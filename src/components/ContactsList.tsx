@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Search, Filter, Plus, Trash, Mail, LinkedIn, Phone, MoreHorizontal } from 'lucide-react';
+import { Search, Filter, Plus, Trash, Mail, Linkedin, Phone, MoreHorizontal } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 // Define the Contact type
@@ -252,7 +251,7 @@ const ContactsList = () => {
                         <Mail className="h-4 w-4" />
                       </button>
                       <button className="p-1 rounded-md hover:bg-muted">
-                        <LinkedIn className="h-4 w-4" />
+                        <Linkedin className="h-4 w-4" />
                       </button>
                       <button className="p-1 rounded-md hover:bg-muted">
                         <Phone className="h-4 w-4" />

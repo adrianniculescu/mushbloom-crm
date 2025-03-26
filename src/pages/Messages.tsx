@@ -1,5 +1,5 @@
 
-import AIMessageGenerator from "@/components/AIMessageGenerator";
+import AIMessageGeneratorWrapper from "@/components/AIMessageGeneratorWrapper";
 import Navbar from "@/components/Navbar";
 
 const Messages = () => {
@@ -7,7 +7,7 @@ const Messages = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <main className="md:ml-64 p-6 pt-16 md:pt-6">
-        <AIMessageGenerator />
+        <AIMessageGeneratorWrapper />
       </main>
     </div>
   );

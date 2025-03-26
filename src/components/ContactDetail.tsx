@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { 
   ArrowLeft, 
@@ -13,7 +12,7 @@ import {
   Trash2, 
   MoreHorizontal, 
   Plus,
-  LinkedIn,
+  Linkedin,
   RefreshCw,
   FileText,
   Check,
@@ -271,7 +270,7 @@ const ContactDetail = () => {
                           </a>
                         </div>
                         <div className="flex items-center gap-2 text-sm">
-                          <LinkedIn className="h-4 w-4 text-muted-foreground" />
+                          <Linkedin className="h-4 w-4 text-muted-foreground" />
                           <a href={contact.linkedinUrl} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                             LinkedIn Profile
                           </a>
@@ -537,7 +536,7 @@ const ContactDetail = () => {
                 Find verified email addresses using LinkedIn profile
               </p>
               <button className="px-4 py-2 bg-primary text-primary-foreground rounded-md flex items-center gap-2 mx-auto">
-                <LinkedIn className="h-4 w-4" /> Find Email
+                <Linkedin className="h-4 w-4" /> Find Email
               </button>
             </div>
           </div>
