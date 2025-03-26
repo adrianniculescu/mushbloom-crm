@@ -1,16 +1,16 @@
 
-import Dashboard from "@/components/Dashboard";
+import ContactsList from "@/components/ContactsList";
 import Navbar from "@/components/Navbar";
 
-const Index = () => {
+const Contacts = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <main className="md:ml-64 p-6 pt-16 md:pt-6">
-        <Dashboard />
+        <ContactsList />
       </main>
     </div>
   );
 };
 
-export default Index;
+export default Contacts;

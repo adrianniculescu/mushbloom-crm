@@ -1,16 +1,16 @@
 
-import Dashboard from "@/components/Dashboard";
+import AIMessageGenerator from "@/components/AIMessageGenerator";
 import Navbar from "@/components/Navbar";
 
-const Index = () => {
+const Messages = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <main className="md:ml-64 p-6 pt-16 md:pt-6">
-        <Dashboard />
+        <AIMessageGenerator />
       </main>
     </div>
   );
 };
 
-export default Index;
+export default Messages;

@@ -1,16 +1,16 @@
 
-import Dashboard from "@/components/Dashboard";
+import DealsBoard from "@/components/DealsBoard";
 import Navbar from "@/components/Navbar";
 
-const Index = () => {
+const Deals = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <main className="md:ml-64 p-6 pt-16 md:pt-6">
-        <Dashboard />
+        <DealsBoard />
       </main>
     </div>
   );
 };
 
-export default Index;
+export default Deals;

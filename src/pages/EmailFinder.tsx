@@ -1,16 +1,16 @@
 
-import Dashboard from "@/components/Dashboard";
+import EmailFinder from "@/components/EmailFinder";
 import Navbar from "@/components/Navbar";
 
-const Index = () => {
+const EmailFinderPage = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <main className="md:ml-64 p-6 pt-16 md:pt-6">
-        <Dashboard />
+        <EmailFinder />
       </main>
     </div>
   );
 };
 
-export default Index;
+export default EmailFinderPage;
