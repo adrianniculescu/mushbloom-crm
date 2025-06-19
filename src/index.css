@@ -97,74 +97,60 @@
     font-family: 'Inter', sans-serif;
   }
 
-  .glass-panel {
-    @apply bg-white/80 dark:bg-black/40 backdrop-blur-md border border-white/20 dark:border-white/10 shadow-sm;
-  }
-
-  .card-hover {
-    @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1;
-  }
-
-  .sidebar-item {
-    @apply flex items-center gap-2 px-3 py-2 my-1 rounded-md text-sm font-medium transition-colors;
-  }
-
-  .sidebar-item-active {
-    @apply bg-primary text-primary-foreground;
-  }
-  
-  .sidebar-item-inactive {
-    @apply text-muted-foreground hover:bg-muted hover:text-foreground;
+  html {
+    scroll-behavior: smooth;
   }
 }
 
-.blur-load {
-  background-size: cover;
-  background-position: center;
+/* Custom animations for the futuristic design */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
-.blur-load.loaded > img {
-  opacity: 1;
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }
 
-.blur-load > img {
-  opacity: 0;
-  transition: opacity 300ms ease-in-out;
+.delay-200 {
+  animation-delay: 200ms;
 }
 
-.chip {
-  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+.delay-400 {
+  animation-delay: 400ms;
 }
 
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 0.5s ease forwards;
+.delay-500 {
+  animation-delay: 500ms;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+.delay-1000 {
+  animation-delay: 1000ms;
 }
 
-/* Smooth page transitions */
-.page-transition-enter {
-  opacity: 0;
-  transform: translateY(10px);
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
 }
 
-.page-transition-enter-active {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 300ms, transform 300ms;
+/* Custom gradient text animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-.page-transition-exit {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.page-transition-exit-active {
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 300ms, transform 300ms;
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
 }
