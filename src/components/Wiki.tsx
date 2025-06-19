@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Search, TrendingUp, Shield, Bot, BarChart3, Target, Zap, Brain, Users, Settings, Clock, Globe, Award, Lightbulb, FileText, DollarSign, Cpu, Network, Database, Lock } from 'lucide-react';
+import { Search, TrendingUp, Shield, Bot, BarChart3, Target, Zap, Brain, Users, Settings, Clock, Globe, Award, Lightbulb, FileText, DollarSign, Cpu, Network, Database, Lock, Heart, CreditCard, ShoppingCart, Truck, Eye, Gavel, HeadphonesIcon, Battery, Gamepad2 } from 'lucide-react';
 
 const Wiki = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -206,10 +205,110 @@ const Wiki = () => {
       readTime: "13 min read",
       seoKeywords: "AI agent scaling, enterprise automation deployment",
       content: "Infrastructure requirements include cloud architecture design, monitoring systems, and maintenance protocols for managing hundreds of AI agents across complex business environments."
+    },
+    {
+      id: 21,
+      title: "AI in Healthcare: From Diagnosis to Patient Engagement",
+      category: "Healthcare",
+      icon: Heart,
+      description: "Artificial intelligence is rapidly transforming the healthcare industry, driving improvements in diagnostics, patient engagement, and operational efficiency. AI-powered diagnostic tools can now analyze complex medical images, such as X-rays and MRIs, with accuracy rivaling or exceeding that of human radiologists.",
+      readTime: "12 min read",
+      seoKeywords: "AI healthcare automation, AI diagnostics, healthcare chatbots",
+      content: "Machine learning algorithms identify patterns in patient data to predict disease outbreaks, recommend personalized treatment plans, and even flag potential medication errors. On the patient-facing side, AI chatbots provide 24/7 support, answering health queries, scheduling appointments, and sending medication reminders, which greatly enhances patient engagement and satisfaction."
+    },
+    {
+      id: 22,
+      title: "AI-Powered Fraud Detection in Finance",
+      category: "Finance",
+      icon: CreditCard,
+      description: "Financial fraud is a growing threat, but AI is revolutionizing how banks and fintechs detect and prevent it. Advanced machine learning models analyze millions of transactions in real time, spotting suspicious patterns and flagging anomalies that might indicate fraud or money laundering.",
+      readTime: "11 min read",
+      seoKeywords: "AI fraud detection, AML automation, AI in banking",
+      content: "AI-powered anti-money laundering (AML) systems adapt to evolving tactics by learning from new data, dramatically reducing false positives and ensuring compliance with global regulations. Automated document verification and contract analysis streamline onboarding and compliance, saving institutions both time and money."
+    },
+    {
+      id: 23,
+      title: "AI for Personalized Marketing and Sales Optimization",
+      category: "Marketing",
+      icon: ShoppingCart,
+      description: "Artificial intelligence is redefining marketing and sales by enabling hyper-personalization and data-driven decision-making. AI analyzes customer data to deliver tailored content, product recommendations, and targeted offers, significantly boosting engagement and conversion rates.",
+      readTime: "9 min read",
+      seoKeywords: "AI marketing automation, AI sales optimization, personalized marketing AI",
+      content: "Predictive analytics help marketers identify the best times and channels to reach each customer, optimizing ad spend and campaign effectiveness. AI chatbots and virtual assistants handle customer inquiries instantly, providing consistent support and freeing human agents for higher-value tasks."
+    },
+    {
+      id: 24,
+      title: "AI-Driven Supply Chain and Logistics Optimization",
+      category: "Logistics",
+      icon: Truck,
+      description: "Supply chain management is experiencing a revolution thanks to AI-powered optimization tools. Machine learning algorithms predict demand fluctuations, optimize inventory levels, and suggest the most efficient shipping routes, reducing costs and improving delivery times.",
+      readTime: "10 min read",
+      seoKeywords: "AI supply chain, logistics automation, AI inventory management",
+      content: "AI can also identify potential disruptions, such as supplier delays or geopolitical risks, and recommend alternative sourcing strategies. Robotics and automation streamline warehouse operations, from picking and packing to inventory audits."
+    },
+    {
+      id: 25,
+      title: "AI in Cybersecurity: Proactive Threat Detection",
+      category: "Cybersecurity",
+      icon: Eye,
+      description: "Cybersecurity threats are constantly evolving, but AI is empowering organizations to defend against attacks more effectively than ever before. AI-driven security systems monitor network traffic, user behavior, and device activity in real time, instantly detecting anomalies and flagging potential breaches.",
+      readTime: "13 min read",
+      seoKeywords: "AI cybersecurity, AI threat detection, automated cyber defense",
+      content: "Machine learning models identify new malware strains and phishing tactics by analyzing vast datasets, enabling rapid response to emerging threats. AI also automates incident response, isolating compromised systems and neutralizing attacks before they spread."
+    },
+    {
+      id: 26,
+      title: "AI for Smart Manufacturing and Industry 4.0",
+      category: "Manufacturing",
+      icon: Settings,
+      description: "The manufacturing sector is embracing AI to drive efficiency, quality, and innovation. AI-powered predictive maintenance systems monitor equipment health, analyzing sensor data to forecast failures and schedule repairs before costly breakdowns occur.",
+      readTime: "14 min read",
+      seoKeywords: "AI manufacturing automation, Industry 4.0 AI, predictive maintenance AI",
+      content: "Robotics and computer vision automate assembly lines and quality inspections, reducing defects and increasing throughput. Machine learning models optimize production schedules, resource allocation, and supply chain logistics, minimizing waste and maximizing productivity."
+    },
+    {
+      id: 27,
+      title: "AI in Legal Services: Contract Analysis and Compliance",
+      category: "Legal",
+      icon: Gavel,
+      description: "AI is transforming the legal industry by automating contract review, risk assessment, and compliance management. Natural language processing (NLP) algorithms extract key clauses, obligations, and deadlines from complex legal documents, flagging inconsistencies and potential liabilities.",
+      readTime: "11 min read",
+      seoKeywords: "AI legal automation, contract analysis AI, legal compliance automation",
+      content: "AI-powered systems cross-reference contracts with changing regulations, ensuring ongoing compliance and reducing the risk of costly penalties. Automated document processing accelerates due diligence for mergers, acquisitions, and financing rounds, freeing legal professionals to focus on strategic advisory work."
+    },
+    {
+      id: 28,
+      title: "AI-Enhanced Customer Support and Chatbots",
+      category: "Customer Service",
+      icon: HeadphonesIcon,
+      description: "AI chatbots and virtual assistants are revolutionizing customer support by delivering instant, personalized service around the clock. Powered by advanced natural language processing, these bots understand and resolve customer queries, handle transactions, and escalate complex issues to human agents when necessary.",
+      readTime: "8 min read",
+      seoKeywords: "AI customer support, chatbot automation, 24/7 AI support",
+      content: "AI-driven ticket routing ensures customers reach the right support team quickly, reducing wait times and boosting satisfaction. Sentiment analysis tailors responses to customer emotions, improving engagement and loyalty."
+    },
+    {
+      id: 29,
+      title: "AI in Energy: Grid Optimization and Sustainability",
+      category: "Energy",
+      icon: Battery,
+      description: "The energy sector is leveraging AI to optimize grid management, integrate renewables, and drive sustainability. Machine learning models forecast energy demand, balance supply from diverse sources, and optimize storage and distribution to minimize waste.",
+      readTime: "12 min read",
+      seoKeywords: "AI energy optimization, smart grid AI, sustainable energy automation",
+      content: "AI-powered analytics detect equipment faults and predict maintenance needs, reducing downtime and operational costs. Utilities use AI to analyze consumption patterns, offer personalized energy-saving recommendations, and support dynamic pricing models."
+    },
+    {
+      id: 30,
+      title: "AI for Gaming and Virtual Worlds",
+      category: "Gaming",
+      icon: Gamepad2,
+      description: "Artificial intelligence is revolutionizing the gaming industry by creating more immersive, dynamic, and personalized experiences. AI-powered non-player characters (NPCs) adapt to player behavior, providing challenging and realistic interactions.",
+      readTime: "10 min read",
+      seoKeywords: "AI gaming, NPC AI, AI content generation in games",
+      content: "Machine learning algorithms generate new game content, levels, and quests on the fly, keeping gameplay fresh and engaging. AI also powers advanced moderation tools, detecting toxic behavior and ensuring safe, inclusive communities."
     }
   ];
 
-  const categories = ['all', 'Investment', 'Startups', 'Crypto', 'Automation', 'Compliance', 'Marketing', 'Analytics', 'Technology'];
+  const categories = ['all', 'Investment', 'Startups', 'Crypto', 'Automation', 'Compliance', 'Marketing', 'Analytics', 'Technology', 'Healthcare', 'Finance', 'Logistics', 'Cybersecurity', 'Manufacturing', 'Legal', 'Customer Service', 'Energy', 'Gaming'];
 
   const filteredArticles = wikiArticles.filter(article => {
     const matchesSearch = article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -231,7 +330,7 @@ const Wiki = () => {
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8">
             Comprehensive guides on AI-powered investment tools, startup automation, and business intelligence. 
-            20 expert articles optimized for maximum impact and SEO dominance.
+            30 expert articles optimized for maximum impact and SEO dominance.
           </p>
         </div>
 

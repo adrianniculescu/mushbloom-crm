@@ -26,7 +26,7 @@ const Contact = () => {
                 <Mail className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2 font-['Space_Grotesk']">Direct Contact</h3>
-              <p className="text-gray-300">hello@mushbloom.uk</p>
+              <p className="text-gray-300">info@mushbloom.co.uk</p>
             </div>
             
             <div className="text-center">
@@ -42,7 +42,7 @@ const Contact = () => {
                 <Zap className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2 font-['Space_Grotesk']">Rapid Deploy</h3>
-              <p className="text-gray-300">90-day AI implementation</p>
+              <p className="text-gray-300">3-90 day AI implementation</p>
             </div>
           </div>
         </div>
