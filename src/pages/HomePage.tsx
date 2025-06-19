@@ -3,6 +3,7 @@ import React from 'react';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import About from '@/components/About';
+import Wiki from '@/components/Wiki';
 import Contact from '@/components/Contact';
 import Navigation from '@/components/Navigation';
 
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Hero />
       <Services />
       <About />
+      <Wiki />
       <Contact />
     </div>
   );
