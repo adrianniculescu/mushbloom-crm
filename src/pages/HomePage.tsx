@@ -2,6 +2,7 @@
 import React from 'react';
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
+import LLMboost from '@/components/LLMboost';
 import About from '@/components/About';
 import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
@@ -16,6 +17,7 @@ const HomePage = () => {
       <Navigation />
       <Hero />
       <Services />
+      <LLMboost />
       <About />
       <Testimonials />
       <FAQ />

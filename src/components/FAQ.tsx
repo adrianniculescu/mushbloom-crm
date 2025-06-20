@@ -15,6 +15,21 @@ const FAQ = () => {
 
   const faqs = [
     {
+      question: "How does LLM SEO differ from traditional SEO with LLMboost?",
+      answer: "LLMboost optimizes for AI models like ChatGPT, Gemini, and Claude, not just Google. While traditional SEO focuses on keywords and backlinks, LLM SEO emphasizes entity relationships, authority signals, context, and structured data that AI models understand. LLMboost ensures your brand becomes the go-to answer in AI-powered search results.",
+      category: "LLMboost & LLM SEO"
+    },
+    {
+      question: "What is Share of Model (SOM) and why does it matter?",
+      answer: "Share of Model (SOM) measures how often your brand appears in AI-generated answers compared to competitors. It's like market share for AI visibility. High SOM means when someone asks ChatGPT or other AI about your industry, your brand is mentioned first. LLMboost tracks and optimizes your SOM across all major AI platforms.",
+      category: "LLMboost Metrics"
+    },
+    {
+      question: "How quickly can I see results with LLMboost?",
+      answer: "LLMboost delivers initial AI visibility improvements within 30-45 days. Full LLM optimization and Share of Model dominance typically takes 60-90 days. Unlike traditional SEO that can take months, AI models update more frequently, allowing faster visibility gains for properly optimized content.",
+      category: "LLMboost Timeline"
+    },
+    {
       question: "How quickly can Mushbloom deploy AI agents for my business?",
       answer: "Mushbloom deploys AI agent teams in 3 to 90 days depending on complexity. Simple automation like lead qualification and email responses can be live in 3-7 days. Complex multi-agent systems for deal sourcing, due diligence, and operations take 30-90 days. We guarantee 37% operational cost reduction within the first 90 days.",
       category: "Implementation Timeline"
@@ -23,6 +38,11 @@ const FAQ = () => {
       question: "What is the guaranteed 37% cost reduction and how does it work?",
       answer: "Mushbloom guarantees 37% operational cost reduction through AI workforce automation. We replace manual tasks like data entry, lead qualification, customer support, and document analysis with AI agents. If we don't achieve 37% cost savings in 90 days, we continue working for free until you get results. This guarantee covers labor costs, not infrastructure expenses.",
       category: "Cost Savings"
+    },
+    {
+      question: "Which AI platforms does LLMboost optimize for?",
+      answer: "LLMboost optimizes your brand visibility across ChatGPT, Gemini, Claude, Perplexity, Bing Chat, Google Bard, and emerging AI search platforms. Our optimization ensures consistent brand authority and citation across all major AI models that users interact with daily.",
+      category: "LLMboost Platforms"
     },
     {
       question: "What types of AI agents does Mushbloom specialize in?",
@@ -35,34 +55,24 @@ const FAQ = () => {
       category: "Integration"
     },
     {
-      question: "What industries does Mushbloom serve with AI automation?",
-      answer: "Mushbloom serves investment firms, private equity, venture capital, real estate, professional services, SaaS companies, e-commerce, manufacturing, and consulting firms. Our AI agents are particularly effective for industries with high-volume document processing, client communication, and data analysis requirements.",
-      category: "Industries"
+      question: "Can LLMboost help my business rank in traditional search engines too?",
+      answer: "Yes! LLMboost's entity optimization, structured data, and authority building also improves traditional Google and Bing rankings. Our approach creates content that both AI models and search engines understand, providing comprehensive visibility across all discovery channels.",
+      category: "LLMboost & Traditional SEO"
     },
     {
-      question: "How does Mushbloom ensure AI agent accuracy and reliability?",
-      answer: "Mushbloom implements multi-layer validation systems, continuous learning algorithms, and human oversight protocols. Our AI agents maintain 95%+ accuracy through regular retraining, feedback loops, and quality assurance processes. All critical decisions include human approval workflows for maximum reliability.",
-      category: "Quality Assurance"
+      question: "What industries benefit most from LLMboost optimization?",
+      answer: "LLMboost delivers exceptional results for SaaS companies, professional services (legal, finance, healthcare), eCommerce brands, agencies, consultancies, and B2B technology firms. Any industry where being the authoritative answer drives business value benefits from LLM visibility optimization.",
+      category: "LLMboost Industries"
     },
     {
-      question: "What is the pricing structure for Mushbloom's AI agent deployment?",
-      answer: "Mushbloom offers performance-based pricing with upfront implementation fees and monthly maintenance costs. Investment starts at £5,000 for basic agent deployment, scaling to £50,000+ for enterprise multi-agent systems. ROI typically achieved within 2-4 months through operational cost savings.",
-      category: "Pricing"
+      question: "How does Mushbloom measure LLMboost success and ROI?",
+      answer: "LLMboost success is measured through Share of Model tracking, AI citation frequency, query response positioning, brand mention quality scores, and conversion from AI-driven traffic. We provide monthly LLM visibility reports showing your progress across all major AI platforms and competitive benchmarking.",
+      category: "LLMboost Measurement"
     },
     {
       question: "Can Mushbloom's AI agents work 24/7 without human intervention?",
       answer: "Yes, Mushbloom's AI agents operate 24/7 with autonomous decision-making capabilities. They handle routine tasks, respond to inquiries, process documents, and execute workflows continuously. Critical decisions and edge cases are escalated to human team members through intelligent routing systems.",
       category: "Autonomous Operations"
-    },
-    {
-      question: "How does Mushbloom handle data security and compliance for AI agents?",
-      answer: "Mushbloom implements enterprise-grade security with end-to-end encryption, data anonymization, and compliance frameworks for GDPR, CCPA, SOC 2, and industry-specific regulations. All AI processing occurs in secure cloud environments with audit trails and access controls.",
-      category: "Security & Compliance"
-    },
-    {
-      question: "What support and maintenance does Mushbloom provide after AI deployment?",
-      answer: "Mushbloom provides ongoing monitoring, performance optimization, agent retraining, system updates, and 24/7 technical support. Monthly maintenance includes accuracy monitoring, workflow improvements, and scaling recommendations to maximize AI agent effectiveness.",
-      category: "Support & Maintenance"
     }
   ];
 
@@ -77,7 +87,7 @@ const FAQ = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Everything you need to know about AI agent deployment, cost savings, and business automation with Mushbloom.
+            Everything you need to know about AI agent deployment, LLMboost optimization, cost savings, and business automation with Mushbloom.
           </p>
         </header>
 
@@ -100,7 +110,9 @@ const FAQ = () => {
                     <h3 className="text-lg font-semibold text-white font-['Space_Grotesk']" itemProp="name">
                       {faq.question}
                     </h3>
-                    <span className="text-xs text-blue-300 font-medium">
+                    <span className={`text-xs font-medium ${
+                      faq.category.includes('LLMboost') ? 'text-purple-300' : 'text-blue-300'
+                    }`}>
                       {faq.category}
                     </span>
                   </div>
@@ -129,7 +141,7 @@ const FAQ = () => {
         <div className="sr-only">
           <div itemScope itemType="https://schema.org/Organization">
             <meta itemProp="name" content="Mushbloom AI Automation" />
-            <meta itemProp="description" content="AI agent deployment company specializing in business automation, deal sourcing, and operational cost reduction" />
+            <meta itemProp="description" content="AI agent deployment and LLM SEO optimization company specializing in business automation, deal sourcing, LLMboost services, and operational cost reduction" />
             <meta itemProp="url" content="https://mushbloom.co.uk" />
             <meta itemProp="email" content="info@mushbloom.co.uk" />
             <div itemProp="areaServed" itemScope itemType="https://schema.org/Country">
@@ -138,16 +150,25 @@ const FAQ = () => {
             <div itemProp="areaServed" itemScope itemType="https://schema.org/Place">
               <meta itemProp="name" content="Global" />
             </div>
+            <div itemProp="service" itemScope itemType="https://schema.org/Service">
+              <meta itemProp="name" content="LLMboost - LLM SEO Optimization" />
+              <meta itemProp="description" content="AI-driven search visibility optimization for ChatGPT, Gemini, Claude, and other LLM platforms" />
+            </div>
           </div>
         </div>
 
         <div className="text-center mt-12">
           <p className="text-gray-400 mb-6">
-            Still have questions? Our AI experts are ready to help.
+            Still have questions about LLMboost or our AI services? Our experts are ready to help.
           </p>
-          <button className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200">
-            Schedule Free Consultation
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-gradient-to-r from-purple-500 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200">
+              Get Free LLM SEO Audit
+            </button>
+            <button className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200">
+              Schedule Free Consultation
+            </button>
+          </div>
         </div>
       </div>
     </section>
