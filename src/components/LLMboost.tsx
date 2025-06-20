@@ -1,5 +1,5 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { 
   Search, 
   TrendingUp, 
@@ -89,9 +89,12 @@ const LLMboost = () => {
               Get Free LLM SEO Audit
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="border border-purple-400 text-purple-300 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-purple-400/10 transition-colors duration-200">
-              View Case Studies
-            </button>
+            <Link 
+              to="/llmboost"
+              className="border border-purple-400 text-purple-300 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-purple-400/10 transition-colors duration-200 flex items-center justify-center"
+            >
+              Learn More About LLMboost
+            </Link>
           </div>
         </div>
 
@@ -115,13 +118,13 @@ const LLMboost = () => {
           </div>
         </div>
 
-        {/* What's Included */}
+        {/* What's Included - abbreviated for homepage */}
         <div className="mb-16">
           <h3 className="text-3xl font-bold text-white text-center mb-12 font-['Space_Grotesk']">
             What's Included in <span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">LLMboost</span>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
+            {features.slice(0, 3).map((feature, index) => (
               <div key={index} className="glass-effect rounded-xl p-6 hover:scale-105 transition-all duration-300">
                 <div className="bg-gradient-to-r from-purple-500 to-blue-600 p-3 rounded-lg w-fit mb-4">
                   <feature.icon className="h-6 w-6 text-white" />
@@ -134,6 +137,14 @@ const LLMboost = () => {
                 </p>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link 
+              to="/llmboost"
+              className="text-purple-400 hover:text-purple-300 transition-colors font-medium"
+            >
+              View All Features →
+            </Link>
           </div>
         </div>
 
@@ -169,12 +180,20 @@ const LLMboost = () => {
             Key <span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">Benefits</span>
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {benefits.map((benefit, index) => (
+            {benefits.slice(0, 2).map((benefit, index) => (
               <div key={index} className="flex items-center gap-3 p-4 glass-effect rounded-lg">
                 <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0" />
                 <span className="text-gray-300">{benefit}</span>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link 
+              to="/llmboost"
+              className="text-purple-400 hover:text-purple-300 transition-colors font-medium"
+            >
+              View All Benefits →
+            </Link>
           </div>
         </div>
 
@@ -184,7 +203,7 @@ const LLMboost = () => {
             Who Needs <span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">LLMboost</span>?
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {idealFor.map((item, index) => (
+            {idealFor.slice(0, 2).map((item, index) => (
               <div key={index} className="glass-effect rounded-xl p-6 text-center hover:scale-105 transition-all duration-300">
                 <div className="bg-gradient-to-r from-purple-500 to-blue-600 p-3 rounded-lg w-fit mx-auto mb-4">
                   <item.icon className="h-6 w-6 text-white" />
@@ -197,6 +216,14 @@ const LLMboost = () => {
                 </p>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link 
+              to="/llmboost"
+              className="text-purple-400 hover:text-purple-300 transition-colors font-medium"
+            >
+              See All Ideal Customers →
+            </Link>
           </div>
         </div>
 
@@ -213,9 +240,12 @@ const LLMboost = () => {
               <button className="bg-gradient-to-r from-purple-500 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform duration-200">
                 Book Your Free LLM SEO Audit Now
               </button>
-              <button className="border border-gray-400 text-gray-300 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors duration-200">
+              <Link 
+                to="/llmboost"
+                className="border border-gray-400 text-gray-300 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors duration-200 flex items-center justify-center"
+              >
                 Learn More
-              </button>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { 
   Bot, 
   Brain, 
@@ -105,9 +106,12 @@ const Services = () => {
                 
                 {service.isNew && (
                   <div className="mt-4">
-                    <button className="text-purple-400 text-sm font-medium hover:text-purple-300 transition-colors">
+                    <Link 
+                      to="/llmboost"
+                      className="text-purple-400 text-sm font-medium hover:text-purple-300 transition-colors"
+                    >
                       Learn About LLMboost →
-                    </button>
+                    </Link>
                   </div>
                 )}
               </div>
@@ -144,9 +148,12 @@ const Services = () => {
                     <span className="text-sm">AI Authority Building</span>
                   </div>
                 </div>
-                <button className="bg-gradient-to-r from-purple-500 to-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200">
+                <Link 
+                  to="/llmboost"
+                  className="bg-gradient-to-r from-purple-500 to-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200 inline-block"
+                >
                   Get Free LLM SEO Audit
-                </button>
+                </Link>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-purple-500/10 rounded-lg p-4 text-center">
