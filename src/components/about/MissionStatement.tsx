@@ -3,15 +3,17 @@ import React from 'react';
 
 const MissionStatement = () => {
   return (
-    <div className="glass-effect rounded-2xl p-8 mb-16 max-w-4xl mx-auto">
-      <h3 className="text-2xl font-bold text-white mb-4 text-center font-['Space_Grotesk']">
-        Our Mission
-      </h3>
-      <p className="text-lg text-gray-300 text-center leading-relaxed">
-        To empower businesses with AI agents that work 24/7, reduce operational costs by 37%, 
-        and create autonomous systems that scale infinitely. We don't just implement AI—we architect 
-        intelligent business ecosystems that evolve and improve continuously.
+    <div className="text-center mb-20" itemScope itemType="https://schema.org/Mission">
+      <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-4xl mx-auto" itemProp="description">
+        We create custom AI agent teams that automate growth, service, and operations—scaling your business while you sleep. 
+        We don't just implement AI—we architect autonomous business systems enhanced, and automated with AI infrastructure.
       </p>
+      
+      {/* Structured data for mission statement */}
+      <div className="sr-only" itemScope itemType="https://schema.org/Organization">
+        <meta itemProp="mission" content="Creating custom AI agent teams for business automation and autonomous operations" />
+        <meta itemProp="specialty" content="AI workforce deployment, business process automation, autonomous systems" />
+      </div>
     </div>
   );
 };
