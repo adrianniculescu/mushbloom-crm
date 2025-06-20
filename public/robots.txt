@@ -1,14 +1,38 @@
-User-agent: Googlebot
+
+User-agent: *
 Allow: /
+
+# Prioritize important pages for crawling
+User-agent: Googlebot
+Crawl-delay: 1
+Allow: /
+Disallow: /admin/
+Disallow: /private/
 
 User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
+Crawl-delay: 1
 Allow: /
 
 User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://mushbloom.co.uk/sitemap.xml
+
+# LLM-specific crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
 Allow: /
