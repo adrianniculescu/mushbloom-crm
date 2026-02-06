@@ -56,10 +56,15 @@ const Hero = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-400">
-            <button className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform duration-200 flex items-center justify-center gap-2 group shadow-lg">
+            <a 
+              href="https://tidycal.com/adrianniculescu" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform duration-200 flex items-center justify-center gap-2 group shadow-lg"
+            >
               Start Your AI Evolution
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
             
             <button className="border border-white/20 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors duration-200 backdrop-blur-sm">
               Explore AI Capabilities

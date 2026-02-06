@@ -28,7 +28,7 @@ const Contact = () => {
                 <Mail className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2 font-['Space_Grotesk']">Direct Contact</h3>
-              <p className="text-gray-300" itemProp="email">info@mushbloom.co.uk</p>
+              <a href="mailto:office@mushbloom.co.uk" className="text-gray-300 hover:text-blue-400 transition-colors" itemProp="email">office@mushbloom.co.uk</a>
               <meta itemProp="contactType" content="customer service" />
             </div>
             
@@ -60,10 +60,17 @@ const Contact = () => {
           <meta itemProp="priceValidUntil" content="2025-12-31" />
         </div>
 
-        <button className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-12 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform duration-200 inline-flex items-center gap-2 shadow-lg" itemScope itemType="https://schema.org/Action">
+        <a 
+          href="https://tidycal.com/adrianniculescu" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-12 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform duration-200 inline-flex items-center gap-2 shadow-lg"
+          itemScope 
+          itemType="https://schema.org/Action"
+        >
           <Zap className="h-5 w-5" />
           <span itemProp="name">Deploy Your AI Workforce</span>
-        </button>
+        </a>
       </div>
       
       {/* Footer with structured data */}
