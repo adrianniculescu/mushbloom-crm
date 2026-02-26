@@ -13,6 +13,7 @@ const Navigation = () => {
   const navItems = [
     { name: 'Home', href: isHomePage ? '#home' : '/' },
     { name: 'Services', href: '#services', hasDropdown: true },
+    { name: 'Portfolio', href: '/portfolio/websites' },
     { name: 'About', href: isHomePage ? '#about' : '/#about' },
     { name: 'Contact', href: isHomePage ? '#contact' : '/#contact' },
   ];

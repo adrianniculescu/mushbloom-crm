@@ -10,7 +10,6 @@ import Wiki from '@/components/Wiki';
 import SiteMap from '@/components/SiteMap';
 import Contact from '@/components/Contact';
 import Navigation from '@/components/Navigation';
-import Portfolio from '@/components/Portfolio';
 
 const HomePage = () => {
   return (
@@ -18,7 +17,6 @@ const HomePage = () => {
       <Navigation />
       <Hero />
       <Services />
-      <Portfolio />
       <LLMboost />
       <About />
       <Testimonials />
