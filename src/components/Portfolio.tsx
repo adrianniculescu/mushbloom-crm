@@ -95,7 +95,7 @@ const Portfolio = () => {
               {/* Screenshot Preview */}
               <div className="relative h-44 overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800">
                 <img
-                  src={`https://api.microlink.io/?url=${encodeURIComponent(site.url)}&screenshot=true&meta=false&embed=screenshot.url&type=jpeg&overlay.browser=none&viewport.width=1280&viewport.height=800`}
+                  src={`https://image.thum.io/get/width/640/crop/400/noanimate/${site.url}`}
                   alt={`${site.name} website preview`}
                   className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"

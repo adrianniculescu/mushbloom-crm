@@ -14,6 +14,7 @@ import CybersecurityPage from "./pages/newswire/CybersecurityPage";
 import FinanceFintechPage from "./pages/newswire/FinanceFintechPage";
 import GamingPage from "./pages/newswire/GamingPage";
 import IGamingPage from "./pages/newswire/iGamingPage";
+import PortfolioWebsites from "./pages/PortfolioWebsites";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           <Sonner />
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/portfolio/websites" element={<PortfolioWebsites />} />
             <Route path="/llmboost" element={<LLMboostPage />} />
             <Route path="/llmboost/:slug" element={<LLMboostCaseStudy />} />
             <Route path="/newswire" element={<NewswirePage />} />
