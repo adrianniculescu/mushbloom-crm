@@ -41,6 +41,13 @@ const websites: PortfolioItem[] = [
 
 const categories = ['All', ...Array.from(new Set(websites.map(w => w.category)))];
 
+// Sites where thum.io fails — use Google's cache instead
+const fallbackScreenshotUrl = (url: string) => 
+  `https://s0.wp.com/mshots/v1/${encodeURIComponent(url)}?w=640&h=400`;
+
+const primaryScreenshotUrl = (url: string) =>
+  `https://image.thum.io/get/width/640/crop/400/noanimate/${url}`;
+
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState('All');
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -95,18 +102,25 @@ const Portfolio = () => {
               {/* Screenshot Preview */}
               <div className="relative h-44 overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800">
                 <img
-                  src={`https://image.thum.io/get/width/640/crop/400/noanimate/${site.url}`}
+                  src={primaryScreenshotUrl(site.url)}
                   alt={`${site.name} website preview`}
                   className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"
                   onError={(e) => {
                     const target = e.currentTarget;
+                    // Try WordPress mshots fallback first
+                    if (!target.dataset.fallback) {
+                      target.dataset.fallback = '1';
+                      target.src = fallbackScreenshotUrl(site.url);
+                      return;
+                    }
+                    // Final fallback: show icon
                     target.style.display = 'none';
                     target.parentElement!.classList.add('flex', 'items-center', 'justify-center');
-                    const fallback = document.createElement('div');
-                    fallback.className = 'flex flex-col items-center gap-2 text-gray-600';
-                    fallback.innerHTML = `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span class="text-xs">${site.name}</span>`;
-                    target.parentElement!.appendChild(fallback);
+                    const fb = document.createElement('div');
+                    fb.className = 'flex flex-col items-center gap-2 text-gray-600';
+                    fb.innerHTML = `<svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span class="text-xs">${site.name}</span>`;
+                    target.parentElement!.appendChild(fb);
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
