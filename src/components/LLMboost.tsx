@@ -74,21 +74,21 @@ const LLMboost = () => {
             <Zap className="h-4 w-4" />
             Revolutionary AI Visibility Service
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 font-['Space_Grotesk']" itemProp="name">
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 font-['Space_Grotesk']" itemProp="name">
             LLM<span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">boost</span>
-          </h1>
-          <h2 className="text-2xl md:text-3xl text-gray-300 mb-8 font-medium">
-            AI-Driven LLM & Search Visibility Accelerator
           </h2>
+          <h3 className="text-2xl md:text-3xl text-gray-300 mb-8 font-medium">
+            AI-Driven LLM & Search Visibility Accelerator
+          </h3>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 leading-relaxed" itemProp="description">
             Unlock the next era of brand visibility with LLMboost—Mushbloom's proprietary service designed to propel your business to the top of AI-powered search, conversational agents, and large language model results.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-purple-500 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform duration-200 flex items-center justify-center gap-2 group">
+            <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-purple-500 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform duration-200 flex items-center justify-center gap-2 group">
               Get Free LLM SEO Audit
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
             <Link 
               to="/llmboost"
               className="border border-purple-400 text-purple-300 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-purple-400/10 transition-colors duration-200 flex items-center justify-center"
@@ -237,9 +237,9 @@ const LLMboost = () => {
               Try LLMboost and see how visible your brand really is in ChatGPT, Gemini, Claude, and beyond.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-purple-500 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform duration-200">
+              <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-purple-500 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform duration-200 inline-block">
                 Book Your Free LLM SEO Audit Now
-              </button>
+              </a>
               <Link 
                 to="/llmboost"
                 className="border border-gray-400 text-gray-300 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors duration-200 flex items-center justify-center"

@@ -66,9 +66,9 @@ const Hero = () => {
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </a>
             
-            <button className="border border-white/20 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors duration-200 backdrop-blur-sm">
+            <a href="#services" className="border border-white/20 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors duration-200 backdrop-blur-sm inline-flex items-center justify-center">
               Explore AI Capabilities
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -143,7 +143,7 @@ const FAQ = () => {
             <meta itemProp="name" content="Mushbloom AI Automation" />
             <meta itemProp="description" content="AI agent deployment and LLM SEO optimization company specializing in business automation, deal sourcing, LLMboost services, and operational cost reduction" />
             <meta itemProp="url" content="https://mushbloom.co.uk" />
-            <meta itemProp="email" content="info@mushbloom.co.uk" />
+            <meta itemProp="email" content="office@mushbloom.co.uk" />
             <div itemProp="areaServed" itemScope itemType="https://schema.org/Country">
               <meta itemProp="name" content="United Kingdom" />
             </div>
@@ -162,12 +162,12 @@ const FAQ = () => {
             Still have questions about LLMboost or our AI services? Our experts are ready to help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gradient-to-r from-purple-500 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200">
+            <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-purple-500 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200 inline-block">
               Get Free LLM SEO Audit
-            </button>
-            <button className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200">
+            </a>
+            <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200 inline-block">
               Schedule Free Consultation
-            </button>
+            </a>
           </div>
         </div>
       </div>

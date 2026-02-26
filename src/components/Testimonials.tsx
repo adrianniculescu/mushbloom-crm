@@ -114,7 +114,7 @@ const Testimonials = () => {
                   <meta itemProp="bestRating" content="5" />
                 </div>
                 <meta itemProp="keywords" content={testimonial.keywords} />
-                <meta itemProp="datePublished" content="2024-12-01" />
+                <meta itemProp="datePublished" content="2025-06-01" />
               </div>
             </div>
           ))}
@@ -136,9 +136,9 @@ const Testimonials = () => {
             <p className="text-gray-300 mb-6">
               Average client achieves 37% cost reduction and 3x operational efficiency within 90 days.
             </p>
-            <button className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200">
+            <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200 inline-block">
               Get Your Success Story
-            </button>
+            </a>
           </div>
         </div>
       </div>
