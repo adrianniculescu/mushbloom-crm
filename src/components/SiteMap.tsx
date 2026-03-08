@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ExternalLink, BookOpen, Users, Briefcase, Award, Zap, Globe } from 'lucide-react';
+import { ExternalLink, BookOpen, Briefcase, Award, Zap, Globe } from 'lucide-react';
 
 const SiteMap = () => {
   const siteStructure = [
@@ -20,32 +19,36 @@ const SiteMap = () => {
       section: "Services",
       icon: Zap,
       links: [
-        { name: "LLMboost", url: "/llmboost", type: "link", description: "AI search visibility accelerator for ChatGPT, Gemini, Claude" },
-        { name: "Newswire Hub", url: "/newswire", type: "link", description: "Niche press release distribution across 5 verticals" },
-        { name: "Crypto & Blockchain PR", url: "/newswire/crypto-blockchain", type: "link", description: "Press releases for DeFi, Web3, and exchanges" },
-        { name: "Cybersecurity PR", url: "/newswire/cybersecurity", type: "link", description: "Security tools, breaches, and compliance news" },
-        { name: "Finance & Fintech PR", url: "/newswire/finance-fintech", type: "link", description: "Fintech, banking, and funding round announcements" },
-        { name: "Gaming PR", url: "/newswire/gaming", type: "link", description: "PC, console, mobile games and esports news" },
-        { name: "iGaming PR", url: "/newswire/igaming", type: "link", description: "Betting, casinos, and affiliate partnerships" }
+        { name: "LLMboost", url: "/llmboost", type: "link", description: "AI search visibility for ChatGPT, Gemini, Claude" },
+        { name: "Newswire Hub", url: "/newswire", type: "link", description: "Niche PR distribution across 5 verticals" },
+        { name: "Crypto & Blockchain PR", url: "/newswire/crypto-blockchain", type: "link", description: "DeFi, Web3, and exchange press releases" },
+        { name: "Cybersecurity PR", url: "/newswire/cybersecurity", type: "link", description: "Security tools and compliance news" },
+        { name: "Finance & Fintech PR", url: "/newswire/finance-fintech", type: "link", description: "Fintech and funding announcements" },
+        { name: "Gaming PR", url: "/newswire/gaming", type: "link", description: "PC, console, mobile and esports news" },
+        { name: "iGaming PR", url: "/newswire/igaming", type: "link", description: "Betting, casinos, and affiliates" }
       ]
     },
     {
       section: "Knowledge Hub",
       icon: BookOpen,
       links: [
-        { name: "AI Investment Wiki", url: "#wiki", type: "anchor", description: "30 expert articles on AI automation" },
-        { name: "FAQ", url: "#faq", type: "anchor", description: "Common questions about AI deployment & LLMboost" },
-        { name: "Client Success Stories", url: "#testimonials", type: "anchor", description: "Case studies and measurable results" }
+        { name: "AI Deal Sourcing", url: "/wiki/ai-deal-sourcing-investors", type: "link", description: "AI-powered investment discovery" },
+        { name: "Automated Due Diligence", url: "/wiki/automated-due-diligence-ai", type: "link", description: "72-hour AI-driven analysis" },
+        { name: "Custom AI Agents", url: "/wiki/custom-ai-agents-business", type: "link", description: "Business workflow automation" },
+        { name: "LLM Visibility", url: "/wiki/llm-visibility-optimization", type: "link", description: "AI search optimization strategies" },
+        { name: "AI Fraud Detection", url: "/wiki/ai-fraud-detection-finance", type: "link", description: "ML-powered financial security" },
+        { name: "AI in Healthcare", url: "/wiki/ai-healthcare-diagnosis-engagement", type: "link", description: "Diagnostics and patient AI" },
+        { name: "View All 30 Articles", url: "#wiki", type: "anchor", description: "Complete AI knowledge library" }
       ]
     },
     {
       section: "Industry Solutions",
       icon: Briefcase,
       links: [
-        { name: "Investment Firms", url: "#services", type: "anchor", description: "VC and PE deal sourcing & due diligence automation" },
-        { name: "SaaS Companies", url: "#services", type: "anchor", description: "Customer success and sales automation" },
-        { name: "Real Estate", url: "#services", type: "anchor", description: "Property management AI systems" },
-        { name: "Professional Services", url: "#services", type: "anchor", description: "Client workflow optimization" }
+        { name: "Investment Firms", url: "/wiki/portfolio-risk-analytics-ai", type: "link", description: "Deal sourcing & due diligence automation" },
+        { name: "SaaS Companies", url: "/wiki/ai-personalized-marketing-sales", type: "link", description: "Sales and marketing automation" },
+        { name: "Cybersecurity", url: "/wiki/ai-cybersecurity-threat-detection", type: "link", description: "Proactive threat detection" },
+        { name: "Manufacturing", url: "/wiki/ai-smart-manufacturing-industry-4", type: "link", description: "Industry 4.0 AI systems" }
       ]
     }
   ];

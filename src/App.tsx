@@ -15,6 +15,8 @@ import FinanceFintechPage from "./pages/newswire/FinanceFintechPage";
 import GamingPage from "./pages/newswire/GamingPage";
 import IGamingPage from "./pages/newswire/iGamingPage";
 import PortfolioWebsites from "./pages/PortfolioWebsites";
+import WikiArticlePage from "./pages/WikiArticlePage";
+import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +38,8 @@ const App = () => (
             <Route path="/newswire/finance-fintech" element={<FinanceFintechPage />} />
             <Route path="/newswire/gaming" element={<GamingPage />} />
             <Route path="/newswire/igaming" element={<IGamingPage />} />
+            <Route path="/wiki/:slug" element={<WikiArticlePage />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
       </TooltipProvider>
