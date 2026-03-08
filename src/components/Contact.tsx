@@ -76,7 +76,7 @@ const Contact = () => {
       {/* Footer with structured data */}
       <footer className="mt-20 pt-8 border-t border-white/10 text-center" itemScope itemType="https://schema.org/Organization">
         <p className="text-gray-400" itemProp="copyrightYear">
-          © 2025 <span itemProp="name">Mushbloom</span>. Architecting the autonomous business revolution.
+          © 2024–2026 <span itemProp="name">Mushbloom</span>. Architecting the autonomous business revolution.
         </p>
         <meta itemProp="description" content="AI-powered business automation and workforce solutions" />
         <meta itemProp="foundingDate" content="2024" />
