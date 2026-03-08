@@ -102,19 +102,15 @@ const Navigation = () => {
                 )
               ))}
               
-              {/* Direct links to key services */}
-              <Link
-                to="/llmboost"
-                className="text-purple-400 hover:text-purple-300 px-3 py-2 text-sm font-medium transition-colors duration-200 hover:bg-purple-500/10 rounded-lg"
+            {/* CTA */}
+              <a
+                href="https://tidycal.com/adrianniculescu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-4 py-2 text-sm font-medium rounded-lg hover:scale-105 transition-transform duration-200"
               >
-                LLMboost
-              </Link>
-              <Link
-                to="/newswire"
-                className="text-blue-400 hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors duration-200 hover:bg-blue-500/10 rounded-lg"
-              >
-                Newswire
-              </Link>
+                Book a Call
+              </a>
             </div>
           </div>
 
