@@ -114,7 +114,7 @@ const Testimonials = () => {
                   <meta itemProp="bestRating" content="5" />
                 </div>
                 <meta itemProp="keywords" content={testimonial.keywords} />
-                <meta itemProp="datePublished" content="2025-06-01" />
+                <meta itemProp="datePublished" content="2026-01-15" />
               </div>
             </div>
           ))}

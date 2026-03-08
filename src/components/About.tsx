@@ -22,7 +22,7 @@ const About = () => {
           <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
             <meta itemProp="addressCountry" content="UK" />
           </div>
-          <meta itemProp="email" content="info@mushbloom.co.uk" />
+          <meta itemProp="email" content="office@mushbloom.co.uk" />
           <meta itemProp="foundingDate" content="2024" />
           <div itemProp="serviceArea" itemScope itemType="https://schema.org/Place">
             <meta itemProp="name" content="Global" />

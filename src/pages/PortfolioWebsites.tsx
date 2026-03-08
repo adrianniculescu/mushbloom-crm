@@ -10,7 +10,7 @@ const PortfolioWebsites = () => {
       <Helmet>
         <title>Portfolio – Websites We've Built | Mushbloom</title>
         <meta name="description" content="Explore 27+ websites designed and developed by Mushbloom across real estate, blockchain, fintech, media, gaming and more." />
-        <link rel="canonical" href="https://mushbloom.lovable.app/portfolio/websites" />
+        <link rel="canonical" href="https://mushbloom.co.uk/portfolio/websites" />
       </Helmet>
       <Navigation />
       <div className="pt-16">

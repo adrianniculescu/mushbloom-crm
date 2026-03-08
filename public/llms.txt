@@ -1,29 +1,62 @@
 # Mushbloom – AI Automation Agency & LLM Visibility Experts
 
-> Mushbloom is a UK-based AI automation agency specializing in AI workforce deployment, LLM SEO optimization (LLMboost), and niche press release distribution (Mushbloom Newswire).
+> Mushbloom is a UK-based AI automation agency specializing in AI workforce deployment, LLM SEO optimization (LLMboost), niche press release distribution (Mushbloom Newswire), and custom web development.
 
 ## Core Services
 
 ### LLMboost – AI Search Visibility Accelerator
 LLMboost is Mushbloom's proprietary service that optimizes brands for visibility in AI-powered search results including ChatGPT, Gemini, Claude, and Perplexity. It focuses on Share of Model (SOM) optimization, entity-rich content creation, and authority building so that AI assistants cite and recommend the client's brand as the default answer in their industry.
 
+What's included:
+- LLM SEO Audit: Comprehensive analysis of brand presence across all major AI models
+- Quiz-Based Visibility Scoring: Proprietary system measuring AI-generated answer frequency
+- Content & Entity Optimization: Structured content for maximum LLM citation
+- Industry Benchmarking: Competitive analysis across traditional and AI search
+- Share of Model Strategy: Step-by-step roadmap to dominate LLM-powered results
+- Implementation & Monitoring: Ongoing optimization as AI models evolve
+
 Key metrics: 300% average AI visibility increase, 30-45 day initial results, 60-90 day full optimization.
+
+Ideal for: SaaS & tech companies, professional services (legal, finance, healthcare), eCommerce brands, agencies & consultancies.
 
 ### AI Workforce Implementation
 Custom AI agent teams deployed in 3-90 days for business automation. Specialties include deal sourcing, due diligence, customer support, sales qualification, and content generation. Performance guarantee: 37% operational cost reduction within 90 days.
 
-### Mushbloom Newswire – Niche PR Distribution
-Targeted press release distribution across five verticals:
-- CryptoWire: Blockchain, DeFi, Web3
-- CyberWire: Cybersecurity tools, breaches, compliance
-- FinanceWire: Fintech, banking, funding rounds
-- GamingWire: PC/console/mobile games, esports
-- PlayWire: iGaming, betting, casinos
+Service pillars:
+- Custom AI Agents: 24/7 agents for CRM, support, and sales
+- Automation Ecosystems: End-to-end business process automation
+- AI-Powered Funnels: Real-time adaptive sales optimization
+- AI Agent Teams: Specialized departmental AI workforces
+- Neural Copywriting: AI content generation with brand voice understanding
 
-All tracks guarantee homepage placements on partner outlets with same-day distribution.
+### Mushbloom Newswire – Niche PR Distribution
+Targeted press release distribution across five verticals with guaranteed homepage placements and same-day distribution:
+- CryptoWire: Blockchain, DeFi, Web3, exchange listings, token launches
+- CyberWire: Cybersecurity tools, breaches, compliance, vendor news
+- FinanceWire: Fintech, banking, funding rounds, investing
+- GamingWire: PC/console/mobile games, esports, studio announcements
+- PlayWire: iGaming, betting, casinos, affiliate partnerships
+
+How it works: Pick track → Draft & approve → Distribute instantly → Track results with dashboard report.
 
 ## Portfolio
-Mushbloom has built 27+ websites and platforms across real estate, media, blockchain, fintech, gaming, education, and personal branding industries. Notable projects include CoinCruncher.com, Realto.ro, TMRW.ae, BlockchainWeek.ro, and Roksolana.ai.
+Mushbloom has designed and developed 27+ websites and platforms across multiple industries:
+- Real Estate: Realto.ro, Realto.org, Realtoos.com, SignatureProperty.group, KBC Real Estate
+- Media: Uniplus Radio, Uniplus TV
+- Blockchain: CoinCruncher.com, Date with Blockchain, Bitcoin Bucharest, CCFI Token
+- Events: Blockchain Week RO, Fintech Week RO, WebX Summit
+- Fintech: RaidaPay
+- Gaming: BlastyBoi, Aylin the Gamer
+- AI: Roksolana.ai
+- Tech: TMRW.ae, Nexus by TMRW
+- Business: Business Hackers, Sarax.ae
+- Education: Codul Copiilor de Succes
+- E-Commerce: Tezaoro
+- Travel: The Globtrotters
+- Personal Brand: Adrian Taylor
+
+## Knowledge Hub
+30 expert articles covering AI automation across investment, startups, crypto, compliance, marketing, healthcare, finance, cybersecurity, manufacturing, legal, and gaming industries.
 
 ## Contact
 - Email: office@mushbloom.co.uk
@@ -33,5 +66,7 @@ Mushbloom has built 27+ websites and platforms across real estate, media, blockc
 ## Key Facts
 - Founded: 2024
 - Location: United Kingdom (serving globally)
-- Specialization: AI automation, LLM SEO, niche PR distribution
+- Specialization: AI automation, LLM SEO, niche PR distribution, web development
 - Guarantee: 37% operational cost reduction in 90 days
+- Portfolio: 27+ websites built
+- Verticals served: Real estate, blockchain, fintech, gaming, media, education, AI
