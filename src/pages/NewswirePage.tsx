@@ -481,7 +481,7 @@ const NewswirePage = () => {
         {/* Footer */}
         <footer className="py-8 border-t border-white/10 text-center">
           <p className="text-gray-400">
-            © 2025 Mushbloom Newswire. Part of the Mushbloom ecosystem.
+            © 2024–2026 Mushbloom Newswire. Part of the Mushbloom ecosystem.
           </p>
         </footer>
       </div>

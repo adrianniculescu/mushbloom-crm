@@ -166,9 +166,9 @@ const LLMboostPage = () => {
                 <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 font-['Space_Grotesk']">
                   LLM<span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">boost</span>
                 </h1>
-                <h2 className="text-2xl md:text-3xl text-gray-300 mb-8 font-medium">
+                <p className="text-2xl md:text-3xl text-gray-300 mb-8 font-medium">
                   AI-Driven LLM & Search Visibility Accelerator
-                </h2>
+                </p>
                 <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 leading-relaxed">
                   Be the default answer in ChatGPT, Gemini, Claude, and AI-powered search. LLMboost optimizes your brand for LLM visibility, driving qualified leads from the next generation of search behavior.
                 </p>
