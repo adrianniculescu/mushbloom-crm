@@ -106,13 +106,13 @@ const Services = () => {
                 <h3 className="text-xl font-semibold text-white mb-3 font-['Space_Grotesk']">{service.title}</h3>
                 <p className="text-gray-300 leading-relaxed">{service.description}</p>
                 
-                {service.isNew && (
+                {service.link && (
                   <div className="mt-4">
                     <Link 
-                      to="/llmboost"
-                      className="text-purple-400 text-sm font-medium hover:text-purple-300 transition-colors"
+                      to={service.link}
+                      className={`${service.isNew ? 'text-purple-400 hover:text-purple-300' : 'text-blue-400 hover:text-blue-300'} text-sm font-medium transition-colors`}
                     >
-                      Learn About LLMboost →
+                      Learn About {service.title} →
                     </Link>
                   </div>
                 )}
