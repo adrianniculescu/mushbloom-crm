@@ -28,7 +28,11 @@ const Contact = () => {
                 <Mail className="h-6 w-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2 font-['Space_Grotesk']">Direct Contact</h3>
-              <a href="mailto:office@mushbloom.co.uk" className="text-gray-300 hover:text-blue-400 transition-colors" itemProp="email">office@mushbloom.co.uk</a>
+              <a href="mailto:office@mushbloom.co.uk" className="text-gray-300 hover:text-blue-400 transition-colors block" itemProp="email">office@mushbloom.co.uk</a>
+              <a href="tel:+40725388605" className="text-gray-300 hover:text-blue-400 transition-colors block mt-1" itemProp="telephone">+40 725 388 605</a>
+              <a href="https://wa.me/40725388605" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-green-400 transition-colors block mt-1">
+                <span className="inline-flex items-center gap-1">💬 WhatsApp</span>
+              </a>
               <meta itemProp="contactType" content="customer service" />
             </div>
             
