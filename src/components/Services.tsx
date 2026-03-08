@@ -23,7 +23,8 @@ const Services = () => {
       description: "AI-driven LLM & search visibility accelerator. Optimize your brand for ChatGPT, Gemini, Claude, and AI-powered search results. Be the default answer in your industry.",
       gradient: "from-purple-500 to-blue-600",
       category: "LLM SEO & AI Visibility",
-      isNew: true
+      isNew: true,
+      link: "/llmboost"
     },
     {
       icon: Bot,
@@ -55,10 +56,11 @@ const Services = () => {
     },
     {
       icon: Edit,
-      title: "Neural Copywriting",
-      description: "AI content generation ecosystems that understand psychology, persuasion, and your brand voice at a molecular level for superior conversion rates.",
+      title: "Mushbloom Newswire",
+      description: "Niche press release distribution across crypto, cybersecurity, fintech, gaming, and iGaming verticals with guaranteed homepage placements on partner outlets.",
       gradient: "from-blue-600 to-green-500",
-      category: "AI Content Systems"
+      category: "PR Distribution",
+      link: "/newswire"
     }
   ];
 
@@ -104,13 +106,13 @@ const Services = () => {
                 <h3 className="text-xl font-semibold text-white mb-3 font-['Space_Grotesk']">{service.title}</h3>
                 <p className="text-gray-300 leading-relaxed">{service.description}</p>
                 
-                {service.isNew && (
+                {service.link && (
                   <div className="mt-4">
                     <Link 
-                      to="/llmboost"
-                      className="text-purple-400 text-sm font-medium hover:text-purple-300 transition-colors"
+                      to={service.link}
+                      className={`${service.isNew ? 'text-purple-400 hover:text-purple-300' : 'text-blue-400 hover:text-blue-300'} text-sm font-medium transition-colors`}
                     >
-                      Learn About LLMboost →
+                      Learn About {service.title} →
                     </Link>
                   </div>
                 )}

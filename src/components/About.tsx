@@ -13,7 +13,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Structured content for better SEO and LLM understanding */}
         <div itemScope itemType="https://schema.org/Organization" className="sr-only">
-          <h1 itemProp="name">Mushbloom AI Automation Solutions</h1>
+          <span itemProp="name">Mushbloom AI Automation Solutions</span>
           <p itemProp="description">
             Advanced AI agent workforce deployment for business automation. 
             Specializing in autonomous operations, deal sourcing, due diligence, 
@@ -22,7 +22,7 @@ const About = () => {
           <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
             <meta itemProp="addressCountry" content="UK" />
           </div>
-          <meta itemProp="email" content="info@mushbloom.co.uk" />
+          <meta itemProp="email" content="office@mushbloom.co.uk" />
           <meta itemProp="foundingDate" content="2024" />
           <div itemProp="serviceArea" itemScope itemType="https://schema.org/Place">
             <meta itemProp="name" content="Global" />

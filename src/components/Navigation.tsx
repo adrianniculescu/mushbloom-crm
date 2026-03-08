@@ -102,19 +102,15 @@ const Navigation = () => {
                 )
               ))}
               
-              {/* Direct links to key services */}
-              <Link
-                to="/llmboost"
-                className="text-purple-400 hover:text-purple-300 px-3 py-2 text-sm font-medium transition-colors duration-200 hover:bg-purple-500/10 rounded-lg"
+            {/* CTA */}
+              <a
+                href="https://tidycal.com/adrianniculescu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-4 py-2 text-sm font-medium rounded-lg hover:scale-105 transition-transform duration-200"
               >
-                LLMboost
-              </Link>
-              <Link
-                to="/newswire"
-                className="text-blue-400 hover:text-blue-300 px-3 py-2 text-sm font-medium transition-colors duration-200 hover:bg-blue-500/10 rounded-lg"
-              >
-                Newswire
-              </Link>
+                Book a Call
+              </a>
             </div>
           </div>
 
@@ -159,25 +155,36 @@ const Navigation = () => {
                 Newswire
               </Link>
             </div>
+
+            <Link
+              to="/portfolio/websites"
+              className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              Portfolio
+            </Link>
             
-            {isHomePage && (
+            {isHomePage ? (
               <>
-                <a
-                  href="#about"
-                  className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium"
-                  onClick={() => setIsOpen(false)}
-                >
-                  About
-                </a>
-                <a
-                  href="#contact"
-                  className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Contact
-                </a>
+                <a href="#about" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium" onClick={() => setIsOpen(false)}>About</a>
+                <a href="#contact" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium" onClick={() => setIsOpen(false)}>Contact</a>
+              </>
+            ) : (
+              <>
+                <Link to="/#about" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium" onClick={() => setIsOpen(false)}>About</Link>
+                <Link to="/#contact" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium" onClick={() => setIsOpen(false)}>Contact</Link>
               </>
             )}
+
+            <a
+              href="https://tidycal.com/adrianniculescu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block mx-3 mt-2 text-center bg-gradient-to-r from-blue-500 to-green-500 text-white px-4 py-2 rounded-lg font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              Book a Call
+            </a>
           </div>
         </div>
       )}

@@ -11,7 +11,7 @@ const SiteMap = () => {
       links: [
         { name: "Home", url: "#home", type: "anchor", description: "AI workforce automation solutions" },
         { name: "Services", url: "#services", type: "anchor", description: "Custom AI agent deployment & LLMboost" },
-        { name: "Portfolio", url: "#portfolio", type: "anchor", description: "27+ websites and platforms we've built" },
+        { name: "Portfolio", url: "/portfolio/websites", type: "link", description: "27+ websites and platforms we've built" },
         { name: "About", url: "#about", type: "anchor", description: "Mushbloom team and mission" },
         { name: "Contact", url: "#contact", type: "anchor", description: "Get in touch for consultation" }
       ]
