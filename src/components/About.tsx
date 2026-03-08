@@ -13,7 +13,7 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Structured content for better SEO and LLM understanding */}
         <div itemScope itemType="https://schema.org/Organization" className="sr-only">
-          <h1 itemProp="name">Mushbloom AI Automation Solutions</h1>
+          <span itemProp="name">Mushbloom AI Automation Solutions</span>
           <p itemProp="description">
             Advanced AI agent workforce deployment for business automation. 
             Specializing in autonomous operations, deal sourcing, due diligence, 
