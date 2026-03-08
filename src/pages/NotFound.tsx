@@ -1,4 +1,3 @@
-
 import { useLocation, Link, Navigate } from "react-router-dom";
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
@@ -10,16 +9,17 @@ const REDIRECTS: Record<string, string> = {
 
 const NotFound = () => {
   const location = useLocation();
-
-  // Handle redirects for old URLs
   const redirect = REDIRECTS[location.pathname];
+
+  useEffect(() => {
+    if (!redirect) {
+      console.error("404 Error:", location.pathname);
+    }
+  }, [location.pathname, redirect]);
+
   if (redirect) {
     return <Navigate to={redirect} replace />;
   }
-
-  useEffect(() => {
-    console.error("404 Error:", location.pathname);
-  }, [location.pathname]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
