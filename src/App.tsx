@@ -17,6 +17,8 @@ import IGamingPage from "./pages/newswire/iGamingPage";
 import PortfolioWebsites from "./pages/PortfolioWebsites";
 import WikiArticlePage from "./pages/WikiArticlePage";
 import NotFound from "./pages/NotFound";
+import CmsLogin from "./pages/CmsLogin";
+import CmsDashboard from "./pages/CmsDashboard";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +41,8 @@ const App = () => (
             <Route path="/newswire/gaming" element={<GamingPage />} />
             <Route path="/newswire/igaming" element={<IGamingPage />} />
             <Route path="/wiki/:slug" element={<WikiArticlePage />} />
+            <Route path="/cms/login" element={<CmsLogin />} />
+            <Route path="/cms" element={<CmsDashboard />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
