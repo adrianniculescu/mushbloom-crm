@@ -15,6 +15,7 @@ import FinanceFintechPage from "./pages/newswire/FinanceFintechPage";
 import GamingPage from "./pages/newswire/GamingPage";
 import IGamingPage from "./pages/newswire/iGamingPage";
 import PortfolioWebsites from "./pages/PortfolioWebsites";
+import PortfolioCustomGPTs from "./pages/PortfolioCustomGPTs";
 import WikiArticlePage from "./pages/WikiArticlePage";
 import NotFound from "./pages/NotFound";
 import CmsLogin from "./pages/CmsLogin";
