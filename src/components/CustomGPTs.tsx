@@ -102,7 +102,7 @@ const CustomGPTs = () => {
               rel="noopener noreferrer"
               className="group relative rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.02] hover:bg-white/[0.06] transition-all duration-500 hover:border-white/20 hover:shadow-2xl hover:shadow-blue-500/5"
             >
-              <div className="relative h-72 overflow-hidden">
+              <div className="relative h-80 overflow-hidden">
                 <img
                   src={gpt.image}
                   alt={`${gpt.name} – ${gpt.role} – Custom GPT by Mushbloom`}
