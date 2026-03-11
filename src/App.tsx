@@ -33,6 +33,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/portfolio/websites" element={<PortfolioWebsites />} />
+            <Route path="/portfolio/custom-gpts" element={<PortfolioCustomGPTs />} />
             <Route path="/llmboost" element={<LLMboostPage />} />
             <Route path="/llmboost/:slug" element={<LLMboostCaseStudy />} />
             <Route path="/newswire" element={<NewswirePage />} />
