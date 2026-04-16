@@ -37,7 +37,13 @@ import {
   Star,
   CreditCard,
   FolderOpen,
-  Plus
+  Plus,
+  Users,
+  TrendingUp,
+  Settings,
+  Wrench,
+  Repeat,
+  BarChart3
 } from 'lucide-react';
 
 const VideoAgencyPage = () => {
