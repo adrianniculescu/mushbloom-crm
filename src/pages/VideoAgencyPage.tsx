@@ -1039,6 +1039,7 @@ const VideoAgencyPage = () => {
         </section>
 
         {/* CTA */}
+        <section className="py-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="glass-effect rounded-2xl p-12 border border-orange-400/30">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-['Space_Grotesk']">
