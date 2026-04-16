@@ -12,7 +12,8 @@ import {
   Cpu,
   Database,
   Search,
-  TrendingUp
+  TrendingUp,
+  Video
 } from 'lucide-react';
 
 const Services = () => {
@@ -55,7 +56,7 @@ const Services = () => {
       category: "Departmental AI Teams"
     },
     {
-      icon: Search,
+      icon: Video,
       title: "AI Video Agency",
       description: "Premium AI-powered video production: explainer videos, social media content packs, video ads, VSLs, and talking head videos. Powered by Runway, Descript & ElevenLabs.",
       gradient: "from-orange-500 to-red-500",
