@@ -1,31 +1,28 @@
 
 
-## Plan: Create Video Agency Page
+## Plan: Add Client Acquisition System Section to Video Agency Page
 
 ### Summary
-Generate the full video agency offer stack content using Lovable AI (Gemini), then build a dedicated `/video-agency` page following the same design patterns as the existing `/llmboost` page, and add it to navigation.
+Add a new "Client Acquisition System" section to the existing `/video-agency` page, using AI (Gemini) to generate the full strategic content based on the prompt, then building it into the page with the same glass-effect card design.
 
 ### Steps
 
-1. **Generate content with AI** — Use Lovable AI (Gemini 2.5 Pro) to generate the complete offer stack based on your prompt: service menu, pricing tiers, niche focus, AI tools used, delivery timelines, and best practices for pricing.
+1. **Generate content with AI** — Use Lovable AI (Gemini) to produce the complete client acquisition playbook: outbound prospecting tactics, cold email template, LinkedIn outreach strategy, content marketing plan, and pricing strategy ($1k minimum filter).
 
-2. **Create the Video Agency page** (`src/pages/VideoAgencyPage.tsx`)
-   - Follow the same structure as LLMboostPage: Navigation, hero section, service cards grid, pricing tiers, process/timeline section, CTA, and Contact form
-   - Services: Explainer Videos, Social Media Content Packs, Video Ads, VSLs, Talking Head Videos
-   - Pricing tiers (Starter/Growth/Scale or similar)
-   - AI tools showcase (Runway, Descript, ElevenLabs)
-   - Niche focus section (SaaS, e-com, coaches, agencies)
-   - Full SEO metadata with JSON-LD schema
+2. **Add the section to `VideoAgencyPage.tsx`** — Insert a new "Client Acquisition System" section between the Niche Focus and CTA sections, containing:
+   - **Section header**: "Land 5 Clients in 30 Days" with gradient styling
+   - **4 strategy cards** in a 2×2 grid:
+     - **Outbound Prospecting**: Finding businesses with bad/no videos, qualification criteria
+     - **Cold Email Outreach**: Template with subject line "Video content for [Company]", before/after approach, free sample edit offer
+     - **LinkedIn Outreach**: Connecting with marketing directors, engagement strategy
+     - **Content Marketing**: Posting video tips, behind-the-scenes, free templates
+   - **Pricing strategy callout**: $1k minimum to filter tire-kickers, presented as a highlighted tip box
 
-3. **Add route** in `App.tsx` → `/video-agency`
-
-4. **Update navigation** — Add Video Agency to the Services dropdown in `Navigation.tsx` and as a service card in `Services.tsx`
-
-5. **Update sitemap** — Add the new page to `sitemap.xml` and `llms.txt`
+3. **Add relevant icons** — Import additional lucide icons (e.g., `Search`, `Mail`, `Linkedin`, `PenTool`, `DollarSign`, `Target`) for the strategy cards.
 
 ### Technical Details
 - Content generated via AI script using `google/gemini-2.5-pro` model
-- Page component follows existing dark theme with glass-effect cards, gradient accents
-- SEO: Helmet meta tags + JSON-LD `Service` schema markup
-- Responsive grid layout matching existing pages
+- New section follows existing glass-effect card pattern with orange/red gradient accents
+- Cold email template rendered in a styled code/quote block for easy reference
+- All changes contained within `src/pages/VideoAgencyPage.tsx`
 
