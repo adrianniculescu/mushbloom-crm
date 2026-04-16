@@ -356,24 +356,75 @@ const VideoAgencyPage = () => {
           </div>
         </section>
 
-        {/* Process */}
-        <section className="py-20">
+        {/* Production Workflow */}
+        <section className="py-20" id="workflow">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-['Space_Grotesk']">
-                Our <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Production Process</span>
+                Our <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Production Workflow</span>
               </h2>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Cinema-quality videos without expensive equipment. Six streamlined steps from brief to final delivery.
+              </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {process.map((step) => (
-                <div key={step.step} className="glass-effect rounded-xl p-6 border border-white/5 text-center">
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold text-lg mb-4">
-                    {step.step}
+                <div key={step.step} className="glass-effect rounded-xl p-6 border border-white/5 hover:border-white/20 transition-all duration-300">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold text-sm shrink-0">
+                      {step.step}
+                    </div>
+                    <h3 className="text-lg font-bold text-white font-['Space_Grotesk']">{step.title}</h3>
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-3 font-['Space_Grotesk']">{step.title}</h3>
-                  <p className="text-gray-400 text-sm">{step.description}</p>
+                  <p className="text-gray-400 text-sm mb-4">{step.description}</p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {step.tools.map((tool, i) => (
+                      <span key={i} className="text-xs bg-white/5 text-cyan-400 px-2 py-1 rounded-full border border-cyan-500/20">{tool}</span>
+                    ))}
+                  </div>
+                  <ul className="space-y-1.5">
+                    {step.details.map((detail, i) => (
+                      <li key={i} className="flex items-start gap-2 text-gray-400 text-xs">
+                        <CheckCircle className="h-3.5 w-3.5 text-green-400 shrink-0 mt-0.5" />
+                        {detail}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Delivery Specs */}
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="glass-effect rounded-2xl p-8 border border-white/5">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h2 className="text-3xl font-bold text-white mb-4 font-['Space_Grotesk']">
+                    Delivery <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Specifications</span>
+                  </h2>
+                  <p className="text-gray-400 mb-4">Every video is rendered in 1080p MP4 and exported in all aspect ratios you need. No extra charge for multiple formats.</p>
+                  <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg border border-white/10">
+                    <RotateCcw className="h-5 w-5 text-orange-400 shrink-0" />
+                    <div>
+                      <p className="text-white text-sm font-semibold">2 Revision Rounds Included</p>
+                      <p className="text-gray-500 text-xs">Additional revisions available at $150/round</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  {deliverySpecs.map((spec, i) => (
+                    <div key={i} className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
+                      <spec.icon className="h-8 w-8 text-cyan-400 mx-auto mb-2" />
+                      <p className="text-white text-sm font-semibold">{spec.ratio}</p>
+                      <p className="text-gray-500 text-xs">{spec.resolution}</p>
+                      <p className="text-gray-400 text-xs mt-1">{spec.platform}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
