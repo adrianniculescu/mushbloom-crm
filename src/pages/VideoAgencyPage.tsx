@@ -25,7 +25,13 @@ import {
   Smartphone,
   MonitorPlay,
   Square,
-  Camera
+  Camera,
+  Search,
+  Mail,
+  Linkedin,
+  PenTool,
+  DollarSign,
+  Target
 } from 'lucide-react';
 
 const VideoAgencyPage = () => {
