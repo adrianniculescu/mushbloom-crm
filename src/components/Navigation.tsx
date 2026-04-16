@@ -20,6 +20,7 @@ const Navigation = () => {
 
   const serviceItems = [
     { name: 'LLMboost', href: '/llmboost', description: 'AI Search Visibility' },
+    { name: 'Video Agency', href: '/video-agency', description: 'Premium AI Video Production' },
     { name: 'Newswire', href: '/newswire', description: 'Niche PR Distribution' },
   ];
 
@@ -146,6 +147,13 @@ const Navigation = () => {
                 onClick={() => setIsOpen(false)}
               >
                 LLMboost
+              </Link>
+              <Link
+                to="/video-agency"
+                className="text-orange-400 hover:text-orange-300 block px-3 py-2 text-base font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                Video Agency
               </Link>
               <Link
                 to="/newswire"

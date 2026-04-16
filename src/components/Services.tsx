@@ -55,6 +55,15 @@ const Services = () => {
       category: "Departmental AI Teams"
     },
     {
+      icon: Search,
+      title: "AI Video Agency",
+      description: "Premium AI-powered video production: explainer videos, social media content packs, video ads, VSLs, and talking head videos. Powered by Runway, Descript & ElevenLabs.",
+      gradient: "from-orange-500 to-red-500",
+      category: "Video Production",
+      isNew: true,
+      link: "/video-agency"
+    },
+    {
       icon: Edit,
       title: "Mushbloom Newswire",
       description: "Niche press release distribution across crypto, cybersecurity, fintech, gaming, and iGaming verticals with guaranteed homepage placements on partner outlets.",

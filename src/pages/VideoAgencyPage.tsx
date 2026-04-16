@@ -1,0 +1,407 @@
+
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import Navigation from '@/components/Navigation';
+import Contact from '@/components/Contact';
+import { 
+  Video, 
+  Play, 
+  Tv, 
+  Megaphone, 
+  Mic, 
+  CheckCircle, 
+  ArrowRight, 
+  Zap, 
+  Wand2, 
+  Scissors, 
+  Send,
+  Monitor,
+  ShoppingCart,
+  GraduationCap,
+  Building2
+} from 'lucide-react';
+
+const VideoAgencyPage = () => {
+  const services = [
+    {
+      icon: Video,
+      title: "Explainer Videos",
+      priceRange: "$1,500 - $3,000",
+      duration: "60-90 seconds",
+      description: "Crystal-clear product demos that showcase your software or physical product in action. We transform complex features into easy-to-understand benefits, driving user comprehension and adoption.",
+      deliverables: ["Collaborative scriptwriting", "AI-generated cinematic visuals", "Professional AI voiceover", "Licensed background music", "Custom branding (logo and colors)", "Final video in 16:9 and 9:16 formats"],
+      timeline: "2-3 Weeks",
+      bestFor: "SaaS companies, e-commerce brands, and tech startups needing to clarify their value proposition.",
+      gradient: "from-orange-500 to-red-500"
+    },
+    {
+      icon: Play,
+      title: "Social Media Content Packs",
+      priceRange: "$2,000/month",
+      duration: "< 60 seconds",
+      description: "Dominate short-form video platforms with a consistent stream of engaging content. Our monthly packs ensure your brand stays top-of-mind and captures attention in a crowded feed.",
+      deliverables: ["12 short-form videos per month (Reels/TikTok/Shorts)", "Monthly content strategy call", "Trending audio recommendations", "Caption prompts for each video", "Delivery of 3 videos per week"],
+      timeline: "Monthly Retainer",
+      bestFor: "Brands seeking to build an active and engaged audience on social media.",
+      gradient: "from-pink-500 to-purple-500"
+    },
+    {
+      icon: Megaphone,
+      title: "Video Ads",
+      priceRange: "$1,000 - $2,500",
+      duration: "15-30 seconds",
+      description: "High-impact, direct-response ads engineered for one purpose: conversion. We leverage proven advertising frameworks and rapid AI production to create multiple variations for A/B testing.",
+      deliverables: ["Scriptwriting based on AIDA/PAS frameworks", "Up to 3 unique video variations", "Strong call-to-action (CTA) elements", "Optimized for mobile viewing", "Fast turnaround for campaign launches"],
+      timeline: "1-2 Weeks",
+      bestFor: "E-commerce and SaaS brands running paid campaigns on Meta, TikTok, or YouTube.",
+      gradient: "from-blue-500 to-cyan-500"
+    },
+    {
+      icon: Tv,
+      title: "Video Sales Letters (VSLs)",
+      priceRange: "$3,000 - $7,000",
+      duration: "5-15 minutes",
+      description: "Compelling, long-form sales assets designed to sell high-ticket products or services. We guide viewers through a persuasive narrative that builds trust and drives high-intent action.",
+      deliverables: ["In-depth persuasion-focused scriptwriting", "Dynamic pacing with AI visuals and kinetic typography", "High-quality AI voiceover", "Strategic use of on-screen graphics and CTAs", "Full-length video for sales pages or webinar funnels"],
+      timeline: "3-4 Weeks",
+      bestFor: "Coaches, consultants, and high-ticket service providers automating their sales process.",
+      gradient: "from-emerald-500 to-teal-500"
+    },
+    {
+      icon: Mic,
+      title: "Talking Head Videos",
+      priceRange: "$800 - $1,500",
+      duration: "1-3 minutes",
+      description: "Build authority and social proof with polished interview or testimonial-style videos. We can create hyper-realistic AI avatars or enhance your existing footage for a professional, trustworthy presence.",
+      deliverables: ["AI avatar creation or footage enhancement", "Script refinement and editing", "AI voice cloning for consistent narration (optional)", "Editing with b-roll, titles, and brand elements", "Final video for websites, social media, or email"],
+      timeline: "1 Week",
+      bestFor: "Building social proof with client testimonials, introducing founders, or sharing expert insights.",
+      gradient: "from-amber-500 to-orange-500"
+    }
+  ];
+
+  const pricingTiers = [
+    {
+      name: "Starter",
+      price: "$2,500",
+      period: "/month",
+      description: "Establish a foundational video presence and build momentum on social media.",
+      includes: ["1x Social Media Content Pack (12 videos)", "Monthly Strategy Call"],
+      bestFor: "Brands focused on organic growth and community building.",
+      popular: false
+    },
+    {
+      name: "Growth",
+      price: "$5,000",
+      period: "/month",
+      description: "Accelerate lead generation and sales by combining organic content with targeted, high-converting video ads.",
+      includes: ["1x Social Media Content Pack (12 videos)", "2x Video Ads (with 2 variations each)", "Bi-weekly performance review"],
+      bestFor: "Businesses ready to scale paid acquisition while maintaining a strong social presence.",
+      popular: true
+    },
+    {
+      name: "Scale",
+      price: "$10,000+",
+      period: "/month",
+      description: "A comprehensive, fully-managed video solution to dominate your market.",
+      includes: ["Choice of 1x Explainer Video or VSL per month", "Full suite of Video Ads for A/B testing", "1x Social Media Content Pack (12 videos)", "Dedicated Account Manager & Weekly Reporting"],
+      bestFor: "Market leaders and funded startups aiming for rapid, aggressive expansion.",
+      popular: false
+    }
+  ];
+
+  const process = [
+    { step: 1, title: "Strategy & Scripting", description: "We begin with a discovery call to define your goals and target audience. Our team crafts a compelling script designed to achieve the specific objective of the video.", icon: Zap },
+    { step: 2, title: "AI Asset Generation", description: "Our AI artists generate the voiceover using ElevenLabs and create custom visual scenes and b-roll using Runway, all tailored to your brand and script.", icon: Wand2 },
+    { step: 3, title: "Post-Production & Assembly", description: "Using Descript, we assemble AI-generated visuals and voiceover into a cohesive story with branding, music, sound effects, subtitles, and motion graphics.", icon: Scissors },
+    { step: 4, title: "Review & Delivery", description: "We deliver a first draft for your feedback. After one to two rounds of revisions, we render the final video files in all the formats you need.", icon: Send }
+  ];
+
+  const niches = [
+    { name: "SaaS", icon: Monitor, description: "Rapidly create product explainer videos, feature announcements, and scalable video onboarding sequences that reduce churn and support load." },
+    { name: "E-commerce", icon: ShoppingCart, description: "Cost-effective production of hundreds of product video ads for testing, UGC-style ads, and engaging social media content to drive sales." },
+    { name: "Coaches & Consultants", icon: GraduationCap, description: "Create persuasive VSLs for high-ticket programs, professional client testimonials, and consistent short-form content to establish expertise." },
+    { name: "Digital Agencies", icon: Building2, description: "White-label AI video services to expand your offerings without the overhead of an in-house video team, increasing client retention and contract value." }
+  ];
+
+  const aiTools = [
+    { name: "Runway", description: "Gen-2 model for generating original, cinematic video clips from text prompts. Forms the primary b-roll and visual foundation for our videos.", color: "text-orange-400" },
+    { name: "Descript", description: "Central hub for video editing. Script-based editor allows editing video as text, with 'Overdub' for realistic voice clones and 'Studio Sound' for crystal-clear audio.", color: "text-cyan-400" },
+    { name: "ElevenLabs", description: "Premium, human-like AI voiceovers. Generate narration in various styles and languages, or clone a founder's voice for personalized video messages.", color: "text-pink-400" }
+  ];
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Mushbloom Premium AI Video Agency",
+    "description": "AI-powered video production agency creating explainer videos, social media content, video ads, VSLs, and talking head videos using Runway, Descript, and ElevenLabs.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Mushbloom",
+      "url": "https://mushbloom.co.uk"
+    },
+    "serviceType": "AI Video Production",
+    "areaServed": "Worldwide",
+    "url": "https://mushbloom.co.uk/video-agency",
+    "offers": [
+      { "@type": "Offer", "name": "Starter", "price": "2500", "priceCurrency": "USD", "description": "Monthly social media content pack with strategy call" },
+      { "@type": "Offer", "name": "Growth", "price": "5000", "priceCurrency": "USD", "description": "Social content + video ads with performance reviews" },
+      { "@type": "Offer", "name": "Scale", "price": "10000", "priceCurrency": "USD", "description": "Full-service video production with dedicated account manager" }
+    ]
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
+      <Helmet>
+        <title>AI Video Agency – Premium Video Production | Mushbloom</title>
+        <meta name="description" content="AI-powered video agency creating explainer videos, social media content, video ads, VSLs & talking head videos. Powered by Runway, Descript & ElevenLabs. From $800." />
+        <link rel="canonical" href="https://mushbloom.co.uk/video-agency" />
+        <meta property="og:title" content="AI Video Agency – Premium Video Production | Mushbloom" />
+        <meta property="og:description" content="AI-powered video production from $800. Explainer videos, social content packs, video ads, VSLs & more." />
+        <meta property="og:url" content="https://mushbloom.co.uk/video-agency" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+      </Helmet>
+      <Navigation />
+      
+      <main>
+        {/* Hero Section */}
+        <section className="pt-32 pb-20 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-orange-500/10 via-transparent to-transparent" />
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="text-center max-w-4xl mx-auto">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 px-4 py-2 rounded-full text-orange-300 text-sm font-medium mb-6">
+                <Video className="h-4 w-4" />
+                Premium AI Video Agency
+              </div>
+              <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 font-['Space_Grotesk'] leading-tight">
+                Video That <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Sells</span>, Powered by <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">AI</span>
+              </h1>
+              <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                From explainer videos to VSLs, we produce cinema-quality video content at a fraction of the traditional cost using cutting-edge AI tools like Runway, Descript, and ElevenLabs.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="https://tidycal.com/adrianniculescu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform duration-200 inline-flex items-center gap-2"
+                >
+                  Get a Free Video Strategy Call <ArrowRight className="h-5 w-5" />
+                </a>
+                <a
+                  href="#pricing"
+                  className="border border-white/20 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors inline-flex items-center gap-2"
+                >
+                  View Pricing
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Grid */}
+        <section className="py-20" id="services">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-['Space_Grotesk']">
+                Our <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Service Menu</span>
+              </h2>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Five core video types, each engineered for a specific business outcome.
+              </p>
+            </div>
+
+            <div className="space-y-8">
+              {services.map((service, index) => (
+                <div key={index} className="glass-effect rounded-2xl p-8 hover:border-white/20 transition-all duration-300 border border-white/5">
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div className="lg:col-span-2">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className={`inline-flex p-3 rounded-lg bg-gradient-to-r ${service.gradient} shrink-0`}>
+                          <service.icon className="h-6 w-6 text-white" />
+                        </div>
+                        <div>
+                          <h3 className="text-2xl font-bold text-white font-['Space_Grotesk']">{service.title}</h3>
+                          <div className="flex flex-wrap gap-3 mt-2">
+                            <span className="text-orange-400 font-semibold">{service.priceRange}</span>
+                            <span className="text-gray-500">•</span>
+                            <span className="text-gray-400">{service.duration}</span>
+                            <span className="text-gray-500">•</span>
+                            <span className="text-cyan-400">{service.timeline}</span>
+                          </div>
+                        </div>
+                      </div>
+                      <p className="text-gray-300 mb-4">{service.description}</p>
+                      <p className="text-sm text-gray-500"><strong className="text-gray-400">Best for:</strong> {service.bestFor}</p>
+                    </div>
+                    <div>
+                      <h4 className="text-sm text-gray-400 uppercase tracking-wide mb-3">What's Included</h4>
+                      <ul className="space-y-2">
+                        {service.deliverables.map((item, i) => (
+                          <li key={i} className="flex items-start gap-2 text-gray-300 text-sm">
+                            <CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Pricing Tiers */}
+        <section className="py-20" id="pricing">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-['Space_Grotesk']">
+                Monthly <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Retainer Plans</span>
+              </h2>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Predictable pricing. Consistent output. No surprises.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {pricingTiers.map((tier, index) => (
+                <div
+                  key={index}
+                  className={`glass-effect rounded-2xl p-8 relative ${
+                    tier.popular ? 'ring-2 ring-orange-400 border-orange-400/30' : 'border border-white/5'
+                  }`}
+                >
+                  {tier.popular && (
+                    <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-500 to-red-500 text-white px-4 py-1 rounded-full text-sm font-bold">
+                      Most Popular
+                    </div>
+                  )}
+                  <h3 className="text-2xl font-bold text-white font-['Space_Grotesk'] mb-2">{tier.name}</h3>
+                  <div className="mb-4">
+                    <span className="text-4xl font-bold text-orange-400">{tier.price}</span>
+                    <span className="text-gray-400">{tier.period}</span>
+                  </div>
+                  <p className="text-gray-400 text-sm mb-6">{tier.description}</p>
+                  <ul className="space-y-3 mb-8">
+                    {tier.includes.map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 text-gray-300">
+                        <CheckCircle className="h-5 w-5 text-green-400 shrink-0 mt-0.5" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="text-xs text-gray-500 mb-6"><strong>Best for:</strong> {tier.bestFor}</p>
+                  <a
+                    href="https://tidycal.com/adrianniculescu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`block text-center px-6 py-3 rounded-lg font-semibold transition-all duration-200 ${
+                      tier.popular
+                        ? 'bg-gradient-to-r from-orange-500 to-red-500 text-white hover:scale-105'
+                        : 'border border-white/20 text-white hover:bg-white/10'
+                    }`}
+                  >
+                    Get Started
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Process */}
+        <section className="py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-['Space_Grotesk']">
+                Our <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Production Process</span>
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {process.map((step) => (
+                <div key={step.step} className="glass-effect rounded-xl p-6 border border-white/5 text-center">
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold text-lg mb-4">
+                    {step.step}
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-3 font-['Space_Grotesk']">{step.title}</h3>
+                  <p className="text-gray-400 text-sm">{step.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* AI Tools */}
+        <section className="py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-['Space_Grotesk']">
+                Powered by <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Cutting-Edge AI</span>
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {aiTools.map((tool, index) => (
+                <div key={index} className="glass-effect rounded-xl p-8 border border-white/5">
+                  <h3 className={`text-2xl font-bold ${tool.color} mb-4 font-['Space_Grotesk']`}>{tool.name}</h3>
+                  <p className="text-gray-300">{tool.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Niche Focus */}
+        <section className="py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-['Space_Grotesk']">
+                Built for <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Your Industry</span>
+              </h2>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {niches.map((niche, index) => (
+                <div key={index} className="glass-effect rounded-xl p-8 border border-white/5 flex gap-4">
+                  <div className="inline-flex p-3 rounded-lg bg-orange-500/10 shrink-0 h-fit">
+                    <niche.icon className="h-6 w-6 text-orange-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2 font-['Space_Grotesk']">{niche.name}</h3>
+                    <p className="text-gray-400">{niche.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="py-20">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div className="glass-effect rounded-2xl p-12 border border-orange-400/30">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 font-['Space_Grotesk']">
+                Ready to Transform Your Video Marketing?
+              </h2>
+              <p className="text-gray-300 text-lg mb-8">
+                Book a free strategy call and discover how AI-powered video can 10x your content output while cutting production costs by 60%.
+              </p>
+              <a
+                href="https://tidycal.com/adrianniculescu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-10 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform duration-200 inline-flex items-center gap-2"
+              >
+                Book Your Free Strategy Call <ArrowRight className="h-5 w-5" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <Contact />
+      </main>
+    </div>
+  );
+};
+
+export default VideoAgencyPage;
