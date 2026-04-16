@@ -757,6 +757,136 @@ const VideoAgencyPage = () => {
           </div>
         </section>
 
+        {/* Productized Video Packages */}
+        <section className="py-20 border-t border-white/10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <span className="text-orange-400 font-semibold text-sm uppercase tracking-wider">Stop Custom Quoting</span>
+              <h2 className="text-3xl md:text-5xl font-bold mt-3 font-['Space_Grotesk']">
+                <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">Productized Video Packages</span>
+              </h2>
+              <p className="text-gray-400 mt-4 max-w-2xl mx-auto text-lg">Clear pricing. Clear deliverables. No back-and-forth proposals. Pick a package, pay 50% upfront, and we get to work.</p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              {/* Bronze */}
+              <div className="glass-effect rounded-2xl p-8 border border-orange-400/20 hover:border-orange-400/40 transition-all duration-300 flex flex-col">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-600 to-amber-800 flex items-center justify-center">
+                    <Package className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white font-['Space_Grotesk']">Bronze</h3>
+                    <p className="text-amber-400 text-sm font-semibold">Starter</p>
+                  </div>
+                </div>
+                <div className="mb-6">
+                  <span className="text-4xl font-bold text-white font-['Space_Grotesk']">$1,200</span>
+                  <span className="text-gray-400 text-sm ml-1">/ project</span>
+                </div>
+                <ul className="space-y-3 mb-8 flex-1">
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />One 60-second explainer video</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Professional AI voiceover</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Licensed background music</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />3 revision rounds included</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />1080p MP4 delivery</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />16:9 + 9:16 formats</li>
+                </ul>
+                <p className="text-gray-500 text-xs mb-4">Delivery: 2-3 weeks • Via Google Drive</p>
+                <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" className="w-full text-center bg-white/10 hover:bg-white/20 text-white py-3 rounded-lg font-semibold transition-colors duration-200 block">Get Started</a>
+              </div>
+
+              {/* Silver — Popular */}
+              <div className="glass-effect rounded-2xl p-8 border-2 border-orange-400/60 hover:border-orange-400/80 transition-all duration-300 flex flex-col relative">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-500 to-red-500 text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">Most Popular</div>
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-gray-300 to-gray-500 flex items-center justify-center">
+                    <Star className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white font-['Space_Grotesk']">Silver</h3>
+                    <p className="text-gray-300 text-sm font-semibold">Growth</p>
+                  </div>
+                </div>
+                <div className="mb-6">
+                  <span className="text-4xl font-bold text-white font-['Space_Grotesk']">$2,500</span>
+                  <span className="text-gray-400 text-sm ml-1">/ project</span>
+                </div>
+                <ul className="space-y-3 mb-8 flex-1">
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Three 30-second social videos</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />One 90-second hero video</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />AI voiceover + licensed music</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />2 revision rounds per video</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Platform-optimized formats</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Thumbnail designs included</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Delivery via Frame.io</li>
+                </ul>
+                <p className="text-gray-500 text-xs mb-4">Delivery: 3-4 weeks • Via Frame.io</p>
+                <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" className="w-full text-center bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200 block">Get Started</a>
+              </div>
+
+              {/* Gold — Premium */}
+              <div className="glass-effect rounded-2xl p-8 border border-yellow-400/30 hover:border-yellow-400/50 transition-all duration-300 flex flex-col">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-yellow-400 to-amber-500 flex items-center justify-center">
+                    <Crown className="h-5 w-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-white font-['Space_Grotesk']">Gold</h3>
+                    <p className="text-yellow-400 text-sm font-semibold">Complete Suite</p>
+                  </div>
+                </div>
+                <div className="mb-2">
+                  <span className="text-4xl font-bold text-white font-['Space_Grotesk']">$5,000</span>
+                  <span className="text-gray-400 text-sm ml-1">/ project</span>
+                </div>
+                <p className="text-yellow-400/80 text-xs mb-6">or <span className="font-bold">$4,000/mo</span> ongoing subscription</p>
+                <ul className="space-y-3 mb-8 flex-1">
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Full VSL (Video Sales Letter)</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />3 high-converting ad creatives</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />8 social media clips</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />2 revision rounds per asset</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />All platform formats included</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Thumbnail designs + captions</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Priority delivery via Frame.io</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Dedicated project manager</li>
+                </ul>
+                <p className="text-gray-500 text-xs mb-4">Delivery: 4-5 weeks • Via Frame.io</p>
+                <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" className="w-full text-center bg-gradient-to-r from-yellow-400 to-amber-500 text-black py-3 rounded-lg font-bold hover:scale-105 transition-transform duration-200 block">Get Started</a>
+              </div>
+            </div>
+
+            {/* Terms & Upsells */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="glass-effect rounded-2xl p-8 border border-white/10">
+                <div className="flex items-center gap-3 mb-4">
+                  <CreditCard className="h-6 w-6 text-orange-400" />
+                  <h3 className="text-xl font-bold text-white font-['Space_Grotesk']">Payment & Delivery Terms</h3>
+                </div>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-orange-400 shrink-0 mt-0.5" /><strong className="text-white">50% upfront</strong> to begin production, 50% on final delivery</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><FolderOpen className="h-4 w-4 text-orange-400 shrink-0 mt-0.5" />Delivery via <strong className="text-white">Frame.io</strong> (Silver/Gold) or <strong className="text-white">Google Drive</strong> (Bronze)</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><FileText className="h-4 w-4 text-orange-400 shrink-0 mt-0.5" />All final files: <strong className="text-white">1080p MP4</strong>, optimized per platform aspect ratio</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><RotateCcw className="h-4 w-4 text-orange-400 shrink-0 mt-0.5" />Revision rounds clearly defined per package — no scope creep</li>
+                </ul>
+              </div>
+
+              <div className="glass-effect rounded-2xl p-8 border border-white/10">
+                <div className="flex items-center gap-3 mb-4">
+                  <Plus className="h-6 w-6 text-orange-400" />
+                  <h3 className="text-xl font-bold text-white font-['Space_Grotesk']">Add-Ons & Upsells</h3>
+                </div>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><DollarSign className="h-4 w-4 text-green-400 shrink-0 mt-0.5" /><strong className="text-white">Additional revision round:</strong> $200 per round</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><DollarSign className="h-4 w-4 text-green-400 shrink-0 mt-0.5" /><strong className="text-white">Rush delivery (48h):</strong> +30% surcharge</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><DollarSign className="h-4 w-4 text-green-400 shrink-0 mt-0.5" /><strong className="text-white">Premium voiceover talent:</strong> $150-$400 (Fiverr Pro)</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><DollarSign className="h-4 w-4 text-green-400 shrink-0 mt-0.5" /><strong className="text-white">Monthly retainer (Gold):</strong> $4,000/mo for ongoing content</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="py-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
