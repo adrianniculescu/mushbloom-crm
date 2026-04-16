@@ -18,7 +18,14 @@ import {
   Monitor,
   ShoppingCart,
   GraduationCap,
-  Building2
+  Building2,
+  FileText,
+  Music,
+  RotateCcw,
+  Smartphone,
+  MonitorPlay,
+  Square,
+  Camera
 } from 'lucide-react';
 
 const VideoAgencyPage = () => {
@@ -111,10 +118,48 @@ const VideoAgencyPage = () => {
   ];
 
   const process = [
-    { step: 1, title: "Strategy & Scripting", description: "We begin with a discovery call to define your goals and target audience. Our team crafts a compelling script designed to achieve the specific objective of the video.", icon: Zap },
-    { step: 2, title: "AI Asset Generation", description: "Our AI artists generate the voiceover using ElevenLabs and create custom visual scenes and b-roll using Runway, all tailored to your brand and script.", icon: Wand2 },
-    { step: 3, title: "Post-Production & Assembly", description: "Using Descript, we assemble AI-generated visuals and voiceover into a cohesive story with branding, music, sound effects, subtitles, and motion graphics.", icon: Scissors },
-    { step: 4, title: "Review & Delivery", description: "We deliver a first draft for your feedback. After one to two rounds of revisions, we render the final video files in all the formats you need.", icon: Send }
+    { 
+      step: 1, title: "Script Writing", icon: FileText,
+      description: "We generate a conversion-focused script from your client brief using AI, then refine it with you. Every word is engineered for your video's specific goal — whether that's sales, engagement, or education.",
+      tools: ["Claude AI", "Google Docs"],
+      details: ["Client brief intake form", "AI-generated first draft in 24h", "Collaborative revision via shared doc", "Approval before production begins"]
+    },
+    { 
+      step: 2, title: "Voiceover Production", icon: Mic,
+      description: "Choose from premium AI voices via ElevenLabs for instant, studio-quality narration — or we source professional human talent from our vetted network for $20-50 per project.",
+      tools: ["ElevenLabs", "Fiverr Pro Talent"],
+      details: ["50+ AI voice styles & languages", "Voice cloning for brand consistency", "Human talent option at budget-friendly rates", "Multiple takes included"]
+    },
+    { 
+      step: 3, title: "Visual Creation", icon: Camera,
+      description: "We build your visual story using a blend of AI-generated b-roll from Runway, curated stock footage, and screen recordings captured via Loom — no expensive shoots required.",
+      tools: ["Runway Gen-2", "Loom", "Stock Libraries"],
+      details: ["AI-generated cinematic b-roll", "Licensed stock footage & imagery", "Screen recordings for SaaS demos", "Custom graphics & brand overlays"]
+    },
+    { 
+      step: 4, title: "Editing & Polish", icon: Scissors,
+      description: "Our editors assemble everything in Descript — precision cuts, auto-captions, noise removal with Studio Sound, color grading, and kinetic typography for a broadcast-quality finish.",
+      tools: ["Descript", "After Effects"],
+      details: ["Script-based precision editing", "Auto-generated captions & subtitles", "Studio Sound noise removal", "Motion graphics & transitions"]
+    },
+    { 
+      step: 5, title: "Music & Sound Design", icon: Music,
+      description: "We layer in royalty-free background music and custom sound effects that match your brand tone, ensuring every video feels professional and emotionally engaging.",
+      tools: ["Epidemic Sound", "Artlist"],
+      details: ["Royalty-free licensed music", "Custom sound effects", "Audio mixing & mastering", "Brand-consistent sonic identity"]
+    },
+    { 
+      step: 6, title: "Review & Delivery", icon: Send,
+      description: "We deliver a first draft for feedback. Two rounds of revisions are included in every project. Final files rendered in 1080p MP4, optimized for every platform you need.",
+      tools: ["Frame.io", "Google Drive"],
+      details: ["2 revision rounds included", "Additional revisions available", "1080p MP4 final delivery", "Platform-optimized exports"]
+    }
+  ];
+
+  const deliverySpecs = [
+    { platform: "YouTube / Website", ratio: "16:9", resolution: "1920×1080", icon: MonitorPlay },
+    { platform: "Instagram Reels / TikTok / Shorts", ratio: "9:16", resolution: "1080×1920", icon: Smartphone },
+    { platform: "Instagram Feed / LinkedIn", ratio: "1:1", resolution: "1080×1080", icon: Square },
   ];
 
   const niches = [
