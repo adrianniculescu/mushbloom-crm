@@ -25,7 +25,13 @@ import {
   Smartphone,
   MonitorPlay,
   Square,
-  Camera
+  Camera,
+  Search,
+  Mail,
+  Linkedin,
+  PenTool,
+  DollarSign,
+  Target
 } from 'lucide-react';
 
 const VideoAgencyPage = () => {
@@ -468,6 +474,127 @@ const VideoAgencyPage = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Client Acquisition System */}
+        <section className="py-20" id="acquisition">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-500/30 px-4 py-2 rounded-full text-orange-300 text-sm font-medium mb-6">
+                <Target className="h-4 w-4" />
+                Client Acquisition Playbook
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-['Space_Grotesk']">
+                Land <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">5 Clients</span> in 30 Days
+              </h2>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                A proven system for filling your pipeline with high-value video production clients.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              {/* Outbound Prospecting */}
+              <div className="glass-effect rounded-2xl p-8 border border-white/5 hover:border-white/20 transition-all duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="inline-flex p-3 rounded-lg bg-gradient-to-r from-orange-500 to-red-500">
+                    <Search className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white font-['Space_Grotesk']">Strategic Outbound Prospecting</h3>
+                </div>
+                <p className="text-gray-300 text-sm mb-4">We don't wait for clients to find us; we actively seek out businesses that can benefit most from our video services. This involves identifying companies with underperforming video content or those missing out on video entirely.</p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-gray-400 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Identify companies in high-growth industries using Apollo.io or Crunchbase</li>
+                  <li className="flex items-start gap-2 text-gray-400 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Scan YouTube, Reels, and TikTok for brands with low engagement or poor video quality</li>
+                  <li className="flex items-start gap-2 text-gray-400 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Qualification checklist: &lt;10k followers, inconsistent branding, no clear CTA</li>
+                  <li className="flex items-start gap-2 text-gray-400 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Create a "Dream 100" list of ideal clients to focus outreach</li>
+                </ul>
+              </div>
+
+              {/* Cold Email */}
+              <div className="glass-effect rounded-2xl p-8 border border-white/5 hover:border-white/20 transition-all duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="inline-flex p-3 rounded-lg bg-gradient-to-r from-pink-500 to-purple-500">
+                    <Mail className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white font-['Space_Grotesk']">High-Impact Cold Email Outreach</h3>
+                </div>
+                <p className="text-gray-300 text-sm mb-4">Hyper-personalized, value-driven email campaigns. Lead with a tangible "before and after" transformation to immediately capture interest and prove expertise.</p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-gray-400 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Subject line: "Video content for [Company]" — high open rates</li>
+                  <li className="flex items-start gap-2 text-gray-400 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Include before/after GIF showing video transformation</li>
+                  <li className="flex items-start gap-2 text-gray-400 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Offer a free sample edit of their existing footage — no strings attached</li>
+                  <li className="flex items-start gap-2 text-gray-400 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Follow up 3 times over 10 days with additional value</li>
+                </ul>
+              </div>
+
+              {/* LinkedIn */}
+              <div className="glass-effect rounded-2xl p-8 border border-white/5 hover:border-white/20 transition-all duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="inline-flex p-3 rounded-lg bg-gradient-to-r from-blue-500 to-cyan-500">
+                    <Linkedin className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white font-['Space_Grotesk']">LinkedIn Social Selling</h3>
+                </div>
+                <p className="text-gray-300 text-sm mb-4">Build genuine relationships with marketing directors and founders. Provide value and engage with their content before making any pitch, establishing trust from the first interaction.</p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-gray-400 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Personalized connection requests mentioning their specific content</li>
+                  <li className="flex items-start gap-2 text-gray-400 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Engage with posts for a week before sending a direct message</li>
+                  <li className="flex items-start gap-2 text-gray-400 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Share case studies to establish authority in video marketing</li>
+                  <li className="flex items-start gap-2 text-gray-400 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Use Sales Navigator for targeted lead lists by industry and job title</li>
+                </ul>
+              </div>
+
+              {/* Content Marketing */}
+              <div className="glass-effect rounded-2xl p-8 border border-white/5 hover:border-white/20 transition-all duration-300">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="inline-flex p-3 rounded-lg bg-gradient-to-r from-emerald-500 to-teal-500">
+                    <PenTool className="h-6 w-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white font-['Space_Grotesk']">Inbound Content Marketing</h3>
+                </div>
+                <p className="text-gray-300 text-sm mb-4">Attract qualified leads by establishing thought leadership. Free tutorials, templates, and behind-the-scenes content draw in clients already looking for a professional video solution.</p>
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2 text-gray-400 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Weekly short-form "how-to" video tips for businesses</li>
+                  <li className="flex items-start gap-2 text-gray-400 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Behind-the-scenes content showcasing your process</li>
+                  <li className="flex items-start gap-2 text-gray-400 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Downloadable resources: Video Shoot Checklist, Reel Idea Template</li>
+                  <li className="flex items-start gap-2 text-gray-400 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Blog posts repurposed into video scripts for multi-channel reach</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Cold Email Template */}
+            <div className="glass-effect rounded-2xl p-8 border border-white/5 mb-12">
+              <h3 className="text-2xl font-bold text-white mb-4 font-['Space_Grotesk'] flex items-center gap-3">
+                <Mail className="h-6 w-6 text-orange-400" />
+                Cold Email Template
+              </h3>
+              <div className="bg-black/40 rounded-xl p-6 border border-white/10 font-mono text-sm">
+                <p className="text-orange-400 mb-3"><strong>Subject:</strong> Video content for [Company]</p>
+                <div className="text-gray-300 space-y-3 leading-relaxed">
+                  <p>Hi [First Name],</p>
+                  <p>I was just looking at [Company]'s website, and I'm really impressed with [specific compliment, e.g., the community you've built].</p>
+                  <p>My name is [Your Name], and I run [Your Agency], a video agency that helps brands like yours create high-converting video content. I noticed an opportunity to significantly increase engagement on your social channels.</p>
+                  <p>For example, we helped a similar brand achieve a <span className="text-green-400 font-semibold">30% increase in leads</span> by transforming their raw footage into story-driven ads. Here's a quick before-and-after example: <span className="text-cyan-400">[Link to GIF/Short Video]</span></p>
+                  <p>To show you what's possible, we'd be happy to take a piece of your existing footage and provide a <span className="text-orange-400 font-semibold">free sample edit</span>, no strings attached.</p>
+                  <p>Would you be open to a quick 15-minute chat next week to discuss this?</p>
+                  <p className="text-gray-500">Best,<br/>[Your Name]<br/>[Your Title]<br/>[Link to your portfolio/website]</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Pricing Strategy Callout */}
+            <div className="glass-effect rounded-2xl p-8 border border-orange-400/30 bg-gradient-to-r from-orange-500/5 to-red-500/5">
+              <div className="flex items-start gap-4">
+                <div className="inline-flex p-3 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 shrink-0">
+                  <DollarSign className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white mb-2 font-['Space_Grotesk']">Premium Service Starts at $1,000</h3>
+                  <p className="text-gray-300">We have a project minimum of $1,000. This ensures we can dedicate the proper resources to deliver exceptional quality and results. It also serves as a filter for tire-kickers, allowing us to focus our full creative energy on serious clients who value professional video production and are committed to seeing a significant return on their investment.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
