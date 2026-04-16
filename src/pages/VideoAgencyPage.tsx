@@ -31,7 +31,13 @@ import {
   Linkedin,
   PenTool,
   DollarSign,
-  Target
+  Target,
+  Package,
+  Crown,
+  Star,
+  CreditCard,
+  FolderOpen,
+  Plus
 } from 'lucide-react';
 
 const VideoAgencyPage = () => {
