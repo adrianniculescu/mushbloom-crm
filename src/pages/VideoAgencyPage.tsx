@@ -37,7 +37,13 @@ import {
   Star,
   CreditCard,
   FolderOpen,
-  Plus
+  Plus,
+  Users,
+  TrendingUp,
+  Settings,
+  Wrench,
+  Repeat,
+  BarChart3
 } from 'lucide-react';
 
 const VideoAgencyPage = () => {
@@ -883,6 +889,151 @@ const VideoAgencyPage = () => {
                   <li className="flex items-start gap-2 text-gray-300 text-sm"><DollarSign className="h-4 w-4 text-green-400 shrink-0 mt-0.5" /><strong className="text-white">Monthly retainer (Gold):</strong> $4,000/mo for ongoing content</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* The Scaling Blueprint */}
+        <section className="py-20 border-t border-white/10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <span className="text-orange-400 font-semibold text-sm uppercase tracking-wider">From Solo to Agency</span>
+              <h2 className="text-3xl md:text-5xl font-bold mt-3 font-['Space_Grotesk']">
+                <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">The Scaling Blueprint</span>
+              </h2>
+              <p className="text-gray-400 mt-4 max-w-2xl mx-auto text-lg">Go from $5K solo freelancer to $25K/month agency with a proven hiring roadmap, margin math, and operational systems.</p>
+            </div>
+
+            {/* Revenue Trajectory */}
+            <div className="glass-effect rounded-2xl p-8 border border-orange-400/20 mb-12">
+              <div className="flex items-center gap-3 mb-6">
+                <TrendingUp className="h-6 w-6 text-orange-400" />
+                <h3 className="text-2xl font-bold text-white font-['Space_Grotesk']">Revenue Growth Trajectory</h3>
+              </div>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-white/5 rounded-xl p-6 border border-white/10 text-center">
+                  <p className="text-gray-400 text-sm uppercase tracking-wider mb-2">Solo Phase</p>
+                  <p className="text-3xl font-bold text-white font-['Space_Grotesk']">$5K–$8K</p>
+                  <p className="text-gray-400 text-sm mt-1">3-4 projects/month max</p>
+                  <p className="text-orange-400 text-xs mt-2">You do everything</p>
+                </div>
+                <div className="bg-white/5 rounded-xl p-6 border border-orange-400/20 text-center">
+                  <p className="text-gray-400 text-sm uppercase tracking-wider mb-2">With Editor</p>
+                  <p className="text-3xl font-bold text-white font-['Space_Grotesk']">$12K–$18K</p>
+                  <p className="text-gray-400 text-sm mt-1">8-10 projects/month</p>
+                  <p className="text-orange-400 text-xs mt-2">First hire unlocks capacity</p>
+                </div>
+                <div className="bg-white/5 rounded-xl p-6 border border-yellow-400/20 text-center">
+                  <p className="text-gray-400 text-sm uppercase tracking-wider mb-2">Full Team</p>
+                  <p className="text-3xl font-bold text-white font-['Space_Grotesk']">$20K–$25K</p>
+                  <p className="text-gray-400 text-sm mt-1">15+ projects/month</p>
+                  <p className="text-yellow-400 text-xs mt-2">You manage, not produce</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Hiring Roadmap & Profit Margins */}
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="glass-effect rounded-2xl p-8 border border-white/10">
+                <div className="flex items-center gap-3 mb-6">
+                  <Users className="h-6 w-6 text-orange-400" />
+                  <h3 className="text-xl font-bold text-white font-['Space_Grotesk']">Hiring Roadmap</h3>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex gap-4">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center text-white text-sm font-bold shrink-0">1</div>
+                    <div>
+                      <p className="text-white font-semibold">Video Editor (Upwork)</p>
+                      <p className="text-gray-400 text-sm">$15–25/hr • Handles cuts, transitions, captions. Frees you for sales and client work. Hire when consistently at 3+ projects/month.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center text-white text-sm font-bold shrink-0">2</div>
+                    <div>
+                      <p className="text-white font-semibold">Scriptwriter</p>
+                      <p className="text-gray-400 text-sm">$20–40/hr or per script • Turns client briefs into compelling narratives. Hire when you're spending 5+ hours/week on scripts.</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center text-white text-sm font-bold shrink-0">3</div>
+                    <div>
+                      <p className="text-white font-semibold">Project Manager</p>
+                      <p className="text-gray-400 text-sm">$18–30/hr • Client communication, timelines, revisions tracking. Hire when managing 8+ concurrent projects.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="glass-effect rounded-2xl p-8 border border-white/10">
+                <div className="flex items-center gap-3 mb-6">
+                  <BarChart3 className="h-6 w-6 text-green-400" />
+                  <h3 className="text-xl font-bold text-white font-['Space_Grotesk']">Profit Margins</h3>
+                </div>
+                <p className="text-gray-300 text-sm mb-4">Target <strong className="text-white">40–50% net margins</strong> after all labor costs. Here's the math on a typical $2,500 project:</p>
+                <div className="space-y-3">
+                  <div className="flex justify-between text-sm"><span className="text-gray-400">Client pays</span><span className="text-white font-semibold">$2,500</span></div>
+                  <div className="flex justify-between text-sm"><span className="text-gray-400">Editor cost (~8 hrs × $20)</span><span className="text-red-400">-$160</span></div>
+                  <div className="flex justify-between text-sm"><span className="text-gray-400">Scriptwriter (per script)</span><span className="text-red-400">-$150</span></div>
+                  <div className="flex justify-between text-sm"><span className="text-gray-400">AI voiceover + music licenses</span><span className="text-red-400">-$50</span></div>
+                  <div className="flex justify-between text-sm"><span className="text-gray-400">Tools & software (prorated)</span><span className="text-red-400">-$40</span></div>
+                  <div className="border-t border-white/10 pt-3 flex justify-between text-sm"><span className="text-white font-semibold">Your profit</span><span className="text-green-400 font-bold text-lg">$2,100 (84%)</span></div>
+                </div>
+                <p className="text-gray-500 text-xs mt-4">Margins decrease to 40-50% as you add full-time team members, but volume compensates.</p>
+              </div>
+            </div>
+
+            {/* Systems & Tools */}
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="glass-effect rounded-2xl p-8 border border-white/10">
+                <div className="flex items-center gap-3 mb-4">
+                  <Settings className="h-6 w-6 text-orange-400" />
+                  <h3 className="text-xl font-bold text-white font-['Space_Grotesk']">Operational Systems</h3>
+                </div>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" /><strong className="text-white">Video templates</strong> — Pre-built timelines for every video type (explainer, ad, VSL)</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" /><strong className="text-white">SOPs documented</strong> — Step-by-step process for editing, review, and delivery</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" /><strong className="text-white">Automated onboarding</strong> — Client intake form → project board → kickoff email sequence</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" /><strong className="text-white">QA checklist</strong> — Brand consistency, audio levels, captions, format specs verified</li>
+                </ul>
+              </div>
+
+              <div className="glass-effect rounded-2xl p-8 border border-white/10">
+                <div className="flex items-center gap-3 mb-4">
+                  <Wrench className="h-6 w-6 text-orange-400" />
+                  <h3 className="text-xl font-bold text-white font-['Space_Grotesk']">Tools Stack (~$200/mo)</h3>
+                </div>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-orange-400 shrink-0 mt-0.5" /><strong className="text-white">Descript</strong> — $24/mo • AI editing, transcription, captions</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-orange-400 shrink-0 mt-0.5" /><strong className="text-white">ElevenLabs</strong> — $22/mo • AI voiceover generation</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-orange-400 shrink-0 mt-0.5" /><strong className="text-white">Frame.io</strong> — $15/mo • Client review & delivery</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-orange-400 shrink-0 mt-0.5" /><strong className="text-white">Artlist/Epidemic</strong> — $17/mo • Licensed music & SFX</li>
+                  <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-orange-400 shrink-0 mt-0.5" /><strong className="text-white">Notion + Loom</strong> — $20/mo • SOPs, project management, async comms</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Client Retention */}
+            <div className="mt-12 glass-effect rounded-2xl p-8 border border-green-400/20 bg-green-400/5">
+              <div className="flex items-center gap-3 mb-4">
+                <Repeat className="h-6 w-6 text-green-400" />
+                <h3 className="text-xl font-bold text-white font-['Space_Grotesk']">Client Retention: One-Offs → Monthly Retainers</h3>
+              </div>
+              <p className="text-gray-300 text-sm mb-4">The fastest path to $25K/month is converting project clients into monthly retainers. After delivering their first video, pitch ongoing content:</p>
+              <div className="grid sm:grid-cols-3 gap-4">
+                <div className="bg-white/5 rounded-lg p-4 border border-white/10 text-center">
+                  <p className="text-green-400 font-bold text-lg">4 videos/mo</p>
+                  <p className="text-gray-400 text-sm">$2,000 retainer</p>
+                </div>
+                <div className="bg-white/5 rounded-lg p-4 border border-white/10 text-center">
+                  <p className="text-green-400 font-bold text-lg">8 videos/mo</p>
+                  <p className="text-gray-400 text-sm">$3,500 retainer</p>
+                </div>
+                <div className="bg-white/5 rounded-lg p-4 border border-white/10 text-center">
+                  <p className="text-green-400 font-bold text-lg">12+ videos/mo</p>
+                  <p className="text-gray-400 text-sm">$5,000 retainer</p>
+                </div>
+              </div>
+              <p className="text-gray-500 text-xs mt-4">5 retainer clients at $4K avg = $20K predictable monthly revenue. That's the goal.</p>
             </div>
           </div>
         </section>
