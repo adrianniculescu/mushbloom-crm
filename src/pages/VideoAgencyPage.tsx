@@ -18,7 +18,14 @@ import {
   Monitor,
   ShoppingCart,
   GraduationCap,
-  Building2
+  Building2,
+  FileText,
+  Music,
+  RotateCcw,
+  Smartphone,
+  MonitorPlay,
+  Square,
+  Camera
 } from 'lucide-react';
 
 const VideoAgencyPage = () => {
@@ -111,10 +118,48 @@ const VideoAgencyPage = () => {
   ];
 
   const process = [
-    { step: 1, title: "Strategy & Scripting", description: "We begin with a discovery call to define your goals and target audience. Our team crafts a compelling script designed to achieve the specific objective of the video.", icon: Zap },
-    { step: 2, title: "AI Asset Generation", description: "Our AI artists generate the voiceover using ElevenLabs and create custom visual scenes and b-roll using Runway, all tailored to your brand and script.", icon: Wand2 },
-    { step: 3, title: "Post-Production & Assembly", description: "Using Descript, we assemble AI-generated visuals and voiceover into a cohesive story with branding, music, sound effects, subtitles, and motion graphics.", icon: Scissors },
-    { step: 4, title: "Review & Delivery", description: "We deliver a first draft for your feedback. After one to two rounds of revisions, we render the final video files in all the formats you need.", icon: Send }
+    { 
+      step: 1, title: "Script Writing", icon: FileText,
+      description: "We generate a conversion-focused script from your client brief using AI, then refine it with you. Every word is engineered for your video's specific goal — whether that's sales, engagement, or education.",
+      tools: ["Claude AI", "Google Docs"],
+      details: ["Client brief intake form", "AI-generated first draft in 24h", "Collaborative revision via shared doc", "Approval before production begins"]
+    },
+    { 
+      step: 2, title: "Voiceover Production", icon: Mic,
+      description: "Choose from premium AI voices via ElevenLabs for instant, studio-quality narration — or we source professional human talent from our vetted network for $20-50 per project.",
+      tools: ["ElevenLabs", "Fiverr Pro Talent"],
+      details: ["50+ AI voice styles & languages", "Voice cloning for brand consistency", "Human talent option at budget-friendly rates", "Multiple takes included"]
+    },
+    { 
+      step: 3, title: "Visual Creation", icon: Camera,
+      description: "We build your visual story using a blend of AI-generated b-roll from Runway, curated stock footage, and screen recordings captured via Loom — no expensive shoots required.",
+      tools: ["Runway Gen-2", "Loom", "Stock Libraries"],
+      details: ["AI-generated cinematic b-roll", "Licensed stock footage & imagery", "Screen recordings for SaaS demos", "Custom graphics & brand overlays"]
+    },
+    { 
+      step: 4, title: "Editing & Polish", icon: Scissors,
+      description: "Our editors assemble everything in Descript — precision cuts, auto-captions, noise removal with Studio Sound, color grading, and kinetic typography for a broadcast-quality finish.",
+      tools: ["Descript", "After Effects"],
+      details: ["Script-based precision editing", "Auto-generated captions & subtitles", "Studio Sound noise removal", "Motion graphics & transitions"]
+    },
+    { 
+      step: 5, title: "Music & Sound Design", icon: Music,
+      description: "We layer in royalty-free background music and custom sound effects that match your brand tone, ensuring every video feels professional and emotionally engaging.",
+      tools: ["Epidemic Sound", "Artlist"],
+      details: ["Royalty-free licensed music", "Custom sound effects", "Audio mixing & mastering", "Brand-consistent sonic identity"]
+    },
+    { 
+      step: 6, title: "Review & Delivery", icon: Send,
+      description: "We deliver a first draft for feedback. Two rounds of revisions are included in every project. Final files rendered in 1080p MP4, optimized for every platform you need.",
+      tools: ["Frame.io", "Google Drive"],
+      details: ["2 revision rounds included", "Additional revisions available", "1080p MP4 final delivery", "Platform-optimized exports"]
+    }
+  ];
+
+  const deliverySpecs = [
+    { platform: "YouTube / Website", ratio: "16:9", resolution: "1920×1080", icon: MonitorPlay },
+    { platform: "Instagram Reels / TikTok / Shorts", ratio: "9:16", resolution: "1080×1920", icon: Smartphone },
+    { platform: "Instagram Feed / LinkedIn", ratio: "1:1", resolution: "1080×1080", icon: Square },
   ];
 
   const niches = [
@@ -311,24 +356,75 @@ const VideoAgencyPage = () => {
           </div>
         </section>
 
-        {/* Process */}
-        <section className="py-20">
+        {/* Production Workflow */}
+        <section className="py-20" id="workflow">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-['Space_Grotesk']">
-                Our <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Production Process</span>
+                Our <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Production Workflow</span>
               </h2>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Cinema-quality videos without expensive equipment. Six streamlined steps from brief to final delivery.
+              </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {process.map((step) => (
-                <div key={step.step} className="glass-effect rounded-xl p-6 border border-white/5 text-center">
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold text-lg mb-4">
-                    {step.step}
+                <div key={step.step} className="glass-effect rounded-xl p-6 border border-white/5 hover:border-white/20 transition-all duration-300">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold text-sm shrink-0">
+                      {step.step}
+                    </div>
+                    <h3 className="text-lg font-bold text-white font-['Space_Grotesk']">{step.title}</h3>
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-3 font-['Space_Grotesk']">{step.title}</h3>
-                  <p className="text-gray-400 text-sm">{step.description}</p>
+                  <p className="text-gray-400 text-sm mb-4">{step.description}</p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {step.tools.map((tool, i) => (
+                      <span key={i} className="text-xs bg-white/5 text-cyan-400 px-2 py-1 rounded-full border border-cyan-500/20">{tool}</span>
+                    ))}
+                  </div>
+                  <ul className="space-y-1.5">
+                    {step.details.map((detail, i) => (
+                      <li key={i} className="flex items-start gap-2 text-gray-400 text-xs">
+                        <CheckCircle className="h-3.5 w-3.5 text-green-400 shrink-0 mt-0.5" />
+                        {detail}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Delivery Specs */}
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="glass-effect rounded-2xl p-8 border border-white/5">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h2 className="text-3xl font-bold text-white mb-4 font-['Space_Grotesk']">
+                    Delivery <span className="bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">Specifications</span>
+                  </h2>
+                  <p className="text-gray-400 mb-4">Every video is rendered in 1080p MP4 and exported in all aspect ratios you need. No extra charge for multiple formats.</p>
+                  <div className="flex items-center gap-3 p-3 bg-white/5 rounded-lg border border-white/10">
+                    <RotateCcw className="h-5 w-5 text-orange-400 shrink-0" />
+                    <div>
+                      <p className="text-white text-sm font-semibold">2 Revision Rounds Included</p>
+                      <p className="text-gray-500 text-xs">Additional revisions available at $150/round</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  {deliverySpecs.map((spec, i) => (
+                    <div key={i} className="text-center p-4 bg-white/5 rounded-lg border border-white/10">
+                      <spec.icon className="h-8 w-8 text-cyan-400 mx-auto mb-2" />
+                      <p className="text-white text-sm font-semibold">{spec.ratio}</p>
+                      <p className="text-gray-500 text-xs">{spec.resolution}</p>
+                      <p className="text-gray-400 text-xs mt-1">{spec.platform}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
