@@ -599,6 +599,158 @@ const VideoAgencyPage = () => {
           </div>
         </section>
 
+        {/* Portfolio Builder */}
+        <section className="py-20" id="portfolio-builder">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500/20 to-indigo-500/20 border border-purple-500/30 px-4 py-2 rounded-full text-purple-300 text-sm font-medium mb-6">
+                <Zap className="h-4 w-4" />
+                Portfolio Strategy
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-['Space_Grotesk']">
+                Build a <span className="bg-gradient-to-r from-purple-400 to-indigo-500 bg-clip-text text-transparent">Killer Portfolio</span> Fast
+              </h2>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                5 portfolio pieces, a 90-second demo reel, and a testimonial strategy — everything you need to land premium clients.
+              </p>
+            </div>
+
+            {/* Spec Work Strategy */}
+            <div className="glass-effect rounded-2xl p-8 border border-purple-400/20 mb-12">
+              <h3 className="text-2xl font-bold text-white mb-3 font-['Space_Grotesk'] flex items-center gap-3">
+                <Wand2 className="h-6 w-6 text-purple-400" />
+                Spec Work Strategy
+              </h3>
+              <p className="text-gray-300 mb-6">Speculative work is crucial for new agencies to demonstrate capabilities and build a compelling portfolio without prior client history. It allows you to showcase your unique AI video expertise and creative vision, attracting ideal clients by proving your value upfront.</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                {[
+                  "Identify 3-5 target industries aligned with your services",
+                  "Research common pain points and marketing challenges",
+                  "Develop impactful video concepts tailored to those pain points",
+                  "Use AI tools for rapid script, voiceover, and animation",
+                  "Produce polished spec videos in a streamlined workflow"
+                ].map((step, i) => (
+                  <div key={i} className="flex items-start gap-2 p-3 bg-white/5 rounded-lg border border-white/10">
+                    <span className="text-purple-400 font-bold text-sm shrink-0">{i + 1}.</span>
+                    <span className="text-gray-300 text-sm">{step}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* 5 Portfolio Pieces */}
+            <div className="space-y-6 mb-12">
+              <h3 className="text-2xl font-bold text-white font-['Space_Grotesk']">5 Essential Portfolio Pieces</h3>
+              {[
+                { title: "QuantumFlow AI - Explainer Video", type: "Explainer", icon: Video, gradient: "from-purple-500 to-indigo-500", client: "QuantumFlow AI Solutions", industry: "Enterprise Software", goal: "Simplify complex AI integration benefits for B2B clients.", solution: "Animated explainer using data visualization and clear narration, breaking down advanced algorithms into digestible benefits for enterprise adoption.", results: ["+30% demo request rate", "-15% bounce rate on product page", "+25% lead qualification improvement"] },
+                { title: "EcoBloom Organics - Social Media Ad", type: "Ad", icon: Megaphone, gradient: "from-green-400 to-teal-500", client: "EcoBloom Organics", industry: "Sustainable Consumer Goods", goal: "Increase brand awareness and DTC sales for organic skincare.", solution: "Short, engaging social ads optimized for Instagram and TikTok with natural aesthetics, product benefits, and strong CTAs.", results: ["500K+ organic impressions in month 1", "+18% click-through rate", "2,500 new website visitors from social"] },
+                { title: "FitFusion Fitness - Testimonial Series", type: "Testimonial", icon: Mic, gradient: "from-red-500 to-pink-500", client: "FitFusion Fitness", industry: "Health & Wellness", goal: "Build trust with real client success stories.", solution: "High-quality video testimonials featuring real members — personal journeys, struggles, and triumphs emphasizing the program's transformative impact.", results: ["+22% conversion on subscription page", "-10% customer acquisition cost", "4-star average on Google My Business"] },
+                { title: "PixelPulse Studio - Brand Story", type: "Social Content", icon: Play, gradient: "from-blue-500 to-cyan-500", client: "PixelPulse Studio", industry: "Creative Agency", goal: "Communicate creative process and culture to attract talent and clients.", solution: "Captivating brand story combining cinematic visuals with behind-the-scenes glimpses, highlighting passion for innovation and collaboration.", results: ["3x more qualified job applications", "+40% website engagement duration", "Featured on industry creative blogs"] },
+                { title: "SwiftShip Logistics - VSL", type: "VSL", icon: Tv, gradient: "from-yellow-400 to-orange-500", client: "SwiftShip Logistics", industry: "Supply Chain & Logistics", goal: "Convert cold leads into warm prospects with AI shipping solutions.", solution: "Data-driven Video Sales Letter using animated infographics and professional voiceover to illustrate speed, reliability, and cost-saving benefits.", results: ["+15% qualified sales appointments", "-7 days average sales cycle", "+12% conversion from VSL to proposals"] }
+              ].map((piece, index) => (
+                <div key={index} className="glass-effect rounded-xl p-6 border border-white/5 hover:border-white/20 transition-all duration-300">
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div className="lg:col-span-2">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className={`inline-flex p-2.5 rounded-lg bg-gradient-to-r ${piece.gradient}`}>
+                          <piece.icon className="h-5 w-5 text-white" />
+                        </div>
+                        <div>
+                          <h4 className="text-lg font-bold text-white font-['Space_Grotesk']">{piece.title}</h4>
+                          <span className="text-xs text-gray-500">{piece.client} • {piece.industry}</span>
+                        </div>
+                      </div>
+                      <p className="text-sm text-gray-400 mb-2"><strong className="text-gray-300">Goal:</strong> {piece.goal}</p>
+                      <p className="text-sm text-gray-400"><strong className="text-gray-300">Solution:</strong> {piece.solution}</p>
+                    </div>
+                    <div>
+                      <h5 className="text-xs text-gray-500 uppercase tracking-wide mb-3">Results</h5>
+                      <ul className="space-y-2">
+                        {piece.results.map((r, i) => (
+                          <li key={i} className="flex items-center gap-2 text-sm">
+                            <CheckCircle className="h-4 w-4 text-green-400 shrink-0" />
+                            <span className="text-green-300 font-semibold">{r}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Demo Reel + Hosting */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+              {/* Demo Reel */}
+              <div className="glass-effect rounded-2xl p-8 border border-white/5">
+                <h3 className="text-2xl font-bold text-white mb-3 font-['Space_Grotesk'] flex items-center gap-3">
+                  <Play className="h-6 w-6 text-orange-400" />
+                  90-Second Demo Reel
+                </h3>
+                <p className="text-gray-400 text-sm mb-6">A dynamic showcase of your best AI-powered video productions, highlighting creative range and technical proficiency across industries.</p>
+                <div className="space-y-3">
+                  {[
+                    { name: "Agency Intro & Branding", duration: "10s" },
+                    { name: "Explainer & Product Demos", duration: "25s" },
+                    { name: "Social Ads & Short-Form Content", duration: "20s" },
+                    { name: "Brand Story & Testimonial Highlights", duration: "25s" },
+                    { name: "Call to Action / Contact Info", duration: "10s" }
+                  ].map((seg, i) => (
+                    <div key={i} className="flex items-center justify-between p-3 bg-white/5 rounded-lg border border-white/10">
+                      <div className="flex items-center gap-3">
+                        <span className="text-orange-400 font-bold text-sm w-6">{i + 1}.</span>
+                        <span className="text-gray-300 text-sm">{seg.name}</span>
+                      </div>
+                      <span className="text-cyan-400 text-xs font-mono">{seg.duration}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Hosting */}
+              <div className="space-y-6">
+                <div className="glass-effect rounded-2xl p-8 border border-white/5">
+                  <h3 className="text-xl font-bold text-white mb-3 font-['Space_Grotesk']">Vimeo Pro</h3>
+                  <p className="text-gray-400 text-sm mb-4">Premium video hosting with advanced analytics, privacy controls, and ad-free playback.</p>
+                  <ul className="space-y-2">
+                    {["Ad-free playback & customizable player", "Robust viewer engagement analytics", "Advanced privacy settings & domain restrictions", "High-quality streaming & download options"].map((b, i) => (
+                      <li key={i} className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />{b}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="glass-effect rounded-2xl p-8 border border-white/5">
+                  <h3 className="text-xl font-bold text-white mb-3 font-['Space_Grotesk']">Webflow / Framer</h3>
+                  <p className="text-gray-400 text-sm mb-4">Custom portfolio websites with seamless video integration and brand-aligned design.</p>
+                  <ul className="space-y-2">
+                    {["Full control over design and branding", "Optimized for SEO and fast loading", "Integrated CMS for easy portfolio updates", "Responsive design across all devices"].map((b, i) => (
+                      <li key={i} className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />{b}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial Strategy */}
+            <div className="glass-effect rounded-2xl p-8 border border-orange-400/30 bg-gradient-to-r from-orange-500/5 to-red-500/5">
+              <div className="flex items-start gap-4">
+                <div className="inline-flex p-3 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 shrink-0">
+                  <Mic className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white mb-2 font-['Space_Grotesk']">Get Testimonials Fast</h3>
+                  <p className="text-gray-300 mb-4">Securing early testimonials is vital for building trust and social proof. Offer attractive incentives for initial clients to provide authentic video feedback.</p>
+                  <ul className="space-y-2">
+                    <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Offer 20-30% discount on 2-3 initial projects in exchange for a video testimonial</li>
+                    <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Provide structured interview guide to help clients articulate their experience</li>
+                    <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Handle all post-production of their raw testimonial footage at no extra cost</li>
+                    <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Feature their business on your premium platforms for increased mutual exposure</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="py-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
