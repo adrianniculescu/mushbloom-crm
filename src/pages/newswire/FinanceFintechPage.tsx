@@ -67,12 +67,12 @@ const FinanceFintechPage = () => {
         <title>FinanceWire – Fintech & Finance Press Release Distribution | Mushbloom Newswire</title>
         <meta name="description" content="Distribute your fintech and finance press releases to investors, VCs, banking executives, and financial analysts. Guaranteed homepage coverage." />
         <meta name="keywords" content="fintech press release, finance PR distribution, investor relations PR, banking news distribution, funding announcement PR, financial services media" />
-        <link rel="canonical" href="https://mushbloom.co.uk/newswire/finance-fintech" />
+        <link rel="canonical" href="https://mushbloom.uk/newswire/finance-fintech" />
         
         <meta property="og:title" content="FinanceWire – Fintech & Finance Press Release Distribution" />
         <meta property="og:description" content="Targeted PR distribution for fintech startups, banks, and financial services companies." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mushbloom.co.uk/newswire/finance-fintech" />
+        <meta property="og:url" content="https://mushbloom.uk/newswire/finance-fintech" />
         
         <script type="application/ld+json">
           {JSON.stringify({

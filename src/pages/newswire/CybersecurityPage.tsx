@@ -67,12 +67,12 @@ const CybersecurityPage = () => {
         <title>CyberWire – Cybersecurity Press Release Distribution | Mushbloom Newswire</title>
         <meta name="description" content="Distribute your cybersecurity press releases to CISOs, security analysts, and IT decision-makers. Guaranteed coverage on leading security publications." />
         <meta name="keywords" content="cybersecurity press release, security PR distribution, CISO outreach, infosec news, security vendor PR, threat intelligence PR, compliance news distribution" />
-        <link rel="canonical" href="https://mushbloom.co.uk/newswire/cybersecurity" />
+        <link rel="canonical" href="https://mushbloom.uk/newswire/cybersecurity" />
         
         <meta property="og:title" content="CyberWire – Cybersecurity Press Release Distribution" />
         <meta property="og:description" content="Targeted PR distribution for security vendors, threat researchers, and compliance professionals." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mushbloom.co.uk/newswire/cybersecurity" />
+        <meta property="og:url" content="https://mushbloom.uk/newswire/cybersecurity" />
         
         <script type="application/ld+json">
           {JSON.stringify({

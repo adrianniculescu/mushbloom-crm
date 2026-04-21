@@ -67,12 +67,12 @@ const iGamingPage = () => {
         <title>PlayWire – iGaming & Betting Press Release Distribution | Mushbloom Newswire</title>
         <meta name="description" content="Distribute your iGaming and betting press releases to sportsbook operators, casino platforms, and affiliate partners. Guaranteed homepage coverage on leading iGaming publications." />
         <meta name="keywords" content="iGaming press release, betting PR distribution, casino news, sportsbook announcement, gambling industry media, online casino PR, sports betting news" />
-        <link rel="canonical" href="https://mushbloom.co.uk/newswire/igaming" />
+        <link rel="canonical" href="https://mushbloom.uk/newswire/igaming" />
         
         <meta property="og:title" content="PlayWire – iGaming & Betting Press Release Distribution" />
         <meta property="og:description" content="Targeted PR distribution for iGaming operators, sportsbooks, and casino platforms." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mushbloom.co.uk/newswire/igaming" />
+        <meta property="og:url" content="https://mushbloom.uk/newswire/igaming" />
         
         <script type="application/ld+json">
           {JSON.stringify({

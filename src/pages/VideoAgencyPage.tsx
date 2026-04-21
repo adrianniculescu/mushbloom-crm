@@ -201,11 +201,11 @@ const VideoAgencyPage = () => {
     "provider": {
       "@type": "Organization",
       "name": "Mushbloom",
-      "url": "https://mushbloom.co.uk"
+      "url": "https://mushbloom.uk"
     },
     "serviceType": "AI Video Production",
     "areaServed": "Worldwide",
-    "url": "https://mushbloom.co.uk/video-agency",
+    "url": "https://mushbloom.uk/video-agency",
     "offers": [
       { "@type": "Offer", "name": "Starter", "price": "2500", "priceCurrency": "USD", "description": "Monthly social media content pack with strategy call" },
       { "@type": "Offer", "name": "Growth", "price": "5000", "priceCurrency": "USD", "description": "Social content + video ads with performance reviews" },
@@ -218,10 +218,10 @@ const VideoAgencyPage = () => {
       <Helmet>
         <title>AI Video Agency – Premium Video Production | Mushbloom</title>
         <meta name="description" content="AI-powered video agency creating explainer videos, social media content, video ads, VSLs & talking head videos. Powered by Runway, Descript & ElevenLabs. From $800." />
-        <link rel="canonical" href="https://mushbloom.co.uk/video-agency" />
+        <link rel="canonical" href="https://mushbloom.uk/video-agency" />
         <meta property="og:title" content="AI Video Agency – Premium Video Production | Mushbloom" />
         <meta property="og:description" content="AI-powered video production from $800. Explainer videos, social content packs, video ads, VSLs & more." />
-        <meta property="og:url" content="https://mushbloom.co.uk/video-agency" />
+        <meta property="og:url" content="https://mushbloom.uk/video-agency" />
         <meta property="og:type" content="website" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>

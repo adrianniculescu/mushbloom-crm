@@ -93,12 +93,12 @@ const LLMboostPage = () => {
         <title>LLMboost – AI Search Visibility Accelerator | ChatGPT, Gemini, Claude SEO | Mushbloom</title>
         <meta name="description" content="LLMboost: Revolutionary LLM SEO optimization for ChatGPT, Gemini, Claude. Boost your Share of Model, dominate AI search results. Free LLM SEO audit available from Mushbloom." />
         <meta name="keywords" content="LLMboost, LLM SEO, ChatGPT SEO, Gemini optimization, Claude visibility, AI search optimization, Share of Model, AI visibility, Mushbloom" />
-        <link rel="canonical" href="https://mushbloom.co.uk/llmboost" />
+        <link rel="canonical" href="https://mushbloom.uk/llmboost" />
         
         <meta property="og:title" content="LLMboost – AI Search Visibility Accelerator | Mushbloom" />
         <meta property="og:description" content="Be the default answer in ChatGPT, Gemini, Claude. LLMboost optimizes your brand for AI-powered search with measurable Share of Model results." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mushbloom.co.uk/llmboost" />
+        <meta property="og:url" content="https://mushbloom.uk/llmboost" />
         
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="LLMboost – AI Search Visibility Accelerator" />
@@ -113,7 +113,7 @@ const LLMboostPage = () => {
             "provider": {
               "@type": "Organization",
               "name": "Mushbloom",
-              "url": "https://mushbloom.co.uk"
+              "url": "https://mushbloom.uk"
             },
             "areaServed": "Global",
             "serviceType": "LLM SEO Optimization",
@@ -135,8 +135,8 @@ const LLMboostPage = () => {
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mushbloom.co.uk" },
-              { "@type": "ListItem", "position": 2, "name": "LLMboost", "item": "https://mushbloom.co.uk/llmboost" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mushbloom.uk" },
+              { "@type": "ListItem", "position": 2, "name": "LLMboost", "item": "https://mushbloom.uk/llmboost" }
             ]
           })}
         </script>

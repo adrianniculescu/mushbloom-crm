@@ -27,27 +27,50 @@ const WikiArticlePage = () => {
   const related = getRelatedArticles(article);
   const Icon = article.icon;
 
+  const wordCount = article.content.split(/\s+/).filter(Boolean).length;
+  const articleUrl = `https://mushbloom.uk/wiki/${article.slug}`;
+
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     "headline": article.title,
     "description": article.metaDescription,
-    "author": { "@type": "Organization", "name": "Mushbloom", "url": "https://mushbloom.co.uk" },
-    "publisher": { "@type": "Organization", "name": "Mushbloom", "logo": { "@type": "ImageObject", "url": "https://mushbloom.co.uk/lovable-uploads/a393711c-b940-4619-8101-fb5159650972.png" } },
-    "datePublished": "2025-01-15",
-    "dateModified": "2026-03-08",
-    "mainEntityOfPage": `https://mushbloom.co.uk/wiki/${article.slug}`,
+    "image": "https://mushbloom.uk/og-image.jpg",
+    "author": {
+      "@type": "Organization",
+      "name": "Mushbloom",
+      "url": "https://mushbloom.uk"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Mushbloom",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://mushbloom.uk/lovable-uploads/a393711c-b940-4619-8101-fb5159650972.png"
+      }
+    },
+    "datePublished": "2025-01-15T09:00:00+00:00",
+    "dateModified": "2026-04-21T09:00:00+00:00",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": articleUrl
+    },
+    "url": articleUrl,
     "keywords": article.seoKeywords,
-    "articleSection": article.category
+    "articleSection": article.category,
+    "wordCount": wordCount,
+    "inLanguage": "en-GB",
+    "isAccessibleForFree": true
   };
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mushbloom.co.uk" },
-      { "@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://mushbloom.co.uk/#wiki" },
-      { "@type": "ListItem", "position": 3, "name": article.title, "item": `https://mushbloom.co.uk/wiki/${article.slug}` }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mushbloom.uk/" },
+      { "@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://mushbloom.uk/#wiki" },
+      { "@type": "ListItem", "position": 3, "name": article.category, "item": `https://mushbloom.uk/#wiki` },
+      { "@type": "ListItem", "position": 4, "name": article.title, "item": articleUrl }
     ]
   };
 
@@ -57,11 +80,22 @@ const WikiArticlePage = () => {
         <title>{article.metaTitle} | Mushbloom</title>
         <meta name="description" content={article.metaDescription} />
         <meta name="keywords" content={article.seoKeywords} />
-        <link rel="canonical" href={`https://mushbloom.co.uk/wiki/${article.slug}`} />
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
+        <link rel="canonical" href={articleUrl} />
         <meta property="og:title" content={article.metaTitle} />
         <meta property="og:description" content={article.metaDescription} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://mushbloom.co.uk/wiki/${article.slug}`} />
+        <meta property="og:url" content={articleUrl} />
+        <meta property="og:image" content="https://mushbloom.uk/og-image.jpg" />
+        <meta property="og:site_name" content="Mushbloom" />
+        <meta property="article:published_time" content="2025-01-15T09:00:00+00:00" />
+        <meta property="article:modified_time" content="2026-04-21T09:00:00+00:00" />
+        <meta property="article:author" content="Mushbloom" />
+        <meta property="article:section" content={article.category} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={article.metaTitle} />
+        <meta name="twitter:description" content={article.metaDescription} />
+        <meta name="twitter:image" content="https://mushbloom.uk/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>

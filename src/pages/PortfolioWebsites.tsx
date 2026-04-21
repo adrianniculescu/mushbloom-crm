@@ -11,17 +11,17 @@ const PortfolioWebsites = () => {
       <Helmet>
         <title>Portfolio – 27+ Websites We've Built | Mushbloom</title>
         <meta name="description" content="Explore 27+ websites designed and developed by Mushbloom across real estate, blockchain, fintech, media, gaming, AI, and more." />
-        <link rel="canonical" href="https://mushbloom.co.uk/portfolio/websites" />
+        <link rel="canonical" href="https://mushbloom.uk/portfolio/websites" />
         <meta property="og:title" content="Portfolio – Websites Built by Mushbloom" />
         <meta property="og:description" content="27+ websites across real estate, blockchain, fintech, media, gaming and more." />
-        <meta property="og:url" content="https://mushbloom.co.uk/portfolio/websites" />
+        <meta property="og:url" content="https://mushbloom.uk/portfolio/websites" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mushbloom.co.uk" },
-              { "@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://mushbloom.co.uk/portfolio/websites" }
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mushbloom.uk" },
+              { "@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://mushbloom.uk/portfolio/websites" }
             ]
           })}
         </script>

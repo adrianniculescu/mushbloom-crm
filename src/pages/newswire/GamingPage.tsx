@@ -67,12 +67,12 @@ const GamingPage = () => {
         <title>GamingWire – Gaming Press Release Distribution | Mushbloom Newswire</title>
         <meta name="description" content="Distribute your gaming press releases to PC, console, mobile gamers and esports audiences. Guaranteed homepage placements on leading gaming publications." />
         <meta name="keywords" content="gaming press release, video game PR distribution, esports news, game launch PR, indie game announcement, mobile gaming media, gaming industry news" />
-        <link rel="canonical" href="https://mushbloom.co.uk/newswire/gaming" />
+        <link rel="canonical" href="https://mushbloom.uk/newswire/gaming" />
         
         <meta property="og:title" content="GamingWire – Gaming Press Release Distribution" />
         <meta property="og:description" content="Targeted PR distribution for game studios, esports organizations, and gaming platforms." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mushbloom.co.uk/newswire/gaming" />
+        <meta property="og:url" content="https://mushbloom.uk/newswire/gaming" />
         
         <script type="application/ld+json">
           {JSON.stringify({

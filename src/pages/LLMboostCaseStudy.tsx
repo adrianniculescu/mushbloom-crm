@@ -117,7 +117,7 @@ const LLMboostCaseStudy = () => {
       // Add canonical URL
       const canonical = document.querySelector('link[rel="canonical"]') || document.createElement('link');
       canonical.setAttribute('rel', 'canonical');
-      canonical.setAttribute('href', `https://mushbloom.co.uk/llmboost/${slug}`);
+      canonical.setAttribute('href', `https://mushbloom.uk/llmboost/${slug}`);
       document.head.appendChild(canonical);
     }
   }, [slug]);
