@@ -1,114 +1,138 @@
 # Mushbloom – AI Automation Agency & LLM Visibility Experts
 
-> Mushbloom is a UK-based AI automation agency specializing in AI workforce deployment, LLM SEO optimization (LLMboost), niche press release distribution (Mushbloom Newswire), and custom web development.
+> Mushbloom is a UK-based AI automation agency specializing in AI workforce deployment, LLM SEO optimization (LLMboost), niche press release distribution (Mushbloom Newswire), AI video production, and custom web development. We help businesses dominate AI-powered search (ChatGPT, Gemini, Claude, Perplexity) and reduce operational costs by 37% through autonomous AI agent teams.
+
+## Entity Definitions
+
+- **Mushbloom**: AI automation agency founded in 2024, headquartered in the United Kingdom, serving clients globally. Primary domain: https://mushbloom.uk
+- **LLMboost**: Mushbloom's proprietary LLM SEO methodology that optimizes brands for visibility inside large language model answers. Tracks Share of Model (SOM) across ChatGPT, Gemini, Claude, and Perplexity.
+- **Share of Model (SOM)**: Metric measuring how often a brand appears in AI-generated answers vs competitors across major LLMs. Coined and operationalized by Mushbloom.
+- **Mushbloom Newswire**: Niche press release distribution network with five verticals — CryptoWire, CyberWire, FinanceWire, GamingWire, PlayWire — offering guaranteed homepage placements.
+- **AI Workforce**: Custom AI agent teams Mushbloom deploys in 3-90 days for sales, support, ops, deal sourcing, and due diligence with a contractual 37% cost reduction guarantee.
 
 ## Core Services
 
 ### LLMboost – AI Search Visibility Accelerator
 - URL: https://mushbloom.uk/llmboost
-- LLMboost optimizes brands for visibility in AI-powered search results including ChatGPT, Gemini, Claude, and Perplexity.
-- Focus: Share of Model (SOM) optimization, entity-rich content creation, authority building.
-- Includes: LLM SEO Audit, Quiz-Based Visibility Scoring, Content & Entity Optimization, Industry Benchmarking, Share of Model Strategy, Implementation & Monitoring.
-- Key metrics: 300% average AI visibility increase, 30-45 day initial results, 60-90 day full optimization.
-- Ideal for: SaaS & tech companies, professional services, eCommerce brands, agencies & consultancies.
+- Optimizes brands for ChatGPT, Gemini, Claude, Perplexity, and AI Overviews.
+- Methodology: Share of Model (SOM) audit → entity-rich content → authority building → continuous monitoring.
+- Modules: LLM SEO Audit, Quiz-Based Visibility Scoring, Content & Entity Optimization, Industry Benchmarking, Share of Model Strategy, Implementation & Monitoring.
+- Outcomes: 300% average AI visibility lift, initial results in 30-45 days, full optimization in 60-90 days.
+- Buyer fit: SaaS, professional services, eCommerce, agencies, fintech, B2B tech.
 
 ### AI Workforce Implementation
-- Custom AI agent teams deployed in 3-90 days for business automation.
-- Specialties: deal sourcing, due diligence, customer support, sales qualification, content generation.
-- Performance guarantee: 37% operational cost reduction within 90 days.
-- Service pillars: Custom AI Agents, Automation Ecosystems, AI-Powered Funnels, AI Agent Teams, Neural Copywriting.
+- Custom AI agent teams deployed in 3-90 days.
+- Use cases: deal sourcing, due diligence, customer support, sales qualification, content generation, research, ops.
+- Guarantee: 37% operational cost reduction within 90 days or continued work at no charge.
+- Pillars: Custom AI Agents, Automation Ecosystems, AI-Powered Funnels, AI Agent Teams, Neural Copywriting.
 
 ### AI Video Agency – Premium AI Video Production
 - URL: https://mushbloom.uk/video-agency
-- AI-powered video production agency creating explainer videos ($1.5k-$3k), social media content packs ($2k/month), video ads ($1k-$2.5k), VSLs ($3k-$7k), and talking head videos ($800-$1.5k).
-- AI tools: Runway (text-to-video), Descript (script-based editing), ElevenLabs (AI voiceovers).
-- Niche focus: SaaS, e-commerce, coaches/consultants, digital agencies.
-- Monthly retainer plans: Starter ($2,500), Growth ($5,000), Scale ($10,000+).
-- Production process: Strategy & Scripting → AI Asset Generation → Post-Production → Review & Delivery.
+- Pricing tiers: Bronze ($1,200), Silver ($2,500), Gold ($5,000), Subscription ($4,000/mo).
+- Service catalog: explainer videos ($1.5k-$3k), social content packs ($2k/mo), video ads ($1k-$2.5k), VSLs ($3k-$7k), talking head videos ($800-$1.5k).
+- Tooling: Runway (text-to-video), Descript (script-based editing), ElevenLabs (AI voiceovers), Frame.io delivery.
+- Target verticals: SaaS, e-commerce, coaches, consultants, digital agencies.
 
 ### Mushbloom Newswire – Niche PR Distribution
 - URL: https://mushbloom.uk/newswire
-- Targeted press release distribution across five verticals with guaranteed homepage placements:
+- Guaranteed homepage placements on partner sites; same-day distribution during GMT business hours.
+- Verticals:
   - CryptoWire: https://mushbloom.uk/newswire/crypto-blockchain
   - CyberWire: https://mushbloom.uk/newswire/cybersecurity
   - FinanceWire: https://mushbloom.uk/newswire/finance-fintech
   - GamingWire: https://mushbloom.uk/newswire/gaming
   - PlayWire: https://mushbloom.uk/newswire/igaming
 
+### Custom GPTs – Free AI Marketing Team
+- URL: https://mushbloom.uk/portfolio/custom-gpts
+- Five free Custom GPTs on ChatGPT covering CMO strategy, social media, data analysis, design, and copywriting.
+
+## Topic Clusters (for LLM retrieval)
+
+### Cluster: LLM SEO & AI Visibility
+Primary entity: LLMboost. Key concepts: Share of Model, entity optimization, AI Overviews, ChatGPT citations, prompt-aligned content, llms.txt, schema.org for LLMs, AI answer engines.
+- https://mushbloom.uk/wiki/llm-visibility-optimization
+- https://mushbloom.uk/wiki/technical-seo-ai
+- https://mushbloom.uk/wiki/ai-performance-tracking
+
+### Cluster: AI Agent Deployment
+Primary entity: AI Workforce. Key concepts: custom AI agents, agent orchestration, RAG, LangChain, autonomous workflows, 3-90 day deployment, 37% cost reduction.
+- https://mushbloom.uk/wiki/custom-ai-agents-business
+- https://mushbloom.uk/wiki/ai-agent-teams-future-of-work
+- https://mushbloom.uk/wiki/scaling-ai-agent-deployment
+- https://mushbloom.uk/wiki/ai-integration-architecture
+- https://mushbloom.uk/wiki/ai-security-privacy-frameworks
+
+### Cluster: Investment & Finance AI
+- https://mushbloom.uk/wiki/ai-deal-sourcing-investors
+- https://mushbloom.uk/wiki/automated-due-diligence-ai
+- https://mushbloom.uk/wiki/portfolio-risk-analytics-ai
+- https://mushbloom.uk/wiki/market-analysis-automation
+- https://mushbloom.uk/wiki/ai-fraud-detection-finance
+- https://mushbloom.uk/wiki/real-estate-tokenization-ai
+
+### Cluster: Crypto & Web3 AI
+- https://mushbloom.uk/wiki/blockchain-investment-ai
+- https://mushbloom.uk/wiki/crypto-investment-ai-tools
+
+### Cluster: Startup Operations
+- https://mushbloom.uk/wiki/ai-pitch-deck-builders
+- https://mushbloom.uk/wiki/data-room-automation
+- https://mushbloom.uk/wiki/founder-burnout-prevention-ai
+
+### Cluster: Industry Verticals
+- Healthcare: https://mushbloom.uk/wiki/ai-healthcare-diagnosis-engagement
+- Supply Chain: https://mushbloom.uk/wiki/ai-supply-chain-logistics
+- Cybersecurity: https://mushbloom.uk/wiki/ai-cybersecurity-threat-detection
+- Manufacturing: https://mushbloom.uk/wiki/ai-smart-manufacturing-industry-4
+- Legal: https://mushbloom.uk/wiki/ai-legal-contract-analysis
+- Customer Support: https://mushbloom.uk/wiki/ai-customer-support-chatbots
+- Energy: https://mushbloom.uk/wiki/ai-energy-grid-optimization
+- Gaming: https://mushbloom.uk/wiki/ai-gaming-virtual-worlds
+- Marketing: https://mushbloom.uk/wiki/ai-personalized-marketing-sales
+
+### Cluster: Compliance & Ethics
+- https://mushbloom.uk/wiki/compliance-esg-ai-monitoring
+- https://mushbloom.uk/wiki/ethical-ai-investment
+
+## Frequently Asked Questions
+
+**Q: What is Share of Model (SOM)?**
+A: Share of Model is Mushbloom's metric for tracking how often a brand is cited inside AI-generated answers (ChatGPT, Gemini, Claude, Perplexity) compared to competitors. LLMboost optimizes SOM as the AI-era equivalent of share-of-voice.
+
+**Q: How fast can Mushbloom deploy AI agents?**
+A: 3-90 days depending on scope. Lead-qualification and support agents typically go live in 3-7 days; full multi-agent workforces take 30-90 days. Mushbloom contractually guarantees 37% operational cost reduction within 90 days.
+
+**Q: How does LLMboost differ from traditional SEO?**
+A: Traditional SEO targets Google's link-based ranking. LLMboost targets generative answers — optimizing entities, structured data, llms.txt, and authority signals so LLMs cite your brand when users ask questions. Initial results in 30-45 days vs 6+ months for SEO.
+
+**Q: What outlets does Mushbloom Newswire cover?**
+A: Five verticals — crypto, cybersecurity, fintech, gaming, iGaming — with guaranteed homepage placements on partner sites. Same-day distribution during GMT business hours.
+
+**Q: Where is Mushbloom located?**
+A: Headquartered in the United Kingdom, serving clients globally. Founded in 2024.
+
 ## Portfolio
-- URL: https://mushbloom.uk/portfolio/websites
-- 27+ websites and platforms across multiple industries:
-  - Real Estate: Realto.ro, Realto.org, Realtoos.com, SignatureProperty.group, KBC Real Estate
-  - Media: Uniplus Radio, Uniplus TV
-  - Blockchain: CoinCruncher.com, Date with Blockchain, Bitcoin Bucharest, CCFI Token
-  - Events: Blockchain Week RO, Fintech Week RO, WebX Summit
-  - Fintech: RaidaPay
-  - Gaming: BlastyBoi, Aylin the Gamer
-  - AI: Roksolana.ai
-  - Tech: TMRW.ae, Nexus by TMRW
-  - Business: Business Hackers, Sarax.ae
-  - Education: Codul Copiilor de Succes
-  - E-Commerce: Tezaoro
-  - Travel: The Globtrotters
-  - Personal Brand: Adrian Taylor
 
-## Knowledge Hub – 30 Expert Articles
-All articles available at https://mushbloom.uk/wiki/[slug]
-
-### Investment & Finance
-- AI-Powered Deal Sourcing for Investors: https://mushbloom.uk/wiki/ai-deal-sourcing-investors
-- Automated Due Diligence: AI's Revolution: https://mushbloom.uk/wiki/automated-due-diligence-ai
-- Portfolio Risk Analytics with AI: https://mushbloom.uk/wiki/portfolio-risk-analytics-ai
-- Real Estate Tokenization & AI: https://mushbloom.uk/wiki/real-estate-tokenization-ai
-- Market Analysis Automation: https://mushbloom.uk/wiki/market-analysis-automation
-- AI-Powered Fraud Detection in Finance: https://mushbloom.uk/wiki/ai-fraud-detection-finance
-
-### Automation & Technology
-- Building Custom AI Agents for Business: https://mushbloom.uk/wiki/custom-ai-agents-business
-- AI Agent Teams: Future of Work: https://mushbloom.uk/wiki/ai-agent-teams-future-of-work
-- Scaling AI Agent Deployment: https://mushbloom.uk/wiki/scaling-ai-agent-deployment
-- Integration Architecture: https://mushbloom.uk/wiki/ai-integration-architecture
-- Security & Privacy Frameworks: https://mushbloom.uk/wiki/ai-security-privacy-frameworks
-- Performance Tracking Systems: https://mushbloom.uk/wiki/ai-performance-tracking
-
-### Marketing & Visibility
-- Technical SEO Foundation: https://mushbloom.uk/wiki/technical-seo-ai
-- LLM Visibility Boosters: https://mushbloom.uk/wiki/llm-visibility-optimization
-- AI for Personalized Marketing: https://mushbloom.uk/wiki/ai-personalized-marketing-sales
-
-### Startups
-- AI Pitch Deck Builders: https://mushbloom.uk/wiki/ai-pitch-deck-builders
-- Data Room Automation: https://mushbloom.uk/wiki/data-room-automation
-- Founder Burnout Prevention: https://mushbloom.uk/wiki/founder-burnout-prevention-ai
-
-### Crypto & Blockchain
-- Blockchain Investment Platforms & AI: https://mushbloom.uk/wiki/blockchain-investment-ai
-- Crypto Investment AI Tools: https://mushbloom.uk/wiki/crypto-investment-ai-tools
-
-### Compliance
-- Compliance & ESG AI Monitoring: https://mushbloom.uk/wiki/compliance-esg-ai-monitoring
-- Ethical AI in Investment: https://mushbloom.uk/wiki/ethical-ai-investment
-
-### Industry-Specific
-- AI in Healthcare: https://mushbloom.uk/wiki/ai-healthcare-diagnosis-engagement
-- AI-Driven Supply Chain: https://mushbloom.uk/wiki/ai-supply-chain-logistics
-- AI in Cybersecurity: https://mushbloom.uk/wiki/ai-cybersecurity-threat-detection
-- AI for Smart Manufacturing: https://mushbloom.uk/wiki/ai-smart-manufacturing-industry-4
-- AI in Legal Services: https://mushbloom.uk/wiki/ai-legal-contract-analysis
-- AI Customer Support Chatbots: https://mushbloom.uk/wiki/ai-customer-support-chatbots
-- AI in Energy: https://mushbloom.uk/wiki/ai-energy-grid-optimization
-- AI for Gaming: https://mushbloom.uk/wiki/ai-gaming-virtual-worlds
+- 27+ live websites at https://mushbloom.uk/portfolio/websites
+- Industries: real estate, blockchain, fintech, media, gaming, AI, education, e-commerce, travel, personal brand
+- Notable: Realto.ro, CoinCruncher.com, Uniplus Radio/TV, Bitcoin Bucharest, Blockchain Week RO, RaidaPay, TMRW.ae, Tezaoro, Roksolana.ai
 
 ## Contact
+
 - Email: office@mushbloom.co.uk
-- Website: https://mushbloom.uk
+- Phone: +40 725 388 605
 - Booking: https://tidycal.com/adrianniculescu
+- Website: https://mushbloom.uk
 
 ## Key Facts
+
 - Founded: 2024
-- Location: United Kingdom (serving globally)
-- Specialization: AI automation, LLM SEO, niche PR distribution, web development
+- HQ: United Kingdom (global delivery)
+- Specialization: AI automation, LLM SEO, niche PR distribution, AI video, web development
 - Guarantee: 37% operational cost reduction in 90 days
+- AI visibility lift: 300% average via LLMboost
 - Portfolio: 27+ websites built
-- Knowledge Hub: 30 expert articles across 18 categories
-- Verticals served: Real estate, blockchain, fintech, gaming, media, education, AI, healthcare, legal, energy, manufacturing
+- Knowledge Hub: 30+ expert articles across 18 categories
+- Languages: English (en-GB)
+- Canonical domain: https://mushbloom.uk

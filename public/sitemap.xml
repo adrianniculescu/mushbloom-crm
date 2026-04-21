@@ -1,244 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mushbloom.uk/</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mushbloom.uk/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mushbloom.uk/" />
   </url>
   <url>
     <loc>https://mushbloom.uk/llmboost</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mushbloom.uk/newswire</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mushbloom.uk/video-agency</loc>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://mushbloom.uk/portfolio/websites</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mushbloom.uk/newswire/crypto-blockchain</loc>
-    <lastmod>2026-03-08</lastmod>
+    <loc>https://mushbloom.uk/portfolio/custom-gpts</loc>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://mushbloom.uk/newswire/cybersecurity</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/newswire/finance-fintech</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/newswire/gaming</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/newswire/igaming</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+  <!-- Newswire Verticals -->
+  <url><loc>https://mushbloom.uk/newswire/crypto-blockchain</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mushbloom.uk/newswire/cybersecurity</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mushbloom.uk/newswire/finance-fintech</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mushbloom.uk/newswire/gaming</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mushbloom.uk/newswire/igaming</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <!-- Wiki Articles -->
-  <url>
-    <loc>https://mushbloom.uk/wiki/ai-deal-sourcing-investors</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/automated-due-diligence-ai</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/ai-pitch-deck-builders</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/blockchain-investment-ai</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/custom-ai-agents-business</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/portfolio-risk-analytics-ai</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/compliance-esg-ai-monitoring</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/data-room-automation</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/founder-burnout-prevention-ai</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/real-estate-tokenization-ai</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/crypto-investment-ai-tools</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/ai-agent-teams-future-of-work</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/ethical-ai-investment</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/market-analysis-automation</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/technical-seo-ai</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/llm-visibility-optimization</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/ai-performance-tracking</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/ai-integration-architecture</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/ai-security-privacy-frameworks</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/scaling-ai-agent-deployment</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/ai-healthcare-diagnosis-engagement</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/ai-fraud-detection-finance</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/ai-personalized-marketing-sales</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/ai-supply-chain-logistics</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/ai-cybersecurity-threat-detection</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/ai-smart-manufacturing-industry-4</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/ai-legal-contract-analysis</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/ai-customer-support-chatbots</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/ai-energy-grid-optimization</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mushbloom.uk/wiki/ai-gaming-virtual-worlds</loc>
-    <lastmod>2026-03-08</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+  <url><loc>https://mushbloom.uk/wiki/ai-deal-sourcing-investors</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/automated-due-diligence-ai</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/ai-pitch-deck-builders</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/blockchain-investment-ai</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/custom-ai-agents-business</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/portfolio-risk-analytics-ai</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/compliance-esg-ai-monitoring</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/data-room-automation</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/founder-burnout-prevention-ai</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/real-estate-tokenization-ai</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/crypto-investment-ai-tools</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/ai-agent-teams-future-of-work</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/ethical-ai-investment</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/market-analysis-automation</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/technical-seo-ai</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/llm-visibility-optimization</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/ai-performance-tracking</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/ai-integration-architecture</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/ai-security-privacy-frameworks</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/scaling-ai-agent-deployment</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/ai-healthcare-diagnosis-engagement</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/ai-fraud-detection-finance</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/ai-personalized-marketing-sales</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/ai-supply-chain-logistics</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/ai-cybersecurity-threat-detection</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/ai-smart-manufacturing-industry-4</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/ai-legal-contract-analysis</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/ai-customer-support-chatbots</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/ai-energy-grid-optimization</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://mushbloom.uk/wiki/ai-gaming-virtual-worlds</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
