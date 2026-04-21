@@ -41,12 +41,13 @@ const websites: PortfolioItem[] = [
 
 const categories = ['All', ...Array.from(new Set(websites.map(w => w.category)))];
 
-// Sites where thum.io fails — use Google's cache instead
-const fallbackScreenshotUrl = (url: string) => 
+// Primary: WordPress mshots (free, no auth overlay, generous limits)
+const primaryScreenshotUrl = (url: string) =>
   `https://s0.wp.com/mshots/v1/${encodeURIComponent(url)}?w=640&h=400`;
 
-const primaryScreenshotUrl = (url: string) =>
-  `https://image.thum.io/get/width/640/crop/400/noanimate/${url}`;
+// Fallback: microlink (free tier, clean screenshots)
+const fallbackScreenshotUrl = (url: string) =>
+  `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url&waitUntil=networkidle0&viewport.width=1280&viewport.height=800`;
 
 const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState('All');
