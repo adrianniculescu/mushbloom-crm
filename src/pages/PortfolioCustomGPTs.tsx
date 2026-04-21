@@ -11,10 +11,10 @@ const PortfolioCustomGPTs = () => {
       <Helmet>
         <title>Custom GPTs – AI Marketing Team Built on ChatGPT | Mushbloom</title>
         <meta name="description" content="Meet Mushbloom's AI-powered digital marketing team: 5 Custom GPTs for strategy, social media, data analysis, design, and copywriting. Free to use on ChatGPT." />
-        <link rel="canonical" href="https://mushbloom.co.uk/portfolio/custom-gpts" />
+        <link rel="canonical" href="https://mushbloom.uk/portfolio/custom-gpts" />
         <meta property="og:title" content="Custom GPTs – AI Marketing Team by Mushbloom" />
         <meta property="og:description" content="5 Custom GPTs forming a complete AI digital marketing department — CMO, social media, data analyst, designer, and copywriter." />
-        <meta property="og:url" content="https://mushbloom.co.uk/portfolio/custom-gpts" />
+        <meta property="og:url" content="https://mushbloom.uk/portfolio/custom-gpts" />
         <meta property="og:type" content="website" />
         <meta name="keywords" content="Custom GPTs, AI marketing team, ChatGPT marketing, AI CMO, AI copywriter, AI designer, AI data analyst, AI social media, Mushbloom" />
         <script type="application/ld+json">
@@ -23,11 +23,11 @@ const PortfolioCustomGPTs = () => {
             "@type": "CollectionPage",
             "name": "Custom GPTs – AI Digital Marketing Team by Mushbloom",
             "description": "A complete AI-powered digital marketing team built as Custom GPTs on ChatGPT by Mushbloom. Includes a CMO, social media strategist, data analyst, designer, and copywriter.",
-            "url": "https://mushbloom.co.uk/portfolio/custom-gpts",
+            "url": "https://mushbloom.uk/portfolio/custom-gpts",
             "creator": {
               "@type": "Organization",
               "name": "Mushbloom",
-              "url": "https://mushbloom.co.uk"
+              "url": "https://mushbloom.uk"
             },
             "hasPart": [
               {
@@ -79,9 +79,9 @@ const PortfolioCustomGPTs = () => {
             "breadcrumb": {
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mushbloom.co.uk" },
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mushbloom.uk" },
                 { "@type": "ListItem", "position": 2, "name": "Portfolio" },
-                { "@type": "ListItem", "position": 3, "name": "Custom GPTs", "item": "https://mushbloom.co.uk/portfolio/custom-gpts" }
+                { "@type": "ListItem", "position": 3, "name": "Custom GPTs", "item": "https://mushbloom.uk/portfolio/custom-gpts" }
               ]
             }
           })}

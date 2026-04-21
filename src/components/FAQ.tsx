@@ -142,7 +142,7 @@ const FAQ = () => {
           <div itemScope itemType="https://schema.org/Organization">
             <meta itemProp="name" content="Mushbloom AI Automation" />
             <meta itemProp="description" content="AI agent deployment and LLM SEO optimization company specializing in business automation, deal sourcing, LLMboost services, and operational cost reduction" />
-            <meta itemProp="url" content="https://mushbloom.co.uk" />
+            <meta itemProp="url" content="https://mushbloom.uk" />
             <meta itemProp="email" content="office@mushbloom.co.uk" />
             <div itemProp="areaServed" itemScope itemType="https://schema.org/Country">
               <meta itemProp="name" content="United Kingdom" />

@@ -133,13 +133,13 @@ const NewswirePage = () => {
         <title>Mushbloom Newswire – Niche Press Release Distribution | Targeted PR</title>
         <meta name="description" content="Broadcast your news to hyper-targeted industry media outlets with guaranteed homepage exposure. Crypto, cybersecurity, fintech, gaming & iGaming PR distribution." />
         <meta name="keywords" content="press release distribution, niche PR, crypto press release, cybersecurity PR, fintech news distribution, gaming press release, iGaming PR, newswire service, targeted media distribution" />
-        <link rel="canonical" href="https://mushbloom.co.uk/newswire" />
+        <link rel="canonical" href="https://mushbloom.uk/newswire" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Mushbloom Newswire – Niche Press Release Distribution" />
         <meta property="og:description" content="Targeted PR distribution for crypto, cybersecurity, fintech, gaming & iGaming. Guaranteed homepage exposure on industry-leading outlets." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mushbloom.co.uk/newswire" />
+        <meta property="og:url" content="https://mushbloom.uk/newswire" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -156,7 +156,7 @@ const NewswirePage = () => {
             "provider": {
               "@type": "Organization",
               "name": "Mushbloom",
-              "url": "https://mushbloom.co.uk"
+              "url": "https://mushbloom.uk"
             },
             "serviceType": "Press Release Distribution",
             "areaServed": "Worldwide",

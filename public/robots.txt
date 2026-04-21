@@ -19,7 +19,7 @@ Disallow: /admin/
 Disallow: /private/
 
 # Sitemap location
-Sitemap: https://mushbloom.co.uk/sitemap.xml
+Sitemap: https://mushbloom.uk/sitemap.xml
 
 # LLM-specific crawlers
 User-agent: GPTBot

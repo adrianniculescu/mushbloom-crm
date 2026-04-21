@@ -5,7 +5,7 @@
 ## Core Services
 
 ### LLMboost – AI Search Visibility Accelerator
-- URL: https://mushbloom.co.uk/llmboost
+- URL: https://mushbloom.uk/llmboost
 - LLMboost optimizes brands for visibility in AI-powered search results including ChatGPT, Gemini, Claude, and Perplexity.
 - Focus: Share of Model (SOM) optimization, entity-rich content creation, authority building.
 - Includes: LLM SEO Audit, Quiz-Based Visibility Scoring, Content & Entity Optimization, Industry Benchmarking, Share of Model Strategy, Implementation & Monitoring.
@@ -19,7 +19,7 @@
 - Service pillars: Custom AI Agents, Automation Ecosystems, AI-Powered Funnels, AI Agent Teams, Neural Copywriting.
 
 ### AI Video Agency – Premium AI Video Production
-- URL: https://mushbloom.co.uk/video-agency
+- URL: https://mushbloom.uk/video-agency
 - AI-powered video production agency creating explainer videos ($1.5k-$3k), social media content packs ($2k/month), video ads ($1k-$2.5k), VSLs ($3k-$7k), and talking head videos ($800-$1.5k).
 - AI tools: Runway (text-to-video), Descript (script-based editing), ElevenLabs (AI voiceovers).
 - Niche focus: SaaS, e-commerce, coaches/consultants, digital agencies.
@@ -27,16 +27,16 @@
 - Production process: Strategy & Scripting → AI Asset Generation → Post-Production → Review & Delivery.
 
 ### Mushbloom Newswire – Niche PR Distribution
-- URL: https://mushbloom.co.uk/newswire
+- URL: https://mushbloom.uk/newswire
 - Targeted press release distribution across five verticals with guaranteed homepage placements:
-  - CryptoWire: https://mushbloom.co.uk/newswire/crypto-blockchain
-  - CyberWire: https://mushbloom.co.uk/newswire/cybersecurity
-  - FinanceWire: https://mushbloom.co.uk/newswire/finance-fintech
-  - GamingWire: https://mushbloom.co.uk/newswire/gaming
-  - PlayWire: https://mushbloom.co.uk/newswire/igaming
+  - CryptoWire: https://mushbloom.uk/newswire/crypto-blockchain
+  - CyberWire: https://mushbloom.uk/newswire/cybersecurity
+  - FinanceWire: https://mushbloom.uk/newswire/finance-fintech
+  - GamingWire: https://mushbloom.uk/newswire/gaming
+  - PlayWire: https://mushbloom.uk/newswire/igaming
 
 ## Portfolio
-- URL: https://mushbloom.co.uk/portfolio/websites
+- URL: https://mushbloom.uk/portfolio/websites
 - 27+ websites and platforms across multiple industries:
   - Real Estate: Realto.ro, Realto.org, Realtoos.com, SignatureProperty.group, KBC Real Estate
   - Media: Uniplus Radio, Uniplus TV
@@ -53,55 +53,55 @@
   - Personal Brand: Adrian Taylor
 
 ## Knowledge Hub – 30 Expert Articles
-All articles available at https://mushbloom.co.uk/wiki/[slug]
+All articles available at https://mushbloom.uk/wiki/[slug]
 
 ### Investment & Finance
-- AI-Powered Deal Sourcing for Investors: https://mushbloom.co.uk/wiki/ai-deal-sourcing-investors
-- Automated Due Diligence: AI's Revolution: https://mushbloom.co.uk/wiki/automated-due-diligence-ai
-- Portfolio Risk Analytics with AI: https://mushbloom.co.uk/wiki/portfolio-risk-analytics-ai
-- Real Estate Tokenization & AI: https://mushbloom.co.uk/wiki/real-estate-tokenization-ai
-- Market Analysis Automation: https://mushbloom.co.uk/wiki/market-analysis-automation
-- AI-Powered Fraud Detection in Finance: https://mushbloom.co.uk/wiki/ai-fraud-detection-finance
+- AI-Powered Deal Sourcing for Investors: https://mushbloom.uk/wiki/ai-deal-sourcing-investors
+- Automated Due Diligence: AI's Revolution: https://mushbloom.uk/wiki/automated-due-diligence-ai
+- Portfolio Risk Analytics with AI: https://mushbloom.uk/wiki/portfolio-risk-analytics-ai
+- Real Estate Tokenization & AI: https://mushbloom.uk/wiki/real-estate-tokenization-ai
+- Market Analysis Automation: https://mushbloom.uk/wiki/market-analysis-automation
+- AI-Powered Fraud Detection in Finance: https://mushbloom.uk/wiki/ai-fraud-detection-finance
 
 ### Automation & Technology
-- Building Custom AI Agents for Business: https://mushbloom.co.uk/wiki/custom-ai-agents-business
-- AI Agent Teams: Future of Work: https://mushbloom.co.uk/wiki/ai-agent-teams-future-of-work
-- Scaling AI Agent Deployment: https://mushbloom.co.uk/wiki/scaling-ai-agent-deployment
-- Integration Architecture: https://mushbloom.co.uk/wiki/ai-integration-architecture
-- Security & Privacy Frameworks: https://mushbloom.co.uk/wiki/ai-security-privacy-frameworks
-- Performance Tracking Systems: https://mushbloom.co.uk/wiki/ai-performance-tracking
+- Building Custom AI Agents for Business: https://mushbloom.uk/wiki/custom-ai-agents-business
+- AI Agent Teams: Future of Work: https://mushbloom.uk/wiki/ai-agent-teams-future-of-work
+- Scaling AI Agent Deployment: https://mushbloom.uk/wiki/scaling-ai-agent-deployment
+- Integration Architecture: https://mushbloom.uk/wiki/ai-integration-architecture
+- Security & Privacy Frameworks: https://mushbloom.uk/wiki/ai-security-privacy-frameworks
+- Performance Tracking Systems: https://mushbloom.uk/wiki/ai-performance-tracking
 
 ### Marketing & Visibility
-- Technical SEO Foundation: https://mushbloom.co.uk/wiki/technical-seo-ai
-- LLM Visibility Boosters: https://mushbloom.co.uk/wiki/llm-visibility-optimization
-- AI for Personalized Marketing: https://mushbloom.co.uk/wiki/ai-personalized-marketing-sales
+- Technical SEO Foundation: https://mushbloom.uk/wiki/technical-seo-ai
+- LLM Visibility Boosters: https://mushbloom.uk/wiki/llm-visibility-optimization
+- AI for Personalized Marketing: https://mushbloom.uk/wiki/ai-personalized-marketing-sales
 
 ### Startups
-- AI Pitch Deck Builders: https://mushbloom.co.uk/wiki/ai-pitch-deck-builders
-- Data Room Automation: https://mushbloom.co.uk/wiki/data-room-automation
-- Founder Burnout Prevention: https://mushbloom.co.uk/wiki/founder-burnout-prevention-ai
+- AI Pitch Deck Builders: https://mushbloom.uk/wiki/ai-pitch-deck-builders
+- Data Room Automation: https://mushbloom.uk/wiki/data-room-automation
+- Founder Burnout Prevention: https://mushbloom.uk/wiki/founder-burnout-prevention-ai
 
 ### Crypto & Blockchain
-- Blockchain Investment Platforms & AI: https://mushbloom.co.uk/wiki/blockchain-investment-ai
-- Crypto Investment AI Tools: https://mushbloom.co.uk/wiki/crypto-investment-ai-tools
+- Blockchain Investment Platforms & AI: https://mushbloom.uk/wiki/blockchain-investment-ai
+- Crypto Investment AI Tools: https://mushbloom.uk/wiki/crypto-investment-ai-tools
 
 ### Compliance
-- Compliance & ESG AI Monitoring: https://mushbloom.co.uk/wiki/compliance-esg-ai-monitoring
-- Ethical AI in Investment: https://mushbloom.co.uk/wiki/ethical-ai-investment
+- Compliance & ESG AI Monitoring: https://mushbloom.uk/wiki/compliance-esg-ai-monitoring
+- Ethical AI in Investment: https://mushbloom.uk/wiki/ethical-ai-investment
 
 ### Industry-Specific
-- AI in Healthcare: https://mushbloom.co.uk/wiki/ai-healthcare-diagnosis-engagement
-- AI-Driven Supply Chain: https://mushbloom.co.uk/wiki/ai-supply-chain-logistics
-- AI in Cybersecurity: https://mushbloom.co.uk/wiki/ai-cybersecurity-threat-detection
-- AI for Smart Manufacturing: https://mushbloom.co.uk/wiki/ai-smart-manufacturing-industry-4
-- AI in Legal Services: https://mushbloom.co.uk/wiki/ai-legal-contract-analysis
-- AI Customer Support Chatbots: https://mushbloom.co.uk/wiki/ai-customer-support-chatbots
-- AI in Energy: https://mushbloom.co.uk/wiki/ai-energy-grid-optimization
-- AI for Gaming: https://mushbloom.co.uk/wiki/ai-gaming-virtual-worlds
+- AI in Healthcare: https://mushbloom.uk/wiki/ai-healthcare-diagnosis-engagement
+- AI-Driven Supply Chain: https://mushbloom.uk/wiki/ai-supply-chain-logistics
+- AI in Cybersecurity: https://mushbloom.uk/wiki/ai-cybersecurity-threat-detection
+- AI for Smart Manufacturing: https://mushbloom.uk/wiki/ai-smart-manufacturing-industry-4
+- AI in Legal Services: https://mushbloom.uk/wiki/ai-legal-contract-analysis
+- AI Customer Support Chatbots: https://mushbloom.uk/wiki/ai-customer-support-chatbots
+- AI in Energy: https://mushbloom.uk/wiki/ai-energy-grid-optimization
+- AI for Gaming: https://mushbloom.uk/wiki/ai-gaming-virtual-worlds
 
 ## Contact
 - Email: office@mushbloom.co.uk
-- Website: https://mushbloom.co.uk
+- Website: https://mushbloom.uk
 - Booking: https://tidycal.com/adrianniculescu
 
 ## Key Facts

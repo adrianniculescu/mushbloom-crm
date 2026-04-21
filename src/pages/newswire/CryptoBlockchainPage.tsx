@@ -67,12 +67,12 @@ const CryptoBlockchainPage = () => {
         <title>CryptoWire – Crypto & Blockchain Press Release Distribution | Mushbloom Newswire</title>
         <meta name="description" content="Distribute your crypto and blockchain press releases to DeFi, Web3, NFT, and exchange audiences. Guaranteed homepage placements on leading crypto publications." />
         <meta name="keywords" content="crypto press release, blockchain PR distribution, DeFi news, Web3 press release, NFT announcement, token launch PR, cryptocurrency media, blockchain newswire" />
-        <link rel="canonical" href="https://mushbloom.co.uk/newswire/crypto-blockchain" />
+        <link rel="canonical" href="https://mushbloom.uk/newswire/crypto-blockchain" />
         
         <meta property="og:title" content="CryptoWire – Crypto & Blockchain Press Release Distribution" />
         <meta property="og:description" content="Targeted PR distribution for DeFi, Web3, NFT, and exchange announcements. Reach crypto traders and investors directly." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://mushbloom.co.uk/newswire/crypto-blockchain" />
+        <meta property="og:url" content="https://mushbloom.uk/newswire/crypto-blockchain" />
         
         <script type="application/ld+json">
           {JSON.stringify({

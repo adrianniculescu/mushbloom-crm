@@ -18,7 +18,7 @@ const HomePage = () => {
       <Helmet>
         <title>Mushbloom – AI Automation Agency & LLM SEO</title>
         <meta name="description" content="Deploy AI agents in 3-90 days. LLMboost optimizes your brand for ChatGPT, Gemini & Claude. 37% cost reduction guaranteed." />
-        <link rel="canonical" href="https://mushbloom.co.uk/" />
+        <link rel="canonical" href="https://mushbloom.uk/" />
       </Helmet>
       <Navigation />
       <main>

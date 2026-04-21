@@ -32,11 +32,11 @@ const WikiArticlePage = () => {
     "@type": "Article",
     "headline": article.title,
     "description": article.metaDescription,
-    "author": { "@type": "Organization", "name": "Mushbloom", "url": "https://mushbloom.co.uk" },
-    "publisher": { "@type": "Organization", "name": "Mushbloom", "logo": { "@type": "ImageObject", "url": "https://mushbloom.co.uk/lovable-uploads/a393711c-b940-4619-8101-fb5159650972.png" } },
+    "author": { "@type": "Organization", "name": "Mushbloom", "url": "https://mushbloom.uk" },
+    "publisher": { "@type": "Organization", "name": "Mushbloom", "logo": { "@type": "ImageObject", "url": "https://mushbloom.uk/lovable-uploads/a393711c-b940-4619-8101-fb5159650972.png" } },
     "datePublished": "2025-01-15",
     "dateModified": "2026-03-08",
-    "mainEntityOfPage": `https://mushbloom.co.uk/wiki/${article.slug}`,
+    "mainEntityOfPage": `https://mushbloom.uk/wiki/${article.slug}`,
     "keywords": article.seoKeywords,
     "articleSection": article.category
   };
@@ -45,9 +45,9 @@ const WikiArticlePage = () => {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mushbloom.co.uk" },
-      { "@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://mushbloom.co.uk/#wiki" },
-      { "@type": "ListItem", "position": 3, "name": article.title, "item": `https://mushbloom.co.uk/wiki/${article.slug}` }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mushbloom.uk" },
+      { "@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://mushbloom.uk/#wiki" },
+      { "@type": "ListItem", "position": 3, "name": article.title, "item": `https://mushbloom.uk/wiki/${article.slug}` }
     ]
   };
 
@@ -57,11 +57,11 @@ const WikiArticlePage = () => {
         <title>{article.metaTitle} | Mushbloom</title>
         <meta name="description" content={article.metaDescription} />
         <meta name="keywords" content={article.seoKeywords} />
-        <link rel="canonical" href={`https://mushbloom.co.uk/wiki/${article.slug}`} />
+        <link rel="canonical" href={`https://mushbloom.uk/wiki/${article.slug}`} />
         <meta property="og:title" content={article.metaTitle} />
         <meta property="og:description" content={article.metaDescription} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://mushbloom.co.uk/wiki/${article.slug}`} />
+        <meta property="og:url" content={`https://mushbloom.uk/wiki/${article.slug}`} />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       </Helmet>
