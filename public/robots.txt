@@ -8,6 +8,8 @@ Crawl-delay: 1
 Allow: /
 Disallow: /admin/
 Disallow: /private/
+Disallow: /mockups/
+Disallow: /cms/
 
 User-agent: Bingbot
 Crawl-delay: 1
@@ -17,6 +19,8 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
+Disallow: /mockups/
+Disallow: /cms/
 
 # Sitemap location
 Sitemap: https://mushbloom.uk/sitemap.xml
