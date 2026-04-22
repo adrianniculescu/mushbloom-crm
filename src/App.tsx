@@ -21,6 +21,8 @@ import VideoAgencyPage from "./pages/VideoAgencyPage";
 import NotFound from "./pages/NotFound";
 import CmsLogin from "./pages/CmsLogin";
 import CmsDashboard from "./pages/CmsDashboard";
+import MockupsIndex from "./pages/mockups/MockupsIndex";
+import AtsMockup from "./pages/mockups/AtsMockup";
 
 const queryClient = new QueryClient();
 
@@ -47,6 +49,8 @@ const App = () => (
             <Route path="/wiki/:slug" element={<WikiArticlePage />} />
             <Route path="/cms/login" element={<CmsLogin />} />
             <Route path="/cms" element={<CmsDashboard />} />
+            <Route path="/mockups" element={<MockupsIndex />} />
+            <Route path="/mockups/ats" element={<AtsMockup />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
