@@ -18,7 +18,16 @@ const MockupsIndex = () => {
     <div className="min-h-screen bg-white text-neutral-900" style={{ fontFamily: 'Manrope, sans-serif' }}>
       <Helmet>
         <title>Client Mockups | Mushbloom</title>
-        <meta name="robots" content="noindex,nofollow" />
+        <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet" />
+        <meta name="GPTBot" content="noindex, nofollow" />
+        <meta name="ChatGPT-User" content="noindex, nofollow" />
+        <meta name="ClaudeBot" content="noindex, nofollow" />
+        <meta name="anthropic-ai" content="noindex, nofollow" />
+        <meta name="PerplexityBot" content="noindex, nofollow" />
+        <meta name="Google-Extended" content="noindex, nofollow" />
+        <meta name="referrer" content="no-referrer" />
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
       </Helmet>
 
