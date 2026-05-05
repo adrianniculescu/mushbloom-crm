@@ -18,6 +18,7 @@ import PortfolioWebsites from "./pages/PortfolioWebsites";
 import PortfolioCustomGPTs from "./pages/PortfolioCustomGPTs";
 import WikiArticlePage from "./pages/WikiArticlePage";
 import WikiIndexPage from "./pages/WikiIndexPage";
+import SaasAiSearchGuide from "./pages/guides/SaasAiSearchGuide";
 import VideoAgencyPage from "./pages/VideoAgencyPage";
 import NotFound from "./pages/NotFound";
 import CmsLogin from "./pages/CmsLogin";
@@ -49,6 +50,7 @@ const App = () => (
             <Route path="/video-agency" element={<VideoAgencyPage />} />
             <Route path="/wiki" element={<WikiIndexPage />} />
             <Route path="/wiki/:slug" element={<WikiArticlePage />} />
+            <Route path="/guides/saas-ai-search-visibility" element={<SaasAiSearchGuide />} />
             <Route path="/cms/login" element={<CmsLogin />} />
             <Route path="/cms" element={<CmsDashboard />} />
             <Route path="/mockups" element={<MockupsIndex />} />
