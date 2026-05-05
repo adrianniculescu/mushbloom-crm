@@ -50,6 +50,7 @@ const App = () => (
             <Route path="/video-agency" element={<VideoAgencyPage />} />
             <Route path="/wiki" element={<WikiIndexPage />} />
             <Route path="/wiki/:slug" element={<WikiArticlePage />} />
+            <Route path="/guides/saas-ai-search-visibility" element={<SaasAiSearchGuide />} />
             <Route path="/cms/login" element={<CmsLogin />} />
             <Route path="/cms" element={<CmsDashboard />} />
             <Route path="/mockups" element={<MockupsIndex />} />
