@@ -47,6 +47,7 @@ const App = () => (
             <Route path="/newswire/gaming" element={<GamingPage />} />
             <Route path="/newswire/igaming" element={<IGamingPage />} />
             <Route path="/video-agency" element={<VideoAgencyPage />} />
+            <Route path="/wiki" element={<WikiIndexPage />} />
             <Route path="/wiki/:slug" element={<WikiArticlePage />} />
             <Route path="/cms/login" element={<CmsLogin />} />
             <Route path="/cms" element={<CmsDashboard />} />
