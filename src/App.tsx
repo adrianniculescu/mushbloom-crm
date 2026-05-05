@@ -17,6 +17,7 @@ import IGamingPage from "./pages/newswire/iGamingPage";
 import PortfolioWebsites from "./pages/PortfolioWebsites";
 import PortfolioCustomGPTs from "./pages/PortfolioCustomGPTs";
 import WikiArticlePage from "./pages/WikiArticlePage";
+import WikiIndexPage from "./pages/WikiIndexPage";
 import VideoAgencyPage from "./pages/VideoAgencyPage";
 import NotFound from "./pages/NotFound";
 import CmsLogin from "./pages/CmsLogin";
