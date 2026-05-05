@@ -15,6 +15,15 @@ const featuredGuides = [
     readTime: '14 min read',
     tag: 'AI Search & Visibility',
   },
+  {
+    slug: 'crypto-web3-ai-search-visibility',
+    path: '/guides/crypto-web3-ai-search-visibility',
+    title: 'How Blockchain, Crypto, and Web3 Companies Can Increase Traffic, Users, and Revenue with AI Search',
+    description:
+      'How blockchain, crypto, and Web3 teams can get cited, recommended, and discovered by the AI tools their users already trust.',
+    readTime: '13 min read',
+    tag: 'AI Search & Visibility',
+  },
 ];
 
 const WikiIndexPage = () => {
