@@ -66,7 +66,7 @@ const WikiIndexPage = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-4">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-4">
             {featuredGuides.map((g) => (
               <Link
                 key={g.slug}
