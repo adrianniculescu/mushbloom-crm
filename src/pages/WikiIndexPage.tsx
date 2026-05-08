@@ -24,6 +24,15 @@ const featuredGuides = [
     readTime: '13 min read',
     tag: 'AI Search & Visibility',
   },
+  {
+    slug: 'web3-company-brain',
+    path: '/guides/web3-company-brain',
+    title: 'Why Blockchain, Crypto, and Web3 Companies Need More Than a Team: They Need a Company Brain',
+    description:
+      'How Web3 companies can build a central AI-powered knowledge layer that captures institutional memory and helps the business scale intelligently.',
+    readTime: '10 min read',
+    tag: 'AI Strategy & Operations',
+  },
 ];
 
 const WikiIndexPage = () => {
