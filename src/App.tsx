@@ -21,6 +21,7 @@ import WikiIndexPage from "./pages/WikiIndexPage";
 import SaasAiSearchGuide from "./pages/guides/SaasAiSearchGuide";
 import CryptoWeb3AiSearchGuide from "./pages/guides/CryptoWeb3AiSearchGuide";
 import Web3CompanyBrainGuide from "./pages/guides/Web3CompanyBrainGuide";
+import SaasCompanyBrainGuide from "./pages/guides/SaasCompanyBrainGuide";
 import VideoAgencyPage from "./pages/VideoAgencyPage";
 import NotFound from "./pages/NotFound";
 import CmsLogin from "./pages/CmsLogin";
@@ -55,6 +56,7 @@ const App = () => (
             <Route path="/guides/saas-ai-search-visibility" element={<SaasAiSearchGuide />} />
             <Route path="/guides/crypto-web3-ai-search-visibility" element={<CryptoWeb3AiSearchGuide />} />
             <Route path="/guides/web3-company-brain" element={<Web3CompanyBrainGuide />} />
+            <Route path="/guides/saas-company-brain" element={<SaasCompanyBrainGuide />} />
             <Route path="/cms/login" element={<CmsLogin />} />
             <Route path="/cms" element={<CmsDashboard />} />
             <Route path="/mockups" element={<MockupsIndex />} />

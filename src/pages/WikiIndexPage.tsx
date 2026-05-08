@@ -33,6 +33,15 @@ const featuredGuides = [
     readTime: '10 min read',
     tag: 'AI Strategy & Operations',
   },
+  {
+    slug: 'saas-company-brain',
+    path: '/guides/saas-company-brain',
+    title: 'Why SaaS Companies Need More Than a Team: They Need a Company Brain',
+    description:
+      'How SaaS companies can build a central AI-powered knowledge layer that captures institutional memory and helps the business scale intelligently.',
+    readTime: '11 min read',
+    tag: 'AI Strategy & Operations',
+  },
 ];
 
 const WikiIndexPage = () => {
