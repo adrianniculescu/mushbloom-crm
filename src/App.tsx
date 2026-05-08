@@ -21,6 +21,7 @@ import WikiIndexPage from "./pages/WikiIndexPage";
 import SaasAiSearchGuide from "./pages/guides/SaasAiSearchGuide";
 import CryptoWeb3AiSearchGuide from "./pages/guides/CryptoWeb3AiSearchGuide";
 import Web3CompanyBrainGuide from "./pages/guides/Web3CompanyBrainGuide";
+import SaasCompanyBrainGuide from "./pages/guides/SaasCompanyBrainGuide";
 import VideoAgencyPage from "./pages/VideoAgencyPage";
 import NotFound from "./pages/NotFound";
 import CmsLogin from "./pages/CmsLogin";
