@@ -25,6 +25,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     service_interest: '',
     budget: '',
     message: '',
@@ -38,7 +39,7 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) return;
+    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.message.trim()) return;
 
     setIsSubmitting(true);
     const leadId = crypto.randomUUID();
@@ -46,6 +47,7 @@ const Contact = () => {
       id: leadId,
       name: formData.name.trim(),
       email: formData.email.trim(),
+      phone: formData.phone.trim(),
       service_interest: formData.service_interest || null,
       budget: formData.budget || null,
       message: formData.message.trim(),
@@ -62,6 +64,7 @@ const Contact = () => {
           templateData: {
             name: payload.name,
             email: payload.email,
+            phone: payload.phone,
             service_interest: payload.service_interest,
             budget: payload.budget,
             message: payload.message,
