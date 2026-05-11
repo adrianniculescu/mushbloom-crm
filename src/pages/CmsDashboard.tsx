@@ -73,18 +73,37 @@ const CmsDashboard = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
       {/* Header */}
-      <header className="border-b border-white/10 px-6 py-4 flex items-center justify-between">
+      <header className="border-b border-white/10 px-6 py-4 flex items-center justify-between flex-wrap gap-3">
         <div className="flex items-center gap-3">
           <h1 className="text-xl font-bold text-white font-['Space_Grotesk']">Mushbloom CMS</h1>
-          {unreadCount > 0 && (
+          {unreadCount > 0 && tab === 'inquiries' && (
             <span className="bg-blue-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">{unreadCount} new</span>
           )}
         </div>
+        <nav className="flex items-center gap-1 bg-white/5 rounded-lg p-1">
+          <button
+            onClick={() => setTab('inquiries')}
+            className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${tab === 'inquiries' ? 'bg-white/10 text-white' : 'text-gray-400 hover:text-white'}`}
+          >
+            <Inbox className="h-4 w-4" /> Inquiries
+          </button>
+          <button
+            onClick={() => setTab('posts')}
+            className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${tab === 'posts' ? 'bg-white/10 text-white' : 'text-gray-400 hover:text-white'}`}
+          >
+            <FileText className="h-4 w-4" /> Posts
+          </button>
+        </nav>
         <button onClick={handleLogout} className="text-gray-400 hover:text-white transition-colors inline-flex items-center gap-2 text-sm">
           <LogOut className="h-4 w-4" /> Sign Out
         </button>
       </header>
 
+      {tab === 'posts' ? (
+        <div className="overflow-y-auto h-[calc(100vh-65px)]">
+          <PostsManager />
+        </div>
+      ) : (
       <div className="flex flex-col lg:flex-row h-[calc(100vh-65px)]">
         {/* List */}
         <div className="lg:w-96 border-r border-white/10 overflow-y-auto">
