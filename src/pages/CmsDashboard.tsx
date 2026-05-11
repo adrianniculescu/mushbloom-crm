@@ -2,8 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '@/integrations/supabase/client';
-import { LogOut, Mail, MailOpen, Trash2, Loader2, Inbox } from 'lucide-react';
+import { LogOut, Mail, MailOpen, Trash2, Loader2, Inbox, FileText } from 'lucide-react';
 import { format } from 'date-fns';
+import PostsManager from '@/components/cms/PostsManager';
 
 interface Inquiry {
   id: string;
