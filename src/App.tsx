@@ -28,6 +28,7 @@ import CmsLogin from "./pages/CmsLogin";
 import CmsDashboard from "./pages/CmsDashboard";
 import MockupsIndex from "./pages/mockups/MockupsIndex";
 import AtsMockup from "./pages/mockups/AtsMockup";
+import Unsubscribe from "./pages/Unsubscribe";
 
 const queryClient = new QueryClient();
 
@@ -61,6 +62,7 @@ const App = () => (
             <Route path="/cms" element={<CmsDashboard />} />
             <Route path="/mockups" element={<MockupsIndex />} />
             <Route path="/mockups/ats" element={<AtsMockup />} />
+            <Route path="/unsubscribe" element={<Unsubscribe />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Router>
