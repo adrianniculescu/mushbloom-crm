@@ -41,13 +41,34 @@ const Contact = () => {
     if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) return;
 
     setIsSubmitting(true);
-    const { error } = await supabase.from('contact_inquiries').insert({
+    const leadId = crypto.randomUUID();
+    const payload = {
+      id: leadId,
       name: formData.name.trim(),
       email: formData.email.trim(),
       service_interest: formData.service_interest || null,
       budget: formData.budget || null,
       message: formData.message.trim(),
-    });
+    };
+    const { error } = await supabase.from('contact_inquiries').insert(payload);
+
+    if (!error) {
+      // Fire-and-forget notification to office@mushbloom.co.uk
+      supabase.functions.invoke('send-transactional-email', {
+        body: {
+          templateName: 'new-lead-notification',
+          recipientEmail: 'office@mushbloom.co.uk',
+          idempotencyKey: `new-lead-${leadId}`,
+          templateData: {
+            name: payload.name,
+            email: payload.email,
+            service_interest: payload.service_interest,
+            budget: payload.budget,
+            message: payload.message,
+          },
+        },
+      }).catch((e) => console.error('Notification email failed', e));
+    }
 
     setIsSubmitting(false);
 
