@@ -209,6 +209,27 @@ const Contact = () => {
         <p className="text-gray-400">
           © 2024–2026 <span itemProp="name">Mushbloom</span>. Architecting the autonomous business revolution.
         </p>
+        <p className="text-gray-500 text-sm mt-3">
+          Mushbloom is an initiative supported by{' '}
+          <a
+            href="https://tomorrowerse.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:text-blue-300 transition-colors"
+          >
+            TOMORROWerse Capital
+          </a>{' '}
+          and{' '}
+          <a
+            href="https://tmrw.ae"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:text-blue-300 transition-colors"
+          >
+            TMRW Venture Network
+          </a>
+          .
+        </p>
       </footer>
     </section>
   );
