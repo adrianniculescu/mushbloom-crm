@@ -9,6 +9,7 @@ const SITE_NAME = 'Mushbloom'
 interface NewLeadProps {
   name?: string
   email?: string
+  phone?: string
   service_interest?: string
   budget?: string
   message?: string
@@ -17,6 +18,7 @@ interface NewLeadProps {
 const NewLeadNotificationEmail = ({
   name,
   email,
+  phone,
   service_interest,
   budget,
   message,
@@ -34,6 +36,7 @@ const NewLeadNotificationEmail = ({
         <Section style={card}>
           <Text style={row}><strong>Name:</strong> {name || '—'}</Text>
           <Text style={row}><strong>Email:</strong> {email || '—'}</Text>
+          <Text style={row}><strong>Phone:</strong> {phone || '—'}</Text>
           <Text style={row}><strong>Service:</strong> {service_interest || '—'}</Text>
           <Text style={row}><strong>Budget:</strong> {budget || '—'}</Text>
         </Section>
