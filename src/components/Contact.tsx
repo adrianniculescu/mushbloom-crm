@@ -162,7 +162,17 @@ const Contact = () => {
                       className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-gray-500 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
                       placeholder="you@company.com"
                     />
-                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-1">Phone *</label>
+                  <input
+                    id="phone" name="phone" type="tel" required maxLength={32}
+                    value={formData.phone} onChange={handleChange}
+                    className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-gray-500 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
+                    placeholder="+40 725 388 605"
+                  />
+                </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
