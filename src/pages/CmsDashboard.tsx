@@ -21,6 +21,7 @@ const CmsDashboard = () => {
   const [inquiries, setInquiries] = useState<Inquiry[]>([]);
   const [loading, setLoading] = useState(true);
   const [selected, setSelected] = useState<Inquiry | null>(null);
+  const [tab, setTab] = useState<'inquiries' | 'posts'>('inquiries');
   const navigate = useNavigate();
 
   useEffect(() => {
