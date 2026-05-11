@@ -52,6 +52,17 @@ const featuredGuides = [
 ];
 
 const WikiIndexPage = () => {
+  const [posts, setPosts] = useState<DbPost[]>([]);
+
+  useEffect(() => {
+    supabase
+      .from('cms_posts')
+      .select('id,slug,title,category,excerpt,read_time,cover_image_url,published_at')
+      .eq('status', 'published')
+      .order('published_at', { ascending: false })
+      .then(({ data }) => setPosts((data as DbPost[]) || []));
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
       <Helmet>
