@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import Wiki from '@/components/Wiki';
-import { BookOpen, ArrowRight, Clock } from 'lucide-react';
+import { BookOpen, ArrowRight, Clock, FileText } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
+
+interface DbPost {
+  id: string; slug: string; title: string; category: string | null;
+  excerpt: string | null; read_time: string | null; cover_image_url: string | null;
+  published_at: string | null;
+}
 
 const featuredGuides = [
   {
@@ -45,6 +52,17 @@ const featuredGuides = [
 ];
 
 const WikiIndexPage = () => {
+  const [posts, setPosts] = useState<DbPost[]>([]);
+
+  useEffect(() => {
+    supabase
+      .from('cms_posts')
+      .select('id,slug,title,category,excerpt,read_time,cover_image_url,published_at')
+      .eq('status', 'published')
+      .order('published_at', { ascending: false })
+      .then(({ data }) => setPosts((data as DbPost[]) || []));
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
       <Helmet>
@@ -100,6 +118,46 @@ const WikiIndexPage = () => {
               </Link>
             ))}
           </div>
+
+          {posts.length > 0 && (
+            <div className="mt-20">
+              <div className="text-center mb-10">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 mb-4">
+                  <FileText className="h-3 w-3 text-green-400" />
+                  <span className="text-xs font-medium text-green-400 uppercase tracking-wider">Latest from Mushbloom</span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-white font-['Space_Grotesk']">Fresh articles</h2>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {posts.map((p) => (
+                  <Link
+                    key={p.id}
+                    to={`/wiki/${p.slug}`}
+                    className="group rounded-2xl glass-effect border border-white/10 p-6 hover:border-green-400/40 transition-all overflow-hidden"
+                  >
+                    {p.cover_image_url && (
+                      <img src={p.cover_image_url} alt={p.title} className="w-full h-40 object-cover rounded-lg mb-4" />
+                    )}
+                    <div className="flex items-center gap-3 mb-3">
+                      {p.category && <span className="text-xs font-medium text-green-400 uppercase tracking-wider">{p.category}</span>}
+                      {p.read_time && (
+                        <>
+                          <span className="text-gray-600">•</span>
+                          <span className="flex items-center gap-1 text-xs text-gray-400">
+                            <Clock className="h-3 w-3" />{p.read_time}
+                          </span>
+                        </>
+                      )}
+                    </div>
+                    <h3 className="text-xl font-bold text-white mb-2 font-['Space_Grotesk'] group-hover:text-green-400 transition-colors leading-snug">
+                      {p.title}
+                    </h3>
+                    {p.excerpt && <p className="text-gray-400 text-sm leading-relaxed line-clamp-3">{p.excerpt}</p>}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
