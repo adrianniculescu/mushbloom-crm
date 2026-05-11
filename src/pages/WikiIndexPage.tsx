@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import Wiki from '@/components/Wiki';
-import { BookOpen, ArrowRight, Clock } from 'lucide-react';
+import { BookOpen, ArrowRight, Clock, FileText } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
+
+interface DbPost {
+  id: string; slug: string; title: string; category: string | null;
+  excerpt: string | null; read_time: string | null; cover_image_url: string | null;
+  published_at: string | null;
+}
 
 const featuredGuides = [
   {
