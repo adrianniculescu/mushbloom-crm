@@ -29,6 +29,7 @@ import CmsDashboard from "./pages/CmsDashboard";
 import MockupsIndex from "./pages/mockups/MockupsIndex";
 import AtsMockup from "./pages/mockups/AtsMockup";
 import Unsubscribe from "./pages/Unsubscribe";
+import Analytics from "./components/Analytics";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,7 @@ const App = () => (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Router>
+          <Analytics />
           <Toaster />
           <Sonner />
           <Routes>
