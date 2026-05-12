@@ -24,6 +24,7 @@ import Web3CompanyBrainGuide from "./pages/guides/Web3CompanyBrainGuide";
 import SaasCompanyBrainGuide from "./pages/guides/SaasCompanyBrainGuide";
 import VideoAgencyPage from "./pages/VideoAgencyPage";
 import AiAutomationAgencyPage from "./pages/AiAutomationAgencyPage";
+import LovableDevelopmentPage from "./pages/LovableDevelopmentPage";
 import NotFound from "./pages/NotFound";
 import CmsLogin from "./pages/CmsLogin";
 import CmsDashboard from "./pages/CmsDashboard";
