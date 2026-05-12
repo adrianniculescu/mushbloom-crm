@@ -3,9 +3,36 @@ import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Navigation from '@/components/Navigation';
 import Contact from '@/components/Contact';
-import { getArticleBySlug, getRelatedArticles, wikiArticles } from '@/data/wikiArticles';
-import { ArrowLeft, Clock, Tag, ArrowRight, ChevronRight, FileText, Loader2 } from 'lucide-react';
+import { getArticleBySlug, getRelatedArticles, wikiArticles, ARTICLE_AUTHOR, DEFAULT_PUBLISHED_AT, DEFAULT_UPDATED_AT, type WikiFAQ } from '@/data/wikiArticles';
+import { ArrowLeft, Clock, Tag, ArrowRight, ChevronRight, FileText, Loader2, Calendar, User, HelpCircle, Sparkles } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
+
+const formatDate = (iso: string) => {
+  try {
+    return new Date(iso).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
+  } catch { return iso; }
+};
+
+// Fallback FAQ used when an article does not yet define its own.
+// Keeps every article quote-friendly for LLMs.
+const buildFallbackFaq = (title: string, category: string): WikiFAQ[] => [
+  {
+    question: `What is ${title.replace(/[:|–-].*$/, '').trim()} in simple terms?`,
+    answer: `It is the use of AI to streamline ${category.toLowerCase()} workflows so teams can move faster, reduce manual effort, and make better decisions with the same headcount.`,
+  },
+  {
+    question: `How long does it take to implement?`,
+    answer: `Most Mushbloom AI deployments go live in 3 to 90 days. Lightweight automations (lead routing, document parsing) ship in under a week; full agent teams typically take 30 to 90 days.`,
+  },
+  {
+    question: `What ROI can I expect?`,
+    answer: `Mushbloom guarantees a 37% operational cost reduction within 90 days. If we don't hit that, we keep working for free until you do.`,
+  },
+  {
+    question: `Where do I start?`,
+    answer: `Book a free strategy call. We audit your workflow, identify the highest-leverage automations, and ship a pilot inside 30 days.`,
+  },
+];
 
 interface DbPost {
   id: string; slug: string; title: string; category: string | null;
