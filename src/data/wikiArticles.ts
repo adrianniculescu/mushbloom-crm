@@ -441,6 +441,41 @@ export const wikiArticles: WikiArticle[] = [
         answer: "After fixing the H1, request a re-crawl with URL Inspection. Bing usually clears the warning within a few days once it has crawled the updated page. If the warning persists after a week, double-check that the deployed HTML actually contains the <h1> tag."
       }
     ]
+  },
+  {
+    id: 34, slug: "ga4-search-console-setup-lovable",
+    title: "How to Add GA4 and Search Console to a Lovable Website",
+    category: "Marketing", icon: BarChart3,
+    description: "A practical guide to connecting Google Analytics 4 and Search Console to a Lovable-built website, testing events, and verifying indexing before publishing content.",
+    readTime: "8 min read", seoKeywords: "GA4 setup Lovable, Search Console Lovable, how to add GA4 to Lovable, how to add Search Console to Lovable",
+    metaTitle: "How to Add GA4 and Search Console to a Lovable Website",
+    metaDescription: "Learn how to connect Google Analytics 4 and Search Console to a Lovable site, test events, and verify indexing the right way.",
+    publishedAt: "2026-05-12T12:00:00+00:00",
+    updatedAt: "2026-05-12T12:00:00+00:00",
+    tldr: "To add GA4 and Search Console to a Lovable website: create a GA4 property and web stream, install the Google tag in your index.html, verify domain ownership in Search Console, submit your sitemap, then test pageviews in GA4 Realtime and confirm indexing via URL Inspection. Do this before publishing content so every page is tracked and indexed correctly from day one.",
+    content: `# Introduction\n\nIf you are building on Lovable, analytics and indexing setup should be part of the build, not an afterthought. GA4 tells you what users do. Search Console tells you how search engines see the site.\n\nTogether, they give you a useful feedback loop for traffic, clicks, and crawl behavior.\n\n# Why this matters\n\nWithout analytics, you are guessing. Without Search Console, you are blind to indexing issues.\n\nFor any new business site, both should be active before serious content publishing begins.\n\n# Step 1: Add GA4\n\nCreate a GA4 property in Google Analytics, create a web stream for your domain, and copy the measurement ID (it looks like G-XXXXXXXXXX).\n\nIn your Lovable project, open index.html and add the Google tag in the <head> section:\n\n- The global site tag (gtag.js) loading asynchronously\n- The config call with your measurement ID\n\nMake sure the site is sending pageview data before doing anything more complex. The simplest way to test this is to open the site in a browser and check GA4 Realtime reports.\n\n# Step 2: Add Search Console\n\nVerify the domain or URL prefix in Google Search Console. Domain verification requires DNS access; URL prefix verification can be done via HTML tag, which you can also place in index.html.\n\nAfter verification, submit your sitemap. This confirms ownership and lets you monitor crawl and indexing behavior.\n\n# Step 3: Test tracking\n\nOpen the site in a real browser and test:\n\n- Pageviews fire on every route change\n- Important clicks (CTAs, navigation, external links) are captured\n- Form submissions trigger conversion events if applicable\n\nUse GA4 DebugView to confirm events arrive in real time.\n\n# Step 4: Confirm indexing\n\nInspect the homepage and a few key pages in Search Console. Make sure the correct canonical version is being indexed.\n\nIf you see "URL is not on Google," check that the page is not blocked by robots.txt or noindex tags, and that the sitemap includes the URL.\n\n# Step 5: Set up clean page structure\n\nA good analytics setup is not enough if the page structure is weak. Make sure:\n\n- Titles are unique on every page\n- Meta descriptions are unique and descriptive\n- H1 exists and describes the page topic\n- Internal linking is clear and logical\n\nThese elements help both analytics attribution and search engine understanding.\n\n# Common mistakes\n\n- Installing GA4 but never testing events — the tag may be missing or the ID wrong\n- Verifying one domain version (www) and forgetting the canonical one (non-www)\n- Leaving old metadata from a previous site or template\n- Submitting a sitemap before the site is ready, leading to soft 404s\n- Not adding route-change tracking in single-page apps, so only the first pageview fires\n\n# Conclusion\n\nGA4 and Search Console are the operational backbone of a modern website. They do not create traffic by themselves, but they make it possible to improve traffic intelligently.\n\nSet them up early, test them thoroughly, and use them as the baseline for every content and conversion decision you make.`,
+    faq: [
+      {
+        question: "Where do I put the GA4 tag in a Lovable project?",
+        answer: "Add the gtag.js script and config call inside the <head> section of index.html. Lovable projects are built with React, so the tag loads once and pageviews can be fired on route changes using a small tracking component."
+      },
+      {
+        question: "How do I verify Search Console on a Lovable site?",
+        answer: "Use the HTML tag verification method. Copy the meta tag from Search Console and paste it into the <head> of index.html. Deploy the site, then click Verify in Search Console. Domain verification via DNS is also possible if you have DNS access."
+      },
+      {
+        question: "Why are my pageviews not showing in GA4?",
+        answer: "Check three things: the measurement ID is correct, the gtag script is loading without errors in the browser console, and pageview events are firing on route changes. In a React SPA, the initial pageview may work but subsequent navigation may need explicit tracking."
+      },
+      {
+        question: "How long does it take for Search Console to index a new Lovable site?",
+        answer: "After submitting a sitemap and requesting indexing for the homepage, initial indexing usually takes a few hours to a few days. New pages may take 1–7 days depending on crawl budget and site authority."
+      },
+      {
+        question: "Do I need to add the GA4 tag to every page manually?",
+        answer: "No. Because Lovable projects are single-page applications built with React, placing the tag once in index.html covers all routes. Just make sure you fire a pageview event on every route change so GA4 knows the user navigated to a new page."
+      }
+    ]
   }
 ];
 
