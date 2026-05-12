@@ -405,6 +405,42 @@ export const wikiArticles: WikiArticle[] = [
         answer: "No. Search engines revisit sitemaps automatically. Resubmit only after major structural changes — a redesign, a migration, a large batch of new content, or a domain change. For individual high-priority pages, use URL Inspection or URL Submission instead."
       }
     ]
+  },
+  {
+    id: 33, slug: "fix-h1-tag-missing-bing-webmaster-tools",
+    title: "How to Fix \"H1 Tag Missing\" in Bing Webmaster Tools",
+    category: "Marketing", icon: Search,
+    description: "Fix Bing's \"H1 tag missing\" warning with a clean semantic HTML approach — one main heading per page, proper hierarchy, and rendered-HTML verification so crawlers can actually see the H1.",
+    readTime: "7 min read",
+    seoKeywords: "H1 tag missing Bing, fix missing H1, Bing Webmaster Tools H1 error, how to add H1 to homepage, semantic HTML headings",
+    metaTitle: "How to Fix \"H1 Tag Missing\" in Bing Webmaster Tools",
+    metaDescription: "Fix Bing's \"H1 tag missing\" issue with a simple page structure approach, semantic HTML, and clear homepage heading hierarchy.",
+    publishedAt: "2026-05-12T11:00:00+00:00",
+    updatedAt: "2026-05-12T11:00:00+00:00",
+    tldr: "To fix Bing's \"H1 tag missing\" error: add exactly one semantic <h1> element to the page's rendered HTML that clearly describes the page topic, make sure it is not a styled <div> or hidden element, keep the rest of the headings in proper H2/H3 order, and then re-run URL Inspection in Bing Webmaster Tools. The fix is almost always semantic, not visual — Bing needs an actual <h1> tag in the HTML, not just large text that looks like a heading.",
+    content: "# Introduction\n\nIf Bing Webmaster Tools reports that your page is missing an H1 tag, it means the page structure is not clear enough for the crawler. This is not a cosmetic problem. It is a semantic problem.\n\nA proper H1 helps search engines understand the main topic of the page and helps users scan the content faster. It is one of the simplest signals a page can send, and one of the most commonly broken on modern hero-driven landing pages.\n\n# What an H1 is\n\nThe H1 is the main heading of a page. It should describe the page topic in a single clear line. It should appear once per page in most cases.\n\nIt is an HTML element — <h1>Your heading</h1> — not a CSS style. A big bold <div> is not an H1, even if it looks like one.\n\n# Why Bing flags this\n\nBing wants to understand the page hierarchy:\n\n- H1 for the main topic\n- H2 for sections\n- H3 for sub-points\n\nIf the page uses visual text instead of semantic headings, Bing may report a missing H1 even if the page looks fine to humans. The crawler reads the HTML, not the design.\n\n# How to fix it\n\n- Open the homepage or affected page in your editor\n- Add one semantic <h1> in the rendered HTML\n- Make the H1 describe the page topic clearly\n- Keep the rest of the structure in proper heading order (H2, then H3)\n- Re-check the page in Bing URL Inspection\n\nIf you use a JavaScript framework, make sure the H1 is rendered in the initial HTML — not injected only after hydration. Crawlers that do not execute scripts will not see a client-only H1.\n\n# Good H1 examples\n\n- Mushbloom AI & Marketing Automation Agency\n- AI Automation for Founders and Growing Teams\n- LLM SEO and Automation for Modern Brands\n\nEach one names the topic of the page in plain language. A visitor or a crawler can read it once and know what the page is about.\n\n# Bad H1 examples\n\n- Welcome\n- Home\n- Our Services\n- Nothing visible at all\n\nThese either describe nothing useful, repeat the navigation, or are missing entirely. They waste the strongest semantic signal on the page.\n\n# Common causes\n\n- The page title is styled like an H1 but is actually a <div> or <span>\n- The page has multiple competing H1 headings\n- The H1 is hidden with CSS or display:none\n- The home page uses a hero design but no semantic heading at all\n- The H1 is rendered only after JavaScript hydration\n\n# How to check the fix\n\nAfter updating the page:\n\n- Inspect the URL again in Bing Webmaster Tools\n- View page source (not the inspector) and confirm a single <h1> exists\n- Confirm the H1 is visible in the rendered HTML\n- Watch for Bing to stop flagging the issue on the next crawl\n\nView Source is more reliable than DevTools here, because View Source shows the HTML the crawler actually receives.\n\n# Conclusion\n\nA missing H1 is easy to fix, but it matters because it affects how clearly your page is understood. If the main topic is obvious to users but not to search engines, the page is weaker than it should be. One semantic H1, accurately describing the page, rendered in the initial HTML — that is the entire fix, and it is one of the highest-leverage technical SEO changes you can make on a new site.",
+    faq: [
+      {
+        question: "Can a page have more than one H1?",
+        answer: "Technically HTML5 allows it inside sectioning elements, but in practice search engines treat the first H1 as the primary topic and ignore or downweight the others. For SEO and clarity, use exactly one H1 per page that names the topic of that page."
+      },
+      {
+        question: "Why does Bing say my H1 is missing when I can clearly see a big heading?",
+        answer: "The visible heading is almost certainly a styled <div> or <span>, not an actual <h1> element. Crawlers read the HTML semantics, not the visual size. Open View Source and search for <h1 — if it is not there, that is your bug."
+      },
+      {
+        question: "Does the H1 need to match the page title tag exactly?",
+        answer: "No, and it should not be identical. The <title> is optimized for search results and tabs; the <h1> is optimized for on-page clarity. They should cover the same topic, but the H1 can be slightly longer or more conversational."
+      },
+      {
+        question: "I use a React or other JavaScript framework. Will Bing see my H1?",
+        answer: "Only if it is in the initial server-rendered or static HTML. If your H1 is added after hydration, many crawlers will miss it. Use SSR, SSG, or make sure the H1 is present in the document on first load."
+      },
+      {
+        question: "How long until Bing stops reporting the H1 missing error after I fix it?",
+        answer: "After fixing the H1, request a re-crawl with URL Inspection. Bing usually clears the warning within a few days once it has crawled the updated page. If the warning persists after a week, double-check that the deployed HTML actually contains the <h1> tag."
+      }
+    ]
   }
 ];
 
