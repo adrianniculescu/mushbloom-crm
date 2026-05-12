@@ -6,6 +6,7 @@ import Contact from '@/components/Contact';
 import { getArticleBySlug, getRelatedArticles, ARTICLE_AUTHOR, DEFAULT_PUBLISHED_AT, DEFAULT_UPDATED_AT, type WikiFAQ } from '@/data/wikiArticles';
 import { Clock, Tag, ArrowRight, ChevronRight, FileText, Loader2, Calendar, User, HelpCircle, Sparkles } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
+import { linkifyLovable } from '@/components/LovableLink';
 
 const formatDate = (iso: string) => {
   try {
@@ -380,13 +381,16 @@ const WikiArticlePage = () => {
                     {items.map((item, j) => (
                       <li key={j} className="text-gray-300 flex items-start gap-2">
                         <span className="text-green-400 mt-1">•</span>
-                        <span>{item.replace('- ', '')}</span>
+                        <span>{linkifyLovable(item.replace('- ', ''))}</span>
                       </li>
                     ))}
                   </ul>
                 );
               }
-              return <p key={i} className="text-gray-300 leading-relaxed mb-6">{paragraph}</p>;
+              if (paragraph.startsWith('# ')) {
+                return <h2 key={i} className="text-2xl md:text-3xl font-bold text-white mt-10 mb-4 font-['Space_Grotesk']">{linkifyLovable(paragraph.replace(/^#\s+/, ''))}</h2>;
+              }
+              return <p key={i} className="text-gray-300 leading-relaxed mb-6">{linkifyLovable(paragraph)}</p>;
             })}
           </article>
 
@@ -403,10 +407,10 @@ const WikiArticlePage = () => {
                   className="glass-effect rounded-xl p-5 border border-white/10 group"
                 >
                   <summary className="text-white font-semibold cursor-pointer list-none flex items-center justify-between gap-4">
-                    <span>{f.question}</span>
+                    <span>{linkifyLovable(f.question)}</span>
                     <ChevronRight className="h-4 w-4 text-blue-400 transition-transform group-open:rotate-90 flex-shrink-0" />
                   </summary>
-                  <p className="text-gray-300 mt-3 leading-relaxed">{f.answer}</p>
+                  <p className="text-gray-300 mt-3 leading-relaxed">{linkifyLovable(f.answer)}</p>
                 </details>
               ))}
             </div>

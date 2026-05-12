@@ -13,11 +13,22 @@ import {
   Database,
   Search,
   TrendingUp,
-  Video
+  Video,
+  Code
 } from 'lucide-react';
+import { LOVABLE_AFFILIATE_URL } from '@/components/LovableLink';
 
 const Services = () => {
   const services = [
+    {
+      icon: Code,
+      title: "No-Code App Development",
+      description: "Production-ready web apps built fast with no-code and AI-native tools — Lovable, ChatGPT, Claude, Perplexity, Cursor. From MVP to SEO-ready site in days, not months.",
+      gradient: "from-cyan-500 to-blue-500",
+      category: "App Development",
+      isNew: true,
+      link: "/services/lovable-development"
+    },
     {
       icon: Search,
       title: "LLMboost",
@@ -129,6 +140,76 @@ const Services = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* No-Code / AI-native build stack */}
+        <div className="mt-16">
+          <div className="glass-effect rounded-2xl p-8 border border-cyan-400/30">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-500 px-4 py-2 rounded-full text-white text-sm font-medium mb-4">
+                  <Code className="h-4 w-4" />
+                  Build with the modern AI stack
+                </div>
+                <h3 className="text-3xl font-bold text-white mb-4 font-['Space_Grotesk']">
+                  Ship production apps with no-code and AI-native tools
+                </h3>
+                <p className="text-gray-300 text-lg mb-6">
+                  We build, optimize, and rescue web apps using the same stack we use ourselves —{' '}
+                  <a
+                    href={LOVABLE_AFFILIATE_URL}
+                    target="_blank"
+                    rel="noopener sponsored"
+                    className="text-cyan-300 hover:text-cyan-200 underline underline-offset-2 font-medium"
+                  >
+                    Lovable
+                  </a>{' '}
+                  for the frontend, ChatGPT and Claude for product logic and copy, Perplexity for research, and Cursor for code. MVP in days, SEO and analytics wired in from day one.
+                </p>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {['Lovable', 'ChatGPT', 'Claude', 'Perplexity', 'Cursor', 'Supabase'].map((t) => (
+                    <span key={t} className="px-3 py-1 rounded-full text-xs bg-white/5 border border-white/10 text-gray-200">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex flex-wrap gap-3">
+                  <Link
+                    to="/services/lovable-development"
+                    className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200"
+                  >
+                    See our app development service
+                  </Link>
+                  <a
+                    href={LOVABLE_AFFILIATE_URL}
+                    target="_blank"
+                    rel="noopener sponsored"
+                    className="border border-white/15 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/5 transition-colors"
+                  >
+                    Try Lovable →
+                  </a>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-cyan-500/10 rounded-lg p-4 text-center">
+                  <div className="text-2xl font-bold text-cyan-300 mb-1">3–30</div>
+                  <div className="text-sm text-gray-400">Days from idea to live site</div>
+                </div>
+                <div className="bg-blue-500/10 rounded-lg p-4 text-center">
+                  <div className="text-2xl font-bold text-blue-300 mb-1">100%</div>
+                  <div className="text-sm text-gray-400">In-codebase SEO + schema</div>
+                </div>
+                <div className="bg-green-500/10 rounded-lg p-4 text-center">
+                  <div className="text-2xl font-bold text-green-300 mb-1">SPA-safe</div>
+                  <div className="text-sm text-gray-400">GA4 + Search Console wired</div>
+                </div>
+                <div className="bg-purple-500/10 rounded-lg p-4 text-center">
+                  <div className="text-2xl font-bold text-purple-300 mb-1">LLM-ready</div>
+                  <div className="text-sm text-gray-400">Cited by ChatGPT &amp; Perplexity</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* LLMboost spotlight section */}
