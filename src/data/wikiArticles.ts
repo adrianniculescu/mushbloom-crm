@@ -476,6 +476,134 @@ export const wikiArticles: WikiArticle[] = [
         answer: "No. Because Lovable projects are single-page applications built with React, placing the tag once in index.html covers all routes. Just make sure you fire a pageview event on every route change so GA4 knows the user navigated to a new page."
       }
     ]
+  },
+  {
+    id: 35, slug: "get-cited-chatgpt-perplexity-llm-platforms",
+    title: "How to Get Cited in ChatGPT, Perplexity, and Other LLM Platforms",
+    category: "Marketing", icon: Lightbulb,
+    description: "Getting cited in ChatGPT and Perplexity is not magic. It is the result of clear structure, crawlable content, strong topical relevance, and trustworthy wording that AI systems can extract with confidence.",
+    readTime: "10 min read", seoKeywords: "how to get cited in ChatGPT, how to get cited in Perplexity, LLM SEO, AI search citation strategy",
+    metaTitle: "How to Get Cited in ChatGPT, Perplexity, and Other LLM Platforms",
+    metaDescription: "A practical guide to getting quoted by AI platforms through structured content, indexing, schema, clarity, and topical authority.",
+    publishedAt: "2026-05-12T13:00:00+00:00",
+    updatedAt: "2026-05-12T13:00:00+00:00",
+    tldr: "To get cited in ChatGPT, Perplexity, and other LLM platforms: publish answer-shaped content that opens with a direct response, use clear H1/H2 structure and bullet lists, build topical clusters with strong internal linking, make your HTML clean and schema-marked up, say something original with lived examples, and ensure the site is fully indexable with a proper sitemap and canonical setup.",
+    content: `# Introduction
+
+Getting cited in LLM platforms is not magic. It is the result of clear structure, crawlable content, strong topical relevance, and trustworthy wording.
+
+If you want AI platforms to quote your site, you need pages that are easy to extract and hard to misread.
+
+# What LLMs tend to quote
+
+LLMs are more likely to cite or reference pages that have:
+
+- Clear headings that define sections precisely
+- Concise definitions that answer questions in one or two sentences
+- Direct answers placed early in the content
+- Structured lists that are easy to parse programmatically
+- Fresh content with visible publication and update dates
+- Strong topic alignment so the page clearly belongs to a known subject area
+
+# Step 1: Publish answer-shaped content
+
+Open with a direct answer. Then expand into details. Do not bury the main point beneath filler.
+
+For example, if the topic is sitemap submission, the first paragraph should say exactly how to submit a sitemap and where. Background and theory come after the answer, not before it.
+
+This mirrors how we structured the Bing Webmaster Tools setup guide and the sitemap submission guide: the answer is in the first screen, and the explanation follows.
+
+# Step 2: Use strong structure
+
+Every page should have:
+
+- One H1 that states the topic clearly
+- Clear H2s that break the content into logical steps
+- Short paragraphs, ideally under four sentences
+- Bullet lists for processes and options
+- FAQ sections that match real search queries
+
+This structure makes it easy for an LLM to extract a quote without misunderstanding context.
+
+# Step 3: Build topic clusters
+
+A single page is not enough. LLMs and search systems both respond better to clusters:
+
+- One main pillar page that defines the topic
+- Several supporting articles that explore subtopics
+- Strong internal links between related pages
+- Consistent vocabulary so the same concepts are named the same way across the site
+
+For example, our wiki combines the Bing setup guide, the sitemap submission guide, the H1 fix guide, and the GA4 setup guide into a coherent set of pages about practical search and analytics setup. Each page links to the others, reinforcing topical authority.
+
+# Step 4: Make the site machine-readable
+
+Use:
+
+- Clean HTML without excessive nested divs or script bloat
+- Schema markup where relevant, especially Article and FAQPage
+- Unique titles and descriptions on every page
+- Clear author and about signals that establish trust
+- Visible dates where freshness matters, such as technical tutorials
+
+# Step 5: Say something original
+
+Generic AI text gets ignored. If you want to be cited, publish:
+
+- Exact processes you have tested yourself
+- Lived examples from client work or internal projects
+- Implementation notes that include specific tools and settings
+- Real observations about what worked and what did not
+- Useful comparisons between methods or platforms
+
+Originality is the single biggest differentiator for LLM citations. Regurgitated content is filtered out during training or retrieval.
+
+# Step 6: Be indexable
+
+If search systems cannot crawl or understand the page, LLMs are less likely to surface it. That means your sitemap, headings, and canonical setup still matter.
+
+Make sure your site has:
+
+- A submitted sitemap in both Google Search Console and Bing Webmaster Tools
+- Clean canonical tags on every page
+- No accidental noindex tags blocking important content
+- Working internal links so crawlers can discover every page
+
+# What not to do
+
+- Do not write generic marketing copy that repeats what everyone else says
+- Do not hide the answer three paragraphs deep
+- Do not overload pages with fluff to hit a word count
+- Do not write only for keyword density without adding real insight
+- Do not ignore technical basics like indexability and sitemap hygiene
+
+# Conclusion
+
+Being cited by LLMs is mostly about becoming the clearest answer in your niche. Structure, originality, and crawlability are the real advantage.
+
+If you want to build a site that LLMs quote consistently, start with clean structure, add original insight, and make sure the site is technically sound. The rest follows from there.`,
+    faq: [
+      {
+        question: "How long does it take to get cited in ChatGPT or Perplexity?",
+        answer: "There is no fixed timeline. If your content is well-structured, original, and indexable, it can appear in LLM responses within days or weeks of publication. The key is topical authority: one strong page is not enough; you need a cluster of related, interlinked pages that cover a subject thoroughly."
+      },
+      {
+        question: "Do I need to pay for LLM SEO or citation tools?",
+        answer: "No. Most of the work is editorial and structural. You need clear headings, direct answers, bullet lists, FAQ sections, and clean HTML. Paid tools can help with research and monitoring, but they do not replace good content architecture."
+      },
+      {
+        question: "Does schema markup really help with LLM citations?",
+        answer: "Yes. Schema markup helps search engines and LLM crawlers understand what a page is about, who wrote it, when it was published, and how it relates to other content. Article, FAQPage, and Organization schemas are particularly useful for citation-friendly pages."
+      },
+      {
+        question: "Can I get cited if my site is new and has low domain authority?",
+        answer: "Yes. Domain authority matters less for LLM citations than it does for traditional search rankings. A new site with an exceptionally clear, original answer to a specific question can be cited ahead of older, more generic pages. Focus on clarity and originality first."
+      },
+      {
+        question: "What is the fastest way to test if my content is citation-friendly?",
+        answer: "Ask a simple question about your topic in Perplexity or ChatGPT and see if your page appears in the sources. If not, compare your page to the ones that do: check their heading structure, answer placement, and originality. Then revise your page to match or exceed that standard."
+      }
+    ]
   }
 ];
 
