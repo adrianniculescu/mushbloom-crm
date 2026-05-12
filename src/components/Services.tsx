@@ -13,11 +13,22 @@ import {
   Database,
   Search,
   TrendingUp,
-  Video
+  Video,
+  Code
 } from 'lucide-react';
+import { LOVABLE_AFFILIATE_URL } from '@/components/LovableLink';
 
 const Services = () => {
   const services = [
+    {
+      icon: Code,
+      title: "No-Code App Development",
+      description: "Production-ready web apps built fast with no-code and AI-native tools — Lovable, ChatGPT, Claude, Perplexity, Cursor. From MVP to SEO-ready site in days, not months.",
+      gradient: "from-cyan-500 to-blue-500",
+      category: "App Development",
+      isNew: true,
+      link: "/services/lovable-development"
+    },
     {
       icon: Search,
       title: "LLMboost",
