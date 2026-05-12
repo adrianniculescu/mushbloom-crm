@@ -4,6 +4,11 @@ import {
   ShoppingCart, Truck, Eye, Gavel, HeadphonesIcon, Battery, Gamepad2, type LucideIcon
 } from 'lucide-react';
 
+export interface WikiFAQ {
+  question: string;
+  answer: string;
+}
+
 export interface WikiArticle {
   id: number;
   slug: string;
@@ -16,7 +21,17 @@ export interface WikiArticle {
   content: string;
   metaTitle: string;
   metaDescription: string;
+  // Optional freshness/quote-friendly enhancements
+  publishedAt?: string; // ISO date
+  updatedAt?: string;   // ISO date
+  tldr?: string;        // direct answer, ~120 words
+  faq?: WikiFAQ[];      // 3-5 Q&As
 }
+
+// Sensible defaults so all articles get freshness signals even without per-article data
+export const DEFAULT_PUBLISHED_AT = "2025-02-01T09:00:00+00:00";
+export const DEFAULT_UPDATED_AT = "2026-05-12T09:00:00+00:00";
+export const ARTICLE_AUTHOR = "Mushbloom Editorial Team";
 
 export const wikiArticles: WikiArticle[] = [
   {

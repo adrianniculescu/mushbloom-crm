@@ -22,14 +22,13 @@ const Wiki = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-['Space_Grotesk']">
-            AI Investment{' '}
+            How does AI actually work for{' '}
             <span className="bg-gradient-to-r from-blue-400 to-green-500 bg-clip-text text-transparent">
-              Knowledge Hub
+              your business?
             </span>
           </h2>
           <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8">
-            Comprehensive guides on AI-powered investment tools, startup automation, and business intelligence. 
-            30 expert articles optimized for maximum impact.
+            Thirty plain-English guides covering AI agents, LLM search visibility, automation playbooks, and investor tooling — written to be quotable by ChatGPT, Gemini, and Claude.
           </p>
         </div>
 

@@ -1,28 +1,72 @@
+## Goal
+Bring mushbloom.uk to peak SEO + LLM-discoverability shape: fix H1, unify metadata, strengthen internal linking, add freshness/author schema, and restructure key content to be "quote-friendly" for LLMs.
 
+## Scope — what gets changed
 
-## Plan: Add Client Acquisition System Section to Video Agency Page
+### 1. Homepage H1 + heading hierarchy
+- Replace the hidden SR-only H1 fallback in `index.html` with a real, visible H1 rendered by `Hero.tsx` (single primary H1, descriptive, keyword-aligned).
+- Demote any competing H1s elsewhere on the homepage to H2 (audit `Services`, `LLMboost`, `About`, `Testimonials`, `FAQ`, `Wiki`, `SiteMap`, `Contact`).
+- Ensure question-style H2s on FAQ + Wiki sections.
 
-### Summary
-Add a new "Client Acquisition System" section to the existing `/video-agency` page, using AI (Gemini) to generate the full strategic content based on the prompt, then building it into the page with the same glass-effect card design.
+### 2. Per-page unique metadata
+Audit and fix `<Helmet>` on every route so each has:
+- One unique `<title>` (≤60 chars, keyword-led)
+- One unique meta description (≤160 chars)
+- One canonical URL pointing to `https://mushbloom.uk/...`
+- One clear H1
 
-### Steps
+Pages to cover: `/`, `/llmboost`, `/newswire`, `/newswire/*` (5 verticals), `/video-agency`, `/portfolio/websites`, `/portfolio/custom-gpts`, `/wiki`, `/wiki/*` (30 articles), `/guides/*` (4 guides).
 
-1. **Generate content with AI** — Use Lovable AI (Gemini) to produce the complete client acquisition playbook: outbound prospecting tactics, cold email template, LinkedIn outreach strategy, content marketing plan, and pricing strategy ($1k minimum filter).
+### 3. Internal linking
+- Homepage: add a clearly-linked "Pillar Guides" / "Featured Articles" block linking to the 6 strongest wiki/guide pieces + all 3 main service pages (LLMboost, Newswire, Video Agency).
+- Wiki article pages: add "Related articles" + "Related service" links (hub-and-spoke).
+- Service pages: cross-link to relevant wiki pillars and to each other.
+- Footer/SiteMap: confirm all key pages are present and use absolute canonical URLs.
 
-2. **Add the section to `VideoAgencyPage.tsx`** — Insert a new "Client Acquisition System" section between the Niche Focus and CTA sections, containing:
-   - **Section header**: "Land 5 Clients in 30 Days" with gradient styling
-   - **4 strategy cards** in a 2×2 grid:
-     - **Outbound Prospecting**: Finding businesses with bad/no videos, qualification criteria
-     - **Cold Email Outreach**: Template with subject line "Video content for [Company]", before/after approach, free sample edit offer
-     - **LinkedIn Outreach**: Connecting with marketing directors, engagement strategy
-     - **Content Marketing**: Posting video tips, behind-the-scenes, free templates
-   - **Pricing strategy callout**: $1k minimum to filter tire-kickers, presented as a highlighted tip box
+### 4. Freshness + author/schema signals
+- Add visible `Published` and `Updated` dates on Wiki articles and Guides (top of article).
+- Add visible Author byline ("Mushbloom Editorial Team") on Wiki/Guides.
+- Add/extend `BlogPosting` schema with `datePublished`, `dateModified`, `author`, `publisher` on Wiki + Guides.
+- Add `BreadcrumbList` schema where missing (Wiki articles, Newswire verticals, Portfolio).
+- Keep homepage `ProfessionalService` schema, ensure `dateModified` reflected via sitemap lastmod.
 
-3. **Add relevant icons** — Import additional lucide icons (e.g., `Search`, `Mail`, `Linkedin`, `PenTool`, `DollarSign`, `Target`) for the strategy cards.
+### 5. LLM-quote-friendly content restructure
+For each pillar page (Wiki articles + Guides + service pages), enforce a consistent template:
+1. Direct one-paragraph answer to the page's main question in the first ~120 words ("TL;DR" or "Key takeaway").
+2. Question-style H2s.
+3. Short paragraphs (≤3 sentences).
+4. Numbered steps or bulleted lists for processes.
+5. Plain-language "Definitions" block where jargon appears.
+6. FAQ block (3–5 Q&As) at the bottom with `FAQPage` schema.
 
-### Technical Details
-- Content generated via AI script using `google/gemini-2.5-pro` model
-- New section follows existing glass-effect card pattern with orange/red gradient accents
-- Cold email template rendered in a styled code/quote block for easy reference
-- All changes contained within `src/pages/VideoAgencyPage.tsx`
+Given there are 30+ wiki articles, this pass will:
+- Build a shared `ArticleShell` component (TL;DR, Updated date, Author, Related links, FAQ slot) and apply it to all wiki/guide pages.
+- Update copy on the 6 priority pillar articles in this iteration; remaining articles inherit the shell + schema but keep existing copy.
 
+### 6. Crawlability hygiene
+- Sitemap: update `lastmod` to today on changed pages.
+- robots.txt: verify allows all, points to sitemap.
+- Check for duplicate titles/descriptions across wiki articles (script + fix).
+- Remove any thin/empty pages or 404 stragglers.
+
+## Technical notes
+- Use `react-helmet-async` (already in use) for per-page meta.
+- New components: `src/components/ArticleShell.tsx`, `src/components/ArticleMeta.tsx` (date + author), `src/components/RelatedLinks.tsx`, `src/components/HomeFeaturedPillars.tsx`.
+- Wiki article data in `src/data/wikiArticles.ts` will get `publishedAt`, `updatedAt`, `author`, `faq`, `tldr` fields. Migration of existing entries kept additive (defaults provided).
+- Schema rendered via JSON-LD `<script>` in Helmet per page.
+
+## Out of scope (this round)
+- Rewriting the full body copy of all 30 wiki articles (only the 6 priority pillars get a copy pass; the rest get structural shell + schema).
+- New visual design directions.
+- Backend/CMS changes.
+
+## Which 6 pillar articles?
+Proposed priority pillars (highest commercial + LLM intent):
+1. `llm-visibility-optimization`
+2. `ai-deal-sourcing-investors`
+3. `automated-due-diligence-ai`
+4. `custom-ai-agents-business`
+5. `ai-agent-teams-future-of-work`
+6. `technical-seo-ai`
+
+Confirm or swap before I start the copy pass on these.
