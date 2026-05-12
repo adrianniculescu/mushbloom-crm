@@ -28,8 +28,12 @@ const Navigation = () => {
     <nav className="fixed top-0 w-full z-50 bg-black/20 backdrop-blur-lg border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/">
+          <Link to="/" className="flex items-center gap-3">
             <Logo />
+            <span className="hidden lg:inline-block text-xs text-gray-400 border-l border-white/15 pl-3 leading-tight max-w-[180px]">
+              Innovative marketing services<br />
+              <span className="text-gray-500">since 2014</span>
+            </span>
           </Link>
           
           {/* Desktop Navigation */}
