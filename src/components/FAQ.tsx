@@ -162,10 +162,10 @@ const FAQ = () => {
             Still have questions about LLMboost or our AI services? Our experts are ready to help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-purple-500 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200 inline-block">
+            <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" data-cta="footer_cta" className="bg-gradient-to-r from-purple-500 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200 inline-block">
               Get Free LLM SEO Audit
             </a>
-            <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200 inline-block">
+            <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" data-cta="footer_cta" className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200 inline-block">
               Schedule Free Consultation
             </a>
           </div>

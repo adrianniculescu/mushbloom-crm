@@ -799,7 +799,7 @@ const VideoAgencyPage = () => {
                   <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />16:9 + 9:16 formats</li>
                 </ul>
                 <p className="text-gray-500 text-xs mb-4">Delivery: 2-3 weeks • Via Google Drive</p>
-                <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" className="w-full text-center bg-white/10 hover:bg-white/20 text-white py-3 rounded-lg font-semibold transition-colors duration-200 block">Get Started</a>
+                <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" data-cta="pricing_cta" className="w-full text-center bg-white/10 hover:bg-white/20 text-white py-3 rounded-lg font-semibold transition-colors duration-200 block">Get Started</a>
               </div>
 
               {/* Silver — Popular */}
@@ -828,7 +828,7 @@ const VideoAgencyPage = () => {
                   <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Delivery via Frame.io</li>
                 </ul>
                 <p className="text-gray-500 text-xs mb-4">Delivery: 3-4 weeks • Via Frame.io</p>
-                <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" className="w-full text-center bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200 block">Get Started</a>
+                <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" data-cta="pricing_cta" className="w-full text-center bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 rounded-lg font-semibold hover:scale-105 transition-transform duration-200 block">Get Started</a>
               </div>
 
               {/* Gold — Premium */}
@@ -858,7 +858,7 @@ const VideoAgencyPage = () => {
                   <li className="flex items-start gap-2 text-gray-300 text-sm"><CheckCircle className="h-4 w-4 text-green-400 shrink-0 mt-0.5" />Dedicated project manager</li>
                 </ul>
                 <p className="text-gray-500 text-xs mb-4">Delivery: 4-5 weeks • Via Frame.io</p>
-                <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" className="w-full text-center bg-gradient-to-r from-yellow-400 to-amber-500 text-black py-3 rounded-lg font-bold hover:scale-105 transition-transform duration-200 block">Get Started</a>
+                <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" data-cta="pricing_cta" className="w-full text-center bg-gradient-to-r from-yellow-400 to-amber-500 text-black py-3 rounded-lg font-bold hover:scale-105 transition-transform duration-200 block">Get Started</a>
               </div>
             </div>
 

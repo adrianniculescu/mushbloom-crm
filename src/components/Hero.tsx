@@ -54,13 +54,14 @@ const Hero = () => {
                 href="https://tidycal.com/adrianniculescu" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                data-cta="hero_cta"
                 className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-transform duration-200 flex items-center justify-center gap-2 group shadow-lg shadow-blue-500/25"
               >
                 Book a Free Consultation
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </a>
               
-              <a href="#services" className="border border-white/20 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors duration-200 backdrop-blur-sm inline-flex items-center justify-center">
+              <a href="#services" data-cta="hero_cta_secondary" className="border border-white/20 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white/10 transition-colors duration-200 backdrop-blur-sm inline-flex items-center justify-center">
                 See How It Works
               </a>
             </div>
