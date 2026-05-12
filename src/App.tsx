@@ -23,6 +23,7 @@ import CryptoWeb3AiSearchGuide from "./pages/guides/CryptoWeb3AiSearchGuide";
 import Web3CompanyBrainGuide from "./pages/guides/Web3CompanyBrainGuide";
 import SaasCompanyBrainGuide from "./pages/guides/SaasCompanyBrainGuide";
 import VideoAgencyPage from "./pages/VideoAgencyPage";
+import AiAutomationAgencyPage from "./pages/AiAutomationAgencyPage";
 import NotFound from "./pages/NotFound";
 import CmsLogin from "./pages/CmsLogin";
 import CmsDashboard from "./pages/CmsDashboard";
@@ -54,6 +55,7 @@ const App = () => (
             <Route path="/newswire/gaming" element={<GamingPage />} />
             <Route path="/newswire/igaming" element={<IGamingPage />} />
             <Route path="/video-agency" element={<VideoAgencyPage />} />
+            <Route path="/agency" element={<AiAutomationAgencyPage />} />
             <Route path="/wiki" element={<WikiIndexPage />} />
             <Route path="/wiki/:slug" element={<WikiArticlePage />} />
             <Route path="/guides/saas-ai-search-visibility" element={<SaasAiSearchGuide />} />
