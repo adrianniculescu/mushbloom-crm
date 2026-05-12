@@ -90,9 +90,9 @@ const LLMboostPage = () => {
   return (
     <>
       <Helmet>
-        <title>LLMboost – AI Search Visibility Accelerator | ChatGPT, Gemini, Claude SEO | Mushbloom</title>
-        <meta name="description" content="LLMboost: Revolutionary LLM SEO optimization for ChatGPT, Gemini, Claude. Boost your Share of Model, dominate AI search results. Free LLM SEO audit available from Mushbloom." />
-        <meta name="keywords" content="LLMboost, LLM SEO, ChatGPT SEO, Gemini optimization, Claude visibility, AI search optimization, Share of Model, AI visibility, Mushbloom" />
+        <title>LLM SEO Agency – Generative Engine Optimization | Mushbloom</title>
+        <meta name="description" content="LLM SEO agency for ChatGPT, Perplexity, Gemini & Google AI Overviews. Generative Engine Optimization that gets your brand cited in AI answers." />
+        <meta name="keywords" content="LLM SEO agency, generative engine optimization, GEO agency, ChatGPT SEO, Perplexity SEO, AI search optimization, Share of Model, LLMboost" />
         <link rel="canonical" href="https://mushbloom.uk/llmboost" />
         
         <meta property="og:title" content="LLMboost – AI Search Visibility Accelerator | Mushbloom" />
@@ -163,11 +163,12 @@ const LLMboostPage = () => {
                   <Zap className="h-4 w-4" />
                   Revolutionary AI Visibility Service
                 </div>
-                <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 font-['Space_Grotesk']">
-                  LLM<span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">boost</span>
+                <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 font-['Space_Grotesk']">
+                  LLM SEO Agency &{' '}
+                  <span className="bg-gradient-to-r from-purple-400 to-blue-500 bg-clip-text text-transparent">Generative Engine Optimization</span>
                 </h1>
                 <p className="text-2xl md:text-3xl text-gray-300 mb-8 font-medium">
-                  AI-Driven LLM & Search Visibility Accelerator
+                  Be the default answer in ChatGPT, Perplexity, Gemini & Google AI Overviews
                 </p>
                 <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 leading-relaxed">
                   Be the default answer in ChatGPT, Gemini, Claude, and AI-powered search. LLMboost optimizes your brand for LLM visibility, driving qualified leads from the next generation of search behavior.
