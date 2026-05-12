@@ -57,6 +57,7 @@ const App = () => (
             <Route path="/newswire/igaming" element={<IGamingPage />} />
             <Route path="/video-agency" element={<VideoAgencyPage />} />
             <Route path="/agency" element={<AiAutomationAgencyPage />} />
+            <Route path="/services/lovable-development" element={<LovableDevelopmentPage />} />
             <Route path="/wiki" element={<WikiIndexPage />} />
             <Route path="/wiki/:slug" element={<WikiArticlePage />} />
             <Route path="/guides/saas-ai-search-visibility" element={<SaasAiSearchGuide />} />
