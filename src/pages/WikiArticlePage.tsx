@@ -210,6 +210,24 @@ const WikiArticlePage = () => {
 
   const wordCount = article.content.split(/\s+/).filter(Boolean).length;
   const articleUrl = `https://mushbloom.uk/wiki/${article.slug}`;
+  const publishedAt = article.publishedAt || DEFAULT_PUBLISHED_AT;
+  const updatedAt = article.updatedAt || DEFAULT_UPDATED_AT;
+  const tldr = article.tldr || article.description;
+  const faqs: WikiFAQ[] = article.faq && article.faq.length > 0
+    ? article.faq
+    : buildFallbackFaq(article.title, article.category);
+
+  // Pick a relevant service to cross-link based on category
+  const serviceLink = (() => {
+    const cat = article.category.toLowerCase();
+    if (cat.includes('seo') || article.slug.includes('llm') || article.slug.includes('visibility')) {
+      return { to: '/llmboost', label: 'LLMboost — AI Search Visibility' };
+    }
+    if (cat.includes('crypto') || cat.includes('gaming') || cat.includes('compliance')) {
+      return { to: '/newswire', label: 'Mushbloom Newswire — Niche PR' };
+    }
+    return { to: '/llmboost', label: 'LLMboost — AI Search Visibility' };
+  })();
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -219,7 +237,7 @@ const WikiArticlePage = () => {
     "image": "https://mushbloom.uk/og-image.jpg",
     "author": {
       "@type": "Organization",
-      "name": "Mushbloom",
+      "name": ARTICLE_AUTHOR,
       "url": "https://mushbloom.uk"
     },
     "publisher": {
@@ -230,12 +248,9 @@ const WikiArticlePage = () => {
         "url": "https://mushbloom.uk/lovable-uploads/a393711c-b940-4619-8101-fb5159650972.png"
       }
     },
-    "datePublished": "2025-01-15T09:00:00+00:00",
-    "dateModified": "2026-04-21T09:00:00+00:00",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": articleUrl
-    },
+    "datePublished": publishedAt,
+    "dateModified": updatedAt,
+    "mainEntityOfPage": { "@type": "WebPage", "@id": articleUrl },
     "url": articleUrl,
     "keywords": article.seoKeywords,
     "articleSection": article.category,
@@ -249,10 +264,20 @@ const WikiArticlePage = () => {
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mushbloom.uk/" },
-      { "@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://mushbloom.uk/#wiki" },
-      { "@type": "ListItem", "position": 3, "name": article.category, "item": `https://mushbloom.uk/#wiki` },
+      { "@type": "ListItem", "position": 2, "name": "Knowledge Hub", "item": "https://mushbloom.uk/wiki" },
+      { "@type": "ListItem", "position": 3, "name": article.category, "item": "https://mushbloom.uk/wiki" },
       { "@type": "ListItem", "position": 4, "name": article.title, "item": articleUrl }
     ]
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map(f => ({
+      "@type": "Question",
+      "name": f.question,
+      "acceptedAnswer": { "@type": "Answer", "text": f.answer }
+    }))
   };
 
   return (
@@ -269,9 +294,9 @@ const WikiArticlePage = () => {
         <meta property="og:url" content={articleUrl} />
         <meta property="og:image" content="https://mushbloom.uk/og-image.jpg" />
         <meta property="og:site_name" content="Mushbloom" />
-        <meta property="article:published_time" content="2025-01-15T09:00:00+00:00" />
-        <meta property="article:modified_time" content="2026-04-21T09:00:00+00:00" />
-        <meta property="article:author" content="Mushbloom" />
+        <meta property="article:published_time" content={publishedAt} />
+        <meta property="article:modified_time" content={updatedAt} />
+        <meta property="article:author" content={ARTICLE_AUTHOR} />
         <meta property="article:section" content={article.category} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={article.metaTitle} />
@@ -279,6 +304,7 @@ const WikiArticlePage = () => {
         <meta name="twitter:image" content="https://mushbloom.uk/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
       <Navigation />
@@ -289,13 +315,13 @@ const WikiArticlePage = () => {
           <nav className="flex items-center gap-2 text-sm text-gray-400 mb-8" aria-label="Breadcrumb">
             <Link to="/" className="hover:text-white transition-colors">Home</Link>
             <ChevronRight className="h-3 w-3" />
-            <a href="/#wiki" className="hover:text-white transition-colors">Knowledge Hub</a>
+            <Link to="/wiki" className="hover:text-white transition-colors">Knowledge Hub</Link>
             <ChevronRight className="h-3 w-3" />
             <span className="text-blue-400">{article.category}</span>
           </nav>
 
           {/* Article Header */}
-          <header className="mb-12">
+          <header className="mb-10">
             <div className="flex items-center gap-3 mb-6">
               <div className="p-3 bg-gradient-to-r from-blue-500 to-green-500 rounded-lg">
                 <Icon className="h-6 w-6 text-white" />
@@ -314,7 +340,35 @@ const WikiArticlePage = () => {
             <p className="text-xl text-gray-300 leading-relaxed">
               {article.description}
             </p>
+
+            {/* Author + dates byline — freshness signals for SEO + LLMs */}
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mt-6 text-sm text-gray-400 border-t border-white/10 pt-5">
+              <span className="flex items-center gap-2">
+                <User className="h-3.5 w-3.5 text-blue-400" />
+                By <span className="text-gray-200">{ARTICLE_AUTHOR}</span>
+              </span>
+              <span className="flex items-center gap-2">
+                <Calendar className="h-3.5 w-3.5 text-blue-400" />
+                Published <time dateTime={publishedAt}>{formatDate(publishedAt)}</time>
+              </span>
+              <span className="flex items-center gap-2">
+                <Calendar className="h-3.5 w-3.5 text-green-400" />
+                Updated <time dateTime={updatedAt}>{formatDate(updatedAt)}</time>
+              </span>
+            </div>
           </header>
+
+          {/* TL;DR — direct answer in first third of page (LLM quote-friendly) */}
+          <aside
+            className="glass-effect border border-blue-500/20 rounded-2xl p-6 mb-12"
+            aria-label="Key takeaway"
+          >
+            <div className="flex items-center gap-2 mb-3">
+              <Sparkles className="h-4 w-4 text-blue-400" />
+              <span className="text-xs font-bold text-blue-400 uppercase tracking-wider">Key takeaway</span>
+            </div>
+            <p className="text-gray-100 leading-relaxed">{tldr}</p>
+          </aside>
 
           {/* Article Body */}
           <article className="prose prose-invert prose-lg max-w-none mb-16">
@@ -336,12 +390,48 @@ const WikiArticlePage = () => {
             })}
           </article>
 
+          {/* FAQ — quote-friendly + FAQPage schema rendered above */}
+          <section className="mb-16" aria-label="Frequently asked questions">
+            <div className="flex items-center gap-2 mb-6">
+              <HelpCircle className="h-5 w-5 text-green-400" />
+              <h2 className="text-2xl font-bold text-white font-['Space_Grotesk']">Frequently asked questions</h2>
+            </div>
+            <div className="space-y-4">
+              {faqs.map((f, i) => (
+                <details
+                  key={i}
+                  className="glass-effect rounded-xl p-5 border border-white/10 group"
+                >
+                  <summary className="text-white font-semibold cursor-pointer list-none flex items-center justify-between gap-4">
+                    <span>{f.question}</span>
+                    <ChevronRight className="h-4 w-4 text-blue-400 transition-transform group-open:rotate-90 flex-shrink-0" />
+                  </summary>
+                  <p className="text-gray-300 mt-3 leading-relaxed">{f.answer}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+
           {/* Keywords */}
           <div className="flex items-center gap-2 flex-wrap mb-12">
             <Tag className="h-4 w-4 text-gray-500" />
             {article.seoKeywords.split(', ').map((keyword, i) => (
               <span key={i} className="px-3 py-1 bg-gray-800 text-gray-400 text-xs rounded-full">{keyword}</span>
             ))}
+          </div>
+
+          {/* Related service cross-link */}
+          <div className="glass-effect rounded-2xl p-6 mb-12 border border-white/10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <div className="text-xs text-blue-400 uppercase tracking-wide font-medium mb-1">Related service</div>
+              <div className="text-white font-semibold">{serviceLink.label}</div>
+            </div>
+            <Link
+              to={serviceLink.to}
+              className="text-blue-400 hover:text-blue-300 font-medium inline-flex items-center gap-1"
+            >
+              Learn more <ArrowRight className="h-4 w-4" />
+            </Link>
           </div>
 
           {/* CTA */}
@@ -354,6 +444,7 @@ const WikiArticlePage = () => {
               href="https://tidycal.com/adrianniculescu"
               target="_blank"
               rel="noopener noreferrer"
+              data-cta="wiki_article_cta"
               className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform inline-flex items-center gap-2"
             >
               Book a Free Consultation <ArrowRight className="h-5 w-5" />
