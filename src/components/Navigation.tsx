@@ -30,9 +30,9 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-3 shrink-0">
             <Logo />
-            <span className="hidden xl:inline-flex items-center gap-2 text-[11px] font-medium tracking-wide text-gray-400 border-l border-white/15 pl-3 whitespace-nowrap">
+            <span className="hidden xl:inline-flex items-center gap-2.5 text-sm font-medium tracking-wide text-gray-200 border-l border-white/15 pl-4 whitespace-nowrap">
               Innovative marketing services
-              <span className="px-1.5 py-0.5 rounded-md bg-gradient-to-r from-blue-500/15 to-green-500/15 border border-white/10 text-gray-200">
+              <span className="px-2.5 py-1 rounded-md bg-gradient-to-r from-blue-500/20 to-green-500/20 border border-white/15 text-white font-semibold">
                 since 2014
               </span>
             </span>
