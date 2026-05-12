@@ -604,6 +604,421 @@ If you want to build a site that LLMs quote consistently, start with clean struc
         answer: "Ask a simple question about your topic in Perplexity or ChatGPT and see if your page appears in the sources. If not, compare your page to the ones that do: check their heading structure, answer placement, and originality. Then revise your page to match or exceed that standard."
       }
     ]
+  },
+  {
+    id: 36, slug: "lovable-seo-checklist-2026",
+    title: "Lovable SEO Checklist 2026",
+    category: "Marketing", icon: Search,
+    description: "The complete 2026 SEO checklist for sites built on Lovable: titles, meta, canonicals, H1 hierarchy, sitemap, robots, schema, GA4, Search Console, and LLM visibility — all wired correctly from day one.",
+    readTime: "11 min read",
+    seoKeywords: "Lovable SEO checklist, Lovable SEO 2026, SEO for Lovable, optimize Lovable site, Lovable website ranking",
+    metaTitle: "Lovable SEO Checklist 2026 — Rank, Track & Get Cited",
+    metaDescription: "The 2026 SEO checklist for Lovable sites: titles, canonicals, H1, sitemap, schema, GA4, Search Console, and LLM visibility — implemented correctly.",
+    publishedAt: "2026-05-20T09:00:00+00:00",
+    updatedAt: "2026-05-20T09:00:00+00:00",
+    tldr: "To rank a Lovable site in 2026: ship unique titles and metas per route, one semantic H1 per page, clean canonicals, a submitted sitemap, JSON-LD schema (Article + FAQ + Organization), GA4 with route-change pageviews, Search Console verified, and answer-shaped content with FAQs so ChatGPT and Perplexity can cite it. Do all of this inside the Lovable codebase, not bolted on with third-party tools.",
+    content: `# Introduction
+
+Lovable makes shipping a site fast. Making that site rank, track, and convert is a separate discipline. This checklist is the exact setup we use at Mushbloom to take a fresh Lovable build from "live" to "indexable, trackable, and citable by AI search."
+
+If you check every box below before publishing serious content, you will avoid 80% of the issues we see on Lovable rescue projects.
+
+# 1. Per-page metadata
+
+Every route on a Lovable site should have its own:
+
+- Unique <title> under 60 characters with the primary keyword
+- Unique meta description under 160 characters
+- Canonical URL pointing to the production domain
+- Open Graph title, description, and image
+- Twitter card metadata
+
+Use react-helmet-async per page — not a global default that every route inherits.
+
+# 2. Semantic HTML and one H1
+
+Every page must have exactly one <h1> in the initial HTML that names the topic of the page. Hero sections styled as headings are not enough — the crawler reads the markup, not the visual size.
+
+Use H2 for sections, H3 for sub-points. Do not skip levels.
+
+# 3. Sitemap and robots
+
+- Maintain public/sitemap.xml with every indexable route
+- Set lastmod dates that reflect real updates
+- Include a public/robots.txt that allows crawling and links to the sitemap
+- Submit the sitemap to Google Search Console and Bing Webmaster Tools
+
+# 4. Canonical and indexability
+
+- Pick one canonical domain (www or non-www, https only) and enforce it
+- Add a self-referencing <link rel="canonical"> on every page
+- Never ship pages with accidental noindex from a copy-pasted template
+- Confirm Search Console shows the right canonical version
+
+# 5. Schema markup (JSON-LD)
+
+Add structured data to the pages that matter:
+
+- Organization or ProfessionalService on the homepage
+- Article + BreadcrumbList on every wiki article
+- FAQPage where you have an FAQ section
+- Service on each service page
+
+Schema is how Google understands entities and how LLMs disambiguate your brand.
+
+# 6. Analytics and Search Console
+
+- Install GA4 in index.html and fire a pageview on every route change in the React SPA
+- Set up conversion events (form submit, TidyCal booking, CTA clicks)
+- Verify Search Console via HTML tag or DNS
+- Submit the sitemap and request indexing for the top 5 pages
+
+# 7. Content that LLMs can cite
+
+- Open every page with a direct answer in the first screen
+- Use bullet lists and short paragraphs
+- Add a TL;DR block on long articles
+- Add an FAQ section with 3–7 real questions
+- Use clear, consistent vocabulary across the site
+
+This is what makes a page extractable by ChatGPT, Perplexity, and Google AI Overviews.
+
+# 8. Performance
+
+- Lazy-load images below the fold
+- Use proper alt text on every image
+- Avoid huge unsplit bundles — Lovable handles code splitting well by default, do not fight it
+- Test on real mobile, not just the desktop preview
+
+# 9. Internal linking
+
+Every important page should be reachable in 2 clicks from the homepage. Every long-tail article should link up to a money page and across to 2 sibling articles. This is what actually moves rankings.
+
+# 10. Pre-publish QA
+
+Before you announce the site:
+
+- View Source on the homepage and confirm the H1, title, canonical, and JSON-LD are present
+- Run URL Inspection in Search Console for the homepage and 3 key pages
+- Confirm GA4 Realtime shows your test visit
+- Check mobile rendering on a real phone
+- Run a Lighthouse audit and fix anything red
+
+# Conclusion
+
+A Lovable site that ships with this checklist done is in the top 5% of what gets published on the platform. Most builds skip steps 5 through 9 entirely, which is why they never rank. Do the boring work once, ship it inside the Lovable codebase, and the site compounds for years.`,
+    faq: [
+      { question: "Can a Lovable site really compete with WordPress or Webflow for SEO?", answer: "Yes. Lovable produces clean React + Vite output with semantic HTML, fast performance, and full control over metadata, schema, and canonical setup. The platform is not the bottleneck — implementation quality is." },
+      { question: "Do I need to hand-write JSON-LD for every page?", answer: "No. Centralize schema in a small helper or per-page constant and inject it via react-helmet-async. Article and FAQPage are the two highest-ROI schemas to start with." },
+      { question: "Why does GA4 only track the homepage on my Lovable site?", answer: "Because Lovable apps are React single-page apps. The initial pageview fires, but route changes do not unless you explicitly send a pageview on every navigation. Add a small Analytics component that listens to route changes." },
+      { question: "How long until a new Lovable site ranks?", answer: "Indexing happens within days. Ranking for low-competition long-tail terms typically takes 4–12 weeks with the checklist above plus consistent publishing. Commercial keywords take longer." },
+      { question: "What is the single biggest SEO mistake on Lovable builds?", answer: "Shipping every page with the same default title and meta description inherited from index.html. Fix that first — unique per-page metadata via Helmet is non-negotiable." }
+    ]
+  },
+  {
+    id: 37, slug: "add-schema-markup-lovable-site",
+    title: "How to Add Schema Markup to a Lovable Site",
+    category: "Marketing", icon: FileText,
+    description: "A practical guide to adding JSON-LD schema markup to a Lovable website — Article, FAQPage, Organization, and BreadcrumbList — so Google, Bing, ChatGPT, and Perplexity understand the site.",
+    readTime: "9 min read",
+    seoKeywords: "schema markup Lovable, JSON-LD Lovable, structured data Lovable, FAQPage schema Lovable, add schema to React site",
+    metaTitle: "How to Add Schema Markup to a Lovable Site (2026 Guide)",
+    metaDescription: "Add JSON-LD schema to a Lovable site: Article, FAQPage, Organization, BreadcrumbList — implemented in React with Helmet, the right way.",
+    publishedAt: "2026-05-25T09:00:00+00:00",
+    updatedAt: "2026-05-25T09:00:00+00:00",
+    tldr: "To add schema markup to a Lovable site: define a JSON-LD object per page (Article for blog posts, Service for service pages, FAQPage for FAQs, Organization on the homepage, BreadcrumbList everywhere), inject it via react-helmet-async inside a <script type=\"application/ld+json\"> tag, then validate with the Rich Results Test. Schema is how search engines and LLMs identify your brand as an entity.",
+    content: `# Introduction
+
+Schema markup is the cheapest, highest-leverage SEO improvement most Lovable sites are missing. It tells Google what each page is, who you are, and how content relates — and it gives LLMs the structured signal they need to confidently cite you.
+
+# What schema actually does
+
+JSON-LD schema is a small block of structured JSON in the page head that describes the content:
+
+- Article schema marks a page as editorial content with an author, date, and topic
+- FAQPage schema marks Q&A blocks as machine-readable answers
+- Organization schema identifies your brand as a real entity
+- BreadcrumbList schema makes site hierarchy explicit
+- Service or ProfessionalService schema describes a commercial offering
+
+Without it, search engines have to guess. With it, they know.
+
+# Step 1: Pick the right schema per page
+
+- Homepage: Organization or ProfessionalService
+- Service pages: Service or ProfessionalService
+- Wiki / blog articles: Article + BreadcrumbList + FAQPage if there is an FAQ
+- Portfolio pages: CollectionPage or ItemList
+- Contact page: ContactPage
+
+# Step 2: Inject JSON-LD with Helmet
+
+Lovable projects ship with react-helmet-async. Inside any page component, render the schema block:
+
+- Create a JavaScript object that matches the schema.org spec
+- Wrap it with JSON.stringify
+- Insert it inside a <script type="application/ld+json"> tag in <Helmet>
+
+Helmet handles deduplication and SSR-friendly injection so you do not have to manage script tags manually.
+
+# Step 3: Use absolute URLs
+
+Schema uses URLs as entity identifiers. Always use the canonical absolute URL, not a relative path:
+
+- Good: https://yourdomain.com/services/lovable-development
+- Bad: /services/lovable-development
+
+This is the single most common bug we fix in schema audits.
+
+# Step 4: Add BreadcrumbList everywhere
+
+BreadcrumbList is short, easy, and improves how the page appears in search results. Every non-home page should have one.
+
+# Step 5: FAQPage where it earns its keep
+
+Only add FAQPage schema where the FAQ is genuinely visible on the page. Hidden or fake FAQs added only for schema are a violation of Google guidelines and can trigger manual actions.
+
+# Step 6: Validate
+
+After deploying:
+
+- Run the page through Google's Rich Results Test
+- Check for errors and warnings
+- Confirm the schema actually appears in View Source (not just DevTools)
+- Re-inspect the URL in Search Console after a few days
+
+# Common mistakes
+
+- Copying schema from a competitor without updating the URLs and names
+- Using JSON-LD that references images or pages that do not exist
+- Adding FAQPage schema to a page with no visible FAQ
+- Forgetting Organization schema on the homepage, which is the single highest-impact one for brand entity recognition
+- Leaving schema only in DevTools — if View Source does not include it, crawlers may not see it
+
+# Conclusion
+
+Schema is the difference between Google guessing what your site is and Google knowing. For a Lovable site, the implementation is one small object per page injected through Helmet. The work is one-time. The compounding visibility benefit is permanent.`,
+    faq: [
+      { question: "Do I need a plugin to add schema to a Lovable site?", answer: "No. Lovable uses react-helmet-async, which lets you inject JSON-LD directly inside the page component. No plugin or external service is required." },
+      { question: "How do I know if my schema is working?", answer: "Use Google's Rich Results Test on a deployed URL. It will parse the page, show the detected schema, and flag any errors. Also confirm the JSON-LD appears in View Source, not just the DevTools inspector." },
+      { question: "Will schema markup directly improve rankings?", answer: "Schema does not give a direct ranking boost, but it improves how your page appears in search (rich results, breadcrumbs, FAQ accordions) and significantly improves how LLMs identify and cite your brand. The downstream effect on traffic and CTR is real." },
+      { question: "Should I add schema to every page?", answer: "Yes — at minimum BreadcrumbList and a page-type schema (Article, Service, ContactPage). The homepage should also include Organization or ProfessionalService schema. This takes one helper file and ten minutes per page." },
+      { question: "Is FAQPage schema still worth using in 2026?", answer: "Yes, but only when the FAQ is genuinely visible on the page and answers real user questions. Hidden or fake FAQs added only for schema can trigger manual actions. Real, helpful FAQs with FAQPage schema are still one of the strongest signals for LLM citations." }
+    ]
+  },
+  {
+    id: 38, slug: "optimize-lovable-site-google-ai-overviews",
+    title: "How to Optimise a Lovable Site for Google AI Overviews",
+    category: "Marketing", icon: Lightbulb,
+    description: "A practical guide to shaping a Lovable website so it gets pulled into Google AI Overviews — clear structure, direct answers, schema, and topical depth that AI summaries trust.",
+    readTime: "9 min read",
+    seoKeywords: "Google AI Overviews Lovable, optimize for AI Overviews, SGE optimization, AI search Lovable, AI Overviews ranking",
+    metaTitle: "How to Optimise a Lovable Site for Google AI Overviews",
+    metaDescription: "Shape a Lovable site so Google AI Overviews pull from it: direct answers, schema, topical clusters, and structure that AI summaries trust.",
+    publishedAt: "2026-05-30T09:00:00+00:00",
+    updatedAt: "2026-05-30T09:00:00+00:00",
+    tldr: "To get a Lovable site featured in Google AI Overviews: open each page with a 2–3 sentence direct answer, use a clean H1/H2 structure with short paragraphs, add FAQPage and Article schema, build topical clusters with strong internal links, and make sure the site is fully indexable. AI Overviews quote pages that are extractable, original, and trusted — not pages that are merely well-written.",
+    content: `# Introduction
+
+Google AI Overviews changed the top of the search results page. Instead of ten blue links, users now see an AI-generated summary that quotes a handful of sources. If you are not in those sources, you lose the click — even if you rank.
+
+For a Lovable site, the work to get pulled into Overviews is structural, not magical.
+
+# What AI Overviews actually reward
+
+Overviews quote pages that are:
+
+- Extractable: clear headings, short paragraphs, direct answers
+- Trustworthy: real author, real dates, real organization signals
+- Original: lived experience, specific numbers, actual processes
+- Indexable: clean canonicals, valid sitemap, no accidental noindex
+- Topically dense: part of a cluster, not a single orphan page
+
+# Step 1: Front-load the answer
+
+Every page that answers a question should answer it in the first 2–3 sentences. Not the third paragraph. Not after a hero. The first 50 words.
+
+A TL;DR block at the top of long articles is the cleanest way to do this on a Lovable site.
+
+# Step 2: Use real structure
+
+- One H1 per page that names the topic in plain language
+- H2s that read like questions or steps
+- Short paragraphs, ideally under four sentences
+- Bullet lists for processes and comparisons
+- An FAQ section with 3–7 real questions
+
+Overviews almost always quote sentences that sit immediately after a clear H2 or inside a bullet list.
+
+# Step 3: Schema is non-negotiable
+
+- Article schema with author, datePublished, and dateModified
+- FAQPage schema where you have an FAQ
+- Organization schema on the homepage
+- BreadcrumbList everywhere
+
+Schema is how Google knows the page is editorial content from a real entity, not generic boilerplate.
+
+# Step 4: Build clusters
+
+Overviews trust topical depth. A single page on "Lovable SEO" is weak. A pillar page plus five supporting articles all interlinked is strong.
+
+For a Lovable site, build clusters around:
+
+- Lovable SEO (pillar) → Bing setup, sitemap, H1, GA4, schema (supporting)
+- LLM SEO (pillar) → ChatGPT citations, Perplexity, AI Overviews, FAQ schema (supporting)
+
+# Step 5: Be indexable
+
+Overviews can only quote what Google has indexed. That means:
+
+- Submitted sitemap in Search Console
+- Clean canonicals
+- No accidental noindex
+- Reasonable performance and mobile rendering
+
+This is exactly the work covered in the Lovable SEO checklist for 2026.
+
+# Step 6: Be the original source
+
+Generic content gets summarised away. To get quoted by name, you need at least one original element on the page:
+
+- A first-hand process you have actually run
+- Specific numbers from your own work
+- A clear opinion that other pages do not state
+- A worked example with real tools and settings
+
+# What not to do
+
+- Do not bury the answer
+- Do not pad with fluff to hit a word count
+- Do not use vague AI-generated boilerplate
+- Do not ignore schema and structure
+- Do not ship pages without a proper title, H1, and canonical
+
+# Conclusion
+
+Google AI Overviews are not a separate ranking system. They are an extraction layer on top of regular search. A Lovable site that is well-structured, schema-marked, topically deep, and genuinely original is exactly what gets pulled into the summary. Everything else gets summarised away.`,
+    faq: [
+      { question: "Are Google AI Overviews the same as ChatGPT and Perplexity citations?", answer: "No, but the playbook overlaps heavily. All three reward structured, original, extractable content. A Lovable site optimised for Overviews is usually also citation-friendly in ChatGPT and Perplexity." },
+      { question: "Do AI Overviews favour large established sites?", answer: "Less than traditional rankings do. Overviews regularly quote small, sharply-structured pages that answer the exact question. A well-built Lovable site can absolutely be quoted alongside large publishers if the structure and originality are right." },
+      { question: "How do I know if my page is being used in an AI Overview?", answer: "Search the question your page answers in Google with AI Overviews enabled, and check whether your domain appears in the source list under the summary. Track this manually across your top 10 target queries." },
+      { question: "Does adding an FAQ section help with AI Overviews?", answer: "Yes, significantly. FAQ sections with FAQPage schema are one of the most quoted formats in AI Overviews because they pair a clear question with a clear answer — exactly the shape the model wants to extract." },
+      { question: "Can I optimise old Lovable pages or do I need new ones?", answer: "You can almost always optimise existing pages. Add a TL;DR, restructure to one H1 with proper H2s, add FAQ schema, and tighten the opening paragraph. Rewriting from scratch is usually unnecessary." }
+    ]
+  },
+  {
+    id: 39, slug: "get-lovable-site-indexed-google-2026",
+    title: "How to Get a Lovable Site Indexed in Google in 2026",
+    category: "Marketing", icon: Search,
+    description: "A step-by-step guide to getting a brand-new Lovable website indexed in Google in 2026 — domain setup, sitemap, Search Console, URL Inspection, and the indexing pitfalls specific to React SPAs.",
+    readTime: "8 min read",
+    seoKeywords: "get Lovable site indexed Google, index Lovable website, Google indexing Lovable, React SPA indexing, Search Console Lovable",
+    metaTitle: "How to Get a Lovable Site Indexed in Google (2026)",
+    metaDescription: "Get a new Lovable website indexed in Google in 2026: canonical domain, sitemap, Search Console, URL Inspection, and the SPA gotchas.",
+    publishedAt: "2026-06-05T09:00:00+00:00",
+    updatedAt: "2026-06-05T09:00:00+00:00",
+    tldr: "To get a Lovable site indexed in Google in 2026: pick one canonical domain and enforce it, ship a clean sitemap.xml and robots.txt, verify the property in Search Console, submit the sitemap, run URL Inspection on the homepage and key pages, then fix any \"discovered – not indexed\" issues with better internal linking and stronger content. Most indexing problems on Lovable sites are structural, not algorithmic.",
+    content: `# Introduction
+
+A live Lovable site is not the same as an indexed Lovable site. Google has to discover the URLs, crawl them, render them, and decide each one is worth keeping in the index. For React SPAs there are a few extra steps where things go wrong.
+
+This guide is the exact sequence we run for every new Lovable build at Mushbloom.
+
+# Step 1: Pick the canonical domain
+
+Decide before launch:
+
+- https only
+- One subdomain (www or non-www, not both)
+- One country domain if applicable
+
+Enforce the choice with redirects so every other variant returns a 301 to the canonical version. Mixed signals on canonical domain are the single most common reason new sites stay un-indexed.
+
+# Step 2: Ship a clean sitemap.xml
+
+Your public/sitemap.xml should:
+
+- Only list canonical URLs that return 200
+- Use absolute URLs on the canonical domain
+- Include realistic lastmod dates
+- Exclude noindex, redirected, or 404 pages
+
+A bloated or inaccurate sitemap teaches Google to distrust the whole file.
+
+# Step 3: Robots.txt and meta robots
+
+- public/robots.txt should allow crawling and link to the sitemap
+- No accidental Disallow: / from a template
+- No <meta name="robots" content="noindex"> on important pages
+
+Check this by viewing the deployed robots.txt directly in the browser.
+
+# Step 4: Search Console verification
+
+In Google Search Console:
+
+- Add the property (domain or URL prefix)
+- Verify via DNS for the cleanest setup, or HTML tag in index.html if DNS is not available
+- Submit the sitemap from the Sitemaps section
+- Wait 24–72 hours for initial coverage data
+
+# Step 5: URL Inspection on key pages
+
+Use URL Inspection on:
+
+- The homepage
+- 3–5 top service or wiki pages
+- Any page you specifically want ranked
+
+For each, click "Request indexing." This nudges Google to crawl sooner than it otherwise would.
+
+# Step 6: Fix React SPA gotchas
+
+Lovable sites are React SPAs. Watch for:
+
+- Content rendered only after JavaScript hydration that crawlers can miss
+- Route changes that do not update the title or H1
+- Empty meta descriptions inherited from index.html
+- Missing per-route canonicals
+
+The fix is per-page metadata via react-helmet-async and content that exists in the rendered HTML, not only in client-side state.
+
+# Step 7: Diagnose "discovered – not indexed"
+
+If Search Console says a URL is discovered but not indexed, the page probably is not strong enough yet:
+
+- Weak or duplicate content
+- No internal links pointing to it
+- Thin word count without real depth
+- Missing schema or structure
+
+Fix the page, request indexing again, and wait another cycle.
+
+# Step 8: Build internal links
+
+Pages with internal links from the homepage and from related articles get indexed faster. Orphan pages — pages no other page links to — often sit in "discovered" forever.
+
+Every important Lovable page should be reachable in two clicks from the homepage.
+
+# Common mistakes
+
+- Submitting a sitemap before the site is ready, full of soft 404s
+- Verifying www in Search Console but redirecting to non-www in production
+- Leaving the default template title and meta description on every route
+- Blocking the entire site with robots.txt during staging and forgetting to undo it
+- Treating "URL is on Google" as the only signal that matters and ignoring crawl errors
+
+# Conclusion
+
+Getting a Lovable site indexed in Google is mostly about being clear with the crawler. One canonical domain, one clean sitemap, real per-page metadata, real internal links, and patience. Do those five things and most pages will be indexed within a week.`,
+    faq: [
+      { question: "How long does it take to get a Lovable site indexed in Google?", answer: "After Search Console verification and a sitemap submission, the homepage is usually indexed within 24–72 hours. Internal pages follow within 1–2 weeks if internal linking is in place. Pages stuck in 'discovered – not indexed' usually need stronger content, not more time." },
+      { question: "Do I need server-side rendering to get a Lovable site indexed?", answer: "No. Google renders JavaScript well in 2026, and most Lovable sites index fine as client-rendered React apps. The risk is for pages where critical content only appears after hydration — those should be made available in the initial response or pre-rendered." },
+      { question: "Why does Search Console say my page is 'crawled – currently not indexed'?", answer: "Google crawled the page and decided not to add it. Almost always this means the page is thin, duplicated, or has no internal links pointing to it. Improve the content and internal linking, then request indexing again." },
+      { question: "Should I use a custom domain or the Lovable subdomain?", answer: "Always a custom domain for production. The lovable.app subdomain is fine for staging, but for an indexable, brand-owned site you need a domain you control with proper DNS, canonical setup, and Search Console verification." },
+      { question: "Is requesting indexing in Search Console worth doing?", answer: "Yes, for the homepage and 3–5 priority pages. It accelerates the first crawl. Beyond that, indexing speed depends on site quality and internal linking, not on how many times you click 'Request indexing.'" }
+    ]
   }
 ];
 
