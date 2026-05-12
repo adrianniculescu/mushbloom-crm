@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Mail, MessageSquare, Zap, Send, Loader2 } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from '@/hooks/use-toast';
+import { trackGenerateLead } from '@/lib/analytics';
 
 const serviceOptions = [
   'AI Automation',
@@ -78,6 +79,11 @@ const Contact = () => {
     if (error) {
       toast({ title: 'Something went wrong', description: 'Please try again or email us directly.', variant: 'destructive' });
     } else {
+      // Fire GA4 generate_lead only after a successful submission.
+      trackGenerateLead('contact_form', {
+        service_interest: payload.service_interest || undefined,
+        budget: payload.budget || undefined,
+      });
       setSubmitted(true);
       toast({ title: 'Message sent!', description: "We'll get back to you within 24 hours." });
     }
