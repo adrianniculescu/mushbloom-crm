@@ -407,10 +407,10 @@ const WikiArticlePage = () => {
                   className="glass-effect rounded-xl p-5 border border-white/10 group"
                 >
                   <summary className="text-white font-semibold cursor-pointer list-none flex items-center justify-between gap-4">
-                    <span>{f.question}</span>
+                    <span>{linkifyLovable(f.question)}</span>
                     <ChevronRight className="h-4 w-4 text-blue-400 transition-transform group-open:rotate-90 flex-shrink-0" />
                   </summary>
-                  <p className="text-gray-300 mt-3 leading-relaxed">{f.answer}</p>
+                  <p className="text-gray-300 mt-3 leading-relaxed">{linkifyLovable(f.answer)}</p>
                 </details>
               ))}
             </div>
