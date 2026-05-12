@@ -90,9 +90,9 @@ const LLMboostPage = () => {
   return (
     <>
       <Helmet>
-        <title>LLMboost – AI Search Visibility Accelerator | ChatGPT, Gemini, Claude SEO | Mushbloom</title>
-        <meta name="description" content="LLMboost: Revolutionary LLM SEO optimization for ChatGPT, Gemini, Claude. Boost your Share of Model, dominate AI search results. Free LLM SEO audit available from Mushbloom." />
-        <meta name="keywords" content="LLMboost, LLM SEO, ChatGPT SEO, Gemini optimization, Claude visibility, AI search optimization, Share of Model, AI visibility, Mushbloom" />
+        <title>LLM SEO Agency – Generative Engine Optimization | Mushbloom</title>
+        <meta name="description" content="LLM SEO agency for ChatGPT, Perplexity, Gemini & Google AI Overviews. Generative Engine Optimization that gets your brand cited in AI answers." />
+        <meta name="keywords" content="LLM SEO agency, generative engine optimization, GEO agency, ChatGPT SEO, Perplexity SEO, AI search optimization, Share of Model, LLMboost" />
         <link rel="canonical" href="https://mushbloom.uk/llmboost" />
         
         <meta property="og:title" content="LLMboost – AI Search Visibility Accelerator | Mushbloom" />
