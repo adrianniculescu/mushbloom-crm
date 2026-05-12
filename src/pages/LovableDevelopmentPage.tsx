@@ -126,7 +126,16 @@ const LovableDevelopmentPage = () => {
             </span>
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mb-8">
-            We build, optimize, and ship Lovable websites with proper SEO, analytics, schema, and LLM visibility wired in from day one — so the site actually ranks, tracks, and converts after launch.
+            We build, optimize, and ship{' '}
+            <a
+              href="https://lovable.dev/invite/DW2DAYV"
+              target="_blank"
+              rel="noopener sponsored"
+              className="text-blue-400 hover:text-blue-300 underline underline-offset-2"
+            >
+              Lovable
+            </a>{' '}
+            websites with proper SEO, analytics, schema, and LLM visibility wired in from day one — so the site actually ranks, tracks, and converts after launch.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
@@ -144,6 +153,14 @@ const LovableDevelopmentPage = () => {
             >
               See Lovable Builds
             </Link>
+            <a
+              href="https://lovable.dev/invite/DW2DAYV"
+              target="_blank"
+              rel="noopener sponsored"
+              className="border border-blue-400/40 text-blue-300 hover:text-blue-200 hover:bg-blue-500/10 px-8 py-3 rounded-lg font-semibold transition-colors inline-flex items-center gap-2"
+            >
+              Try Lovable
+            </a>
           </div>
         </section>
 
