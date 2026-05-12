@@ -81,6 +81,10 @@ const Testimonials = () => {
                 "{testimonial.content}"
               </blockquote>
 
+              <div itemProp="itemReviewed" itemScope itemType="https://schema.org/Organization" className="sr-only">
+                <meta itemProp="name" content="Mushbloom" />
+              </div>
+
               <div className="border-t border-gray-700 pt-4">
                 <div className="flex items-center gap-3 mb-4">
                   <img 
@@ -88,10 +92,14 @@ const Testimonials = () => {
                     alt={testimonial.name}
                     className="w-12 h-12 rounded-full object-cover"
                   />
-                  <div>
-                    <div className="text-white font-semibold" itemProp="author">{testimonial.name}</div>
-                    <div className="text-gray-400 text-sm">{testimonial.role}</div>
-                    <div className="text-blue-300 text-sm font-medium" itemProp="publisher">{testimonial.company}</div>
+                  <div itemProp="author" itemScope itemType="https://schema.org/Person">
+                    <div className="text-white font-semibold" itemProp="name">{testimonial.name}</div>
+                    <div className="text-gray-400 text-sm" itemProp="jobTitle">{testimonial.role}</div>
+                    <div className="text-blue-300 text-sm font-medium">
+                      <span itemProp="worksFor" itemScope itemType="https://schema.org/Organization">
+                        <span itemProp="name">{testimonial.company}</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
 
@@ -120,12 +128,16 @@ const Testimonials = () => {
           ))}
         </div>
 
-        {/* Aggregate rating for SEO */}
-        <div className="sr-only" itemScope itemType="https://schema.org/AggregateRating">
-          <meta itemProp="ratingValue" content="5" />
-          <meta itemProp="reviewCount" content="47" />
-          <meta itemProp="bestRating" content="5" />
-          <meta itemProp="worstRating" content="1" />
+        {/* Aggregate rating for SEO - attached to Organization */}
+        <div className="sr-only" itemScope itemType="https://schema.org/Organization">
+          <meta itemProp="name" content="Mushbloom" />
+          <div itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating">
+            <meta itemProp="itemReviewed" content="Mushbloom" />
+            <meta itemProp="ratingValue" content="5" />
+            <meta itemProp="reviewCount" content="47" />
+            <meta itemProp="bestRating" content="5" />
+            <meta itemProp="worstRating" content="1" />
+          </div>
         </div>
 
         <div className="text-center mt-12">
