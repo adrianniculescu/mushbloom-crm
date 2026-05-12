@@ -128,12 +128,16 @@ const Testimonials = () => {
           ))}
         </div>
 
-        {/* Aggregate rating for SEO */}
-        <div className="sr-only" itemScope itemType="https://schema.org/AggregateRating">
-          <meta itemProp="ratingValue" content="5" />
-          <meta itemProp="reviewCount" content="47" />
-          <meta itemProp="bestRating" content="5" />
-          <meta itemProp="worstRating" content="1" />
+        {/* Aggregate rating for SEO - attached to Organization */}
+        <div className="sr-only" itemScope itemType="https://schema.org/Organization">
+          <meta itemProp="name" content="Mushbloom" />
+          <div itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating">
+            <meta itemProp="itemReviewed" content="Mushbloom" />
+            <meta itemProp="ratingValue" content="5" />
+            <meta itemProp="reviewCount" content="47" />
+            <meta itemProp="bestRating" content="5" />
+            <meta itemProp="worstRating" content="1" />
+          </div>
         </div>
 
         <div className="text-center mt-12">
