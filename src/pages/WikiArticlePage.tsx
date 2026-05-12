@@ -3,8 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Navigation from '@/components/Navigation';
 import Contact from '@/components/Contact';
-import { getArticleBySlug, getRelatedArticles, wikiArticles, ARTICLE_AUTHOR, DEFAULT_PUBLISHED_AT, DEFAULT_UPDATED_AT, type WikiFAQ } from '@/data/wikiArticles';
-import { ArrowLeft, Clock, Tag, ArrowRight, ChevronRight, FileText, Loader2, Calendar, User, HelpCircle, Sparkles } from 'lucide-react';
+import { getArticleBySlug, getRelatedArticles, ARTICLE_AUTHOR, DEFAULT_PUBLISHED_AT, DEFAULT_UPDATED_AT, type WikiFAQ } from '@/data/wikiArticles';
+import { Clock, Tag, ArrowRight, ChevronRight, FileText, Loader2, Calendar, User, HelpCircle, Sparkles } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
 
 const formatDate = (iso: string) => {
