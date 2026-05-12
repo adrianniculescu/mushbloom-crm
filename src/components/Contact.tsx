@@ -223,6 +223,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
+                  data-cta="contact_cta"
                   className="w-full bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:scale-[1.02] transition-transform duration-200 inline-flex items-center justify-center gap-2 shadow-lg disabled:opacity-60 disabled:hover:scale-100"
                 >
                   {isSubmitting ? (
