@@ -11,6 +11,7 @@ import Wiki from '@/components/Wiki';
 import SiteMap from '@/components/SiteMap';
 import Contact from '@/components/Contact';
 import Navigation from '@/components/Navigation';
+import HomeFeaturedPillars from '@/components/HomeFeaturedPillars';
 
 const HomePage = () => {
   return (
@@ -25,6 +26,7 @@ const HomePage = () => {
         <Hero />
         <Services />
         <LLMboost />
+        <HomeFeaturedPillars />
         <About />
         <Testimonials />
         <FAQ />
