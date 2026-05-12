@@ -369,6 +369,42 @@ export const wikiArticles: WikiArticle[] = [
         answer: "No. Submit your sitemap first and let Bing crawl naturally. Use the URL Submission tool only for new high-priority pages — a new service page, a major article, or an updated landing page — when you want faster discovery."
       }
     ]
+  },
+  {
+    id: 32, slug: "submit-sitemap-bing-google-guide",
+    title: "How to Submit a Sitemap to Bing and Google Without Indexing Problems",
+    category: "Marketing", icon: Search,
+    description: "A practical sitemap submission guide for Bing and Google — including verification, submission steps, crawl checks, and the common errors that quietly block indexing on new and rebuilt websites.",
+    readTime: "8 min read",
+    seoKeywords: "submit sitemap to Bing, submit sitemap to Google, sitemap submission guide, sitemap indexing problems, XML sitemap submission",
+    metaTitle: "How to Submit a Sitemap to Bing and Google Without Indexing Problems",
+    metaDescription: "A practical sitemap submission guide for Bing and Google, including verification, submission, crawl checks, and common errors to avoid.",
+    publishedAt: "2026-05-12T10:00:00+00:00",
+    updatedAt: "2026-05-12T10:00:00+00:00",
+    tldr: "To submit a sitemap cleanly: (1) locate your sitemap (usually /sitemap.xml or /sitemap_index.xml), (2) submit it in Google Search Console under Sitemaps, (3) submit the same URL in Bing Webmaster Tools, (4) confirm all listed URLs return 200, are canonical, and are not noindexed, and (5) resubmit after major site changes. A sitemap does not guarantee rankings, but it removes friction so search engines can discover your URLs without working harder than necessary.",
+    content: "# Introduction\n\nA sitemap does not guarantee rankings, but it removes friction. If search engines cannot find your URLs cleanly, they have to work harder to understand your site — and on a new or rebuilt website, that delay is exactly when you cannot afford it.\n\nThis guide shows how to submit a sitemap to Bing and Google the right way, how to check whether it is being processed, and what to do when the site structure changes.\n\n# What a sitemap is\n\nA sitemap is a machine-readable list of URLs on your site. It helps search engines discover pages and understand the structure of your website.\n\nFor new websites, it is one of the fastest ways to make sure the right URLs are known early, before search engines guess at your structure from internal links alone.\n\n# Step 1: Find your sitemap\n\nCommon sitemap locations include:\n\n- /sitemap.xml\n- /sitemap_index.xml\n\nIf your platform generates multiple sitemaps, the index sitemap is usually the best one to submit. It points to the individual sitemaps and keeps everything in one place.\n\n# Step 2: Submit to Google Search Console\n\nIn Google Search Console:\n\n- Choose the property for your domain\n- Open Sitemaps\n- Submit the sitemap URL\n- Wait for processing and coverage data\n\nGoogle will report whether the sitemap was read, how many URLs were discovered, and any errors it found. Check back over the following days as coverage data populates.\n\n# Step 3: Submit to Bing Webmaster Tools\n\nIn Bing Webmaster Tools:\n\n- Open Sitemaps\n- Submit the sitemap URL\n- Confirm it appears as successful\n\nIf you have not set up Bing Webmaster Tools yet, do that first — sitemap submission is one of the main reasons it exists.\n\n# Step 4: Make sure URLs are crawlable\n\nA sitemap only helps if the URLs inside it are valid. Check that:\n\n- The page returns a 200 status\n- The page is not blocked by robots.txt\n- The page uses the canonical version you want indexed\n- The page is not accidentally noindexed\n\nA sitemap full of 404s, redirects, or noindexed pages does more harm than good. It signals carelessness to search engines.\n\n# Step 5: Re-submit after major changes\n\nIf you rebuild the site, change page structure, or publish a new batch of pages, resubmit the sitemap. Search engines revisit sitemaps automatically, but resubmission speeds up discovery and gives you a fresh processing log to inspect.\n\n# What not to do\n\n- Do not submit dead URLs\n- Do not include test or staging pages\n- Do not mix old-site and new-site URLs in the same sitemap\n- Do not assume sitemap submission fixes thin content\n- Do not submit multiple conflicting sitemaps without an index\n\n# Why sitemap submission matters\n\nSitemap submission is not glamorous, but it supports:\n\n- Faster discovery of new pages\n- Cleaner crawling across the site\n- Better visibility for newly published content\n- Reduced confusion after a redesign or migration\n\n# Conclusion\n\nIf your website is new or rebuilt, sitemap submission is one of the first technical tasks you should complete. It helps search engines see the site as a deliberate, organized system instead of a loose collection of pages. Combine clean sitemap submission with a proper Bing Webmaster Tools setup, a single semantic H1 on every page, and unique metadata, and your indexing setup will be in the top percentile of new websites.",
+    faq: [
+      {
+        question: "Where do I find my sitemap URL?",
+        answer: "Most platforms expose it at /sitemap.xml or /sitemap_index.xml on your root domain. If you are unsure, try both in a browser. If neither loads, your CMS or framework may need a sitemap plugin or a static sitemap file added to the public folder."
+      },
+      {
+        question: "How long does it take Google and Bing to process a sitemap?",
+        answer: "Both engines typically start processing within a few hours. Full coverage data can take several days to populate, especially for new domains. Resubmitting does not speed up the first crawl — clean structure and internal linking matter more."
+      },
+      {
+        question: "Should I submit one sitemap or multiple?",
+        answer: "If your site is small (under a few hundred URLs), one sitemap is fine. For larger sites, generate a sitemap index that points to category-specific sitemaps (pages, posts, products). Submit the index URL — search engines will follow the references."
+      },
+      {
+        question: "What is the most common sitemap mistake?",
+        answer: "Including URLs that return non-200 responses or that are noindexed. A sitemap is a promise that these are the URLs you want indexed. Mixing in dead, redirected, or excluded pages signals a careless setup and reduces trust in the sitemap."
+      },
+      {
+        question: "Do I need to resubmit my sitemap every time I publish a new page?",
+        answer: "No. Search engines revisit sitemaps automatically. Resubmit only after major structural changes — a redesign, a migration, a large batch of new content, or a domain change. For individual high-priority pages, use URL Inspection or URL Submission instead."
+      }
+    ]
   }
 ];
 
