@@ -2,6 +2,31 @@
 
 > Mushbloom is a UK-based AI automation agency specializing in AI workforce deployment, LLM SEO optimization (LLMboost), niche press release distribution (Mushbloom Newswire), AI video production, and custom web development. We help businesses dominate AI-powered search (ChatGPT, Gemini, Claude, Perplexity) and reduce operational costs by 37% through autonomous AI agent teams.
 
+## Pages
+
+- [Home](/): Mushbloom AI automation agency overview, services, and results.
+- [LLMboost](/llmboost): LLM SEO and Share of Model optimization for ChatGPT, Gemini, Claude, Perplexity.
+- [AI Automation Agency](/agency): Positioning page for founders, operators, and growing teams.
+- [Lovable Development](/services/lovable-development): No-code app development with Lovable, ChatGPT, Claude.
+- [Mushbloom Newswire](/newswire): Niche press release distribution across five verticals.
+- [AI Video Agency](/video-agency): Premium AI video production with tiered pricing.
+- [Portfolio – Websites](/portfolio/websites): 27+ live websites across industries.
+- [Portfolio – Custom GPTs](/portfolio/custom-gpts): Free AI marketing team Custom GPTs.
+- [Wiki Hub](/wiki): 35+ expert articles on AI automation, LLM SEO, and growth.
+- [Bing Webmaster Tools Setup](/wiki/bing-webmaster-tools-setup): Step-by-step Bing setup guide.
+- [Submit Sitemap to Bing & Google](/wiki/submit-sitemap-bing-google-guide): Sitemap submission tutorial.
+- [Fix H1 Tag Missing](/wiki/fix-h1-tag-missing-bing-webmaster-tools): Fix common H1 issue.
+- [GA4 + Search Console for Lovable](/wiki/ga4-search-console-setup-lovable): Analytics setup guide.
+- [Get Cited in LLM Platforms](/wiki/get-cited-chatgpt-perplexity-llm-platforms): How to earn AI citations.
+- [Lovable SEO Checklist 2026](/wiki/lovable-seo-checklist-2026): Complete SEO checklist for Lovable sites.
+- [Add Schema Markup on Lovable](/wiki/add-schema-markup-lovable-site): Schema.org guide for Lovable.
+- [Optimize for Google AI Overviews](/wiki/optimize-lovable-site-google-ai-overviews): AI Overviews optimization.
+- [Get Indexed on Google 2026](/wiki/get-lovable-site-indexed-google-2026): Indexing playbook.
+- [SaaS AI Search Visibility Guide](/guides/saas-ai-search-visibility): SaaS LLM SEO playbook.
+- [Crypto/Web3 AI Search Guide](/guides/crypto-web3-ai-search-visibility): Web3 LLM SEO playbook.
+- [SaaS Company Brain](/guides/saas-company-brain): Company brain for SaaS teams.
+- [Web3 Company Brain](/guides/web3-company-brain): Company brain for Web3 teams.
+
 ## Entity Definitions
 
 - **Mushbloom**: AI automation agency founded in 2024, headquartered in the United Kingdom, serving clients globally. Primary domain: https://mushbloom.uk
