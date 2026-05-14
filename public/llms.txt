@@ -8,6 +8,7 @@
 - [LLMboost](/llmboost): LLM SEO and Share of Model optimization for ChatGPT, Gemini, Claude, Perplexity.
 - [AI Automation Agency](/agency): Positioning page for founders, operators, and growing teams.
 - [Lovable Development](/services/lovable-development): No-code app development with Lovable, ChatGPT, Claude.
+- [WordPress + AI Platform](/platforms/wordpress-and-ai): SaaS platform for WordPress + AI websites, backed by agency-grade execution.
 - [Mushbloom Newswire](/newswire): Niche press release distribution across five verticals.
 - [AI Video Agency](/video-agency): Premium AI video production with tiered pricing.
 - [Portfolio – Websites](/portfolio/websites): 27+ live websites across industries.
