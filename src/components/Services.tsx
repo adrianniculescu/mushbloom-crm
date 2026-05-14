@@ -14,12 +14,22 @@ import {
   Search,
   TrendingUp,
   Video,
-  Code
+  Code,
+  Globe
 } from 'lucide-react';
 import { LOVABLE_AFFILIATE_URL } from '@/components/LovableLink';
 
 const Services = () => {
   const services = [
+    {
+      icon: Globe,
+      title: "WordPress + AI Platform",
+      description: "Our SaaS platform for WordPress + AI websites — backed by agency intelligence. Self-serve speed with optional done-for-you build, migration, SEO, and optimization.",
+      gradient: "from-blue-500 to-green-500",
+      category: "SaaS Platform",
+      isNew: true,
+      link: "/platforms/wordpress-and-ai"
+    },
     {
       icon: Code,
       title: "No-Code App Development",
