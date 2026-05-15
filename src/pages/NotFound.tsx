@@ -1,10 +1,29 @@
 import { useLocation, Link, Navigate } from "react-router-dom";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import Navigation from "@/components/Navigation";
 import { Home, ArrowRight } from "lucide-react";
 
+// 301-style client redirects for legacy WordPress URLs that Google still
+// has in its index. Mapping each one to the closest current page kills the
+// Soft 404 / duplicate-canonical findings in Search Console.
 const REDIRECTS: Record<string, string> = {
   "/portfolio-websites": "/portfolio/websites",
+  // Legacy WP marketing pages → consolidate to home / relevant service
+  "/mushbloom-london-digital-marketing-agency": "/",
+  "/mushbloom-london-digital-marketing-agency/": "/",
+  "/how-can-we-help/social-media-marketing": "/agency",
+  "/how-can-we-help/social-media-marketing/": "/agency",
+  "/how-can-we-help/web-design": "/services/lovable-development",
+  "/how-can-we-help/web-design/": "/services/lovable-development",
+  "/how-can-we-help/marketing-technology-hub": "/agency",
+  "/how-can-we-help/marketing-technology-hub/": "/agency",
+  "/how-can-we-help": "/agency",
+  "/how-can-we-help/": "/agency",
+  "/get-in-touch": "/#contact",
+  "/get-in-touch/": "/#contact",
+  "/team": "/#about",
+  "/team/": "/#about",
 };
 
 const NotFound = () => {
@@ -23,6 +42,12 @@ const NotFound = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
+      <Helmet>
+        <title>404 — Page Not Found | Mushbloom</title>
+        <meta name="robots" content="noindex, follow" />
+        <meta name="googlebot" content="noindex, follow" />
+        <link rel="canonical" href="https://mushbloom.uk/" />
+      </Helmet>
       <Navigation />
       <div className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
         <h1 className="text-8xl font-bold text-white mb-4 font-['Space_Grotesk']">404</h1>
