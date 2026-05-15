@@ -27,6 +27,7 @@ import AiAutomationAgencyPage from "./pages/AiAutomationAgencyPage";
 import LovableDevelopmentPage from "./pages/LovableDevelopmentPage";
 import WordPressAiPlatformPage from "./pages/platforms/WordPressAiPlatformPage";
 import ReelFactoryPage from "./pages/projects/ReelFactoryPage";
+import NexusTmrwPage from "./pages/projects/NexusTmrwPage";
 import NotFound from "./pages/NotFound";
 import CmsLogin from "./pages/CmsLogin";
 import CmsDashboard from "./pages/CmsDashboard";
