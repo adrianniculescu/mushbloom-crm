@@ -65,8 +65,6 @@ const Testimonials = () => {
             <div 
               key={index} 
               className="glass-effect rounded-2xl p-6 hover:scale-105 transition-all duration-300"
-              itemScope 
-              itemType="https://schema.org/Review"
             >
               <div className="flex items-center mb-4">
                 <Quote className="h-8 w-8 text-blue-400 mb-4" />
