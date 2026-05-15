@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -62,7 +62,7 @@ const App = () => (
             <Route path="/services/lovable-development" element={<LovableDevelopmentPage />} />
             <Route path="/platforms/wordpress-and-ai" element={<WordPressAiPlatformPage />} />
             <Route path="/projects/reel-factory" element={<ReelFactoryPage />} />
-            <Route path="/projects" element={<ReelFactoryPage />} />
+            <Route path="/projects" element={<Navigate to="/portfolio/websites" replace />} />
             <Route path="/wiki" element={<WikiIndexPage />} />
             <Route path="/wiki/:slug" element={<WikiArticlePage />} />
             <Route path="/guides/saas-ai-search-visibility" element={<SaasAiSearchGuide />} />
