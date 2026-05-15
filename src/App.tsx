@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -26,6 +26,7 @@ import VideoAgencyPage from "./pages/VideoAgencyPage";
 import AiAutomationAgencyPage from "./pages/AiAutomationAgencyPage";
 import LovableDevelopmentPage from "./pages/LovableDevelopmentPage";
 import WordPressAiPlatformPage from "./pages/platforms/WordPressAiPlatformPage";
+import ReelFactoryPage from "./pages/projects/ReelFactoryPage";
 import NotFound from "./pages/NotFound";
 import CmsLogin from "./pages/CmsLogin";
 import CmsDashboard from "./pages/CmsDashboard";
@@ -60,6 +61,8 @@ const App = () => (
             <Route path="/agency" element={<AiAutomationAgencyPage />} />
             <Route path="/services/lovable-development" element={<LovableDevelopmentPage />} />
             <Route path="/platforms/wordpress-and-ai" element={<WordPressAiPlatformPage />} />
+            <Route path="/projects/reel-factory" element={<ReelFactoryPage />} />
+            <Route path="/projects" element={<Navigate to="/portfolio/websites" replace />} />
             <Route path="/wiki" element={<WikiIndexPage />} />
             <Route path="/wiki/:slug" element={<WikiArticlePage />} />
             <Route path="/guides/saas-ai-search-visibility" element={<SaasAiSearchGuide />} />
