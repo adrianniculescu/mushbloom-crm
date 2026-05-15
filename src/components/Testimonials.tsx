@@ -75,13 +75,9 @@ const Testimonials = () => {
                 </div>
               </div>
 
-              <blockquote className="text-gray-300 leading-relaxed mb-6" itemProp="reviewBody">
+              <blockquote className="text-gray-300 leading-relaxed mb-6">
                 "{testimonial.content}"
               </blockquote>
-
-              <div itemProp="itemReviewed" itemScope itemType="https://schema.org/Organization" className="sr-only">
-                <meta itemProp="name" content="Mushbloom" />
-              </div>
 
               <div className="border-t border-gray-700 pt-4">
                 <div className="flex items-center gap-3 mb-4">
@@ -90,13 +86,11 @@ const Testimonials = () => {
                     alt={testimonial.name}
                     className="w-12 h-12 rounded-full object-cover"
                   />
-                  <div itemProp="author" itemScope itemType="https://schema.org/Person">
-                    <div className="text-white font-semibold" itemProp="name">{testimonial.name}</div>
-                    <div className="text-gray-400 text-sm" itemProp="jobTitle">{testimonial.role}</div>
+                  <div>
+                    <div className="text-white font-semibold">{testimonial.name}</div>
+                    <div className="text-gray-400 text-sm">{testimonial.role}</div>
                     <div className="text-blue-300 text-sm font-medium">
-                      <span itemProp="worksFor" itemScope itemType="https://schema.org/Organization">
-                        <span itemProp="name">{testimonial.company}</span>
-                      </span>
+                      <span>{testimonial.company}</span>
                     </div>
                   </div>
                 </div>
@@ -112,30 +106,8 @@ const Testimonials = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Structured data for search engines */}
-              <div className="sr-only">
-                <div itemProp="reviewRating" itemScope itemType="https://schema.org/Rating">
-                  <meta itemProp="ratingValue" content={testimonial.metrics.satisfaction.toString()} />
-                  <meta itemProp="bestRating" content="5" />
-                </div>
-                <meta itemProp="keywords" content={testimonial.keywords} />
-                <meta itemProp="datePublished" content="2026-01-15" />
-              </div>
             </div>
           ))}
-        </div>
-
-        {/* Aggregate rating for SEO - attached to Organization */}
-        <div className="sr-only" itemScope itemType="https://schema.org/Organization">
-          <meta itemProp="name" content="Mushbloom" />
-          <div itemProp="aggregateRating" itemScope itemType="https://schema.org/AggregateRating">
-            <meta itemProp="itemReviewed" content="Mushbloom" />
-            <meta itemProp="ratingValue" content="5" />
-            <meta itemProp="reviewCount" content="47" />
-            <meta itemProp="bestRating" content="5" />
-            <meta itemProp="worstRating" content="1" />
-          </div>
         </div>
 
         <div className="text-center mt-12">
