@@ -63,6 +63,7 @@ const App = () => (
             <Route path="/services/lovable-development" element={<LovableDevelopmentPage />} />
             <Route path="/platforms/wordpress-and-ai" element={<WordPressAiPlatformPage />} />
             <Route path="/projects/reel-factory" element={<ReelFactoryPage />} />
+            <Route path="/projects/nexus-tmrw-venture-network" element={<NexusTmrwPage />} />
             <Route path="/projects" element={<Navigate to="/portfolio/websites" replace />} />
             <Route path="/wiki" element={<WikiIndexPage />} />
             <Route path="/wiki/:slug" element={<WikiArticlePage />} />
