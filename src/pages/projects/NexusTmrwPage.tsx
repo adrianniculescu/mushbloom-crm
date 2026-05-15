@@ -23,7 +23,7 @@ const META_TITLE = 'Nexus by TMRW Venture Network — AI Venture Platform';
 const META_DESCRIPTION =
   'Nexus is an AI-powered venture platform by TMRW Venture Network, designed to support investors, founders, and venture professionals across sourcing, diligence, fundraising, and reporting workflows.';
 
-const capabilities: { icon: React.ComponentType<{ className?: string; strokeWidth?: number }>; label: string }[] = [
+const capabilities = [
   { icon: Search, label: 'AI-driven deal sourcing' },
   { icon: ShieldCheck, label: 'Due diligence support' },
   { icon: BarChart3, label: 'Real-time portfolio and risk analytics' },
