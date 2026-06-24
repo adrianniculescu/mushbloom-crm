@@ -217,3 +217,22 @@ html {
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* Accessibility: respect users who request reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Global, consistent visible focus ring for keyboard users */
+:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
