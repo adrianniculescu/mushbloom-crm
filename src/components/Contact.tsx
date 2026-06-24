@@ -253,7 +253,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <footer className="mt-20 pt-8 border-t border-white/10 text-center" itemScope itemType="https://schema.org/Organization">
+      <div className="mt-20 pt-8 border-t border-white/10 text-center" itemScope itemType="https://schema.org/Organization">
         <p className="text-gray-400">
           © 2024–2026 <span itemProp="name">Mushbloom</span>. Architecting the autonomous business revolution.
         </p>
