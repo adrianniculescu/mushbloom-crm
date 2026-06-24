@@ -220,11 +220,18 @@ const Contact = () => {
                   />
                 </div>
 
+                <p className="text-xs text-gray-400">
+                  By submitting this form you agree we may contact you about your enquiry. We will not share
+                  your details with third parties for marketing. See our{' '}
+                  <a href="/legal/privacy-policy" className="underline hover:text-white">Privacy Policy</a>.
+                  Privacy requests: <a href="mailto:office@mushbloom.co.uk" className="underline hover:text-white">office@mushbloom.co.uk</a>.
+                </p>
+
                 <button
                   type="submit"
                   disabled={isSubmitting}
                   data-cta="contact_cta"
-                  className="w-full bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:scale-[1.02] transition-transform duration-200 inline-flex items-center justify-center gap-2 shadow-lg disabled:opacity-60 disabled:hover:scale-100"
+                  className="w-full bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:scale-[1.02] transition-transform duration-200 inline-flex items-center justify-center gap-2 shadow-lg disabled:opacity-60 disabled:hover:scale-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
                 >
                   {isSubmitting ? (
                     <><Loader2 className="h-5 w-5 animate-spin" /> Sending...</>
