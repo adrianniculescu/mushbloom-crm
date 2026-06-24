@@ -10,6 +10,7 @@ const serviceOptions = [
   'LLMboost SEO',
   'AI Workforce',
   'Web Development',
+  'Website Compliance',
   'Consulting',
   'Other',
 ];
