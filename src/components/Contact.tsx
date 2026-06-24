@@ -278,7 +278,7 @@ const Contact = () => {
           </a>
           .
         </p>
-      </footer>
+      </div>
     </section>
   );
 };
