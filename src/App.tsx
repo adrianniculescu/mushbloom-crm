@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -28,6 +28,10 @@ import LovableDevelopmentPage from "./pages/LovableDevelopmentPage";
 import WordPressAiPlatformPage from "./pages/platforms/WordPressAiPlatformPage";
 import ReelFactoryPage from "./pages/projects/ReelFactoryPage";
 import NexusTmrwPage from "./pages/projects/NexusTmrwPage";
+import PrivacyPolicy from "./pages/legal/PrivacyPolicy";
+import CookiePolicy from "./pages/legal/CookiePolicy";
+import Terms from "./pages/legal/Terms";
+import AccessibilityStatement from "./pages/legal/AccessibilityStatement";
 import NotFound from "./pages/NotFound";
 import CmsLogin from "./pages/CmsLogin";
 import CmsDashboard from "./pages/CmsDashboard";
@@ -35,50 +39,68 @@ import MockupsIndex from "./pages/mockups/MockupsIndex";
 import AtsMockup from "./pages/mockups/AtsMockup";
 import Unsubscribe from "./pages/Unsubscribe";
 import Analytics from "./components/Analytics";
+import { ConsentProvider } from "@/lib/consent";
+import CookieConsent from "@/components/CookieConsent";
+import SiteFooter from "@/components/SiteFooter";
 
 const queryClient = new QueryClient();
+
+const ChromeFooter = () => {
+  const { pathname } = useLocation();
+  // Hide the sitewide footer on admin/CMS surfaces.
+  if (pathname.startsWith('/cms')) return null;
+  return <SiteFooter />;
+};
 
 const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <Router>
-          <Analytics />
-          <Toaster />
-          <Sonner />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/portfolio/websites" element={<PortfolioWebsites />} />
-            <Route path="/portfolio/custom-gpts" element={<PortfolioCustomGPTs />} />
-            <Route path="/llmboost" element={<LLMboostPage />} />
-            <Route path="/llmboost/:slug" element={<LLMboostCaseStudy />} />
-            <Route path="/newswire" element={<NewswirePage />} />
-            <Route path="/newswire/crypto-blockchain" element={<CryptoBlockchainPage />} />
-            <Route path="/newswire/cybersecurity" element={<CybersecurityPage />} />
-            <Route path="/newswire/finance-fintech" element={<FinanceFintechPage />} />
-            <Route path="/newswire/gaming" element={<GamingPage />} />
-            <Route path="/newswire/igaming" element={<IGamingPage />} />
-            <Route path="/video-agency" element={<VideoAgencyPage />} />
-            <Route path="/agency" element={<AiAutomationAgencyPage />} />
-            <Route path="/services/lovable-development" element={<LovableDevelopmentPage />} />
-            <Route path="/platforms/wordpress-and-ai" element={<WordPressAiPlatformPage />} />
-            <Route path="/projects/reel-factory" element={<ReelFactoryPage />} />
-            <Route path="/projects/nexus-tmrw-venture-network" element={<NexusTmrwPage />} />
-            <Route path="/projects" element={<Navigate to="/portfolio/websites" replace />} />
-            <Route path="/wiki" element={<WikiIndexPage />} />
-            <Route path="/wiki/:slug" element={<WikiArticlePage />} />
-            <Route path="/guides/saas-ai-search-visibility" element={<SaasAiSearchGuide />} />
-            <Route path="/guides/crypto-web3-ai-search-visibility" element={<CryptoWeb3AiSearchGuide />} />
-            <Route path="/guides/web3-company-brain" element={<Web3CompanyBrainGuide />} />
-            <Route path="/guides/saas-company-brain" element={<SaasCompanyBrainGuide />} />
-            <Route path="/cms/login" element={<CmsLogin />} />
-            <Route path="/cms" element={<CmsDashboard />} />
-            <Route path="/mockups" element={<MockupsIndex />} />
-            <Route path="/mockups/ats" element={<AtsMockup />} />
-            <Route path="/unsubscribe" element={<Unsubscribe />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Router>
+        <ConsentProvider>
+          <Router>
+            <Analytics />
+            <Toaster />
+            <Sonner />
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/portfolio/websites" element={<PortfolioWebsites />} />
+              <Route path="/portfolio/custom-gpts" element={<PortfolioCustomGPTs />} />
+              <Route path="/llmboost" element={<LLMboostPage />} />
+              <Route path="/llmboost/:slug" element={<LLMboostCaseStudy />} />
+              <Route path="/newswire" element={<NewswirePage />} />
+              <Route path="/newswire/crypto-blockchain" element={<CryptoBlockchainPage />} />
+              <Route path="/newswire/cybersecurity" element={<CybersecurityPage />} />
+              <Route path="/newswire/finance-fintech" element={<FinanceFintechPage />} />
+              <Route path="/newswire/gaming" element={<GamingPage />} />
+              <Route path="/newswire/igaming" element={<IGamingPage />} />
+              <Route path="/video-agency" element={<VideoAgencyPage />} />
+              <Route path="/agency" element={<AiAutomationAgencyPage />} />
+              <Route path="/services/lovable-development" element={<LovableDevelopmentPage />} />
+              <Route path="/platforms/wordpress-and-ai" element={<WordPressAiPlatformPage />} />
+              <Route path="/projects/reel-factory" element={<ReelFactoryPage />} />
+              <Route path="/projects/nexus-tmrw-venture-network" element={<NexusTmrwPage />} />
+              <Route path="/projects" element={<Navigate to="/portfolio/websites" replace />} />
+              <Route path="/wiki" element={<WikiIndexPage />} />
+              <Route path="/wiki/:slug" element={<WikiArticlePage />} />
+              <Route path="/guides/saas-ai-search-visibility" element={<SaasAiSearchGuide />} />
+              <Route path="/guides/crypto-web3-ai-search-visibility" element={<CryptoWeb3AiSearchGuide />} />
+              <Route path="/guides/web3-company-brain" element={<Web3CompanyBrainGuide />} />
+              <Route path="/guides/saas-company-brain" element={<SaasCompanyBrainGuide />} />
+              <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/legal/cookie-policy" element={<CookiePolicy />} />
+              <Route path="/legal/terms" element={<Terms />} />
+              <Route path="/legal/accessibility" element={<AccessibilityStatement />} />
+              <Route path="/cms/login" element={<CmsLogin />} />
+              <Route path="/cms" element={<CmsDashboard />} />
+              <Route path="/mockups" element={<MockupsIndex />} />
+              <Route path="/mockups/ats" element={<AtsMockup />} />
+              <Route path="/unsubscribe" element={<Unsubscribe />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+            <ChromeFooter />
+            <CookieConsent />
+          </Router>
+        </ConsentProvider>
       </TooltipProvider>
     </QueryClientProvider>
   </HelmetProvider>

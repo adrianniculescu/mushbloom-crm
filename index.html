@@ -232,13 +232,11 @@
     }
     </script>
 
-    <!-- Google Analytics (GA4) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VZ1T4E6G5B"></script>
+    <!-- Google Analytics (GA4) is loaded by the in-app consent manager
+         (src/lib/consent.ts) only after the user grants Analytics consent. -->
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-VZ1T4E6G5B', { send_page_view: false });
+      window.gtag = window.gtag || function(){ window.dataLayer.push(arguments); };
     </script>
   </head>
 
