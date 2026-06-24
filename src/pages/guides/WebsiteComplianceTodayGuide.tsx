@@ -8,7 +8,7 @@ import { ArrowRight, ChevronRight, Mail, MessageCircle, Globe, BookOpen, Clock }
 interface Section { id: string; title: string; }
 
 const sections: Section[] = [
-  { id: 'why-it-matters', title: 'Why website compliance matters in 2026' },
+  { id: 'why-it-matters', title: 'Why website compliance matters today' },
   { id: 'risks', title: 'The risks of a non-compliant website' },
   { id: 'gdpr', title: 'GDPR and privacy beyond the cookie banner' },
   { id: 'cookies', title: 'Cookie consent done properly' },
@@ -26,7 +26,7 @@ const sections: Section[] = [
   { id: 'contact', title: 'Need help? Contact Mushbloom' },
 ];
 
-const WebsiteCompliance2026Guide = () => {
+const WebsiteComplianceTodayGuide = () => {
   const [activeId, setActiveId] = useState<string>(sections[0].id);
 
   useEffect(() => {
@@ -41,10 +41,10 @@ const WebsiteCompliance2026Guide = () => {
     return () => observer.disconnect();
   }, []);
 
-  const url = 'https://mushbloom.uk/guides/website-compliance-2026';
-  const title = 'Website Compliance in 2026: GDPR, Accessibility and International Standards for Growing Brands';
+  const url = 'https://mushbloom.uk/guides/website-compliance-today';
+  const title = 'Website Compliance Today: GDPR, Accessibility and International Standards for Growing Brands';
   const description =
-    'A practical 2026 guide to website compliance: GDPR and ePrivacy, cookie consent, WCAG 2.2 accessibility, the European Accessibility Act, and an actionable audit and remediation roadmap.';
+    'A practical guide to website compliance: GDPR and ePrivacy, cookie consent, WCAG 2.2 accessibility, the European Accessibility Act, and an actionable audit and remediation roadmap.';
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -58,15 +58,15 @@ const WebsiteCompliance2026Guide = () => {
       name: 'Mushbloom',
       logo: { '@type': 'ImageObject', url: 'https://mushbloom.uk/lovable-uploads/a393711c-b940-4619-8101-fb5159650972.png' },
     },
-    datePublished: '2026-01-15T09:00:00+00:00',
-    dateModified: '2026-01-15T09:00:00+00:00',
+    datePublished: '2025-01-15T09:00:00+00:00',
+    dateModified: '2025-01-15T09:00:00+00:00',
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     url,
     articleSection: 'Compliance & Trust',
     inLanguage: 'en-GB',
     isAccessibleForFree: true,
     keywords: [
-      'website compliance 2026',
+      'website compliance today',
       'GDPR website compliance',
       'cookie consent UK',
       'WCAG 2.2 AA',
@@ -162,13 +162,13 @@ const WebsiteCompliance2026Guide = () => {
               {title}
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 leading-relaxed font-light">
-              A clear, practical 2026 playbook for getting your website compliant across GDPR, cookie consent,
+              A clear, practical playbook for getting your website compliant across GDPR, cookie consent,
               WCAG 2.2 accessibility and international standards — without breaking your brand or conversions.
             </p>
             <div className="flex items-center gap-4 mt-8 text-sm text-gray-400">
               <div className="flex items-center gap-2"><Clock className="h-4 w-4" /><span>16 min read</span></div>
               <span>•</span>
-              <span>Updated January 2026</span>
+              <span>Updated January 2025</span>
             </div>
           </header>
 
@@ -205,7 +205,7 @@ const WebsiteCompliance2026Guide = () => {
                 </p>
               </div>
 
-              <Section id="why-it-matters" title="Why website compliance matters in 2026">
+              <Section id="why-it-matters" title="Why website compliance matters today">
                 <p>
                   Businesses serving users across the UK, Europe and other regulated markets increasingly need a
                   website that handles privacy correctly, remains accessible to a wider range of users and stands
@@ -213,7 +213,7 @@ const WebsiteCompliance2026Guide = () => {
                   task to a continuous quality standard for the whole site.
                 </p>
                 <p>
-                  Three forces are converging in 2026: stricter cookie and privacy enforcement, the European
+                  Three forces are converging today: stricter cookie and privacy enforcement, the European
                   Accessibility Act now in force for in-scope services, and rising buyer expectations around
                   transparency and trust. Sites that lag on any of these dimensions lose credibility well before
                   they ever attract a regulator&#39;s attention.
@@ -262,7 +262,7 @@ const WebsiteCompliance2026Guide = () => {
               <Section id="cookies" title="Cookie consent done properly">
                 <p>
                   Good cookie consent is invisible until it needs to be visible, and respectful when it appears.
-                  The 2026 baseline most legal teams converge on includes:
+                  The current baseline most legal teams converge on includes:
                 </p>
                 <BulletList items={[
                   'Block all non-essential scripts before a choice is made, including analytics, marketing pixels and embeds.',
@@ -585,4 +585,4 @@ const Step = ({ n, title, children }: { n: number; title: string; children: Reac
   </div>
 );
 
-export default WebsiteCompliance2026Guide;
+export default WebsiteComplianceTodayGuide;
