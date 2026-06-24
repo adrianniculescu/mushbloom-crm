@@ -50,11 +50,11 @@ const featuredGuides = [
     tag: 'AI Strategy & Operations',
   },
   {
-    slug: 'website-compliance-2026',
-    path: '/guides/website-compliance-2026',
-    title: 'Website Compliance in 2026: GDPR, Accessibility and International Standards for Growing Brands',
+    slug: 'website-compliance-today',
+    path: '/guides/website-compliance-today',
+    title: 'Website Compliance Today: GDPR, Accessibility and International Standards for Growing Brands',
     description:
-      'A practical 2026 playbook covering GDPR, cookie consent, WCAG 2.2 accessibility, the European Accessibility Act, and a 30-60-90 day remediation roadmap.',
+      'A practical playbook covering GDPR, cookie consent, WCAG 2.2 accessibility, the European Accessibility Act, and a 30-60-90 day remediation roadmap.',
     readTime: '16 min read',
     tag: 'Compliance & Trust',
   },
