@@ -77,11 +77,9 @@ function loadGA() {
   s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
   s.setAttribute('data-ga-loader', '1');
   document.head.appendChild(s);
-  // Initialize once script is queued (gtag stub already exists from index.html)
-  // @ts-expect-error - gtag stub
-  window.gtag('js', new Date());
-  // @ts-expect-error - gtag stub
-  window.gtag('config', GA_ID, { send_page_view: false, anonymize_ip: true });
+  const w = window as unknown as { gtag: (...args: unknown[]) => void };
+  w.gtag('js', new Date());
+  w.gtag('config', GA_ID, { send_page_view: false, anonymize_ip: true });
   gaLoaded = true;
 }
 
