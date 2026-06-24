@@ -475,6 +475,59 @@ const WebsiteComplianceTodayGuide = () => {
                   multi-template marketing sites with heavy tracking and ecommerce flows sit considerably higher.
                   We scope every engagement against the actual site rather than against a template.
                 </p>
+
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-6 md:p-8 my-8">
+                  <h3 className="text-xl font-semibold text-white mb-6 font-['Space_Grotesk']">Indicative pricing</h3>
+                  <div className="space-y-5">
+                    {[
+                      { label: 'Compliance audit and recommendations', range: '$500 to $1,200' },
+                      { label: 'GDPR / cookie consent implementation', range: '$750 to $2,000' },
+                      { label: 'Accessibility remediation for common issues', range: '$1,000 to $3,000' },
+                      { label: 'Full website compliance implementation across privacy, accessibility, and international best-practice requirements', range: '$2,500 to $7,500+' },
+                      { label: 'Ongoing monitoring, review, and maintenance', range: 'custom / quote-based' },
+                    ].map((item) => (
+                      <div key={item.label} className="flex items-start gap-4">
+                        <div className="mt-1 p-1.5 rounded-md bg-blue-500/10 border border-blue-500/20">
+                          <DollarSign className="h-4 w-4 text-blue-400" />
+                        </div>
+                        <div className="flex-1">
+                          <p className="text-gray-200 font-medium leading-snug">{item.label}</p>
+                          <p className="text-gray-400 text-sm">from {item.range}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="mt-8 pt-6 border-t border-white/10">
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      All figures are indicative. The final scope is set after a brief review of your site, stack,
+                      target markets and current compliance gaps.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="rounded-xl border border-blue-500/20 bg-blue-500/10 p-6">
+                  <h3 className="text-lg font-semibold text-white mb-3 font-['Space_Grotesk']">Not sure what you need?</h3>
+                  <p className="text-gray-300 mb-5 leading-relaxed">
+                    Book a free compliance review. We will look at your current site, identify the highest-priority
+                    gaps, and recommend a scoped engagement with a clear fixed or estimate-based price.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <a
+                      href="https://tidycal.com/adrianniculescu"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:scale-105 transition-transform inline-flex items-center justify-center gap-2"
+                    >
+                      Book a free compliance review <ArrowRight className="h-4 w-4" />
+                    </a>
+                    <a
+                      href="mailto:office@mushbloom.co.uk?subject=Website%20compliance%20enquiry"
+                      className="border border-white/20 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors inline-flex items-center justify-center gap-2"
+                    >
+                      <Mail className="h-4 w-4" /> Email us
+                    </a>
+                  </div>
+                </div>
               </Section>
 
               <Section id="help" title="How Mushbloom can help">
