@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Navigation from '@/components/Navigation';
 import Contact from '@/components/Contact';
-import { ArrowRight, ChevronRight, Mail, MessageCircle, Globe, BookOpen, Clock } from 'lucide-react';
+import { ArrowRight, ChevronRight, Mail, MessageCircle, Globe, BookOpen, Clock, DollarSign } from 'lucide-react';
 
 interface Section { id: string; title: string; }
 
