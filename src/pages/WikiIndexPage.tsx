@@ -14,6 +14,15 @@ interface DbPost {
 
 const featuredGuides = [
   {
+    slug: 'website-compliance-today',
+    path: '/guides/website-compliance-today',
+    title: 'Website Compliance Today: GDPR, Accessibility and International Standards for Growing Brands',
+    description:
+      'A practical playbook covering GDPR, cookie consent, WCAG 2.2 accessibility, the European Accessibility Act, and a 30-60-90 day remediation roadmap.',
+    readTime: '16 min read',
+    tag: 'Compliance & Trust',
+  },
+  {
     slug: 'saas-ai-search-visibility',
     path: '/guides/saas-ai-search-visibility',
     title: 'How SaaS Companies Can Increase Traffic, Users, and Revenue with AI Search',
@@ -48,15 +57,6 @@ const featuredGuides = [
       'How SaaS companies can build a central AI-powered knowledge layer that captures institutional memory and helps the business scale intelligently.',
     readTime: '11 min read',
     tag: 'AI Strategy & Operations',
-  },
-  {
-    slug: 'website-compliance-today',
-    path: '/guides/website-compliance-today',
-    title: 'Website Compliance Today: GDPR, Accessibility and International Standards for Growing Brands',
-    description:
-      'A practical playbook covering GDPR, cookie consent, WCAG 2.2 accessibility, the European Accessibility Act, and a 30-60-90 day remediation roadmap.',
-    readTime: '16 min read',
-    tag: 'Compliance & Trust',
   },
 ];
 
