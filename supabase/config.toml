@@ -3,13 +3,9 @@ project_id = "unatnldzcewjtfpumkzp"
 [functions]
   [functions.auth-email-hook]
     verify_jwt = false
-  [functions.handle-email-suppression]
+  [functions.handle-email-events]
     verify_jwt = false
-  [functions.handle-email-unsubscribe]
+  [functions.notify-new-lead]
     verify_jwt = false
   [functions.preview-transactional-email]
     verify_jwt = false
-  [functions.process-email-queue]
-    verify_jwt = true
-  [functions.send-transactional-email]
-    verify_jwt = true
