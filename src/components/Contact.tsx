@@ -58,21 +58,9 @@ const Contact = () => {
 
     if (!error) {
       // Fire-and-forget notification to office@mushbloom.co.uk
-      supabase.functions.invoke('send-transactional-email', {
-        body: {
-          templateName: 'new-lead-notification',
-          recipientEmail: 'office@mushbloom.co.uk',
-          idempotencyKey: `new-lead-${leadId}`,
-          templateData: {
-            name: payload.name,
-            email: payload.email,
-            phone: payload.phone,
-            service_interest: payload.service_interest,
-            budget: payload.budget,
-            message: payload.message,
-          },
-        },
-      }).catch((e) => console.error('Notification email failed', e));
+      supabase.functions
+        .invoke('notify-new-lead', { body: { leadId } })
+        .catch((e) => console.error('Notification email failed', e));
     }
 
     setIsSubmitting(false);
