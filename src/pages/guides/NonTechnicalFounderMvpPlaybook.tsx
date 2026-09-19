@@ -506,7 +506,7 @@ const NonTechnicalFounderMvpPlaybook = () => {
                     Lovable development
                   </Link>
                   ,{' '}
-                  <Link to="/ai-automation-agency" className="text-blue-400 hover:text-blue-300 underline underline-offset-2">
+                  <Link to="/agency" className="text-blue-400 hover:text-blue-300 underline underline-offset-2">
                     AI automation agency
                   </Link>{' '}
                   and{' '}

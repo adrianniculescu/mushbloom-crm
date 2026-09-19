@@ -23,6 +23,7 @@ import CryptoWeb3AiSearchGuide from "./pages/guides/CryptoWeb3AiSearchGuide";
 import Web3CompanyBrainGuide from "./pages/guides/Web3CompanyBrainGuide";
 import SaasCompanyBrainGuide from "./pages/guides/SaasCompanyBrainGuide";
 import WebsiteComplianceTodayGuide from "./pages/guides/WebsiteComplianceTodayGuide";
+import NonTechnicalFounderMvpPlaybook from "./pages/guides/NonTechnicalFounderMvpPlaybook";
 import VideoAgencyPage from "./pages/VideoAgencyPage";
 import AiAutomationAgencyPage from "./pages/AiAutomationAgencyPage";
 import LovableDevelopmentPage from "./pages/LovableDevelopmentPage";
@@ -89,6 +90,8 @@ const App = () => (
               <Route path="/guides/saas-company-brain" element={<SaasCompanyBrainGuide />} />
               <Route path="/guides/website-compliance-today" element={<WebsiteComplianceTodayGuide />} />
               <Route path="/guides/website-compliance-2026" element={<Navigate to="/guides/website-compliance-today" replace />} />
+              <Route path="/guides/non-technical-founder-mvp-playbook" element={<NonTechnicalFounderMvpPlaybook />} />
+              <Route path="/non-technical-founder-mvp-playbook" element={<Navigate to="/guides/non-technical-founder-mvp-playbook" replace />} />
               <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/legal/cookie-policy" element={<CookiePolicy />} />
               <Route path="/legal/terms" element={<Terms />} />
