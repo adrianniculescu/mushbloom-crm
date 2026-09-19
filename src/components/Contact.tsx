@@ -11,6 +11,7 @@ const serviceOptions = [
   'AI Workforce',
   'Web Development',
   'Website Compliance',
+  'MVP / Product Build',
   'Consulting',
   'Other',
 ];
