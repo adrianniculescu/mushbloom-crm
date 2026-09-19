@@ -14,6 +14,15 @@ interface DbPost {
 
 const featuredGuides = [
   {
+    slug: 'non-technical-founder-mvp-playbook',
+    path: '/guides/non-technical-founder-mvp-playbook',
+    title: 'From Corporate Expert to Startup Founder: The Practical MVP Playbook for Non-Technical Builders',
+    description:
+      'How non-technical founders validate a real problem, prove customer commitment and build an AI-enabled MVP — without a technical co-founder or a large development budget.',
+    readTime: '15 min read',
+    tag: 'Founders & MVPs',
+  },
+  {
     slug: 'website-compliance-today',
     path: '/guides/website-compliance-today',
     title: 'Website Compliance Today: GDPR, Accessibility and International Standards for Growing Brands',
