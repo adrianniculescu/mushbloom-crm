@@ -1,0 +1,235 @@
+// Indicative availability data supplied by Mushbloom's sources.
+// Volumes are typical/indicative ranges only — never guaranteed delivery levels.
+
+export interface VerticalCard {
+  name: string;
+  examples: string;
+}
+
+export const VERTICAL_CARDS: VerticalCard[] = [
+  { name: 'AI and technology', examples: 'AI leads, domain owners, software and computer-support audiences' },
+  { name: 'Accredited investors and finance', examples: 'Accredited investors, stock, merchant cash advance, bankruptcy' },
+  { name: 'B2B and business decision-makers', examples: 'B2B feeds, business lists, CEO and owner records, new businesses' },
+  { name: 'Crypto and digital assets', examples: 'Crypto audiences and related investor segments' },
+  { name: 'Real estate and mortgage', examples: 'Mortgage, real estate, home owners, renters, new movers' },
+  { name: 'Insurance and financial services', examples: 'Auto, health, life and final-expense insurance, debt, credit' },
+  { name: 'Health and wellness', examples: 'Health insurance, diabetic, weight loss, nutra, human wellness' },
+  { name: 'Solar and home services', examples: 'Solar, electric, home security, house cleaning, recycling' },
+  { name: 'Auto and mobility', examples: 'Auto insurance, auto warranty, auto finance, Uber, bike and boat owners' },
+  { name: 'Travel and hospitality', examples: 'Travel, timeshare, hotel and convention audiences' },
+  { name: 'Education and employment', examples: 'EDU, student loan, job seeker and grant audiences' },
+  { name: 'Fitness and lifestyle', examples: 'Fitness, garage sale, gun owners, model and actor audiences' },
+  { name: 'Pets and consumer products', examples: 'Pet leads, pet food, cleaning products, coupon and sweepstakes' },
+  { name: 'Gaming and entertainment', examples: 'Gaming, wrestling and entertainment-interest audiences' },
+  { name: 'E-commerce and buyer-intent segments', examples: 'Openers, clickers, buyers, freebie and mixed-intent feeds' },
+];
+
+export const CARD_DISCLAIMER =
+  'Availability, volume, geography, data fields and permitted use vary by source. Request current details.';
+
+export interface StreamRow {
+  name: string;
+  frequency: string;
+  volume: string;
+  group: string;
+}
+
+// Source: supplied daily lead verticals sheet. Ranges are indicative averages.
+export const STREAM_ROWS: StreamRow[] = [
+  { name: 'Accredited Investors', frequency: 'Daily', volume: '10,000 – 15,000', group: 'Finance & investing' },
+  { name: 'Affiliate Publishers', frequency: 'Daily', volume: '5,000 – 10,000', group: 'B2B & business' },
+  { name: 'AI Leads', frequency: 'Daily', volume: '10,000 – 20,000', group: 'AI & technology' },
+  { name: 'Ailment Database Monthly Feed', frequency: 'Monthly', volume: '20,000,000', group: 'Health & wellness' },
+  { name: 'All Realtimes Combined', frequency: 'Daily', volume: '1,500,000', group: 'Mixed & intent' },
+  { name: 'Australian Leads', frequency: 'Daily', volume: '1,000 – 1,500', group: 'International' },
+  { name: 'Auto Finance (New & Used)', frequency: 'Daily', volume: 'On request', group: 'Auto & mobility' },
+  { name: 'Auto Insurance', frequency: 'Daily', volume: '60,000 – 70,000', group: 'Insurance' },
+  { name: 'Auto Warranty', frequency: 'Daily', volume: 'On request', group: 'Auto & mobility' },
+  { name: 'Battery Auto', frequency: 'Daily', volume: '5,000 – 10,000', group: 'Auto & mobility' },
+  { name: 'B2B Data (6 feeds)', frequency: 'Daily', volume: '150,000+ – 250,000+', group: 'B2B & business' },
+  { name: 'Bankruptcy Leads', frequency: 'Daily', volume: '800 – 1,000', group: 'Finance & investing' },
+  { name: 'Bike Owners', frequency: 'Daily', volume: '35,000 – 50,000', group: 'Lifestyle & consumer' },
+  { name: 'Boat Owners', frequency: 'Daily', volume: '35,000 – 50,000', group: 'Lifestyle & consumer' },
+  { name: 'Boat Parts', frequency: 'Daily', volume: '5,000 – 10,000', group: 'Lifestyle & consumer' },
+  { name: 'Business Opportunity Seekers (2 feeds)', frequency: 'Daily', volume: '50,000 – 55,000', group: 'B2B & business' },
+  { name: 'Canadian Coregs', frequency: 'Daily', volume: '2,000 – 5,000', group: 'International' },
+  { name: 'Car Wash', frequency: 'Daily', volume: '5,000 – 10,000', group: 'Auto & mobility' },
+  { name: 'CBD Oil & Phones (consumer)', frequency: 'Daily', volume: '5,000 – 50,000', group: 'Health & wellness' },
+  { name: 'Cleaning Products', frequency: 'Daily', volume: '50,000 – 55,000', group: 'Lifestyle & consumer' },
+  { name: 'Computer Repair & Support Companies', frequency: 'Daily', volume: '5,000 – 10,000', group: 'AI & technology' },
+  { name: 'Convention', frequency: 'Daily', volume: '5,000 – 10,000', group: 'Travel & hospitality' },
+  { name: 'Coreg Leads (3 feeds)', frequency: 'Daily', volume: '5,000,000+ – 10,000,000+', group: 'Mixed & intent' },
+  { name: 'Coupon / Sweepstakes', frequency: 'Daily', volume: '50,000 – 55,000', group: 'Lifestyle & consumer' },
+  { name: 'Credit Leads', frequency: 'Daily', volume: '50,000 – 55,000', group: 'Finance & investing' },
+  { name: 'Crypto Leads', frequency: 'Daily', volume: '5,000 – 15,000', group: 'Crypto & digital assets' },
+  { name: 'Debt Leads', frequency: 'Daily', volume: '50,000 – 55,000', group: 'Finance & investing' },
+  { name: 'Deliverable Emails', frequency: 'Daily', volume: 'On request', group: 'Mixed & intent' },
+  { name: 'Diabetic Leads', frequency: 'Daily', volume: '20,000 – 30,000', group: 'Health & wellness' },
+  { name: 'Dialing Data (B2B & consumer)', frequency: 'Daily / one-time', volume: 'Custom', group: 'B2B & business' },
+  { name: 'Disability Leads', frequency: 'Daily', volume: '50,000', group: 'Health & wellness' },
+  { name: 'Dog Park', frequency: 'Daily', volume: '5,000 – 10,000', group: 'Pets' },
+  { name: 'Domain Name Owners', frequency: 'Daily', volume: '70,000', group: 'AI & technology' },
+  { name: 'EDU Leads', frequency: 'Daily', volume: '50,000 – 55,000', group: 'Education & employment' },
+  { name: 'Electric Leads', frequency: 'Daily', volume: '20,000', group: 'Solar & home services' },
+  { name: 'Farmer Leads', frequency: 'Daily', volume: '10,000 – 20,000', group: 'B2B & business' },
+  { name: 'Federal & State Liens', frequency: 'Daily', volume: 'On request', group: 'Finance & investing' },
+  { name: 'Final Expense Leads', frequency: 'Daily', volume: 'On request', group: 'Insurance' },
+  { name: 'Fitness Leads', frequency: 'Daily', volume: '50,000 – 55,000', group: 'Fitness & lifestyle' },
+  { name: 'Freebie Leads', frequency: 'Daily', volume: '50,000 – 60,000', group: 'Mixed & intent' },
+  { name: 'Gaming Leads', frequency: 'Daily', volume: 'On request', group: 'Gaming & entertainment' },
+  { name: 'Garage Sale Leads', frequency: 'Daily', volume: '30,000 – 40,000', group: 'Lifestyle & consumer' },
+  { name: 'Geek Squad', frequency: 'Daily', volume: '4,000 – 5,000', group: 'AI & technology' },
+  { name: 'Grant Leads', frequency: 'Daily', volume: '50,000 – 55,000', group: 'Education & employment' },
+  { name: 'Gun Owners', frequency: 'Daily', volume: '10,000 – 15,000', group: 'Lifestyle & consumer' },
+  { name: 'Health Insurance Leads', frequency: 'Daily', volume: '50,000 – 55,000', group: 'Insurance' },
+  { name: 'Health Insurance Leads With Phones', frequency: 'Daily', volume: '80,000 – 100,000', group: 'Insurance' },
+  { name: 'Health Insurance Long Form', frequency: 'Daily', volume: 'On request', group: 'Insurance' },
+  { name: 'Home Owners Leads', frequency: 'Daily', volume: '20,000 – 30,000', group: 'Real estate & mortgage' },
+  { name: 'Home Security Leads', frequency: 'Daily', volume: '50,000 – 55,000', group: 'Solar & home services' },
+  { name: 'Hotel Leads', frequency: 'Daily', volume: '15,000 – 20,000', group: 'Travel & hospitality' },
+  { name: 'House Cleaning', frequency: 'Daily', volume: '5,000 – 10,000', group: 'Solar & home services' },
+  { name: 'Human Wellness', frequency: 'Daily', volume: '5,000 – 10,000', group: 'Health & wellness' },
+  { name: 'Investors', frequency: 'Daily', volume: 'On request', group: 'Finance & investing' },
+  { name: 'Job Seeker Leads', frequency: 'Daily', volume: '50,000 – 55,000', group: 'Education & employment' },
+  { name: 'Life Insurance Final Expense', frequency: 'Daily', volume: '50,000', group: 'Insurance' },
+  { name: 'Life Insurance Leads', frequency: 'Daily', volume: '50,000 – 55,000', group: 'Insurance' },
+  { name: 'Medicare', frequency: 'Daily', volume: 'On request', group: 'Insurance' },
+  { name: 'Merchant Cash Advance', frequency: 'Daily', volume: '15,000', group: 'Finance & investing' },
+  { name: 'Military', frequency: 'Daily', volume: 'On request', group: 'Lifestyle & consumer' },
+  { name: 'Mixed Leads', frequency: 'Daily', volume: '100,000 – 150,000', group: 'Mixed & intent' },
+  { name: 'Model & Actors', frequency: 'Daily', volume: '5,000 – 10,000', group: 'Lifestyle & consumer' },
+  { name: 'Mortgage Leads', frequency: 'Daily', volume: '50,000 – 80,000', group: 'Real estate & mortgage' },
+  { name: 'Mortgage Leads (Lending Tree)', frequency: 'Daily', volume: '30,000 – 35,000', group: 'Real estate & mortgage' },
+  { name: 'New Mover / Connects Leads', frequency: 'Daily', volume: '100,000', group: 'Real estate & mortgage' },
+  { name: 'Nutra Leads', frequency: 'Weekly (Fridays)', volume: '50,000', group: 'Health & wellness' },
+  { name: 'Openers / Clickers / Buyers', frequency: 'Daily', volume: '30,000 – 60,000', group: 'E-commerce & buyer intent' },
+  { name: 'Payday Leads (short & long form)', frequency: 'Daily', volume: '50,000+ – 55,000+', group: 'Finance & investing' },
+  { name: 'Pet Food', frequency: 'Daily', volume: '5,000 – 10,000', group: 'Pets' },
+  { name: 'Pet Leads', frequency: 'Daily', volume: '40,000 – 50,000', group: 'Pets' },
+  { name: 'Pharma Leads', frequency: 'Daily', volume: '6,000', group: 'Health & wellness' },
+  { name: 'Political Donors', frequency: 'Daily', volume: '5,000 – 10,000', group: 'Lifestyle & consumer' },
+  { name: 'Prescription Drug RX', frequency: 'Daily', volume: '10,000 – 20,000', group: 'Health & wellness' },
+  { name: 'Real Estate Leads', frequency: 'Daily', volume: '15,000 – 20,000', group: 'Real estate & mortgage' },
+  { name: 'Recycling', frequency: 'Daily', volume: '5,000 – 10,000', group: 'Solar & home services' },
+  { name: 'Renters', frequency: 'Daily', volume: 'On request', group: 'Real estate & mortgage' },
+  { name: 'Senior Leads', frequency: 'Daily', volume: '50,000 – 55,000', group: 'Lifestyle & consumer' },
+  { name: 'SMS Phone (cell) Data', frequency: 'Daily', volume: '5,000', group: 'Mixed & intent' },
+  { name: 'Social Assistance Leads', frequency: 'Daily', volume: 'On request', group: 'Lifestyle & consumer' },
+  { name: 'Social Media Verified Leads', frequency: 'Daily', volume: '500,000', group: 'Mixed & intent' },
+  { name: 'Solar Leads', frequency: 'Daily', volume: '50,000 – 55,000', group: 'Solar & home services' },
+  { name: 'Specialty Leads', frequency: 'Weekly', volume: '2,000,000', group: 'Mixed & intent' },
+  { name: 'Stock Leads', frequency: 'Daily', volume: '50,000 – 55,000', group: 'Finance & investing' },
+  { name: 'Student Loan', frequency: 'Daily', volume: 'On request', group: 'Education & employment' },
+  { name: 'Tax Relief Leads', frequency: 'Daily', volume: '3,000 – 10,000', group: 'Finance & investing' },
+  { name: 'Timeshare / Travel Leads', frequency: 'Daily', volume: '50,000 – 100,000+', group: 'Travel & hospitality' },
+  { name: 'Travel Leads', frequency: 'Daily', volume: '50,000 – 60,000', group: 'Travel & hospitality' },
+  { name: 'Tricare Leads', frequency: 'Daily', volume: '20,000 – 30,000', group: 'Insurance' },
+  { name: 'Uber Leads', frequency: 'Daily', volume: '10,000 – 25,000', group: 'Auto & mobility' },
+  { name: 'UK Leads', frequency: 'Daily', volume: '7,000 – 10,000', group: 'International' },
+  { name: 'UK Life Insurance Leads', frequency: 'Daily', volume: '1,000 – 3,000', group: 'International' },
+  { name: 'Valet Parking', frequency: 'Daily', volume: '5,000 – 10,000', group: 'Auto & mobility' },
+  { name: 'Voters', frequency: 'Daily', volume: '10,000 – 15,000', group: 'Lifestyle & consumer' },
+  { name: 'Weight Loss Leads', frequency: 'Daily', volume: '20,000 – 50,000', group: 'Health & wellness' },
+  { name: 'Wrestling Leads', frequency: 'Daily', volume: '10,000 – 12,000', group: 'Gaming & entertainment' },
+];
+
+export interface CoverageRow {
+  name: string;
+  size: string;
+}
+
+export interface CoverageGroup {
+  title: string;
+  note: string;
+  rows: CoverageRow[];
+}
+
+export const COVERAGE_GROUPS: CoverageGroup[] = [
+  {
+    title: 'US consumer coverage',
+    note: 'Indicative record counts held across US consumer sources.',
+    rows: [
+      { name: 'Consumer (regular)', size: '450 million' },
+      { name: 'Consumer (premium)', size: '320 million' },
+      { name: 'Landline records', size: '190 million' },
+      { name: 'Cell phone records', size: '150 million' },
+      { name: 'General interest', size: '180 million' },
+      { name: 'iCloud-associated', size: '70 million' },
+      { name: 'White pages phone book', size: '40 million' },
+      { name: 'Yellow pages residential', size: '10 million' },
+    ],
+  },
+  {
+    title: 'US business coverage',
+    note: 'Indicative record counts held across US business sources.',
+    rows: [
+      { name: 'WHOIS records', size: '200 million' },
+      { name: 'B2B network', size: '80 million' },
+      { name: 'US business list', size: '75 million' },
+      { name: 'Long payday', size: '66 million' },
+      { name: 'CEO / owner records', size: '38 million' },
+      { name: 'Yellow pages business', size: '15 million' },
+      { name: 'Accredited investors', size: '5 million' },
+      { name: 'Life insurance agents', size: '5 million' },
+    ],
+  },
+  {
+    title: 'International consumer coverage',
+    note: 'Indicative record counts by market. Permitted use differs sharply by jurisdiction.',
+    rows: [
+      { name: 'China', size: '10.6 million' },
+      { name: 'Austria', size: '8.5 million' },
+      { name: 'Canada', size: '8.3 million' },
+      { name: 'Taiwan', size: '8.2 million' },
+      { name: 'Spain', size: '7.2 million' },
+      { name: 'Hong Kong', size: '7.1 million' },
+      { name: 'Iceland', size: '7.1 million' },
+      { name: 'Australia', size: '6.8 million' },
+      { name: 'United Kingdom', size: '6.5 million' },
+      { name: 'France', size: '6.5 million' },
+      { name: 'Sweden', size: '6.4 million' },
+      { name: 'Norway', size: '6.2 million' },
+      { name: 'Germany', size: '5.8 million' },
+      { name: 'Hungary', size: '5.2 million' },
+      { name: 'Russia', size: '5.2 million' },
+      { name: 'Ukraine', size: '5.1 million' },
+      { name: 'Brazil', size: '4.8 million' },
+      { name: 'UAE', size: '4.2 million' },
+      { name: 'New Zealand', size: '4.1 million' },
+      { name: 'Indonesia', size: '4.1 million' },
+      { name: 'South Africa', size: '3.7 million' },
+      { name: 'Italy', size: '3.2 million' },
+      { name: 'Switzerland', size: '3.1 million' },
+      { name: 'Malaysia', size: '2.4 million' },
+      { name: 'Belgium', size: '2.1 million' },
+      { name: 'Denmark', size: '2.1 million' },
+      { name: 'Poland', size: '2.1 million' },
+      { name: 'India', size: '2.1 million' },
+      { name: 'Egypt', size: '2.1 million' },
+      { name: 'Finland', size: '1.7 million' },
+      { name: 'Latin America', size: '1.4 million' },
+      { name: 'Greece', size: '1.2 million' },
+    ],
+  },
+  {
+    title: 'International business coverage',
+    note: 'Indicative business record counts by market.',
+    rows: [
+      { name: 'Spain', size: '9.1 million' },
+      { name: 'United Kingdom', size: '6.1 million' },
+      { name: 'Switzerland', size: '5.1 million' },
+      { name: 'Canada', size: '4.6 million' },
+      { name: 'Germany', size: '4.1 million' },
+      { name: 'France', size: '4.1 million' },
+      { name: 'Belgium', size: '3.5 million' },
+      { name: 'Japan', size: '3.1 million' },
+      { name: 'Dubai', size: '3.1 million' },
+      { name: 'New Zealand', size: '3.1 million' },
+      { name: 'Australia', size: '2.3 million' },
+      { name: 'UAE', size: '2.2 million' },
+      { name: 'Schweiz', size: '2.2 million' },
+      { name: 'China', size: '2.1 million' },
+      { name: 'Latin America', size: '445,000' },
+    ],
+  },
+];
