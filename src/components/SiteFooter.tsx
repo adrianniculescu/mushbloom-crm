@@ -38,6 +38,8 @@ const SiteFooter: React.FC = () => {
             <li><Link to="/legal/cookie-policy" className="hover:text-white">Cookie Policy</Link></li>
             <li><Link to="/legal/terms" className="hover:text-white">Terms &amp; Conditions</Link></li>
             <li><Link to="/legal/accessibility" className="hover:text-white">Accessibility Statement</Link></li>
+            <li><Link to="/legal/acceptable-use" className="hover:text-white">Acceptable Use Policy</Link></li>
+            <li><Link to="/legal/data-processing" className="hover:text-white">Data Processing Addendum</Link></li>
             <li>
               <button
                 type="button"

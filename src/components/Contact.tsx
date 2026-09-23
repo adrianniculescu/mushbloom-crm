@@ -12,6 +12,7 @@ const serviceOptions = [
   'Web Development',
   'Website Compliance',
   'MVP / Product Build',
+  'Lead Generation & Data',
   'Consulting',
   'Other',
 ];

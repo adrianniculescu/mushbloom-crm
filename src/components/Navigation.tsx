@@ -22,6 +22,7 @@ const Navigation = () => {
     { name: 'LLMboost', href: '/llmboost', description: 'AI Search Visibility' },
     { name: 'Video Agency', href: '/video-agency', description: 'Premium AI Video Production' },
     { name: 'Newswire', href: '/newswire', description: 'Niche PR Distribution' },
+    { name: 'Lead Generation & Data', href: '/lead-generation-data', description: 'Recurring Lead Streams & Databases' },
   ];
 
   return (
