@@ -24,6 +24,9 @@ import Web3CompanyBrainGuide from "./pages/guides/Web3CompanyBrainGuide";
 import SaasCompanyBrainGuide from "./pages/guides/SaasCompanyBrainGuide";
 import WebsiteComplianceTodayGuide from "./pages/guides/WebsiteComplianceTodayGuide";
 import NonTechnicalFounderMvpPlaybook from "./pages/guides/NonTechnicalFounderMvpPlaybook";
+import LeadGenerationDataPage from "./pages/LeadGenerationDataPage";
+import AcceptableUsePolicy from "./pages/legal/AcceptableUsePolicy";
+import DataProcessingAddendum from "./pages/legal/DataProcessingAddendum";
 import VideoAgencyPage from "./pages/VideoAgencyPage";
 import AiAutomationAgencyPage from "./pages/AiAutomationAgencyPage";
 import LovableDevelopmentPage from "./pages/LovableDevelopmentPage";
@@ -96,6 +99,10 @@ const App = () => (
               <Route path="/legal/cookie-policy" element={<CookiePolicy />} />
               <Route path="/legal/terms" element={<Terms />} />
               <Route path="/legal/accessibility" element={<AccessibilityStatement />} />
+              <Route path="/legal/acceptable-use" element={<AcceptableUsePolicy />} />
+              <Route path="/legal/data-processing" element={<DataProcessingAddendum />} />
+              <Route path="/lead-generation-data" element={<LeadGenerationDataPage />} />
+              <Route path="/lead-generation" element={<Navigate to="/lead-generation-data" replace />} />
               <Route path="/cms/login" element={<CmsLogin />} />
               <Route path="/cms" element={<CmsDashboard />} />
               <Route path="/mockups" element={<MockupsIndex />} />
