@@ -29,6 +29,7 @@
 - [Crypto/Web3 AI Search Guide](/guides/crypto-web3-ai-search-visibility): Web3 LLM SEO playbook.
 - [SaaS Company Brain](/guides/saas-company-brain): Company brain for SaaS teams.
 - [Web3 Company Brain](/guides/web3-company-brain): Company brain for Web3 teams.
+- [AI Workflows to Save Time and Grow Revenue: A Practical Guide for SMBs](/guides/ai-workflows): What AI workflows are, where they create value, and how to choose and implement the first one.
 - [How to Turn Your LinkedIn Profile Into a Sales Machine](/guides/linkedin-sales-machine): Buyer-focused headline, About and Featured structure plus a sustainable B2B LinkedIn activity routine.
 - [Non-Technical Founder MVP Playbook](/guides/non-technical-founder-mvp-playbook): How corporate professionals validate a problem and build an AI-enabled MVP without a technical co-founder.
 

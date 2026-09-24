@@ -14,6 +14,15 @@ interface DbPost {
 
 const featuredGuides = [
   {
+    slug: 'ai-workflows',
+    path: '/guides/ai-workflows',
+    title: 'AI Workflows to Save Time and Grow Revenue: A Practical Guide for SMBs',
+    description:
+      'What AI workflows are, where they create real value in small and mid-sized businesses, and how to choose and implement the right first workflow inside your existing tools.',
+    readTime: '9 min read',
+    tag: 'AI & Automation',
+  },
+  {
     slug: 'linkedin-sales-machine',
     path: '/guides/linkedin-sales-machine',
     title: 'How to Turn Your LinkedIn Profile Into a Sales Machine (Without Spam or Hype)',

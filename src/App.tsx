@@ -25,6 +25,7 @@ import SaasCompanyBrainGuide from "./pages/guides/SaasCompanyBrainGuide";
 import WebsiteComplianceTodayGuide from "./pages/guides/WebsiteComplianceTodayGuide";
 import NonTechnicalFounderMvpPlaybook from "./pages/guides/NonTechnicalFounderMvpPlaybook";
 import LinkedInSalesMachineGuide from "./pages/guides/LinkedInSalesMachineGuide";
+import AiWorkflowsGuide from "./pages/guides/AiWorkflowsGuide";
 import LeadGenerationDataPage from "./pages/LeadGenerationDataPage";
 import AcceptableUsePolicy from "./pages/legal/AcceptableUsePolicy";
 import DataProcessingAddendum from "./pages/legal/DataProcessingAddendum";
@@ -101,6 +102,7 @@ const App = () => (
               <Route path="/guides/website-compliance-today" element={<WebsiteComplianceTodayGuide />} />
               <Route path="/guides/website-compliance-2026" element={<Navigate to="/guides/website-compliance-today" replace />} />
               <Route path="/guides/linkedin-sales-machine" element={<LinkedInSalesMachineGuide />} />
+              <Route path="/guides/ai-workflows" element={<AiWorkflowsGuide />} />
               <Route path="/guides/non-technical-founder-mvp-playbook" element={<NonTechnicalFounderMvpPlaybook />} />
               <Route path="/non-technical-founder-mvp-playbook" element={<Navigate to="/guides/non-technical-founder-mvp-playbook" replace />} />
               <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
