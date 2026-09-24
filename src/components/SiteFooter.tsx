@@ -8,7 +8,7 @@ const SiteFooter: React.FC = () => {
   return (
     <footer className="border-t border-white/10 bg-black/40 backdrop-blur-sm" aria-labelledby="site-footer-heading">
       <h2 id="site-footer-heading" className="sr-only">Site footer</h2>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid gap-8 md:grid-cols-4 text-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid gap-8 md:grid-cols-5 text-sm">
         <div className="md:col-span-2">
           <p className="text-white font-semibold mb-2">Mushbloom</p>
           <p className="text-gray-400 max-w-md">
@@ -29,6 +29,16 @@ const SiteFooter: React.FC = () => {
             <li><Link to="/portfolio/websites" className="hover:text-white">Portfolio</Link></li>
             <li><Link to="/wiki" className="hover:text-white">Wiki</Link></li>
             <li><a href="/#contact" className="hover:text-white">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Services">
+          <p className="text-white font-semibold mb-3">Services</p>
+          <ul className="space-y-2 text-gray-400">
+            <li><Link to="/llmboost" className="hover:text-white">LLMboost</Link></li>
+            <li><Link to="/video-agency" className="hover:text-white">Video Agency</Link></li>
+            <li><Link to="/newswire" className="hover:text-white">Newswire</Link></li>
+            <li><Link to="/lead-generation-data" className="hover:text-white">Lead Generation &amp; Data</Link></li>
+            <li><Link to="/services/linkedin-sales-machine" className="hover:text-white">LinkedIn Sales Machine</Link></li>
           </ul>
         </nav>
         <nav aria-label="Legal and compliance">
