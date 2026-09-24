@@ -59,11 +59,11 @@ const audiences = [
 ];
 
 const reasons = [
-  ['No jargon, just outcomes', 'We talk about booked jobs, saved time and clearer cash flow—not agents, stacks or technical theatre.'],
-  ['Built for real workflows, not demos', 'Every system follows the way your business actually works: enquiries, quotes, visits, deliveries and payments.'],
-  ['Fast to implement, easy to live with', 'Core systems are designed to go live quickly without forcing your team through training marathons.'],
-  ['International team, agency delivery', 'UK-based with an international team. All work is delivered by our agency, operating since 2014.'],
-  ['Flexible ways to start', 'Choose a focused productised service through Legiit, a custom project or ongoing support to suit your goals.'],
+  ['No jargon, just outcomes', "We don't talk about 'LLMs', 'agents' or 'stacks'. We talk about revenue, saved time and clearer cash flow."],
+  ['Built for real workflows, not demos', 'Our systems are designed around how your business actually works: enquiries, quotes, site visits, deliveries, payments.'],
+  ['Fast to implement, easy to live with', "Most core systems go live in days, not months. Your team doesn't need training marathons to use them."],
+  ['International team, agency delivery', 'UK-based with an international team. All work is done by our agency (operating since 2014). Clear scope, clear fees, no surprises.'],
+  ['Flexible engagement models', 'From productised offers via Legiit to custom projects and retainers—choose the level that fits your budget and goals.'],
 ];
 
 const supportingServices = [
@@ -213,18 +213,30 @@ const HomeRepositioning = () => (
           <div className="grid md:grid-cols-[1fr_auto] gap-8 items-end">
             <div>
               <div className="inline-flex items-center gap-2 text-blue-400 mb-4"><Sparkles className="h-5 w-5" /><span className="text-sm font-semibold uppercase">Low-risk starting point</span></div>
-              <h2 className="text-3xl md:text-4xl font-bold text-white font-['Space_Grotesk'] mb-5">Start with a clear, free 20-minute audit</h2>
-              <p className="text-lg text-gray-300 mb-6">We review your lead and admin process, identify where time or money is being lost, and outline one or two practical automation opportunities.</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-white font-['Space_Grotesk'] mb-5">Start with a clear, low-risk audit</h2>
+              <p className="text-lg text-gray-300 mb-6">We begin with a focused 20–30 minute audit of your current lead and admin process. You'll leave with:</p>
               <ul className="space-y-2 text-gray-300">
-                {['A clear view of where time and money are being lost', 'One or two high-impact opportunities specific to your business', 'A simple plan with indicative costs and timelines'].map((item) => <li key={item} className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-green-400 flex-none" />{item}</li>)}
+                {["A clear view of where you're losing time and money", 'One or two high-impact AI opportunities specific to your business', 'A simple plan to implement them, with indicative costs and timelines'].map((item) => <li key={item} className="flex gap-2"><CheckCircle2 className="h-5 w-5 text-green-400 flex-none" />{item}</li>)}
               </ul>
             </div>
             <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" data-cta="audit_section" className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-7 py-4 rounded-lg font-semibold inline-flex items-center justify-center gap-2 whitespace-nowrap">
-              Book your free audit <ArrowRight className="h-5 w-5" />
+              Book a free 20‑minute audit <ArrowRight className="h-5 w-5" />
             </a>
           </div>
           <p className="text-sm text-gray-400 mt-7">No pressure sales call. Just a practical working session to identify where automation can create clear business value.</p>
         </div>
+      </div>
+    </section>
+
+    <section className="py-20 border-t border-gray-800">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 className="text-3xl md:text-5xl font-bold text-white font-['Space_Grotesk'] mb-6">Ready to turn AI into a real business system?</h2>
+        <p className="text-lg text-gray-300 mb-8">If you want a simple AI system that captures more leads, follows up consistently and saves hours—without adding headcount or complexity—let's talk.</p>
+        <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" data-cta="final_cta" className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-7 py-4 rounded-lg font-semibold inline-flex items-center justify-center gap-2">
+          Book a free 20‑minute audit <ArrowRight className="h-5 w-5" />
+        </a>
+        <p className="text-gray-400 mt-6">Or email us at <a href="mailto:office@mushbloom.co.uk" className="text-blue-400 hover:underline">office@mushbloom.co.uk</a> with a short description of your business and biggest bottleneck.</p>
+        <p className="text-sm text-gray-500 mt-3">Prefer a productised start? See our <Link to="/partners" className="text-green-400 hover:underline">partners</Link>.</p>
       </div>
     </section>
   </>
