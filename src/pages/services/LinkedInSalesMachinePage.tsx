@@ -253,6 +253,12 @@ const LinkedInSalesMachinePage = () => {
               All work is delivered with clear documentation, example copy and practical guidance so you can continue
               using the system independently.
             </p>
+            <p className="text-gray-400 text-sm mt-4">
+              Want to see the method first? Read our free guide:{' '}
+              <a href="/guides/linkedin-sales-machine" className="text-blue-400 hover:underline">
+                How to Turn Your LinkedIn Profile Into a Sales Machine
+              </a>.
+            </p>
           </div>
         </section>
 
