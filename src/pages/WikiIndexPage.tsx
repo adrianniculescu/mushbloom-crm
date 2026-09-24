@@ -14,6 +14,15 @@ interface DbPost {
 
 const featuredGuides = [
   {
+    slug: 'mushbloom-legiit-partnership',
+    path: '/wiki/mushbloom-legiit-partnership',
+    title: 'Mushbloom × Legiit: Delivering Specialist Services at Competitive Prices',
+    description:
+      'How agency-level delivery, transparent scopes and escrow-secured payments create a simpler way to buy specialist LinkedIn and AI workflow services.',
+    readTime: '10 min read',
+    tag: 'Partners & Platforms',
+  },
+  {
     slug: 'ai-workflows',
     path: '/guides/ai-workflows',
     title: 'AI Workflows to Save Time and Grow Revenue: A Practical Guide for SMBs',

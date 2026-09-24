@@ -26,6 +26,7 @@ import WebsiteComplianceTodayGuide from "./pages/guides/WebsiteComplianceTodayGu
 import NonTechnicalFounderMvpPlaybook from "./pages/guides/NonTechnicalFounderMvpPlaybook";
 import LinkedInSalesMachineGuide from "./pages/guides/LinkedInSalesMachineGuide";
 import AiWorkflowsGuide from "./pages/guides/AiWorkflowsGuide";
+import MushbloomLegiitPartnership from "./pages/guides/MushbloomLegiitPartnership";
 import LeadGenerationDataPage from "./pages/LeadGenerationDataPage";
 import AcceptableUsePolicy from "./pages/legal/AcceptableUsePolicy";
 import DataProcessingAddendum from "./pages/legal/DataProcessingAddendum";
@@ -96,6 +97,7 @@ const App = () => (
               <Route path="/projects/nexus-tmrw-venture-network" element={<NexusTmrwPage />} />
               <Route path="/projects" element={<Navigate to="/portfolio/websites" replace />} />
               <Route path="/wiki" element={<WikiIndexPage />} />
+              <Route path="/wiki/mushbloom-legiit-partnership" element={<MushbloomLegiitPartnership />} />
               <Route path="/wiki/:slug" element={<WikiArticlePage />} />
               <Route path="/guides/saas-ai-search-visibility" element={<SaasAiSearchGuide />} />
               <Route path="/guides/crypto-web3-ai-search-visibility" element={<CryptoWeb3AiSearchGuide />} />
