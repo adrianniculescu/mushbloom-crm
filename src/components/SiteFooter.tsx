@@ -39,6 +39,7 @@ const SiteFooter: React.FC = () => {
             <li><Link to="/newswire" className="hover:text-white">Newswire</Link></li>
             <li><Link to="/lead-generation-data" className="hover:text-white">Lead Generation &amp; Data</Link></li>
             <li><Link to="/services/linkedin-sales-machine" className="hover:text-white">LinkedIn Sales Machine</Link></li>
+            <li><Link to="/services/ai-workflows" className="hover:text-white">AI Workflows</Link></li>
           </ul>
         </nav>
         <nav aria-label="Legal and compliance">

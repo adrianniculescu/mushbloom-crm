@@ -24,6 +24,7 @@ const Navigation = () => {
     { name: 'Newswire', href: '/newswire', description: 'Niche PR Distribution' },
     { name: 'Lead Generation & Data', href: '/lead-generation-data', description: 'Recurring Lead Streams & Databases' },
     { name: 'LinkedIn Sales Machine', href: '/services/linkedin-sales-machine', description: 'LinkedIn Profile & Lead Generation' },
+    { name: 'AI Workflows', href: '/services/ai-workflows', description: 'Save Time & Grow Revenue with AI' },
   ];
 
   return (
@@ -180,6 +181,13 @@ const Navigation = () => {
                 onClick={() => setIsOpen(false)}
               >
                 LinkedIn Sales Machine
+              </Link>
+              <Link
+                to="/services/ai-workflows"
+                className="text-blue-300 hover:text-blue-200 block px-3 py-2 text-base font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                AI Workflows
               </Link>
             </div>
 
