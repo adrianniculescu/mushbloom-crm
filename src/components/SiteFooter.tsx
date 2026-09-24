@@ -27,6 +27,7 @@ const SiteFooter: React.FC = () => {
           <ul className="space-y-2 text-gray-400">
             <li><Link to="/" className="hover:text-white">Home</Link></li>
             <li><Link to="/portfolio/websites" className="hover:text-white">Portfolio</Link></li>
+            <li><Link to="/partners" className="hover:text-white">Partners</Link></li>
             <li><Link to="/wiki" className="hover:text-white">Wiki</Link></li>
             <li><a href="/#contact" className="hover:text-white">Contact</a></li>
           </ul>
