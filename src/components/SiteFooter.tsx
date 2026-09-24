@@ -12,7 +12,7 @@ const SiteFooter: React.FC = () => {
         <div className="md:col-span-2">
           <p className="text-white font-semibold mb-2">Mushbloom</p>
           <p className="text-gray-400 max-w-md">
-            AI automation, LLM SEO and creative engineering. The canonical website is{' '}
+            Simple, revenue-focused AI automation for SMEs and owner-run businesses, delivered internationally since 2014. The canonical website is{' '}
             <a href="https://mushbloom.uk" className="text-gray-300 hover:text-white underline underline-offset-2">mushbloom.uk</a>;
             mushbloom.co.uk redirects here.
           </p>

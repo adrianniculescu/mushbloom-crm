@@ -7,8 +7,8 @@ import { trackGenerateLead } from '@/lib/analytics';
 
 const serviceOptions = [
   'AI Automation',
+  'Free Workflow Audit',
   'LLMboost SEO',
-  'AI Workforce',
   'Web Development',
   'Website Compliance',
   'MVP / Product Build',
@@ -85,15 +85,14 @@ const Contact = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-['Space_Grotesk']">
-            Ready to{' '}
+            Ready to turn AI into{' '}
             <span className="bg-gradient-to-r from-blue-400 to-green-500 bg-clip-text text-transparent">
-              Automate Everything
+              a real business system
             </span>
             ?
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Let's architect your AI workforce and launch your business into the autonomous future.
-            Pay for performance: <strong>37% operational cost reduction guaranteed</strong>.
+             If you want a simple system that captures more leads, follows up consistently and saves hours—without adding headcount or complexity—let's talk.
           </p>
         </header>
 
@@ -116,16 +115,16 @@ const Contact = () => {
               <div className="inline-flex p-3 rounded-lg bg-gradient-to-r from-green-500 to-green-600 mb-4">
                 <MessageSquare className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2 font-['Space_Grotesk']">AI Consultation</h3>
-              <p className="text-gray-300">Free automation assessment</p>
+              <h3 className="text-lg font-semibold text-white mb-2 font-['Space_Grotesk']">Free 20-minute audit</h3>
+              <p className="text-gray-300">Find the workflow costing you time or revenue</p>
             </div>
 
             <div className="glass-effect rounded-2xl p-6 border border-white/10">
               <div className="inline-flex p-3 rounded-lg bg-gradient-to-r from-blue-400 to-green-400 mb-4">
                 <Zap className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2 font-['Space_Grotesk']">Rapid Deploy</h3>
-              <p className="text-gray-300"><strong>3 to 90 days</strong> AI implementation</p>
+              <h3 className="text-lg font-semibold text-white mb-2 font-['Space_Grotesk']">Practical implementation</h3>
+              <p className="text-gray-300">Clear scope, no-code tools and a documented handover</p>
             </div>
           </div>
 
@@ -137,7 +136,7 @@ const Contact = () => {
                   <Send className="h-8 w-8 text-green-400" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-3 font-['Space_Grotesk']">Message Received!</h3>
-                <p className="text-gray-300">We'll get back to you within 24 hours with a personalised AI strategy.</p>
+                <p className="text-gray-300">We'll get back to you within 24 hours to discuss the workflow you want to improve.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="glass-effect rounded-2xl p-8 border border-white/10 space-y-5">
@@ -207,7 +206,7 @@ const Contact = () => {
                     id="message" name="message" required maxLength={2000} rows={4}
                     value={formData.message} onChange={handleChange}
                     className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-gray-500 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition resize-none"
-                    placeholder="Tell us about your project and goals..."
+                    placeholder="Where are leads, time or money being lost in your current process?"
                   />
                 </div>
 
@@ -227,7 +226,7 @@ const Contact = () => {
                   {isSubmitting ? (
                     <><Loader2 className="h-5 w-5 animate-spin" /> Sending...</>
                   ) : (
-                    <><Send className="h-5 w-5" /> Deploy Your AI Workforce</>
+                    <><Send className="h-5 w-5" /> Send Your Enquiry</>
                   )}
                 </button>
               </form>
@@ -235,18 +234,17 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Performance guarantee */}
-        <div className="glass-effect rounded-xl p-6 mt-8 max-w-2xl mx-auto text-center" itemScope itemType="https://schema.org/Offer">
-          <div className="text-sm text-gray-400 mb-2">PERFORMANCE GUARANTEE</div>
-          <div className="text-lg text-white" itemProp="description">
-            <strong>37% operational cost reduction</strong> in first 90 days, or we work for free until you get results.
+        <div className="glass-effect rounded-xl p-6 mt-8 max-w-2xl mx-auto text-center">
+          <div className="text-sm text-gray-400 mb-2">START WITH THE BOTTLENECK</div>
+          <div className="text-lg text-white">
+            One practical system first. Prove the value, then scale what works.
           </div>
         </div>
       </div>
 
       <div className="mt-20 pt-8 border-t border-white/10 text-center" itemScope itemType="https://schema.org/Organization">
         <p className="text-gray-400">
-          © 2024–2026 <span itemProp="name">Mushbloom</span>. Architecting the autonomous business revolution.
+          © 2024–2026 <span itemProp="name">Mushbloom</span>. Practical AI automation for real business workflows.
         </p>
         <p className="text-gray-500 text-sm mt-3">
           Mushbloom is an initiative supported by{' '}

@@ -35,7 +35,7 @@ const Navigation = () => {
           <Link to="/" className="flex items-center gap-3 shrink-0">
             <Logo />
             <span className="hidden xl:inline-block text-sm font-medium tracking-wide text-gray-200 border-l border-white/15 pl-4 whitespace-nowrap">
-              Innovative marketing services since 2014
+              Practical AI automation since 2014
             </span>
           </Link>
           
@@ -117,7 +117,7 @@ const Navigation = () => {
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-4 py-2 text-sm font-medium rounded-lg hover:scale-105 transition-transform duration-200"
               >
-                Book a Call
+                Free 20-min audit
               </a>
             </div>
           </div>
@@ -226,7 +226,7 @@ const Navigation = () => {
               className="block mx-3 mt-2 text-center bg-gradient-to-r from-blue-500 to-green-500 text-white px-4 py-2 rounded-lg font-medium"
               onClick={() => setIsOpen(false)}
             >
-              Book a Call
+              Free 20-min audit
             </a>
           </div>
         </div>
