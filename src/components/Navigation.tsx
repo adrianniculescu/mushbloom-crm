@@ -14,6 +14,7 @@ const Navigation = () => {
     { name: 'Home', href: isHomePage ? '#home' : '/' },
     { name: 'Services', href: '#services', hasDropdown: true },
     { name: 'Portfolio', href: '/portfolio/websites' },
+    { name: 'Partners', href: '/partners' },
     { name: 'About', href: isHomePage ? '#about' : '/#about' },
     { name: 'Contact', href: isHomePage ? '#contact' : '/#contact' },
   ];
@@ -197,6 +198,13 @@ const Navigation = () => {
               onClick={() => setIsOpen(false)}
             >
               Portfolio
+            </Link>
+            <Link
+              to="/partners"
+              className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              Partners
             </Link>
             
             {isHomePage ? (

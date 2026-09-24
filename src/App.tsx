@@ -34,6 +34,7 @@ import AiAutomationAgencyPage from "./pages/AiAutomationAgencyPage";
 import LovableDevelopmentPage from "./pages/LovableDevelopmentPage";
 import LinkedInSalesMachinePage from "./pages/services/LinkedInSalesMachinePage";
 import AiWorkflowsPage from "./pages/services/AiWorkflowsPage";
+import PartnersPage from "./pages/PartnersPage";
 import WordPressAiPlatformPage from "./pages/platforms/WordPressAiPlatformPage";
 import ReelFactoryPage from "./pages/projects/ReelFactoryPage";
 import NexusTmrwPage from "./pages/projects/NexusTmrwPage";
@@ -87,6 +88,7 @@ const App = () => (
               <Route path="/services/lovable-development" element={<LovableDevelopmentPage />} />
               <Route path="/services/linkedin-sales-machine" element={<LinkedInSalesMachinePage />} />
               <Route path="/services/ai-workflows" element={<AiWorkflowsPage />} />
+              <Route path="/partners" element={<PartnersPage />} />
               <Route path="/ai-workflows" element={<Navigate to="/services/ai-workflows" replace />} />
               <Route path="/linkedin-sales-machine" element={<Navigate to="/services/linkedin-sales-machine" replace />} />
               <Route path="/platforms/wordpress-and-ai" element={<WordPressAiPlatformPage />} />

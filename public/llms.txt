@@ -10,6 +10,7 @@
 - [Lovable Development](/services/lovable-development): No-code app development with Lovable, ChatGPT, Claude.
 - [AI Workflows](/services/ai-workflows): Identify, design and implement one high-value AI workflow inside existing tools for SMBs, purchased via Legiit.
 - [LinkedIn Sales Machine](/services/linkedin-sales-machine): LinkedIn profile optimisation and B2B lead generation service, purchased via Legiit.
+- [Partners](/partners): Trusted platforms Mushbloom works with, beginning with Legiit for secure ordering of LinkedIn and AI workflow services.
 - [WordPress + AI Platform](/platforms/wordpress-and-ai): SaaS platform for WordPress + AI websites, backed by agency-grade execution.
 - [Mushbloom Newswire](/newswire): Niche press release distribution across five verticals.
 - [AI Video Agency](/video-agency): Premium AI video production with tiered pricing.
