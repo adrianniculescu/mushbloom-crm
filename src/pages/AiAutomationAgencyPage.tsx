@@ -9,24 +9,24 @@ import {
 } from 'lucide-react';
 
 const PAGE_URL = 'https://mushbloom.uk/agency';
-const META_TITLE = 'AI Automation Agency for Founders, Operators, and Growing Teams';
-const META_DESCRIPTION = 'Mushbloom builds AI automation, LLM SEO, analytics, and search visibility systems for founders, operators, and growing businesses.';
+const META_TITLE = 'No-Code AI Automation Agency for SMEs';
+const META_DESCRIPTION = 'Mushbloom helps SMEs and owner-run businesses implement simple AI automation that improves lead handling, follow-up, admin and cash flow.';
 
 const services = [
-  { icon: Bot, title: 'AI Automation', desc: 'Custom agents and workflows that remove repetitive work across sales, ops, and content.' },
+  { icon: Bot, title: 'AI Automation', desc: 'Simple no-code workflows that remove repetitive work across sales, service and operations.' },
   { icon: Search, title: 'LLM SEO', desc: 'Optimize for ChatGPT, Perplexity, Google AI Overviews, and traditional search at the same time.' },
   { icon: Globe, title: 'Search Indexing', desc: 'Proper sitemap, canonical, and crawl setup so the site is actually discoverable.' },
   { icon: BarChart3, title: 'Analytics Setup', desc: 'GA4, Search Console, and event tracking wired to real business decisions, not vanity metrics.' },
-  { icon: Workflow, title: 'Lead-Gen Workflows', desc: 'Forms, routing, enrichment, and follow-up that turn traffic into qualified conversations.' },
+  { icon: Workflow, title: 'Lead-Gen Workflows', desc: 'Enquiry handling, qualification, booking and follow-up that turn interest into qualified conversations.' },
   { icon: Zap, title: 'Website Optimization', desc: 'Structure, speed, and conversion fixes on the actual site — not slide decks.' },
 ];
 
 const audiences = [
-  { icon: Sparkles, label: 'Founders' },
-  { icon: Users, label: 'Agencies' },
-  { icon: Target, label: 'B2B service businesses' },
-  { icon: Settings, label: 'Operators' },
-  { icon: TrendingUp, label: 'Small teams that need leverage' },
+  { icon: Sparkles, label: 'Owner-run businesses' },
+  { icon: Users, label: 'Trades and home services' },
+  { icon: Target, label: 'Professional services' },
+  { icon: Settings, label: 'Local service providers' },
+  { icon: TrendingUp, label: 'SMEs with workflow bottlenecks' },
 ];
 
 const steps = [
@@ -78,7 +78,7 @@ const AiAutomationAgencyPage = () => {
       <Helmet>
         <title>{META_TITLE} | Mushbloom</title>
         <meta name="description" content={META_DESCRIPTION} />
-        <meta name="keywords" content="AI automation agency, LLM SEO agency, AI automation for founders, search visibility for businesses" />
+       <meta name="keywords" content="AI automation for SMEs, no-code AI automation agency, AI for owner-run businesses, AI follow-up and booking automation" />
         <link rel="canonical" href={PAGE_URL} />
         <meta property="og:title" content={META_TITLE} />
         <meta property="og:description" content={META_DESCRIPTION} />
@@ -99,13 +99,13 @@ const AiAutomationAgencyPage = () => {
             <Sparkles className="h-3 w-3" /> AI Automation Agency
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white font-['Space_Grotesk'] leading-tight mb-6">
-            AI Automation Agency for{' '}
+             No-Code AI Automation for{' '}
             <span className="bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent">
-              Founders, Operators, and Growing Teams
+               SMEs and Owner-Run Businesses
             </span>
           </h1>
           <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mb-8">
-            Mushbloom helps founders and teams build systems that save time, improve visibility, and create more reliable growth. Not generic “AI for everything.” Practical automation, search visibility, and implementation.
+             We start with the workflow that is costing you time or revenue, then build a simple AI system using proven tools—without jargon or over-engineering.
           </p>
           <div className="flex flex-wrap gap-4">
             <a
@@ -115,7 +115,7 @@ const AiAutomationAgencyPage = () => {
               data-cta="agency_hero"
               className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform inline-flex items-center gap-2"
             >
-              Book a Free Call <ArrowRight className="h-5 w-5" />
+               Book a free 20-minute audit <ArrowRight className="h-5 w-5" />
             </a>
             <Link
               to="/wiki"
@@ -129,7 +129,7 @@ const AiAutomationAgencyPage = () => {
         {/* What we do */}
         <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white font-['Space_Grotesk'] mb-3">What we do</h2>
-          <p className="text-gray-400 mb-10 max-w-2xl">Six disciplines, one integrated system. Each one is implemented on your actual site and stack.</p>
+          <p className="text-gray-400 mb-10 max-w-2xl">We focus on the workflows that drive revenue, cost and capacity, then bring in the specialist capabilities the outcome needs.</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {services.map((s) => {
               const Icon = s.icon;
@@ -149,7 +149,7 @@ const AiAutomationAgencyPage = () => {
         {/* Who it's for */}
         <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white font-['Space_Grotesk'] mb-3">Who it is for</h2>
-          <p className="text-gray-400 mb-10 max-w-2xl">If you sell something real and need leverage, this fits.</p>
+          <p className="text-gray-400 mb-10 max-w-2xl">For practical businesses where missed enquiries, slow follow-up or repetitive admin have a real cost.</p>
           <div className="flex flex-wrap gap-3">
             {audiences.map((a) => {
               const Icon = a.icon;
@@ -168,10 +168,10 @@ const AiAutomationAgencyPage = () => {
           <div className="glass-effect rounded-3xl p-8 md:p-12 border border-white/10">
             <h2 className="text-3xl md:text-4xl font-bold text-white font-['Space_Grotesk'] mb-4">What makes it different</h2>
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              This is not just strategy or content. It is implementation. We work on the actual site, the actual tracking, the actual indexing, and the actual outputs.
+               We start with your business workflow and commercial objective, not a particular AI tool. Then we implement the smallest useful system on your actual setup.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Most businesses do not need more tools. They need systems that work together: site structure, analytics, search visibility, content, and automation — connected, not siloed.
+               Most SMEs do not need more software. They need leads answered, quotes followed up, jobs booked and routine admin handled consistently.
             </p>
           </div>
         </section>
@@ -199,9 +199,9 @@ const AiAutomationAgencyPage = () => {
         <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
-              { stat: '37%', label: 'operational cost reduction guarantee within 90 days' },
-              { stat: '3–90 days', label: 'from kickoff to live automations and visibility wins' },
-              { stat: '1 team', label: 'site, tracking, content, and automation — under one roof' },
+              { stat: 'Since 2014', label: 'agency experience grounded in commercial outcomes' },
+              { stat: 'No-code', label: 'affordable, proven tools without over-engineering' },
+              { stat: '1 team', label: 'clear scope, implementation, documentation and support' },
             ].map((t) => (
               <div key={t.label} className="glass-effect rounded-2xl p-6 border border-white/10 text-center">
                 <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-green-400 bg-clip-text text-transparent font-['Space_Grotesk'] mb-2">{t.stat}</div>
@@ -236,13 +236,13 @@ const AiAutomationAgencyPage = () => {
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="glass-effect rounded-3xl p-8 md:p-12 border border-white/10 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white font-['Space_Grotesk'] mb-4">
-              Turn search and automation into business assets
+               Ready to turn AI into a real business system?
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed mb-8 max-w-2xl mx-auto">
-              The goal is not noise. The goal is leverage. Book a free call and we will map the highest-impact systems to ship first.
+               Start with a free 20-minute audit. We will identify where time or money is being lost and map one or two practical opportunities.
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-8 text-sm text-gray-400">
-              {['No pitch deck', 'No fluff', 'Implementation-first'].map((b) => (
+              {['No pressure', 'No jargon', 'Practical next steps'].map((b) => (
                 <span key={b} className="inline-flex items-center gap-2">
                   <CheckCircle className="h-4 w-4 text-green-400" /> {b}
                 </span>
@@ -255,7 +255,7 @@ const AiAutomationAgencyPage = () => {
               data-cta="agency_footer"
               className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:scale-105 transition-transform inline-flex items-center gap-2"
             >
-              Book a Free Call <ArrowRight className="h-5 w-5" />
+              Book a free 20-minute audit <ArrowRight className="h-5 w-5" />
             </a>
           </div>
         </section>

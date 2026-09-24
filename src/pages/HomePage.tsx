@@ -2,36 +2,27 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import Hero from '@/components/Hero';
-import Services from '@/components/Services';
-import LLMboost from '@/components/LLMboost';
-import About from '@/components/About';
-import Testimonials from '@/components/Testimonials';
-import FAQ from '@/components/FAQ';
 import Wiki from '@/components/Wiki';
-import SiteMap from '@/components/SiteMap';
 import Contact from '@/components/Contact';
 import Navigation from '@/components/Navigation';
-import HomeFeaturedPillars from '@/components/HomeFeaturedPillars';
+import HomeRepositioning from '@/components/HomeRepositioning';
 
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
       <Helmet>
-        <title>Mushbloom – AI Automation Agency & LLM SEO</title>
-        <meta name="description" content="Deploy AI agents in 3-90 days. LLMboost optimizes your brand for ChatGPT, Gemini & Claude. 37% cost reduction guaranteed." />
+        <title>AI Automation for SMEs &amp; Owner-Run Businesses | Mushbloom</title>
+        <meta name="description" content="Mushbloom designs and builds simple AI systems for small and mid-sized businesses. Capture more leads, follow up automatically and save hours—without jargon or complex software." />
+        <meta property="og:title" content="AI Automation for SMEs &amp; Owner-Run Businesses | Mushbloom" />
+        <meta property="og:description" content="Simple AI systems that help SMEs capture more leads, follow up automatically and save hours—without jargon or complex software." />
+        <meta property="og:url" content="https://mushbloom.uk/" />
         <link rel="canonical" href="https://mushbloom.uk/" />
       </Helmet>
       <Navigation />
       <main>
         <Hero />
-        <Services />
-        <LLMboost />
-        <HomeFeaturedPillars />
-        <About />
-        <Testimonials />
-        <FAQ />
+        <HomeRepositioning />
         <Wiki />
-        <SiteMap />
         <Contact />
       </main>
     </div>

@@ -5,14 +5,14 @@ const MissionStatement = () => {
   return (
     <div className="text-center mb-20" itemScope itemType="https://schema.org/Mission">
       <p className="text-xl md:text-2xl text-gray-300 leading-relaxed max-w-4xl mx-auto" itemProp="description">
-        We create custom AI agent teams that automate growth, service, and operations—scaling your business while you sleep. 
-        We don't just implement AI—we architect autonomous business systems enhanced, and automated with AI infrastructure.
+        We start with the workflow, not the technology. That means fixing specific business problems such as missed enquiries,
+        slow follow-up and repetitive admin with affordable, proven tools and a clear handover.
       </p>
       
       {/* Structured data for mission statement */}
       <div className="sr-only" itemScope itemType="https://schema.org/Organization">
-        <meta itemProp="mission" content="Creating custom AI agent teams for business automation and autonomous operations" />
-        <meta itemProp="specialty" content="AI workforce deployment, business process automation, autonomous systems" />
+        <meta itemProp="mission" content="Helping SMEs make or save money with simple no-code AI automation" />
+        <meta itemProp="specialty" content="Lead handling, follow-up, booking and workflow automation for small businesses" />
       </div>
     </div>
   );

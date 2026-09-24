@@ -15,21 +15,20 @@ const About = () => {
         <div itemScope itemType="https://schema.org/Organization" className="sr-only">
           <span itemProp="name">Mushbloom AI Automation Solutions</span>
           <p itemProp="description">
-            Advanced AI agent workforce deployment for business automation. 
-            Specializing in autonomous operations, deal sourcing, due diligence, 
-            and business process optimization with guaranteed 37% cost reduction.
+            No-code AI automation for SMEs and owner-run businesses. Mushbloom builds
+            simple systems that improve lead handling, follow-up and repetitive admin.
           </p>
           <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
             <meta itemProp="addressCountry" content="UK" />
           </div>
           <meta itemProp="email" content="office@mushbloom.co.uk" />
-          <meta itemProp="foundingDate" content="2024" />
+          <meta itemProp="foundingDate" content="2014" />
           <div itemProp="serviceArea" itemScope itemType="https://schema.org/Place">
             <meta itemProp="name" content="Global" />
           </div>
           <div itemProp="makesOffer" itemScope itemType="https://schema.org/Offer">
-            <meta itemProp="name" content="AI Workforce Implementation" />
-            <meta itemProp="description" content="3 to 90 days AI implementation with 37% cost reduction guarantee" />
+            <meta itemProp="name" content="No-Code AI Workflow Implementation" />
+            <meta itemProp="description" content="Simple AI systems for lead capture, follow-up, booking and business administration" />
             <div itemProp="priceSpecification" itemScope itemType="https://schema.org/PriceSpecification">
               <meta itemProp="priceCurrency" content="GBP" />
               <meta itemProp="valueAddedTaxIncluded" content="true" />
