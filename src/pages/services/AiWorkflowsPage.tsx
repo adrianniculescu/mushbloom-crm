@@ -10,7 +10,7 @@ import {
 const PAGE_URL = 'https://mushbloom.uk/services/ai-workflows';
 const LEGIIT_URL = 'https://legiit.com/mushbloom/ai-workflows-to-save-time-and-grow-revenue';
 const META_TITLE = 'AI Workflows to Save Time and Grow Revenue';
-const META_DESCRIPTION = 'A focused service to identify, design and implement one high-value AI workflow inside your existing tools, for small and mid-sized businesses. Delivered via Legiit.';
+const META_DESCRIPTION = 'A focused service to identify, design and implement one high-value AI workflow inside your existing tools—so your team saves time and grows revenue. Delivered via Legiit.';
 
 const deliverables = [
   { icon: Target, title: 'One high-impact workflow, implemented', desc: 'We identify the single workflow where AI can create the clearest business value—lead capture, follow-up, onboarding, reporting, content, or operations—and implement it end to end.' },
@@ -27,16 +27,17 @@ const audiences = [
 ];
 
 const steps = [
-  { n: '01', title: 'AI Workflow Assessment (30–45 min)', desc: 'We clarify your business model, current workflows and priorities, then identify the workflow where AI can create the clearest business value.' },
-  { n: '02', title: 'Workflow design', desc: 'We map the chosen workflow step by step inside your existing tools, agree the business metric it should move, and define where human review stays in the loop.' },
-  { n: '03', title: 'Implementation', desc: 'We build and test the workflow end to end in your stack, so it runs on real data rather than as a demo.' },
-  { n: '04', title: 'Documentation & handover', desc: 'You receive the documented workflow and operating guidance, and we walk your team through running and extending it independently.' },
+  { n: '01', title: 'AI Workflow Assessment (30–45 min)', desc: 'We clarify your business model, current workflows and priorities, then identify the highest-value AI opportunity and outline scope, timeline and investment.' },
+  { n: '02', title: 'Workflow Blueprint (optional)', desc: 'For selected opportunities, we map the current process, define the AI-enhanced workflow, specify tools and integrations, and document approval points and operating rules.' },
+  { n: '03', title: 'Workflow Build & Handover', desc: 'We configure the workflow in your existing stack, test it with real scenarios, and provide clear handover documentation and guidance.' },
+  { n: '04', title: 'Iterate as You Grow', desc: 'As your business evolves, we refine and extend workflows to new processes, teams or markets.' },
 ];
 
 const differentiators = [
-  { title: 'Business value first', desc: 'We start from a commercial goal—time saved, faster response, more qualified opportunities—not from a tool.' },
-  { title: 'Your stack, not another platform', desc: 'The workflow lives inside the tools your team already uses every day.' },
-  { title: 'Human oversight built in', desc: 'Clear process and documentation instead of "magic button" promises.' },
+  { title: 'Business-first, not tool-first', desc: 'We start with your workflow and commercial objective, then choose AI—not the other way around.' },
+  { title: 'Designed for adoption', desc: 'Every workflow includes human approval points, operating guidance and documentation so your team actually uses it.' },
+  { title: 'AI-native, commercially grounded', desc: 'Mushbloom has operated since 2014, evolving from classical digital marketing into AI-native growth and implementation.' },
+  { title: 'Focused entry point', desc: 'This service is a clear, scoped starting point: assess, plan, then optionally blueprint and build one high-value workflow.' },
 ];
 
 const serviceSchema = {
@@ -185,7 +186,7 @@ const AiWorkflowsPage = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-white font-['Space_Grotesk'] mb-10">
             What makes this different
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {differentiators.map((d) => (
               <div key={d.title} className="glass-effect rounded-2xl p-6 border border-white/10">
                 <CheckCircle className="h-5 w-5 text-green-400 mb-4" />
@@ -209,8 +210,8 @@ const AiWorkflowsPage = () => {
               productised engagement.
             </p>
             <p className="text-gray-500 text-sm leading-relaxed mt-4">
-              All work is delivered with clear documentation, example copy and practical guidance so you can continue
-              using the system independently.
+              All work is delivered with defined scope, documented materials, clear client ownership of accounts and
+              data, and practical handover guidance.
             </p>
           </div>
         </section>
@@ -219,11 +220,11 @@ const AiWorkflowsPage = () => {
         <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="glass-effect rounded-2xl p-10 border border-blue-500/20 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white font-['Space_Grotesk'] mb-4">
-              Ready to put AI to work in your business?
+              Ready to turn AI into a real business system?
             </h2>
             <p className="text-gray-300 leading-relaxed max-w-2xl mx-auto mb-8">
-              If you want one practical AI workflow that saves your team time and supports revenue, this service gives
-              you an assessment, an implemented workflow and a documented handover—delivered through Legiit.
+              If you want one concrete AI workflow that saves time and supports revenue—rather than another theoretical
+              discussion—this service gives you a clear assessment, plan and implementation, delivered through Legiit.
             </p>
             <div className="flex justify-center">
               <LegiitButton id="ai_workflows_footer_cta">Get the service on Legiit</LegiitButton>
