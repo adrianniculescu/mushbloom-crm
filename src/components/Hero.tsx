@@ -14,14 +14,14 @@ const Hero = () => {
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in font-['Space_Grotesk'] leading-tight">
-              Turn messy workflows into simple AI systems that{' '}
               <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-green-500 bg-clip-text text-transparent">
-                book more jobs and save hours
-              </span>
+                Stop losing revenue
+              </span>{' '}
+              to missed enquiries, slow follow-up and repetitive admin
             </h1>
             
             <p className="text-lg md:text-xl text-gray-300 mb-6 animate-fade-in delay-200 leading-relaxed">
-              Mushbloom designs and builds simple AI systems for small and mid-sized businesses. We focus on the workflows that drive revenue, cost and capacity—so you get more booked jobs, faster follow-up and less admin, without jargon or complex software.
+              Mushbloom helps SMEs and owner-run businesses identify the workflows costing them time and money, then implement simple AI-powered systems that capture more opportunities, follow up consistently and reduce admin—without jargon or complex software.
             </p>
 
             {/* Bullet points */}
@@ -29,7 +29,7 @@ const Hero = () => {
               {[
                 'Built around your existing workflow',
                 'Affordable, proven no-code tools',
-                'Clear scope, handover and support',
+                'Delivered by an international agency team with experience since 2014',
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-gray-200">
                   <CheckCircle className="h-5 w-5 text-green-400 flex-shrink-0" />
