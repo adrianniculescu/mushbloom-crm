@@ -14,6 +14,15 @@ interface DbPost {
 
 const featuredGuides = [
   {
+    slug: 'linkedin-sales-machine',
+    path: '/guides/linkedin-sales-machine',
+    title: 'How to Turn Your LinkedIn Profile Into a Sales Machine (Without Spam or Hype)',
+    description:
+      'Rewrite your headline, About and Featured sections for buyers, and build a simple routine that consistently creates qualified B2B conversations.',
+    readTime: '11 min read',
+    tag: 'Sales & LinkedIn',
+  },
+  {
     slug: 'non-technical-founder-mvp-playbook',
     path: '/guides/non-technical-founder-mvp-playbook',
     title: 'From Corporate Expert to Startup Founder: The Practical MVP Playbook for Non-Technical Builders',
