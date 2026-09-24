@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import Navigation from '@/components/Navigation';
 import Contact from '@/components/Contact';
@@ -231,6 +232,13 @@ const AiWorkflowsPage = () => {
             </div>
             <p className="text-gray-500 text-sm mt-4">
               You’ll be taken to Legiit to review the full scope, pricing and ordering details.
+            </p>
+            <p className="text-gray-500 text-sm mt-3">
+              Want the background first? Read our guide:{' '}
+              <Link to="/guides/ai-workflows" className="text-blue-400 hover:underline">
+                AI Workflows to Save Time and Grow Revenue: A Practical Guide for SMBs
+              </Link>
+              .
             </p>
           </div>
         </section>
