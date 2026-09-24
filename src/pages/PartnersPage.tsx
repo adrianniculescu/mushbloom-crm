@@ -51,10 +51,10 @@ const PartnersPage = () => (
   <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white">
     <Helmet>
       <title>Partners | Mushbloom</title>
-      <meta name="description" content="Meet the trusted platforms Mushbloom partners with to deliver specialist AI and marketing services at competitive, transparent prices." />
+      <meta name="description" content="Mushbloom partners with trusted platforms to deliver specialist services at competitive, transparent prices. All work is executed by our agency team, with secured payments and guaranteed delivery." />
       <link rel="canonical" href={PAGE_URL} />
       <meta property="og:title" content="Partners | Mushbloom" />
-      <meta property="og:description" content="Trusted platforms that extend Mushbloom's specialist AI and marketing services with transparent pricing and secure payments." />
+      <meta property="og:description" content="Mushbloom partners with trusted platforms to deliver specialist services at competitive, transparent prices. All work is executed by our agency team, with secured payments and guaranteed delivery." />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={PAGE_URL} />
       <meta name="twitter:card" content="summary_large_image" />
