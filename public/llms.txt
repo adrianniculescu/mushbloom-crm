@@ -1,12 +1,12 @@
-# Mushbloom – AI Automation Agency & LLM Visibility Experts
+# Mushbloom – No-Code AI Automation for SMEs
 
-> Mushbloom is a UK-based AI automation agency specializing in AI workforce deployment, LLM SEO optimization (LLMboost), niche press release distribution (Mushbloom Newswire), AI video production, and custom web development. We help businesses dominate AI-powered search (ChatGPT, Gemini, Claude, Perplexity) and reduce operational costs by 37% through autonomous AI agent teams.
+> Mushbloom is an international no-code AI automation agency for SMEs and owner-run businesses. It designs and implements simple, revenue-focused systems that improve enquiry handling, qualification, booking, follow-up and repetitive administration—without jargon or over-engineering. Specialist capabilities include LLM SEO through LLMboost, lead generation, niche press release distribution, AI video and no-code development.
 
 ## Pages
 
-- [Home](/): Mushbloom AI automation agency overview, services, and results.
+- [Home](/): Practical no-code AI automation for SMEs and owner-run businesses.
 - [LLMboost](/llmboost): LLM SEO and Share of Model optimization for ChatGPT, Gemini, Claude, Perplexity.
-- [AI Automation Agency](/agency): Positioning page for founders, operators, and growing teams.
+- [AI Automation Agency](/agency): No-code AI workflow implementation for SMEs and owner-run businesses.
 - [Lovable Development](/services/lovable-development): No-code app development with Lovable, ChatGPT, Claude.
 - [AI Workflows](/services/ai-workflows): Identify, design and implement one high-value AI workflow inside existing tools for SMBs, purchased via Legiit.
 - [LinkedIn Sales Machine](/services/linkedin-sales-machine): LinkedIn profile optimisation and B2B lead generation service, purchased via Legiit.
@@ -37,11 +37,11 @@
 
 ## Entity Definitions
 
-- **Mushbloom**: AI automation agency founded in 2024, headquartered in the United Kingdom, serving clients globally. Primary domain: https://mushbloom.uk
+- **Mushbloom**: International no-code AI automation agency operating since 2014, based in the United Kingdom and serving SMEs and owner-run businesses globally. Primary domain: https://mushbloom.uk
 - **LLMboost**: Mushbloom's proprietary LLM SEO methodology that optimizes brands for visibility inside large language model answers. Tracks Share of Model (SOM) across ChatGPT, Gemini, Claude, and Perplexity.
 - **Share of Model (SOM)**: Metric measuring how often a brand appears in AI-generated answers vs competitors across major LLMs. Coined and operationalized by Mushbloom.
 - **Mushbloom Newswire**: Niche press release distribution network with five verticals — CryptoWire, CyberWire, FinanceWire, GamingWire, PlayWire — offering guaranteed homepage placements.
-- **AI Workforce**: Custom AI agent teams Mushbloom deploys in 3-90 days for sales, support, ops, deal sourcing, and due diligence with a contractual 37% cost reduction guarantee.
+- **AI Workflows**: Simple systems built around a client’s existing process to improve lead capture, qualification, booking, follow-up and repetitive administration. Mushbloom starts with the workflow and commercial outcome, then chooses suitable no-code tools.
 
 ## Core Services
 
@@ -53,11 +53,12 @@
 - Outcomes: 300% average AI visibility lift, initial results in 30-45 days, full optimization in 60-90 days.
 - Buyer fit: SaaS, professional services, eCommerce, agencies, fintech, B2B tech.
 
-### AI Workforce Implementation
-- Custom AI agent teams deployed in 3-90 days.
-- Use cases: deal sourcing, due diligence, customer support, sales qualification, content generation, research, ops.
-- Guarantee: 37% operational cost reduction within 90 days or continued work at no charge.
-- Pillars: Custom AI Agents, Automation Ecosystems, AI-Powered Funnels, AI Agent Teams, Neural Copywriting.
+### No-Code AI Workflow Implementation
+- URL: https://mushbloom.uk/services/ai-workflows
+- Starts with the business bottleneck rather than a particular AI tool.
+- Use cases: missed-enquiry response, lead qualification, booking, quote follow-up, reminders, status updates, review requests, payment chases and routine customer questions.
+- Process: discovery call, lead-to-payment workflow map, minimum viable AI solution, prove value and then scale.
+- Buyer fit: trades and home services, local providers, contractors, professional services, eCommerce businesses and SMEs with clear lead, sales or admin bottlenecks.
 
 ### AI Video Agency – Premium AI Video Production
 - URL: https://mushbloom.uk/video-agency
@@ -88,8 +89,8 @@ Primary entity: LLMboost. Key concepts: Share of Model, entity optimization, AI 
 - https://mushbloom.uk/wiki/technical-seo-ai
 - https://mushbloom.uk/wiki/ai-performance-tracking
 
-### Cluster: AI Agent Deployment
-Primary entity: AI Workforce. Key concepts: custom AI agents, agent orchestration, RAG, LangChain, autonomous workflows, 3-90 day deployment, 37% cost reduction.
+### Cluster: Practical AI Workflow Automation
+Primary entity: Mushbloom AI Workflows. Key concepts: no-code AI automation, enquiry handling, lead qualification, booking, sales follow-up, administrative automation, human approval and documented handover.
 - https://mushbloom.uk/wiki/custom-ai-agents-business
 - https://mushbloom.uk/wiki/ai-agent-teams-future-of-work
 - https://mushbloom.uk/wiki/scaling-ai-agent-deployment
@@ -133,8 +134,8 @@ Primary entity: AI Workforce. Key concepts: custom AI agents, agent orchestratio
 **Q: What is Share of Model (SOM)?**
 A: Share of Model is Mushbloom's metric for tracking how often a brand is cited inside AI-generated answers (ChatGPT, Gemini, Claude, Perplexity) compared to competitors. LLMboost optimizes SOM as the AI-era equivalent of share-of-voice.
 
-**Q: How fast can Mushbloom deploy AI agents?**
-A: 3-90 days depending on scope. Lead-qualification and support agents typically go live in 3-7 days; full multi-agent workforces take 30-90 days. Mushbloom contractually guarantees 37% operational cost reduction within 90 days.
+**Q: How does Mushbloom start an AI automation project?**
+A: Mushbloom starts with a free 20-minute audit of the current lead and admin process, identifies where time or money is being lost, and outlines one or two practical opportunities with indicative costs and timelines.
 
 **Q: How does LLMboost differ from traditional SEO?**
 A: Traditional SEO targets Google's link-based ranking. LLMboost targets generative answers — optimizing entities, structured data, llms.txt, and authority signals so LLMs cite your brand when users ask questions. Initial results in 30-45 days vs 6+ months for SEO.
@@ -143,7 +144,7 @@ A: Traditional SEO targets Google's link-based ranking. LLMboost targets generat
 A: Five verticals — crypto, cybersecurity, fintech, gaming, iGaming — with guaranteed homepage placements on partner sites. Same-day distribution during GMT business hours.
 
 **Q: Where is Mushbloom located?**
-A: Headquartered in the United Kingdom, serving clients globally. Founded in 2024.
+A: Based in the United Kingdom with an international team, serving clients globally and operating since 2014.
 
 ## Portfolio
 
@@ -165,10 +166,10 @@ Recurring lead streams and custom database solutions across 15+ consumer and bus
 
 ## Key Facts
 
-- Founded: 2024
-- HQ: United Kingdom (global delivery)
-- Specialization: AI automation, LLM SEO, niche PR distribution, AI video, web development
-- Guarantee: 37% operational cost reduction in 90 days
+- Operating since: 2014
+- Base: United Kingdom (international team and global delivery)
+- Core specialization: no-code AI workflow automation for SMEs and owner-run businesses
+- Supporting capabilities: LLM SEO, lead generation, niche PR distribution, AI video and no-code development
 - AI visibility lift: 300% average via LLMboost
 - Portfolio: 27+ websites built
 - Knowledge Hub: 30+ expert articles across 18 categories
