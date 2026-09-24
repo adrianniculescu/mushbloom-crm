@@ -14,6 +14,15 @@ interface DbPost {
 
 const featuredGuides = [
   {
+    slug: 'mushbloom-ai-automation-evolution',
+    path: '/wiki/mushbloom-ai-automation-evolution',
+    title: 'From Classical Marketing to AI Automation: How Mushbloom Evolved Since 2014',
+    description:
+      'How a traditional digital marketing agency became an international AI automation agency for SMEs and owner-run businesses—focused on workflows, not technology.',
+    readTime: '12 min read',
+    tag: 'About Mushbloom',
+  },
+  {
     slug: 'mushbloom-legiit-partnership',
     path: '/wiki/mushbloom-legiit-partnership',
     title: 'Mushbloom × Legiit: Delivering Specialist Services at Competitive Prices',
