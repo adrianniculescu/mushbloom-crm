@@ -11,8 +11,8 @@ const AboutHeader = () => {
         </span>
       </h2>
       <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8">
-        We're not just another marketing agency. We're architects of the autonomous business revolution, 
-        building intelligent AI workforces that transform how companies operate, grow, and succeed.
+        We are an international no-code AI automation agency for SMEs and owner-run businesses,
+        focused on simple systems that make money, save money and give teams time back.
       </p>
     </div>
   );
