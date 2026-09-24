@@ -27,6 +27,7 @@ import NonTechnicalFounderMvpPlaybook from "./pages/guides/NonTechnicalFounderMv
 import LinkedInSalesMachineGuide from "./pages/guides/LinkedInSalesMachineGuide";
 import AiWorkflowsGuide from "./pages/guides/AiWorkflowsGuide";
 import MushbloomLegiitPartnership from "./pages/guides/MushbloomLegiitPartnership";
+import MushbloomEvolutionGuide from "./pages/guides/MushbloomEvolutionGuide";
 import LeadGenerationDataPage from "./pages/LeadGenerationDataPage";
 import AcceptableUsePolicy from "./pages/legal/AcceptableUsePolicy";
 import DataProcessingAddendum from "./pages/legal/DataProcessingAddendum";
@@ -98,6 +99,7 @@ const App = () => (
               <Route path="/projects" element={<Navigate to="/portfolio/websites" replace />} />
               <Route path="/wiki" element={<WikiIndexPage />} />
               <Route path="/wiki/mushbloom-legiit-partnership" element={<MushbloomLegiitPartnership />} />
+              <Route path="/wiki/mushbloom-ai-automation-evolution" element={<MushbloomEvolutionGuide />} />
               <Route path="/wiki/:slug" element={<WikiArticlePage />} />
               <Route path="/guides/saas-ai-search-visibility" element={<SaasAiSearchGuide />} />
               <Route path="/guides/crypto-web3-ai-search-visibility" element={<CryptoWeb3AiSearchGuide />} />

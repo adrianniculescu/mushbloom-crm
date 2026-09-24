@@ -27,6 +27,7 @@
 - [Optimize for Google AI Overviews](/wiki/optimize-lovable-site-google-ai-overviews): AI Overviews optimization.
 - [Get Indexed on Google 2026](/wiki/get-lovable-site-indexed-google-2026): Indexing playbook.
 - [Mushbloom × Legiit Partnership](/wiki/mushbloom-legiit-partnership): How Mushbloom combines in-house agency delivery with Legiit’s transparent marketplace and escrow-secured ordering for specialist services.
+- [Mushbloom Evolution Since 2014](/wiki/mushbloom-ai-automation-evolution): From classical digital marketing to an AI automation agency for SMEs and owner-run businesses.
 - [SaaS AI Search Visibility Guide](/guides/saas-ai-search-visibility): SaaS LLM SEO playbook.
 - [Crypto/Web3 AI Search Guide](/guides/crypto-web3-ai-search-visibility): Web3 LLM SEO playbook.
 - [SaaS Company Brain](/guides/saas-company-brain): Company brain for SaaS teams.
