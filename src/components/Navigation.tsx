@@ -23,6 +23,7 @@ const Navigation = () => {
     { name: 'Video Agency', href: '/video-agency', description: 'Premium AI Video Production' },
     { name: 'Newswire', href: '/newswire', description: 'Niche PR Distribution' },
     { name: 'Lead Generation & Data', href: '/lead-generation-data', description: 'Recurring Lead Streams & Databases' },
+    { name: 'LinkedIn Sales Machine', href: '/services/linkedin-sales-machine', description: 'LinkedIn Profile & Lead Generation' },
   ];
 
   return (
@@ -165,6 +166,20 @@ const Navigation = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Newswire
+              </Link>
+              <Link
+                to="/lead-generation-data"
+                className="text-green-400 hover:text-green-300 block px-3 py-2 text-base font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                Lead Generation &amp; Data
+              </Link>
+              <Link
+                to="/services/linkedin-sales-machine"
+                className="text-blue-300 hover:text-blue-200 block px-3 py-2 text-base font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                LinkedIn Sales Machine
               </Link>
             </div>
 
