@@ -115,6 +115,7 @@ const Navigation = () => {
                 href="https://tidycal.com/adrianniculescu"
                 target="_blank"
                 rel="noopener noreferrer"
+                data-cta="nav_audit"
                 className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-4 py-2 text-sm font-medium rounded-lg hover:scale-105 transition-transform duration-200"
               >
                 Free 20-min audit
@@ -223,6 +224,7 @@ const Navigation = () => {
               href="https://tidycal.com/adrianniculescu"
               target="_blank"
               rel="noopener noreferrer"
+              data-cta="mobile_nav_audit"
               className="block mx-3 mt-2 text-center bg-gradient-to-r from-blue-500 to-green-500 text-white px-4 py-2 rounded-lg font-medium"
               onClick={() => setIsOpen(false)}
             >

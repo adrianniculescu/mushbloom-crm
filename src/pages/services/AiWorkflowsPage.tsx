@@ -123,6 +123,7 @@ const AiWorkflowsPage = () => {
           </p>
           <div className="flex flex-wrap gap-4">
             <LegiitButton id="ai_workflows_hero">Get the service on Legiit</LegiitButton>
+            <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" data-cta="ai_workflows_audit" className="border border-white/15 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/5 transition-colors inline-flex items-center gap-2">Book a free 20-minute audit</a>
             <a
               href="#how-it-works"
               className="border border-white/15 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/5 transition-colors inline-flex items-center gap-2"
@@ -230,6 +231,7 @@ const AiWorkflowsPage = () => {
             <div className="flex justify-center">
               <LegiitButton id="ai_workflows_footer_cta">Get the service on Legiit</LegiitButton>
             </div>
+            <p className="text-gray-300 text-sm mt-5">Not ready to order? <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" data-cta="ai_workflows_footer_audit" className="text-blue-400 hover:underline">Book a free 20-minute audit</a> to discuss your first workflow.</p>
             <p className="text-gray-500 text-sm mt-4">
               You’ll be taken to Legiit to review the full scope, pricing and ordering details.
             </p>
