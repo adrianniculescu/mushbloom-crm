@@ -43,7 +43,7 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim() || !formData.message.trim()) return;
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) return;
 
     setIsSubmitting(true);
     const leadId = crypto.randomUUID();
@@ -51,7 +51,7 @@ const Contact = () => {
       id: leadId,
       name: formData.name.trim(),
       email: formData.email.trim(),
-      phone: formData.phone.trim(),
+      phone: formData.phone.trim() || null,
       service_interest: formData.service_interest || null,
       budget: formData.budget || null,
       message: formData.message.trim(),
@@ -117,6 +117,7 @@ const Contact = () => {
               </div>
               <h3 className="text-lg font-semibold text-white mb-2 font-['Space_Grotesk']">Free 20-minute audit</h3>
               <p className="text-gray-300">Find the workflow costing you time or revenue</p>
+              <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" data-cta="contact_book_audit" className="inline-block mt-4 text-blue-400 hover:underline">Book your free audit →</a>
             </div>
 
             <div className="glass-effect rounded-2xl p-6 border border-white/10">
@@ -161,9 +162,9 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-1">Phone *</label>
+                     <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-1">Phone (optional)</label>
                   <input
-                    id="phone" name="phone" type="tel" required maxLength={32}
+                     id="phone" name="phone" type="tel" maxLength={32}
                     value={formData.phone} onChange={handleChange}
                     className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 text-white placeholder-gray-500 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition"
                     placeholder="+40 725 388 605"
@@ -201,7 +202,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">Message *</label>
+                   <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">What's your biggest bottleneck? *</label>
                   <textarea
                     id="message" name="message" required maxLength={2000} rows={4}
                     value={formData.message} onChange={handleChange}

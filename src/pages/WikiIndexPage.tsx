@@ -145,6 +145,8 @@ const WikiIndexPage = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-white font-['Space_Grotesk']">
               In-depth research from Mushbloom
             </h2>
+            <p className="text-gray-300 mt-5 max-w-2xl mx-auto">Mushbloom has worked across marketing, lead generation and workflow automation since 2014. Read the methods, then talk through your own bottleneck.</p>
+            <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" data-cta="wiki_audit" className="inline-flex items-center gap-2 mt-6 bg-gradient-to-r from-blue-500 to-green-500 text-white px-6 py-3 rounded-lg font-semibold">Book a free 20-minute audit <ArrowRight className="h-4 w-4" /></a>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-4">
