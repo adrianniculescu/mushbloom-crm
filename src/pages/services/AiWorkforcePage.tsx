@@ -49,7 +49,7 @@ const faqs = [
 ];
 
 const schema = [
-  { '@context': 'https://schema.org', '@type': 'Service', name: 'AI Workforce Systems', serviceType: 'Supervised AI agent implementation', url, description, provider: { '@type': 'ProfessionalService', name: 'Mushbloom', url: 'https://mushbloom.uk', email: 'office@mushbloom.co.uk' }, offers: packages.map(({ name, price }) => ({ '@type': 'Offer', name, priceCurrency: 'GBP', priceSpecification: { '@type': 'PriceSpecification', minPrice: Number(price.replace(/[^\d]/g, '')), priceCurrency: 'GBP' } })) },
+  { '@context': 'https://schema.org', '@type': 'Service', name: 'AI Workforce Systems', serviceType: 'Supervised AI agent implementation', url, description, provider: { '@type': 'ProfessionalService', name: 'Mushbloom', url: 'https://mushbloom.uk', email: 'office@mushbloom.co.uk' }, offers: packages.map(({ name, price }) => ({ '@type': 'Offer', name, priceSpecification: { '@type': 'PriceSpecification', minPrice: Number(price.replace(/[^\d]/g, '')), priceCurrency: 'GBP' } })) },
   { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://mushbloom.uk/' }, { '@type': 'ListItem', position: 2, name: 'AI Workforce Systems', item: url }] },
   { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(({ q, a }) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) },
 ];

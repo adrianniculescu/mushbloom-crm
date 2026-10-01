@@ -48,6 +48,7 @@
   }
 
   .dark {
+    --workforce-highlight: 149 78% 57%;
     --background: 222 47% 11%;
     --foreground: 210 40% 98%;
 
