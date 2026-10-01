@@ -67,6 +67,7 @@ const reasons = [
 ];
 
 const supportingServices = [
+  { to: '/ai-workforce', title: 'AI Workforce Systems', text: 'Coordinate supervised AI agents across sales, marketing, support and operations—with human approval for sensitive actions.' },
   { to: '/services/ai-workflows', title: 'AI Workflows', text: 'Identify and implement one high-value workflow inside the tools you already use.' },
   { to: '/services/linkedin-sales-machine', title: 'LinkedIn Sales Machine', text: 'Turn your profile and activity into a consistent B2B sales asset.' },
   { to: '/llmboost', title: 'LLMboost', text: 'Improve how your business is discovered and cited in AI-powered search.' },
@@ -115,6 +116,13 @@ const HomeRepositioning = () => (
             </article>
           ))}
         </div>
+      </div>
+    </section>
+
+    <section className="py-16 border-y border-white/10 bg-white/[0.02]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
+        <div><p className="text-sm font-semibold uppercase text-green-400 mb-4">A core service</p><h2 className="text-3xl md:text-4xl font-bold text-white font-['Space_Grotesk'] mb-4">AI Workforce Systems</h2><p className="text-lg text-gray-300 max-w-2xl">When one workflow is not enough, we connect supervised AI agents across lead response, customer service, marketing and operations. Your team remains in control of sensitive decisions.</p></div>
+        <Link to="/ai-workforce" className="text-blue-400 font-semibold inline-flex items-center gap-2 hover:underline">Explore AI Workforce Systems <ArrowRight className="h-5 w-5" /></Link>
       </div>
     </section>
 

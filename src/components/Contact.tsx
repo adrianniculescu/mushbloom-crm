@@ -7,6 +7,7 @@ import { trackGenerateLead } from '@/lib/analytics';
 
 const serviceOptions = [
   'AI Automation',
+  'AI Workforce Systems',
   'Free Workflow Audit',
   'LLMboost SEO',
   'Web Development',
