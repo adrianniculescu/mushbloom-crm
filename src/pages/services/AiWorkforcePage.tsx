@@ -99,7 +99,7 @@ function AssessmentForm() {
 }
 
 export default function AiWorkforcePage() {
-  return <div className="dark min-h-screen bg-background text-foreground">
+  return <div className="workforce-theme min-h-screen bg-background text-foreground">
     <Helmet>
       <title>{title}</title><meta name="description" content={description} /><link rel="canonical" href={url} />
       <meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={url} /><meta property="og:type" content="website" /><meta name="twitter:card" content="summary" />
