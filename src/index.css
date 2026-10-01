@@ -85,6 +85,19 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
+  .workforce-theme {
+    --background: 220 12% 7%;
+    --foreground: 0 0% 97%;
+    --card: 220 10% 10%;
+    --muted-foreground: 210 8% 72%;
+    --border: 216 11% 25%;
+    --input: 216 11% 32%;
+    --primary: 149 78% 57%;
+    --primary-foreground: 220 12% 7%;
+    --accent: 149 78% 57%;
+    --accent-foreground: 220 12% 7%;
+  }
 }
 
 @layer base {

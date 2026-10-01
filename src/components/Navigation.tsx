@@ -20,6 +20,7 @@ const Navigation = () => {
   ];
 
   const serviceItems = [
+    { name: 'AI Workforce Systems', href: '/ai-workforce', description: 'Supervised AI agents for your business' },
     { name: 'LLMboost', href: '/llmboost', description: 'AI Search Visibility' },
     { name: 'Video Agency', href: '/video-agency', description: 'Premium AI Video Production' },
     { name: 'Newswire', href: '/newswire', description: 'Niche PR Distribution' },
@@ -149,6 +150,7 @@ const Navigation = () => {
             
             <div className="border-t border-white/10 pt-2 mt-2">
               <div className="px-3 py-1 text-xs text-gray-500 uppercase">Services</div>
+              <Link to="/ai-workforce" className="text-green-400 hover:text-green-300 block px-3 py-2 text-base font-medium" onClick={() => setIsOpen(false)}>AI Workforce Systems</Link>
               <Link
                 to="/llmboost"
                 className="text-purple-400 hover:text-purple-300 block px-3 py-2 text-base font-medium"

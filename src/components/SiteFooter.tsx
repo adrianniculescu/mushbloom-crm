@@ -35,6 +35,7 @@ const SiteFooter: React.FC = () => {
         <nav aria-label="Services">
           <p className="text-white font-semibold mb-3">Services</p>
           <ul className="space-y-2 text-gray-400">
+            <li><Link to="/ai-workforce" className="hover:text-white">AI Workforce Systems</Link></li>
             <li><Link to="/llmboost" className="hover:text-white">LLMboost</Link></li>
             <li><Link to="/video-agency" className="hover:text-white">Video Agency</Link></li>
             <li><Link to="/newswire" className="hover:text-white">Newswire</Link></li>

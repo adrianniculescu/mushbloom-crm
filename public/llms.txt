@@ -7,6 +7,7 @@
 - [Home](/): Practical no-code AI automation for SMEs and owner-run businesses.
 - [LLMboost](/llmboost): LLM SEO and Share of Model optimization for ChatGPT, Gemini, Claude, Perplexity.
 - [AI Automation Agency](/agency): No-code AI workflow implementation for SMEs and owner-run businesses.
+- [AI Workforce Systems](/ai-workforce): Supervised, business-specific AI agent teams for sales, marketing, customer service and operations; human review for sensitive decisions. Assessment from £250, sprint from £1,500, system from £5,000 and support from £299/month.
 - [Lovable Development](/services/lovable-development): No-code app development with Lovable, ChatGPT, Claude.
 - [AI Workflows](/services/ai-workflows): Identify, design and implement one high-value AI workflow inside existing tools for SMBs, purchased via Legiit.
 - [LinkedIn Sales Machine](/services/linkedin-sales-machine): LinkedIn profile optimisation and B2B lead generation service, purchased via Legiit.
@@ -43,8 +44,16 @@
 - **Share of Model (SOM)**: Metric measuring how often a brand appears in AI-generated answers vs competitors across major LLMs. Coined and operationalized by Mushbloom.
 - **Mushbloom Newswire**: Niche press release distribution network with five verticals — CryptoWire, CyberWire, FinanceWire, GamingWire, PlayWire — offering guaranteed homepage placements.
 - **AI Workflows**: Simple systems built around a client’s existing process to improve lead capture, qualification, booking, follow-up and repetitive administration. Mushbloom starts with the workflow and commercial outcome, then chooses suitable no-code tools.
+- **AI Workforce Systems**: Mushbloom's supervised, coordinated AI agents with defined roles, approved knowledge, controlled access, human review, activity logs and ongoing refinement. Not autonomous employees replacing a team.
 
 ## Core Services
+
+### AI Workforce Systems – Supervised AI Agent Implementation
+- URL: https://mushbloom.uk/ai-workforce
+- Starts with a business workflow; designs specialist agent roles, permissions, approved tools and human review.
+- Teams: sales and lead response, marketing, customer service and operations.
+- Process: assess, design, deploy and improve.
+- Packages: AI Opportunity Assessment from £250; AI Workforce Sprint from £1,500; AI Workforce System from £5,000; ongoing support from £299/month. Final scope and price vary.
 
 ### LLMboost – AI Search Visibility Accelerator
 - URL: https://mushbloom.uk/llmboost
