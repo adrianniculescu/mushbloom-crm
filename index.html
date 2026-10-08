@@ -52,8 +52,8 @@
       "name": "Mushbloom",
       "alternateName": ["Mushbloom AI Automation", "Mushbloom No-Code AI Agency"],
       "url": "https://mushbloom.uk",
-      "slogan": "Simple AI systems that make or save money.",
-      "knowsAbout": ["No-Code AI Automation", "AI Automation for SMEs", "Lead Qualification", "Booking Automation", "Sales Follow-Up", "Business Process Automation", "LLM SEO", "Share of Model", "Press Release Distribution"],
+      "slogan": "Tell us what is slowing your business down. We map the workflow, identify what can be automated and build the system.",
+      "knowsAbout": ["AI Agents", "AI Workflow Automation", "Generative Engine Optimization", "AI Search Visibility", "No-Code AI Automation", "AI Automation for SMEs", "Lead Qualification", "Booking Automation", "Sales Follow-Up", "Business Process Automation", "LLM SEO", "Share of Model", "Press Release Distribution"],
       "logo": "https://mushbloom.uk/lovable-uploads/a393711c-b940-4619-8101-fb5159650972.png",
       "description": "International no-code AI automation agency helping SMEs and owner-run businesses improve lead handling, follow-up, booking and repetitive administration.",
       "email": "office@mushbloom.co.uk",
@@ -96,23 +96,28 @@
         },
         {
           "@type": "Offer",
-          "name": "AI Deal Sourcing",
-          "description": "Automated investment discovery and analysis",
-          "category": "Investment Tools"
+          "name": "AI Workforce Systems",
+          "description": "Supervised AI agent teams for sales, lead response, marketing, customer service and operations, with human approval for sensitive actions.",
+          "category": "AI Agents",
+          "url": "https://mushbloom.uk/ai-workforce"
         },
         {
           "@type": "Offer",
-          "name": "Due Diligence AI",
-          "description": "Automated document analysis and risk assessment",
-          "category": "Investment Analysis"
+          "name": "Automation Discovery",
+          "description": "Workflow review, bottleneck map, automation opportunities, recommended tools and a prioritised implementation plan.",
+          "category": "Business Automation",
+          "url": "https://mushbloom.uk/automate"
         },
         {
           "@type": "Offer",
           "name": "Mushbloom Newswire",
-          "description": "Niche press release distribution across crypto, cybersecurity, fintech, gaming, and iGaming verticals with guaranteed homepage placements",
-          "category": "PR Distribution"
+          "description": "Niche press release distribution across crypto, cybersecurity, fintech, gaming and iGaming verticals.",
+          "category": "PR Distribution",
+          "url": "https://mushbloom.uk/newswire"
         }
       ],
+      "founder": { "@id": "https://mushbloom.uk/#founder" },
+      "areaServed": ["GB", "Europe", "Worldwide"],
       "contactPoint": {
         "@type": "ContactPoint",
         "email": "office@mushbloom.co.uk",
@@ -127,13 +132,38 @@
     }
     </script>
 
+    <!-- Founder + WebSite -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://mushbloom.uk/#founder",
+        "name": "Adrian Niculescu",
+        "jobTitle": "Founder",
+        "worksFor": { "@id": "https://mushbloom.uk/#organization" },
+        "knowsAbout": ["AI automation for SMEs", "AI agents", "LLM SEO", "No-code development", "Digital marketing", "PR distribution"],
+        "url": "https://mushbloom.uk/wiki/mushbloom-ai-automation-evolution"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://mushbloom.uk/#website",
+        "name": "Mushbloom",
+        "url": "https://mushbloom.uk",
+        "inLanguage": "en-GB",
+        "publisher": { "@id": "https://mushbloom.uk/#organization" }
+      }
+    ]
+    </script>
+
     <!-- LLMboost Service Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Service",
       "name": "LLMboost - AI-Driven LLM & Search Visibility Accelerator",
-      "description": "Revolutionary LLM SEO optimization service for ChatGPT, Gemini, Claude, and AI-powered search results. Boost your Share of Model and dominate AI visibility.",
+      "description": "LLM SEO service that improves how brands are understood and cited by ChatGPT, Gemini, Claude, Perplexity and Google AI Overviews, measured through Share of Model.",
       "provider": {
         "@type": "Organization",
         "name": "Mushbloom",
@@ -234,9 +264,30 @@
 
   <body>
     <div id="root">
-      <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Mushbloom — No-Code AI Automation for SMEs</h1>
-    </div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+      <!-- Static, crawler-readable summary. React replaces this on load; AI crawlers that don't run JavaScript read it. -->
+      <main style="max-width:860px;margin:0 auto;padding:48px 20px;font-family:system-ui,sans-serif;color:#e5e7eb;background:#000">
+        <h1>Mushbloom — Practical AI Automation for SMEs and Owner-Run Businesses</h1>
+        <p>Mushbloom is an international no-code AI automation agency, operating since 2014 and founded by Adrian Niculescu. We help SMEs stop losing revenue to missed enquiries, slow follow-up and repetitive admin.</p>
+        <p><strong>How we work:</strong> workflow first, tool second. We map the current process, find where time or revenue leaks, build the smallest system that proves value, keep a human in control of sensitive decisions, then scale.</p>
+        <h2>What we build</h2>
+        <ul>
+          <li><a href="/automate">Tell us what you want to automate</a> — workflow audit to working system.</li>
+          <li><a href="/ai-workforce">AI Workforce Systems</a> — supervised AI agents for sales, marketing, customer service and operations.</li>
+          <li><a href="/services/ai-workflows">AI Workflows</a> — enquiry handling, lead qualification, booking, follow-up and admin automation.</li>
+          <li><a href="/llmboost">LLMboost</a> — AI search visibility in ChatGPT, Gemini, Claude, Perplexity and Google AI Overviews.</li>
+          <li><a href="/services/lovable-development">No-code app and MVP development</a> and <a href="/lead-generation-data">lead generation data</a>.</li>
+        </ul>
+        <h2>Guides</h2>
+        <ul>
+          <li><a href="/guides/ai-workflows">AI Workflows to Save Time and Grow Revenue: A Practical Guide for SMBs</a></li>
+          <li><a href="/guides/non-technical-founder-mvp-playbook">The Non-Technical Founder MVP Playbook</a></li>
+          <li><a href="/guides/linkedin-sales-machine">How to Turn Your LinkedIn Profile Into a Sales Machine</a></li>
+          <li><a href="/wiki/mushbloom-ai-automation-evolution">How Mushbloom evolved since 2014</a></li>
+          <li><a href="/wiki">All guides and articles</a></li>
+        </ul>
+        <p>Start with a free 20-minute audit: <a href="https://tidycal.com/adrianniculescu">book a call</a> or email office@mushbloom.co.uk.</p>
+      </main>
+    </div>    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
