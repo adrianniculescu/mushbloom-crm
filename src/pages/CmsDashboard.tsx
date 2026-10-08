@@ -2,9 +2,22 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '@/integrations/supabase/client';
-import { LogOut, Mail, MailOpen, Trash2, Loader2, Inbox, FileText } from 'lucide-react';
+import { LogOut, Mail, MailOpen, Trash2, Loader2, Inbox, FileText, FolderKanban, Wand2, Brain, FolderPlus } from 'lucide-react';
 import { format } from 'date-fns';
 import PostsManager from '@/components/cms/PostsManager';
+import ProjectsManager from '@/components/cms/ProjectsManager';
+import AiToolsPanel from '@/components/cms/AiToolsPanel';
+import KnowledgeManager from '@/components/cms/KnowledgeManager';
+import { isCurrentUserAdmin } from '@/lib/admin';
+
+type Tab = 'inquiries' | 'projects' | 'tools' | 'brain' | 'posts';
+const TABS: { id: Tab; label: string; icon: typeof Inbox }[] = [
+  { id: 'inquiries', label: 'Inquiries', icon: Inbox },
+  { id: 'projects', label: 'Projects', icon: FolderKanban },
+  { id: 'tools', label: 'AI Tools', icon: Wand2 },
+  { id: 'brain', label: 'Brain', icon: Brain },
+  { id: 'posts', label: 'Posts', icon: FileText },
+];
 
 interface Inquiry {
   id: string;
@@ -21,7 +34,7 @@ const CmsDashboard = () => {
   const [inquiries, setInquiries] = useState<Inquiry[]>([]);
   const [loading, setLoading] = useState(true);
   const [selected, setSelected] = useState<Inquiry | null>(null);
-  const [tab, setTab] = useState<'inquiries' | 'posts'>('inquiries');
+  const [tab, setTab] = useState<Tab>('inquiries');
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -29,6 +42,11 @@ const CmsDashboard = () => {
       const { data: { session } } = await supabase.auth.getSession();
       if (!session) {
         navigate('/cms/login');
+        return;
+      }
+      if (!(await isCurrentUserAdmin())) {
+        await supabase.auth.signOut();
+        navigate('/cms/login?denied=1');
         return;
       }
       fetchInquiries();
@@ -63,6 +81,15 @@ const CmsDashboard = () => {
     if (selected?.id === id) setSelected(null);
   };
 
+  const createProject = async (inq: Inquiry) => {
+    const { data: client } = await supabase.from('clients').insert({ name: inq.name, email: inq.email }).select().single();
+    const { error } = await supabase.from('projects').insert({
+      title: `${inq.service_interest || 'Enquiry'} — ${inq.name}`,
+      brief: inq.message, inquiry_id: inq.id, client_id: client?.id ?? null,
+    });
+    if (!error) setTab('projects');
+  };
+
   const handleLogout = async () => {
     await supabase.auth.signOut();
     navigate('/cms/login');
@@ -81,18 +108,12 @@ const CmsDashboard = () => {
           )}
         </div>
         <nav className="flex items-center gap-1 bg-white/5 rounded-lg p-1">
-          <button
-            onClick={() => setTab('inquiries')}
-            className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${tab === 'inquiries' ? 'bg-white/10 text-white' : 'text-gray-400 hover:text-white'}`}
-          >
-            <Inbox className="h-4 w-4" /> Inquiries
-          </button>
-          <button
-            onClick={() => setTab('posts')}
-            className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${tab === 'posts' ? 'bg-white/10 text-white' : 'text-gray-400 hover:text-white'}`}
-          >
-            <FileText className="h-4 w-4" /> Posts
-          </button>
+          {TABS.map(({ id, label, icon: Icon }) => (
+            <button key={id} onClick={() => setTab(id)}
+              className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${tab === id ? 'bg-white/10 text-white' : 'text-gray-400 hover:text-white'}`}>
+              <Icon className="h-4 w-4" /> {label}
+            </button>
+          ))}
         </nav>
         <button onClick={handleLogout} className="text-gray-400 hover:text-white transition-colors inline-flex items-center gap-2 text-sm">
           <LogOut className="h-4 w-4" /> Sign Out
@@ -100,9 +121,13 @@ const CmsDashboard = () => {
       </header>
 
       {tab === 'posts' ? (
-        <div className="overflow-y-auto h-[calc(100vh-65px)]">
-          <PostsManager />
-        </div>
+        <div className="overflow-y-auto h-[calc(100vh-65px)]"><PostsManager /></div>
+      ) : tab === 'projects' ? (
+        <div className="h-[calc(100vh-65px)]"><ProjectsManager /></div>
+      ) : tab === 'tools' ? (
+        <div className="overflow-y-auto h-[calc(100vh-65px)]"><AiToolsPanel /></div>
+      ) : tab === 'brain' ? (
+        <div className="overflow-y-auto h-[calc(100vh-65px)]"><KnowledgeManager /></div>
       ) : (
       <div className="flex flex-col lg:flex-row h-[calc(100vh-65px)]">
         {/* List */}
@@ -200,6 +225,9 @@ const CmsDashboard = () => {
               >
                 <Mail className="h-4 w-4" /> Reply via Email
               </a>
+              <button onClick={() => createProject(selected)} className="mt-6 ml-3 inline-flex items-center gap-2 bg-white/10 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/20">
+                <FolderPlus className="h-4 w-4" /> Create project
+              </button>
             </div>
           ) : (
             <div className="flex flex-col items-center justify-center h-full text-gray-500">

@@ -9,3 +9,5 @@ project_id = "unatnldzcewjtfpumkzp"
     verify_jwt = false
   [functions.preview-transactional-email]
     verify_jwt = false
+  [functions.admin-ai]
+    verify_jwt = false

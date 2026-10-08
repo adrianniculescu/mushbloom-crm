@@ -37,6 +37,7 @@ import LovableDevelopmentPage from "./pages/LovableDevelopmentPage";
 import LinkedInSalesMachinePage from "./pages/services/LinkedInSalesMachinePage";
 import AiWorkflowsPage from "./pages/services/AiWorkflowsPage";
 import AiWorkforcePage from "./pages/services/AiWorkforcePage";
+import AutomateIntakePage from "./pages/services/AutomateIntakePage";
 import PartnersPage from "./pages/PartnersPage";
 import WordPressAiPlatformPage from "./pages/platforms/WordPressAiPlatformPage";
 import ReelFactoryPage from "./pages/projects/ReelFactoryPage";
@@ -92,6 +93,7 @@ const App = () => (
               <Route path="/services/linkedin-sales-machine" element={<LinkedInSalesMachinePage />} />
               <Route path="/services/ai-workflows" element={<AiWorkflowsPage />} />
               <Route path="/ai-workforce" element={<AiWorkforcePage />} />
+              <Route path="/automate" element={<AutomateIntakePage />} />
               <Route path="/partners" element={<PartnersPage />} />
               <Route path="/ai-workflows" element={<Navigate to="/services/ai-workflows" replace />} />
               <Route path="/linkedin-sales-machine" element={<Navigate to="/services/linkedin-sales-machine" replace />} />
