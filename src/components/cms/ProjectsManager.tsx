@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Plus, Loader2, CheckCircle2, Sparkles as _unused, Trash2, Save } from 'lucide-react';
+import { Plus, Loader2, CheckCircle2, Trash2, Save } from 'lucide-react';
 import { supabase } from '@/integrations/supabase/client';
 import { runAiTool } from '@/lib/admin';
 import { toast } from '@/hooks/use-toast';
