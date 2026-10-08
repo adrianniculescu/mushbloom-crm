@@ -14,6 +14,80 @@ export type Database = {
   }
   public: {
     Tables: {
+      ai_runs: {
+        Row: {
+          created_at: string
+          id: string
+          input: string
+          output: string | null
+          project_id: string | null
+          status: string
+          tool: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          input: string
+          output?: string | null
+          project_id?: string | null
+          status?: string
+          tool: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          input?: string
+          output?: string | null
+          project_id?: string | null
+          status?: string
+          tool?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "ai_runs_project_id_fkey"
+            columns: ["project_id"]
+            isOneToOne: false
+            referencedRelation: "projects"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      clients: {
+        Row: {
+          company: string | null
+          created_at: string
+          email: string | null
+          id: string
+          name: string
+          notes: string | null
+          updated_at: string
+          website: string | null
+        }
+        Insert: {
+          company?: string | null
+          created_at?: string
+          email?: string | null
+          id?: string
+          name: string
+          notes?: string | null
+          updated_at?: string
+          website?: string | null
+        }
+        Update: {
+          company?: string | null
+          created_at?: string
+          email?: string | null
+          id?: string
+          name?: string
+          notes?: string | null
+          updated_at?: string
+          website?: string | null
+        }
+        Relationships: []
+      }
       cms_posts: {
         Row: {
           category: string | null
@@ -191,6 +265,99 @@ export type Database = {
         }
         Relationships: []
       }
+      knowledge_items: {
+        Row: {
+          category: string
+          content: string
+          created_at: string
+          id: string
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          category?: string
+          content: string
+          created_at?: string
+          id?: string
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          category?: string
+          content?: string
+          created_at?: string
+          id?: string
+          title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      projects: {
+        Row: {
+          approved_at: string | null
+          area: string | null
+          brief: string | null
+          client_id: string | null
+          created_at: string
+          diagnosis: string | null
+          diagnosis_approved: boolean
+          id: string
+          inquiry_id: string | null
+          milestones: string | null
+          notes: string | null
+          status: string
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          approved_at?: string | null
+          area?: string | null
+          brief?: string | null
+          client_id?: string | null
+          created_at?: string
+          diagnosis?: string | null
+          diagnosis_approved?: boolean
+          id?: string
+          inquiry_id?: string | null
+          milestones?: string | null
+          notes?: string | null
+          status?: string
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          approved_at?: string | null
+          area?: string | null
+          brief?: string | null
+          client_id?: string | null
+          created_at?: string
+          diagnosis?: string | null
+          diagnosis_approved?: boolean
+          id?: string
+          inquiry_id?: string | null
+          milestones?: string | null
+          notes?: string | null
+          status?: string
+          title?: string
+          updated_at?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "projects_client_id_fkey"
+            columns: ["client_id"]
+            isOneToOne: false
+            referencedRelation: "clients"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "projects_inquiry_id_fkey"
+            columns: ["inquiry_id"]
+            isOneToOne: false
+            referencedRelation: "contact_inquiries"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       suppressed_emails: {
         Row: {
           created_at: string
@@ -215,15 +382,39 @@ export type Database = {
         }
         Relationships: []
       }
+      user_roles: {
+        Row: {
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin" | "client"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -350,6 +541,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin", "client"],
+    },
   },
 } as const
