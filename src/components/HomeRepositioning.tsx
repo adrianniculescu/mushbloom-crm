@@ -119,6 +119,18 @@ const HomeRepositioning = () => (
       </div>
     </section>
 
+    <section className="py-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p className="text-sm font-semibold uppercase text-blue-400 mb-4">From workflow audit to working system</p>
+        <h2 className="text-3xl md:text-5xl font-bold text-white font-['Space_Grotesk'] mb-5">Tell us what you want to automate</h2>
+        <p className="text-lg text-gray-300 mb-8 max-w-3xl mx-auto">Every business has repetitive work, disconnected tools, and processes that depend too heavily on one person. Describe what you want to improve, and we'll map the workflow, identify the highest-value opportunities, and build the right solution.</p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Link to="/automate#describe" data-cta="home_automate" className="bg-gradient-to-r from-blue-500 to-green-500 text-white px-7 py-3 rounded-lg font-semibold inline-flex items-center gap-2">Describe your challenge <ArrowRight className="h-5 w-5" /></Link>
+          <a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" data-cta="home_automate_booking" className="border border-white/20 text-white px-7 py-3 rounded-lg font-semibold">Book an automation discovery call</a>
+        </div>
+      </div>
+    </section>
+
     <section className="py-16 border-y border-white/10 bg-white/[0.02]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid gap-8 md:grid-cols-[1fr_auto] md:items-end">
         <div><p className="text-sm font-semibold uppercase text-green-400 mb-4">A core service</p><h2 className="text-3xl md:text-4xl font-bold text-white font-['Space_Grotesk'] mb-4">AI Workforce Systems</h2><p className="text-lg text-gray-300 max-w-2xl">When one workflow is not enough, we connect supervised AI agents across lead response, customer service, marketing and operations. Your team remains in control of sensitive decisions.</p></div>

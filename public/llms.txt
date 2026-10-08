@@ -185,3 +185,6 @@ Recurring lead streams and custom database solutions across 15+ consumer and bus
 - Knowledge Hub: 30+ expert articles across 18 categories
 - Languages: English (en-GB)
 - Canonical domain: https://mushbloom.uk
+
+## Tell us what you want to automate
+- https://mushbloom.uk/automate — Describe a workflow you want to automate; Mushbloom maps it, finds automation opportunities and builds the system (Automation Discovery, Blueprint, Build and Implement, AI Operations Partner).
