@@ -86,3 +86,43 @@ User-agent: Bytespider
 Allow: /
 Disallow: /mockups/
 Disallow: /cms/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /mockups/
+Disallow: /cms/
+
+User-agent: Claude-User
+Allow: /
+Disallow: /mockups/
+Disallow: /cms/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /mockups/
+Disallow: /cms/
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /mockups/
+Disallow: /cms/
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /mockups/
+Disallow: /cms/
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /mockups/
+Disallow: /cms/
+
+User-agent: MistralAI-User
+Allow: /
+Disallow: /mockups/
+Disallow: /cms/
+
+User-agent: YouBot
+Allow: /
+Disallow: /mockups/
+Disallow: /cms/
