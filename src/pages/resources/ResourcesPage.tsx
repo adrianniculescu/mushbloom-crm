@@ -5,6 +5,7 @@ import ResourceMeta from '@/components/ResourceMeta';
 import { Button } from '@/components/ui/button';
 import referenceImage from '@/assets/resources-reference.jpg';
 import { glossaryTerms } from '@/data/searchGlossary';
+import { myths } from '@/data/aeoGeoMyths';
 
 export default function ResourcesPage() {
   return <div className="resources-theme min-h-screen bg-background text-foreground">
@@ -22,6 +23,12 @@ export default function ResourcesPage() {
           <p className="text-muted-foreground leading-relaxed">60 original guides from answer engines to agentic commerce: definitions, analogies, business examples, how each works, comparisons and FAQs.</p>
           <Button asChild className="mt-6 self-start"><Link to="/resources/aeo-geo-seo-glossary"><BookOpen /> Explore the glossary <ArrowRight /></Link></Button>
         </div>
+      </article>
+      <article className="border-b border-border py-8">
+        <p className="text-primary text-xs uppercase tracking-wider">Resource 02 · Fact-checks · {myths.length} claims</p>
+        <h2 className="text-3xl font-bold mt-4 mb-4 font-['Space_Grotesk']"><Link to="/resources/aeo-geo-myths">AEO & GEO myths: {myths.length} fact-checked claims</Link></h2>
+        <p className="text-muted-foreground leading-relaxed max-w-3xl">Common AI search claims from sales decks and social posts, checked against Google, Bing, OpenAI and published research — with a clear verdict and what to do instead.</p>
+        <Button asChild className="mt-6"><Link to="/resources/aeo-geo-myths">Read the fact-checks <ArrowRight /></Link></Button>
       </article>
       <div className="mt-12 flex flex-col sm:flex-row sm:items-center justify-between gap-5">
         <div><h2 className="text-xl font-semibold">Go deeper into the methods</h2><p className="text-muted-foreground mt-2">Long-form guides on AI visibility, workflows and growth.</p></div>
