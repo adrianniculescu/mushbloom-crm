@@ -30,6 +30,12 @@ export default function ResourcesPage() {
         <p className="text-muted-foreground leading-relaxed max-w-3xl">Common AI search claims from sales decks and social posts, checked against Google, Bing, OpenAI and published research — with a clear verdict and what to do instead.</p>
         <Button asChild className="mt-6"><Link to="/resources/aeo-geo-myths">Read the fact-checks <ArrowRight /></Link></Button>
       </article>
+      <article className="border-b border-border py-8">
+        <p className="text-primary text-xs uppercase tracking-wider">Resource 03 · Research · Readiness check</p>
+        <h2 className="text-3xl font-bold mt-4 mb-4 font-['Space_Grotesk']"><Link to="/resources/sme-ai-survival-guide">The SME AI survival guide</Link></h2>
+        <p className="text-muted-foreground leading-relaxed max-w-3xl">Sourced 2025 data on small-business AI adoption, seven practical guidelines and a two-minute readiness score.</p>
+        <Button asChild className="mt-6"><Link to="/resources/sme-ai-survival-guide">Check your readiness <ArrowRight /></Link></Button>
+      </article>
       <div className="mt-12 flex flex-col sm:flex-row sm:items-center justify-between gap-5">
         <div><h2 className="text-xl font-semibold">Go deeper into the methods</h2><p className="text-muted-foreground mt-2">Long-form guides on AI visibility, workflows and growth.</p></div>
         <Button asChild variant="outline"><Link to="/wiki">Visit the Wiki <ArrowRight /></Link></Button>
