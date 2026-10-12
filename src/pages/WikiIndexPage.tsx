@@ -14,6 +14,14 @@ interface DbPost {
 
 const featuredGuides = [
   {
+    slug: 'aeo-geo-seo-glossary',
+    path: '/resources/aeo-geo-seo-glossary',
+    title: 'The AEO, GEO & SEO Glossary',
+    description: '30 original definitions with simple analogies, practical business examples and references for AI search, SEO and supervised AI systems.',
+    readTime: 'Reference library',
+    tag: 'Resources & Definitions',
+  },
+  {
     slug: 'mushbloom-ai-automation-evolution',
     path: '/wiki/mushbloom-ai-automation-evolution',
     title: 'From Classical Marketing to AI Automation: How Mushbloom Evolved Since 2014',

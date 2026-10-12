@@ -1,5 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -97,6 +96,28 @@
     --primary-foreground: 220 12% 7%;
     --accent: 149 78% 57%;
     --accent-foreground: 220 12% 7%;
+  }
+
+  .resources-theme {
+    --background: 220 8% 6%;
+    --foreground: 0 0% 96%;
+    --card: 220 8% 10%;
+    --primary: 213 94% 70%;
+    --primary-foreground: 220 8% 6%;
+    --secondary: 152 35% 15%;
+    --secondary-foreground: 151 68% 74%;
+    --accent: 220 8% 15%;
+    --accent-foreground: 0 0% 96%;
+    --muted: 220 8% 13%;
+    --muted-foreground: 220 6% 70%;
+    --border: 220 8% 23%;
+    --input: 220 8% 28%;
+    --ring: 213 94% 70%;
+    letter-spacing: 0;
+  }
+
+  .resources-theme h1, .resources-theme h2, .resources-theme h3 {
+    font-family: 'Space Grotesk', sans-serif;
   }
 }
 

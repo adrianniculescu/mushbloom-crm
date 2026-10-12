@@ -15,6 +15,7 @@ const Navigation = () => {
     { name: 'Services', href: '#services', hasDropdown: true },
     { name: 'Portfolio', href: '/portfolio/websites' },
     { name: 'Partners', href: '/partners' },
+    { name: 'Resources', href: '/resources' },
     { name: 'About', href: isHomePage ? '#about' : '/#about' },
     { name: 'Contact', href: isHomePage ? '#contact' : '/#contact' },
   ];
@@ -36,13 +37,13 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-3 shrink-0">
             <Logo />
-            <span className="hidden xl:inline-block text-sm font-medium tracking-wide text-gray-200 border-l border-white/15 pl-4 whitespace-nowrap">
+            <span className="hidden 2xl:inline-block text-sm font-medium tracking-wide text-gray-200 border-l border-white/15 pl-4 whitespace-nowrap">
               Practical AI automation since 2014
             </span>
           </Link>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item) => (
                 item.hasDropdown ? (
@@ -126,9 +127,10 @@ const Navigation = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
+              aria-label={isOpen ? 'Close navigation' : 'Open navigation'}
               className="text-gray-400 hover:text-white p-2"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -139,7 +141,7 @@ const Navigation = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 bg-black/90 backdrop-blur-lg">
             <Link
               to="/"
@@ -212,6 +214,7 @@ const Navigation = () => {
               Partners
             </Link>
             
+            <Link to="/resources" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium" onClick={() => setIsOpen(false)}>Resources</Link>
             {isHomePage ? (
               <>
                 <a href="#about" className="text-gray-300 hover:text-white block px-3 py-2 text-base font-medium" onClick={() => setIsOpen(false)}>About</a>
