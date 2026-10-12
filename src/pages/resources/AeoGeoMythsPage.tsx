@@ -46,6 +46,7 @@ export default function AeoGeoMythsPage() {
           <div className="flex justify-between text-xs text-muted-foreground"><span>Pillar {String(i + 1).padStart(2, '0')}</span><span>{myths.filter(m => m.pillar === p.id).length} claims</span></div>
           <h3 className="font-semibold mt-2">{p.name}</h3>
           <p className="text-sm text-muted-foreground mt-2">{p.summary}</p>
+          <Link to={`${mythsPath}/${p.id}`} onClick={e => e.stopPropagation()} className="inline-block text-sm text-primary underline mt-3">Read the pillar report →</Link>
         </button>)}
       </div>
 

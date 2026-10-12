@@ -211,5 +211,13 @@
   <!-- myths:start -->
   <url><loc>https://mushbloom.uk/resources/aeo-geo-myths</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://mushbloom.uk/resources/aeo-geo-myths.html</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mushbloom.uk/resources/aeo-geo-myths/crawlability</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mushbloom.uk/resources/aeo-geo-myths/schema</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mushbloom.uk/resources/aeo-geo-myths/content</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mushbloom.uk/resources/aeo-geo-myths/links</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mushbloom.uk/resources/aeo-geo-myths/authority</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mushbloom.uk/resources/aeo-geo-myths/measurement</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mushbloom.uk/resources/aeo-geo-myths/agentic</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mushbloom.uk/resources/aeo-geo-myths/retrieval</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <!-- myths:end -->
 </urlset>
