@@ -27,6 +27,9 @@ How Mushbloom works: workflow first, tool second. It maps the current process, f
 
 ## Pages
 
+- [Resources](https://mushbloom.uk/resources): Mushbloom’s practical reference library for AI search and business automation.
+- [AEO, GEO & SEO Glossary](https://mushbloom.uk/resources/aeo-geo-seo-glossary): 30 original definitions with analogies, business examples and primary references. Includes SEO, AEO, GEO, AI citations, RAG, AI agents and technical access. Industry terminology varies; inclusion and citations are not guaranteed.
+- [Glossary — full plain-text reference](https://mushbloom.uk/resources/aeo-geo-seo-glossary.txt): Complete readable definitions, examples, stable term URLs and source links without requiring JavaScript.
 - [Home](https://mushbloom.uk/): Practical no-code AI automation for SMEs and owner-run businesses.
 - [LLMboost](https://mushbloom.uk/llmboost): LLM SEO and Share of Model optimization for ChatGPT, Gemini, Claude, Perplexity.
 - [AI Automation Agency](https://mushbloom.uk/agency): No-code AI workflow implementation for SMEs and owner-run businesses.
@@ -121,6 +124,8 @@ Primary entity: LLMboost. Key concepts: Share of Model, entity optimization, AI 
 - https://mushbloom.uk/wiki/llm-visibility-optimization
 - https://mushbloom.uk/wiki/technical-seo-ai
 - https://mushbloom.uk/wiki/ai-performance-tracking
+- https://mushbloom.uk/resources/aeo-geo-seo-glossary
+- https://mushbloom.uk/resources/aeo-geo-seo-glossary.txt
 
 ### Cluster: Practical AI Workflow Automation
 Primary entity: Mushbloom AI Workflows. Key concepts: no-code AI automation, enquiry handling, lead qualification, booking, sales follow-up, administrative automation, human approval and documented handover.
