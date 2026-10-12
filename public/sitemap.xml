@@ -208,4 +208,8 @@
   <url><loc>https://mushbloom.uk/resources/glossary/what-is-sitemap.html</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://mushbloom.uk/resources/glossary/what-is-zero-click-search.html</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <!-- glossary-guides:end -->
+  <!-- myths:start -->
+  <url><loc>https://mushbloom.uk/resources/aeo-geo-myths</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://mushbloom.uk/resources/aeo-geo-myths.html</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- myths:end -->
 </urlset>

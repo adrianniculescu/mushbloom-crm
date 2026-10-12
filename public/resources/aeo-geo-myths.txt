@@ -1,0 +1,477 @@
+# AEO & GEO Myths: 76 Fact-Checked Claims
+
+76 common AEO, GEO and AI search claims checked against official documentation and research, with practical advice for SMEs.
+
+By Mushbloom. Published 2026-10-12. Interactive: https://mushbloom.uk/resources/aeo-geo-myths
+
+## Crawlability & technical signals
+
+Claim: You need an llms.txt file to appear in AI answers.
+Verdict: Debunked
+Reality: llms.txt is a community proposal. No major AI search provider has documented it as a requirement or ranking input. Pages without it are cited every day.
+What to do: Add one if it is cheap — it is a tidy summary for agents and developers — but prioritise crawlable, substantive pages first.
+Source: https://llmstxt.org/
+
+Claim: Blocking GPTBot removes you from ChatGPT search results.
+Verdict: Nuanced
+Reality: OpenAI documents separate agents: GPTBot (training), OAI-SearchBot (search) and ChatGPT-User (user-triggered fetches). Blocking one does not block the others.
+What to do: Decide per crawler. Many businesses allow search and user agents while choosing a training policy separately.
+Source: https://platform.openai.com/docs/bots
+
+Claim: Blocking Google-Extended removes you from Google AI Overviews.
+Verdict: Debunked
+Reality: Google states Google-Extended controls use of content for Gemini model training and grounding in certain products, not inclusion in Search or AI Overviews, which follow Googlebot.
+What to do: Keep Googlebot allowed if you want Search visibility; treat Google-Extended as a separate data-use decision.
+Source: https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers
+
+Claim: AI crawlers render JavaScript like Googlebot does.
+Verdict: Debunked
+Reality: Googlebot renders JavaScript, but many AI fetchers retrieve raw HTML only. A client-only app can look empty to them.
+What to do: Serve meaningful HTML: server rendering, prerendering or static summaries of key pages.
+Source: https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics
+
+Claim: Single-page apps cannot rank at all.
+Verdict: Debunked
+Reality: Google can index JavaScript sites; the risk is delay, rendering errors and invisibility to non-rendering bots, not an absolute ban.
+What to do: Test pages with URL Inspection and a no-JS fetch; prerender the pages that matter commercially.
+Source: https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics
+
+Claim: There is a special robots.txt directive that boosts AI citations.
+Verdict: Debunked
+Reality: robots.txt only controls crawling permissions. It cannot request preference, priority or citation.
+What to do: Use robots.txt to allow the crawlers you want and block private areas — nothing more.
+Source: https://developers.google.com/search/docs/crawling-indexing/robots/intro
+
+Claim: Robots.txt noindex hides pages from search.
+Verdict: Debunked
+Reality: Google does not support noindex in robots.txt. A blocked URL can still be indexed from links, without its content.
+What to do: Use a noindex meta tag or header on a crawlable page to keep it out of the index.
+Source: https://developers.google.com/search/docs/crawling-indexing/robots/intro
+
+Claim: Submitting a sitemap guarantees indexing.
+Verdict: Debunked
+Reality: Sitemaps aid discovery. Engines still choose what to crawl and index based on quality and demand.
+What to do: Keep the sitemap clean, then strengthen internal links and content on unindexed pages.
+Source: https://www.bing.com/webmasters/help/webmasters-guidelines-30fba23a
+
+Claim: IndexNow makes Google index pages faster.
+Verdict: Debunked
+Reality: IndexNow is supported by Bing, Yandex and others. Google does not participate.
+What to do: Use IndexNow for Bing (which also powers Copilot grounding) and Search Console for Google.
+Source: https://www.indexnow.org/documentation
+
+Claim: Page speed is a major factor in being cited by AI.
+Verdict: Nuanced
+Reality: Speed is a modest classic-search signal, and very slow or timing-out pages may fail to be fetched. There is no evidence of a strong citation reward for speed alone.
+What to do: Fix timeouts and severe slowness; do not chase perfect scores at the cost of content work.
+Source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+## Structured data & schema
+
+Claim: Schema markup makes ChatGPT cite you.
+Verdict: Debunked
+Reality: No major LLM provider documents schema as a citation trigger. Generation works from retrieved text; markup may help indexing systems understand entities.
+What to do: Use accurate schema for search features and entity clarity, not as a citation lever.
+Source: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+
+Claim: FAQ schema still produces rich results for most sites.
+Verdict: Debunked
+Reality: Google limited FAQ rich results to well-known authoritative government and health sites in 2023.
+What to do: Write visible FAQs for users; do not expect FAQ snippets in Google for a typical business.
+Source: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+
+Claim: There is special schema required for AI Overviews.
+Verdict: Debunked
+Reality: Google states no special markup or optimisation is required for AI features beyond normal Search eligibility.
+What to do: Focus on indexable, helpful pages that meet Search Essentials.
+Source: https://developers.google.com/search/docs/appearance/ai-features
+
+Claim: Structured data is useless for AI search.
+Verdict: Nuanced
+Reality: It is not a direct citation lever, but it helps search systems understand organisations, products and authors, which feeds knowledge systems that AI products may rely on.
+What to do: Mark up Organization, Product, Article and LocalBusiness accurately where they genuinely apply.
+Source: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+
+Claim: More schema types on a page always helps.
+Verdict: Debunked
+Reality: Markup must describe visible content. Irrelevant or misleading markup can trigger manual actions.
+What to do: Mark up only what the page really shows; validate with the Rich Results Test.
+Source: https://developers.google.com/search/docs/essentials/spam-policies
+
+Claim: JSON-LD is preferred over microdata by Google.
+Verdict: Verified
+Reality: Google recommends JSON-LD as the easiest to implement and maintain, while supporting other formats.
+What to do: Use JSON-LD in new builds.
+Source: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+
+Claim: Schema can replace missing on-page content.
+Verdict: Debunked
+Reality: Structured data describes page content; it does not substitute for it. Hidden or unsupported claims violate guidelines.
+What to do: Put facts in visible text first, then mark them up.
+Source: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+
+Claim: sameAs links help connect your brand entity.
+Verdict: Verified
+Reality: sameAs pointing to official profiles is a standard way to disambiguate an organisation in structured data.
+What to do: Link only profiles you control and keep names consistent across them.
+Source: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+
+Claim: Review schema on your own homepage creates star ratings.
+Verdict: Debunked
+Reality: Google does not show self-serving review stars for LocalBusiness and Organization pages that host reviews about themselves.
+What to do: Collect reviews on independent platforms; use Product review markup only where eligible.
+Source: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+
+## Content format, freshness & volume
+
+Claim: Publishing more articles is the fastest path to AI visibility.
+Verdict: Debunked
+Reality: Mass-produced, low-value pages risk scaled-content spam policies and add little that retrieval systems prefer.
+What to do: Publish fewer, better pages that answer real buyer questions with specifics.
+Source: https://developers.google.com/search/docs/essentials/spam-policies
+
+Claim: AI-written content is penalised by Google.
+Verdict: Debunked
+Reality: Google evaluates quality and intent, not authorship method. Scaled low-value content is penalised however it is produced.
+What to do: Use AI as a drafting aid with expert editing, original detail and fact-checking.
+Source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+Claim: Changing the date on a page makes it “fresh”.
+Verdict: Debunked
+Reality: Updating dates without substantive changes is called out by Google as not helpful and can mislead users.
+What to do: Update dates only when content materially changes.
+Source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+Claim: Adding statistics and citations can increase visibility in generative answers.
+Verdict: Nuanced
+Reality: The GEO study found quotations, statistics and source citations improved visibility in its test setup. Results varied by domain and engine and are not universal guarantees.
+What to do: Add genuine, sourced data where it helps readers — never invented figures.
+Source: https://arxiv.org/abs/2311.09735
+
+Claim: Keyword stuffing works on LLMs because they read words.
+Verdict: Debunked
+Reality: The GEO study found keyword stuffing performed poorly, and it remains a spam policy violation in search.
+What to do: Write naturally; cover the concepts and questions buyers ask.
+Source: https://arxiv.org/abs/2311.09735
+
+Claim: Long-form content always beats short content.
+Verdict: Debunked
+Reality: Length is not a ranking or citation factor in itself. Completeness for the query matters.
+What to do: Make pages as long as the answer requires and no longer.
+Source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+Claim: Clear headings and direct answers make content easier to reuse.
+Verdict: Verified
+Reality: Retrieval systems split pages into passages. Self-contained, well-labelled sections are easier to match and quote accurately.
+What to do: Lead sections with a direct answer, then supporting detail.
+Source: https://arxiv.org/abs/2005.11401
+
+Claim: You must write in Q&A format for AEO.
+Verdict: Nuanced
+Reality: Questions as headings can help match queries, but forcing every page into Q&A harms readability.
+What to do: Use questions where buyers genuinely ask them; use normal structure elsewhere.
+Source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+Claim: Hidden text for bots improves AI understanding.
+Verdict: Debunked
+Reality: Showing bots different content from users is cloaking and violates spam policies.
+What to do: Make machine-readable content visible or available to users too (for example a plain-text edition).
+Source: https://developers.google.com/search/docs/essentials/spam-policies
+
+Claim: Original first-hand experience matters for quality.
+Verdict: Verified
+Reality: Google’s helpful-content guidance explicitly asks whether content shows first-hand experience and expertise.
+What to do: Include real process detail, photos, examples and named authors.
+Source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+Claim: AI answers only quote pages ranking in the top 3.
+Verdict: Debunked
+Reality: AI features often draw from a wider set of sources than the top organic results, including via query fan-out.
+What to do: Cover sub-questions thoroughly; a page can be cited without ranking first.
+Source: https://developers.google.com/search/docs/appearance/ai-features
+
+Claim: Translating pages automatically creates new visibility markets.
+Verdict: Nuanced
+Reality: Localised content can reach new audiences, but unreviewed machine translation at scale risks low quality.
+What to do: Translate priority pages with human review and proper hreflang.
+Source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+## Links, mentions & off-site signals
+
+Claim: Backlinks no longer matter in the AI era.
+Verdict: Debunked
+Reality: Links still help discovery and authority in classic search, which many AI systems use for retrieval.
+What to do: Earn links from relevant, reputable sites through useful assets and partnerships.
+Source: https://developers.google.com/search/docs/essentials/spam-policies
+
+Claim: Unlinked brand mentions can support AI visibility.
+Verdict: Nuanced
+Reality: LLMs learn from and retrieve text where your brand is discussed, link or not. The effect is plausible but hard to measure directly.
+What to do: Pursue genuine mentions in industry media, podcasts and communities.
+Source: https://arxiv.org/abs/2311.09735
+
+Claim: Buying links is a safe shortcut.
+Verdict: Debunked
+Reality: Link schemes violate spam policies and can lead to manual actions or ignored links.
+What to do: Invest in digital PR and assets worth citing instead.
+Source: https://developers.google.com/search/docs/essentials/spam-policies
+
+Claim: Reddit and forum discussions influence AI answers.
+Verdict: Nuanced
+Reality: Some AI products frequently surface community content, but presence and impact vary by product and topic.
+What to do: Participate honestly where your buyers already discuss problems; never astroturf.
+Source: https://developers.google.com/search/docs/essentials/spam-policies
+
+Claim: Press releases alone build authority.
+Verdict: Debunked
+Reality: Syndicated releases are usually nofollow and duplicated. Value comes from journalists who pick up the story.
+What to do: Use releases for genuine news and pitch editors directly.
+Source: https://developers.google.com/search/docs/essentials/spam-policies
+
+Claim: Third-party reviews help buyers and machines trust a business.
+Verdict: Verified
+Reality: Independent reviews provide corroborating evidence that people and systems can weigh.
+What to do: Ask satisfied clients for reviews on reputable platforms.
+Source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+Claim: Guest posting on any site helps.
+Verdict: Debunked
+Reality: Large-scale guest posting with keyword links is treated as a link scheme.
+What to do: Contribute occasionally to relevant publications for audience, not anchors.
+Source: https://developers.google.com/search/docs/essentials/spam-policies
+
+Claim: Being listed in industry directories is worthless.
+Verdict: Nuanced
+Reality: Spammy directories add nothing; reputable, curated industry lists provide corroboration.
+What to do: Choose a handful of respected directories relevant to your sector.
+Source: https://www.bing.com/webmasters/help/webmasters-guidelines-30fba23a
+
+Claim: Internal links help engines find and understand pages.
+Verdict: Verified
+Reality: Internal links are a primary discovery path and signal relative importance.
+What to do: Link from strong pages to new or unindexed ones with descriptive text.
+Source: https://www.bing.com/webmasters/help/webmasters-guidelines-30fba23a
+
+## Brand authority & entities
+
+Claim: You need a Wikipedia page to be cited by AI.
+Verdict: Debunked
+Reality: Wikipedia helps notable entities, but countless businesses are cited without one, and promotional pages get deleted.
+What to do: Build verifiable third-party coverage first; notability follows.
+Source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+Claim: Consistent business information across the web helps entity understanding.
+Verdict: Verified
+Reality: Conflicting names, addresses or descriptions make it harder for systems to resolve which entity is meant.
+What to do: Standardise name, description, contact details and profiles.
+Source: https://www.bing.com/webmasters/help/webmasters-guidelines-30fba23a
+
+Claim: A clear “about” page and named authors support trust.
+Verdict: Verified
+Reality: Google’s guidance asks whether it is clear who created content and why they are qualified.
+What to do: Publish real author bios, credentials and company background.
+Source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+Claim: E-E-A-T is a direct ranking score.
+Verdict: Debunked
+Reality: E-E-A-T is a quality-rater framework, not a single algorithmic score.
+What to do: Demonstrate experience and trust in content; do not chase a mythical score.
+Source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+Claim: Small businesses cannot compete with big brands in AI answers.
+Verdict: Nuanced
+Reality: Big brands have advantages on broad queries, but niche, local and specific questions are often answered from specialist sources.
+What to do: Own a narrow topic deeply.
+Source: https://developers.google.com/search/docs/appearance/ai-features
+
+Claim: Founder visibility can strengthen a brand entity.
+Verdict: Nuanced
+Reality: Named experts with consistent profiles and published work create more corroborating signals, though impact is hard to isolate.
+What to do: Link founder profiles, talks and writing to the company site.
+Source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+Claim: Claiming “#1 agency” in copy helps AI recommend you.
+Verdict: Debunked
+Reality: Unsupported superlatives are not evidence; systems weigh corroboration, and false claims create legal risk.
+What to do: Use verifiable proof: case studies, numbers you can back, client names with permission.
+Source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+Claim: Case studies are among the strongest commercial trust assets.
+Verdict: Verified
+Reality: Specific, verifiable outcomes give both buyers and machines concrete evidence to reference.
+What to do: Publish case studies with context, process and honest results.
+Source: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+Claim: Changing your brand name often has no visibility cost.
+Verdict: Debunked
+Reality: Rebrands split mentions and entity signals until the web catches up.
+What to do: Redirect properly, update profiles and announce clearly.
+Source: https://www.bing.com/webmasters/help/webmasters-guidelines-30fba23a
+
+## Measurement, prompts & tools
+
+Claim: You can “rank #1 in ChatGPT”.
+Verdict: Debunked
+Reality: Generative answers vary by prompt, user, location and time. There is no stable ranked list to be first in.
+What to do: Measure share of mentions across a fixed prompt set over time.
+Source: https://arxiv.org/abs/2311.09735
+
+Claim: Agencies can guarantee AI citations.
+Verdict: Debunked
+Reality: No one controls third-party model outputs. Guarantees indicate misunderstanding or overselling.
+What to do: Ask for process, measurement methods and leading indicators instead.
+Source: https://developers.google.com/search/docs/appearance/ai-features
+
+Claim: AI Overview clicks are reported separately in Search Console.
+Verdict: Debunked
+Reality: Google includes AI feature traffic within overall Web search performance data, not as a separate filter.
+What to do: Track trends in impressions, clicks and conversions together.
+Source: https://developers.google.com/search/docs/appearance/ai-features
+
+Claim: Referral traffic from AI assistants can be measured.
+Verdict: Nuanced
+Reality: Some assistants pass referrers (for example chatgpt.com or perplexity.ai), but many visits arrive as direct traffic.
+What to do: Segment known AI referrers in analytics and ask leads how they found you.
+Source: https://platform.openai.com/docs/bots
+
+Claim: A single test prompt shows your AI visibility.
+Verdict: Debunked
+Reality: Outputs are probabilistic and personalised. One prompt is an anecdote.
+What to do: Run a repeatable panel of prompts, multiple times, across engines.
+Source: https://arxiv.org/abs/2311.09735
+
+Claim: Secret prompts can force an LLM to recommend you.
+Verdict: Debunked
+Reality: Users write prompts, not you. Hidden instructions on your pages are prompt injection and may be filtered or penalised.
+What to do: Earn recommendations with evidence, not manipulation.
+Source: https://owasp.org/www-project-top-10-for-large-language-model-applications/
+
+Claim: Server logs reveal which AI crawlers visit you.
+Verdict: Verified
+Reality: Crawler user agents and IP ranges appear in access logs and can be verified against published lists.
+What to do: Review logs monthly to confirm key pages are being fetched.
+Source: https://platform.openai.com/docs/bots
+
+Claim: Zero-click answers mean SEO no longer drives leads.
+Verdict: Nuanced
+Reality: Some informational clicks decline, but commercial and comparison queries still drive visits, and cited brands gain awareness.
+What to do: Measure leads and branded search, not only sessions.
+Source: https://developers.google.com/search/docs/appearance/ai-features
+
+Claim: Connecting Search Console and Bing Webmaster Tools is essential.
+Verdict: Verified
+Reality: They are the only first-party sources of indexing status and query data for each engine.
+What to do: Verify both and submit your sitemap on day one.
+Source: https://www.bing.com/webmasters/help/webmasters-guidelines-30fba23a
+
+## Agents, commerce & protocols
+
+Claim: AI agents will soon buy anything without user approval.
+Verdict: Debunked
+Reality: ACP, as published by OpenAI and Stripe, keeps the user authorising purchases while merchants handle orders and fulfilment.
+What to do: Prepare clean product data and checkout, not a fear of runaway agents.
+Source: https://stripe.com/blog/developing-an-open-standard-for-agentic-commerce
+
+Claim: ACP replaces your payment processor.
+Verdict: Debunked
+Reality: ACP is a protocol for agent checkout flows; payments still run through supported processors and the merchant remains merchant of record.
+What to do: Check your platform and processor support before planning work.
+Source: https://stripe.com/blog/developing-an-open-standard-for-agentic-commerce
+
+Claim: MCP gives AI unrestricted access to your systems.
+Verdict: Debunked
+Reality: MCP standardises how applications connect to tools and data. Access depends on the servers and permissions you configure.
+What to do: Expose only scoped tools, with authentication and logging.
+Source: https://modelcontextprotocol.io/docs/getting-started/intro
+
+Claim: MCP is just another name for an API.
+Verdict: Nuanced
+Reality: MCP servers usually wrap APIs, but MCP defines a common interface so many AI apps can discover and call tools in the same way.
+What to do: Use MCP when several AI clients need the same tools; a direct API is fine for one integration.
+Source: https://modelcontextprotocol.io/docs/getting-started/intro
+
+Claim: AI agents are ready to run whole businesses unsupervised.
+Verdict: Debunked
+Reality: Agents still make errors, are vulnerable to prompt injection and need oversight for consequential actions.
+What to do: Start with supervised workflows and human approval steps.
+Source: https://owasp.org/www-project-top-10-for-large-language-model-applications/
+
+Claim: Prompt injection is a real security risk for agents.
+Verdict: Verified
+Reality: OWASP lists prompt injection as the top risk for LLM applications.
+What to do: Separate untrusted content from instructions and limit tool permissions.
+Source: https://owasp.org/www-project-top-10-for-large-language-model-applications/
+
+Claim: Product feeds will matter for agentic shopping.
+Verdict: Verified
+Reality: Agentic checkout relies on structured, accurate product data that agents can read and act on.
+What to do: Keep titles, prices, availability and policies accurate and machine-readable.
+Source: https://stripe.com/blog/developing-an-open-standard-for-agentic-commerce
+
+Claim: Small businesses should wait until agents are mainstream.
+Verdict: Nuanced
+Reality: Full agentic commerce is early, but the groundwork — clean data, clear policies, automated intake — pays off now.
+What to do: Automate repetitive admin today; adopt protocols when your platform supports them.
+Source: https://modelcontextprotocol.io/docs/getting-started/intro
+
+Claim: A chatbot on your site makes you “AI-ready”.
+Verdict: Debunked
+Reality: A widget does not make your content crawlable, your data structured or your workflows automated.
+What to do: Fix discoverability and processes before adding chat.
+Source: https://developers.google.com/search/docs/appearance/ai-features
+
+## RAG, embeddings & LLM mechanics
+
+Claim: LLMs search the live web for every answer.
+Verdict: Debunked
+Reality: Some products retrieve live results for some queries; others answer from training data. Behaviour varies by product, mode and query.
+What to do: Be present both in long-lived web sources and in crawlable current pages.
+Source: https://arxiv.org/abs/2005.11401
+
+Claim: RAG eliminates hallucinations.
+Verdict: Debunked
+Reality: Retrieval grounds answers in sources and reduces some errors, but models can still misread or misattribute retrieved text.
+What to do: Keep human review for important outputs and cite sources.
+Source: https://arxiv.org/abs/2005.11401
+
+Claim: Content is retrieved in passages, not whole pages.
+Verdict: Verified
+Reality: Retrieval systems typically split documents into chunks and match the most relevant ones to a query.
+What to do: Make each section understandable on its own.
+Source: https://arxiv.org/abs/2005.11401
+
+Claim: Vector search makes keywords irrelevant.
+Verdict: Debunked
+Reality: Many production systems combine semantic and keyword (hybrid) retrieval because exact terms still matter.
+What to do: Use the real names of products, places and problems.
+Source: https://arxiv.org/abs/2005.11401
+
+Claim: Fine-tuning a model is the best way to add company knowledge.
+Verdict: Debunked
+Reality: For changing facts, retrieval is usually cheaper and easier to update; fine-tuning better suits style and task behaviour.
+What to do: Start with a knowledge base plus retrieval.
+Source: https://arxiv.org/abs/2005.11401
+
+Claim: Training cut-offs mean new businesses are invisible to AI.
+Verdict: Nuanced
+Reality: Base models may not know you, but retrieval-enabled products can find current pages.
+What to do: Make sure current pages are crawlable and corroborated.
+Source: https://platform.openai.com/docs/bots
+
+Claim: Bigger context windows remove the need for retrieval.
+Verdict: Debunked
+Reality: Long contexts cost more and models can miss details in long inputs; retrieval still selects what matters.
+What to do: Feed focused, relevant material.
+Source: https://arxiv.org/abs/2005.11401
+
+Claim: LLMs cite the original source of every fact.
+Verdict: Debunked
+Reality: Citations point to retrieved pages, which may not be the original source, and some answers carry no citation.
+What to do: Publish original data clearly attributed so others cite you.
+Source: https://arxiv.org/abs/2005.11401
+
+Claim: Opting out of training stops all AI use of your content.
+Verdict: Nuanced
+Reality: Training opt-outs do not necessarily block search or user-triggered retrieval, which use different agents.
+What to do: Review each crawler’s documented purpose.
+Source: https://platform.openai.com/docs/bots
