@@ -55,7 +55,7 @@ function ReadinessCheck() {
           <Input required placeholder="Your name" aria-label="Your name" value={name} onChange={e => setName(e.target.value)} />
           <Input required type="email" placeholder="Email" aria-label="Email" value={email} onChange={e => setEmail(e.target.value)} />
           <Button type="submit" disabled={status === 'sending'}>{status === 'sending' ? <Loader2 className="animate-spin" /> : <Send />} Get my recommendations</Button>
-          <p className="sm:col-span-3 text-xs text-muted-foreground">We use your details only to reply about your results. See our <Link className="underline" to="/privacy">Privacy Policy</Link>.</p>
+          <p className="sm:col-span-3 text-xs text-muted-foreground">We use your details only to reply about your results. See our <Link className="underline" to="/legal/privacy-policy">Privacy Policy</Link>.</p>
           {status === 'error' && <p className="sm:col-span-3 text-sm text-destructive">Something went wrong. Please email office@mushbloom.co.uk.</p>}
         </form>}
       <Button asChild variant="outline" className="mt-4"><a href="https://tidycal.com/adrianniculescu" target="_blank" rel="noopener noreferrer" data-cta="survival-audit">Or book a free 20-minute audit <ArrowRight /></a></Button>
