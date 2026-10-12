@@ -1,0 +1,67 @@
+# What is llms.txt?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-llms-txt.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+llms.txt is a community proposal for a Markdown file that summarises a site and links to useful content for language-model tools. It is not a universal crawler standard, access-control file or guaranteed citation signal.
+
+## Analogy & mental model
+
+It is a suggested reading list for an assistant, not a compulsory invitation or a security gate.
+
+Maintain it as a helpful reference, but prioritise accessible pages, evidence and real search measurement.
+
+## Why it matters
+
+An explicit reading list can make a site easier for some tools to explore. It is inexpensive to maintain, but should not displace higher-priority access and evidence work. Its adoption is not universal, so results must not be assumed simply because the file exists.
+
+## Practical business example
+
+A reference site lists its full-text glossary and main guides so an assistant has a concise starting point for further retrieval.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Write a concise site summary and link to substantive public resources.
+
+2. Keep URLs and descriptions aligned with the current published content.
+
+3. Check that listed documents are accessible without special credentials or hidden application state.
+
+## Core components
+
+- Markdown summary
+
+- Curated resource links
+
+- Current public URLs
+
+This is a community proposal, not a universal requirement or a guaranteed citation signal.
+
+## llms.txt vs robots.txt
+
+robots.txt communicates crawl preferences. llms.txt proposes useful reading material; it does not define crawler access rules or indexing directives.
+
+## Frequently asked questions
+
+What does llms.txt mean?
+llms.txt is a community proposal for a Markdown file that summarises a site and links to useful content for language-model tools. It is not a universal crawler standard, access-control file or guaranteed citation signal.
+
+How is it different from robots.txt?
+robots.txt communicates crawl preferences. llms.txt proposes useful reading material; it does not define crawler access rules or indexing directives.
+
+What is a sensible first step for a small business?
+Maintain it as a helpful reference, but prioritise accessible pages, evidence and real search measurement. Write a concise site summary and link to substantive public resources.
+
+What limitations should I keep in mind?
+This is a community proposal, not a universal requirement or a guaranteed citation signal.
+
+## Sources
+
+The llms.txt community proposal: https://llmstxt.org/
+
+No rankings, AI citations or commercial outcomes are guaranteed.

@@ -1,0 +1,67 @@
+# What is robots.txt?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-robots-txt.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+robots.txt is a file that gives compatible crawlers instructions about which paths they may crawl. It is not authentication and does not reliably hide private information or remove indexed URLs.
+
+## Analogy & mental model
+
+It is a sign asking visitors where not to walk, not a locked door.
+
+Protect private data with real access controls and manage indexing separately from crawl preferences.
+
+## Why it matters
+
+Crawler instructions affect discoverability, but confusing them with security can expose sensitive information. A private page must be protected independently. Public pages also need a deliberate relationship between crawling preferences and indexing directives.
+
+## Practical business example
+
+A site asks crawlers not to visit an admin area but still requires sign-in and role checks to access any private information.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Place the file at the website root and define relevant crawler groups.
+
+2. Review allow and disallow rules for intended public and private paths.
+
+3. Test rule interpretation and actual server access, then manage indexing separately.
+
+## Core components
+
+- User-agent groups
+
+- Path rules
+
+- Optional sitemap reference
+
+A disallowed URL can still be known to an engine through external links, and noncompliant clients can ignore the file.
+
+## robots.txt vs noindex
+
+robots.txt controls compatible crawling. noindex requests exclusion from an index and normally must be fetched to be seen.
+
+## Frequently asked questions
+
+What does robots.txt mean?
+robots.txt is a file that gives compatible crawlers instructions about which paths they may crawl. It is not authentication and does not reliably hide private information or remove indexed URLs.
+
+How is it different from noindex?
+robots.txt controls compatible crawling. noindex requests exclusion from an index and normally must be fetched to be seen.
+
+What is a sensible first step for a small business?
+Protect private data with real access controls and manage indexing separately from crawl preferences. Place the file at the website root and define relevant crawler groups.
+
+What limitations should I keep in mind?
+A disallowed URL can still be known to an engine through external links, and noncompliant clients can ignore the file.
+
+## Sources
+
+Google: How Search works: https://developers.google.com/search/docs/fundamentals/how-search-works
+
+No rankings, AI citations or commercial outcomes are guaranteed.

@@ -1,0 +1,67 @@
+# What is AI evaluation?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-evaluation.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+AI evaluation is the systematic testing of model or agent behaviour against defined requirements. It can examine factual accuracy, retrieval quality, tool use, safety, cost and task completion using representative cases.
+
+## Analogy & mental model
+
+It is a driving test with realistic routes, not one successful trip around the car park.
+
+Keep a repeatable test set covering normal cases, missing evidence and unsafe requests.
+
+## Why it matters
+
+One successful demonstration does not show that a system is dependable. Evaluation exposes recurring errors, missing evidence and unsafe actions before wider deployment. The cases should reflect real user tasks and commercial consequences rather than only easy examples.
+
+## Practical business example
+
+An enquiry assistant is tested on routine requests, spam, missing contact details and demands for unsupported pricing before it is allowed to assist staff.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Define measurable requirements and a representative set of expected outcomes.
+
+2. Run the workflow against normal, ambiguous, failure and adversarial cases.
+
+3. Inspect errors, revise the system and repeat the same tests after changes.
+
+## Core components
+
+- Representative cases
+
+- Explicit success criteria
+
+- Repeatable comparison
+
+Automated judges can be useful but should not replace human review of consequential or disputed cases.
+
+## AI evaluation vs Monitoring
+
+Evaluation tests defined cases before or between releases. Monitoring observes behaviour in use; both are needed because production inputs may differ from the test set.
+
+## Frequently asked questions
+
+What does AI evaluation mean?
+AI evaluation is the systematic testing of model or agent behaviour against defined requirements. It can examine factual accuracy, retrieval quality, tool use, safety, cost and task completion using representative cases.
+
+How is it different from Monitoring?
+Evaluation tests defined cases before or between releases. Monitoring observes behaviour in use; both are needed because production inputs may differ from the test set.
+
+What is a sensible first step for a small business?
+Keep a repeatable test set covering normal cases, missing evidence and unsafe requests. Define measurable requirements and a representative set of expected outcomes.
+
+What limitations should I keep in mind?
+Automated judges can be useful but should not replace human review of consequential or disputed cases.
+
+## Sources
+
+OpenAI: Evaluation best practices: https://developers.openai.com/api/docs/guides/evaluation-best-practices
+
+No rankings, AI citations or commercial outcomes are guaranteed.

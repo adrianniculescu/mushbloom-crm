@@ -1,0 +1,67 @@
+# What is Backlink?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-backlink.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+A backlink is a link from another website to a page on your website. Relevant editorial links can help discovery and contribute to search signals; a link is not proof of expertise by itself.
+
+## Analogy & mental model
+
+It is a reference from another publication, rather than a claim printed in your own brochure.
+
+Earn links through useful original work and genuine partnerships, not purchased ranking schemes.
+
+## Why it matters
+
+External links can help people and crawlers discover a useful resource. Their value depends on relevance, context and editorial credibility. A genuine link from an industry association can bring appropriate visitors, while a large number of unrelated links may do little for the business.
+
+## Practical business example
+
+A trade association links to an agency’s documented automation checklist because members need a practical starting point.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Publish something another organisation has a legitimate reason to reference.
+
+2. Earn a contextual link with descriptive text from a relevant page.
+
+3. Check the linked destination, referral quality and any changes to the referring page.
+
+## Core components
+
+- Referring page
+
+- Link destination
+
+- Editorial context
+
+Manipulative link schemes can violate search policies; paid links should not be presented as independent endorsements.
+
+## Backlink vs Brand mention
+
+A backlink provides a navigable connection to a page. A mention can establish context without linking, and neither should be counted automatically as a lead.
+
+## Frequently asked questions
+
+What does Backlink mean?
+A backlink is a link from another website to a page on your website. Relevant editorial links can help discovery and contribute to search signals; a link is not proof of expertise by itself.
+
+How is it different from Brand mention?
+A backlink provides a navigable connection to a page. A mention can establish context without linking, and neither should be counted automatically as a lead.
+
+What is a sensible first step for a small business?
+Earn links through useful original work and genuine partnerships, not purchased ranking schemes. Publish something another organisation has a legitimate reason to reference.
+
+What limitations should I keep in mind?
+Manipulative link schemes can violate search policies; paid links should not be presented as independent endorsements.
+
+## Sources
+
+Google: Creating helpful, reliable content: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+No rankings, AI citations or commercial outcomes are guaranteed.

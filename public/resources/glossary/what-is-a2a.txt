@@ -1,0 +1,67 @@
+# What is Agent2Agent (A2A)?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-a2a.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Agent2Agent is an open protocol for communication and collaboration between independent AI agent systems. It supports capability discovery and task exchanges without requiring agents to share their internal implementation.
+
+## Analogy & mental model
+
+It is a shared handover language for assistants working in different organisations.
+
+Verify identity, task ownership and what information can cross an organisational boundary.
+
+## Why it matters
+
+Companies may use agents built by different providers. A shared task interface can reduce custom integration work, but it also creates new boundaries for identity and data sharing. Collaboration is only safe when ownership, permissions and completion criteria are clear.
+
+## Practical business example
+
+A research assistant requests a permitted summary from another specialist agent without obtaining that agent’s private prompts or underlying customer documents.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. An agent discovers another agent’s declared capabilities through its published interface.
+
+2. It sends an authorised task or message and receives status updates or requests for more input.
+
+3. It receives the resulting artifact or task outcome and checks whether it meets the original requirements.
+
+## Core components
+
+- Capability description
+
+- Tasks and status
+
+- Messages and artifacts
+
+Protocol compatibility is not permission to disclose confidential information or execute unrestricted tasks.
+
+## Agent2Agent (A2A) vs MCP
+
+A2A supports agent-to-agent task exchanges. MCP supports AI applications connecting to tools and data. They operate at different integration boundaries and can coexist.
+
+## Frequently asked questions
+
+What does Agent2Agent (A2A) mean?
+Agent2Agent is an open protocol for communication and collaboration between independent AI agent systems. It supports capability discovery and task exchanges without requiring agents to share their internal implementation.
+
+How is it different from MCP?
+A2A supports agent-to-agent task exchanges. MCP supports AI applications connecting to tools and data. They operate at different integration boundaries and can coexist.
+
+What is a sensible first step for a small business?
+Verify identity, task ownership and what information can cross an organisational boundary. An agent discovers another agent’s declared capabilities through its published interface.
+
+What limitations should I keep in mind?
+Protocol compatibility is not permission to disclose confidential information or execute unrestricted tasks.
+
+## Sources
+
+Agent2Agent protocol documentation: https://a2a-protocol.org/latest/
+
+No rankings, AI citations or commercial outcomes are guaranteed.

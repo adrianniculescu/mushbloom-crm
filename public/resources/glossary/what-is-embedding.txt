@@ -1,0 +1,67 @@
+# What is Embedding?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-embedding.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+An embedding is a numerical representation of content used to compare patterns of meaning. Retrieval systems can use embeddings to find relevant passages even when wording differs; similarity does not establish factual correctness.
+
+## Analogy & mental model
+
+It is a map that places related ideas near each other, not a stamp saying they are true.
+
+Use retrieval tests and source checks alongside semantic matching.
+
+## Why it matters
+
+Different wording can describe the same business issue. Embeddings help systems retrieve passages by semantic similarity, improving recall when exact keywords differ. They can also retrieve plausible but unsuitable material, so quality and access controls remain essential.
+
+## Practical business example
+
+A query about “unanswered sales requests” retrieves a document headed “missed enquiries”, even though the exact phrase differs.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Convert documents and queries into numerical representations with a compatible model.
+
+2. Compare representations to retrieve nearby candidate passages.
+
+3. Filter and assess candidates before using them as answer evidence.
+
+## Core components
+
+- Embedding model
+
+- Vector representation
+
+- Similarity comparison
+
+High similarity does not establish truth, freshness or permission to disclose a document.
+
+## Embedding vs Keyword search
+
+Keyword search matches terms directly. Embedding search matches learned patterns of meaning; hybrid retrieval can use both rather than choosing one exclusively.
+
+## Frequently asked questions
+
+What does Embedding mean?
+An embedding is a numerical representation of content used to compare patterns of meaning. Retrieval systems can use embeddings to find relevant passages even when wording differs; similarity does not establish factual correctness.
+
+How is it different from Keyword search?
+Keyword search matches terms directly. Embedding search matches learned patterns of meaning; hybrid retrieval can use both rather than choosing one exclusively.
+
+What is a sensible first step for a small business?
+Use retrieval tests and source checks alongside semantic matching. Convert documents and queries into numerical representations with a compatible model.
+
+What limitations should I keep in mind?
+High similarity does not establish truth, freshness or permission to disclose a document.
+
+## Sources
+
+Google Cloud: Retrieval-augmented generation: https://cloud.google.com/use-cases/retrieval-augmented-generation
+
+No rankings, AI citations or commercial outcomes are guaranteed.

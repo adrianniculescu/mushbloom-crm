@@ -1,0 +1,67 @@
+# What is AI search?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-ai-search.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+AI search combines information retrieval with AI-generated answers. A system may search the web or a knowledge collection, select evidence and compose a response; not every model answer uses live search.
+
+## Analogy & mental model
+
+A researcher collects documents before writing a briefing rather than answering from memory alone.
+
+Separate live-search citations from model-only brand mentions when measuring visibility.
+
+## Why it matters
+
+AI search can surface information through answers rather than only lists of links. It is useful to distinguish discovery, citation, referral traffic and enquiry generation, because these are different stages. A company can be mentioned frequently yet receive no relevant commercial visits.
+
+## Practical business example
+
+An owner compares ways to automate quote follow-up. A helpful source explains both the workflow and cases where a human must still intervene.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. The system interprets the request and may expand it into related searches.
+
+2. It retrieves and selects passages from available sources.
+
+3. The model composes an answer, sometimes with links that users can follow.
+
+## Core components
+
+- Search or retrieval layer
+
+- Source selection
+
+- Generated answer
+
+Not every AI product searches on every request, and a fluent answer is not evidence of live retrieval.
+
+## AI search vs Model-only response
+
+A model-only response can draw on learned patterns without live retrieval. AI search introduces retrieved evidence, although that evidence may still be misread.
+
+## Frequently asked questions
+
+What does AI search mean?
+AI search combines information retrieval with AI-generated answers. A system may search the web or a knowledge collection, select evidence and compose a response; not every model answer uses live search.
+
+How is it different from Model-only response?
+A model-only response can draw on learned patterns without live retrieval. AI search introduces retrieved evidence, although that evidence may still be misread.
+
+What is a sensible first step for a small business?
+Separate live-search citations from model-only brand mentions when measuring visibility. The system interprets the request and may expand it into related searches.
+
+What limitations should I keep in mind?
+Not every AI product searches on every request, and a fluent answer is not evidence of live retrieval.
+
+## Sources
+
+Google: AI features and your website: https://developers.google.com/search/docs/appearance/ai-features
+
+No rankings, AI citations or commercial outcomes are guaranteed.

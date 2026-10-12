@@ -7,5 +7,7 @@
 - [ ] Phase 3 client logins (later, by request).
 
 ## Resources launch
+- [x] Expand to 60 terms and individual detailed guides with definition, importance, process, comparisons and FAQs.
+- [x] Synchronise discovery and non-JavaScript references; test the complete guide flow.
 - [x] Add Resources hub and original, sourced AI search glossary with search, categories and A–Z navigation.
 - [x] Connect navigation, Wiki, discovery files and a plain-text reference; verify the reader flow.

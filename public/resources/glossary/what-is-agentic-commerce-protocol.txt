@@ -1,0 +1,67 @@
+# What is Agentic Commerce Protocol (ACP)?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-agentic-commerce-protocol.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Agentic Commerce Protocol is an open specification developed by OpenAI and Stripe for interactions between AI agents and merchants during checkout. It standardises commerce-related exchanges; it is not a general permission for agents to spend money independently.
+
+## Analogy & mental model
+
+It is a shared checkout form that an assistant and a shop can both understand.
+
+Check merchant support, payment permissions and order approval before considering an agent-assisted purchase flow.
+
+## Why it matters
+
+Checkout is more consequential than recommending a product: it creates an order and may transfer money. ACP provides a shared transactional interface between an agent and a merchant. For a business, the priorities are reliable price and stock data, buyer consent and merchant-controlled fulfilment, not a claim that AI can negotiate or purchase anything automatically.
+
+## Practical business example
+
+A buyer asks an assistant to purchase a selected item from a supported store. The store supplies the total and terms, the buyer authorises the purchase, and the merchant handles fulfilment. This is an illustrative flow, not a claim that every store supports ACP.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. The agent uses a supported merchant checkout interface to create or update a checkout session with selected items.
+
+2. The merchant returns authoritative totals, availability and information required to complete the order.
+
+3. The buyer’s authorised payment and confirmation flow completes the session; the merchant remains responsible for the order and fulfilment.
+
+## Core components
+
+- Checkout sessions and line items
+
+- Merchant-provided totals and order state
+
+- Authorised payment exchange
+
+Implementation and availability evolve. ACP does not grant unlimited spending authority or guarantee inclusion in an assistant’s recommendations.
+
+## Agentic Commerce Protocol (ACP) vs Schema markup
+
+Schema markup describes products and other page content. ACP defines transactional exchanges for checkout; adding Product schema does not create an ACP checkout integration. MCP connects tools, while A2A connects agent systems.
+
+## Frequently asked questions
+
+What does Agentic Commerce Protocol (ACP) mean?
+Agentic Commerce Protocol is an open specification developed by OpenAI and Stripe for interactions between AI agents and merchants during checkout. It standardises commerce-related exchanges; it is not a general permission for agents to spend money independently.
+
+How is it different from Schema markup?
+Schema markup describes products and other page content. ACP defines transactional exchanges for checkout; adding Product schema does not create an ACP checkout integration. MCP connects tools, while A2A connects agent systems.
+
+What is a sensible first step for a small business?
+Check merchant support, payment permissions and order approval before considering an agent-assisted purchase flow. The agent uses a supported merchant checkout interface to create or update a checkout session with selected items.
+
+What limitations should I keep in mind?
+Implementation and availability evolve. ACP does not grant unlimited spending authority or guarantee inclusion in an assistant’s recommendations.
+
+## Sources
+
+Agentic Commerce Protocol: specification: https://www.agenticcommerce.dev/
+
+No rankings, AI citations or commercial outcomes are guaranteed.

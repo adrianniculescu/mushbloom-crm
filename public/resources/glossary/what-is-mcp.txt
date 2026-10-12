@@ -1,0 +1,67 @@
+# What is Model Context Protocol (MCP)?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-mcp.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Model Context Protocol is an open protocol for connecting AI applications with external tools and data sources. It standardises the connection interface; it does not replace authentication, authorisation or business approval rules.
+
+## Analogy & mental model
+
+It is a standard connector between an assistant and its tools, not a master key.
+
+Expose only approved tools and enforce permissions on the server handling each request.
+
+## Why it matters
+
+Standardised tool connections can make integrations easier to reuse. The critical business question is what each connected tool is allowed to access or change. A common protocol does not turn an untrusted server into a safe one or replace independent authorisation.
+
+## Practical business example
+
+An internal assistant reads approved project records through a restricted server but cannot export other clients’ data or change billing details.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. The AI application connects to a configured MCP server using the applicable transport and authentication.
+
+2. It discovers available tools or resources and requests operations through the defined interface.
+
+3. The server enforces access rules and returns data or results for the application to validate.
+
+## Core components
+
+- Client and server
+
+- Tools and resources
+
+- Transport and authentication
+
+Review server trust, tool descriptions, credentials and side effects before enabling a connection.
+
+## Model Context Protocol (MCP) vs Tool calling
+
+Tool calling is the model’s mechanism for requesting an operation. MCP standardises a connection and capability interface through which tools or resources can be made available.
+
+## Frequently asked questions
+
+What does Model Context Protocol (MCP) mean?
+Model Context Protocol is an open protocol for connecting AI applications with external tools and data sources. It standardises the connection interface; it does not replace authentication, authorisation or business approval rules.
+
+How is it different from Tool calling?
+Tool calling is the model’s mechanism for requesting an operation. MCP standardises a connection and capability interface through which tools or resources can be made available.
+
+What is a sensible first step for a small business?
+Expose only approved tools and enforce permissions on the server handling each request. The AI application connects to a configured MCP server using the applicable transport and authentication.
+
+What limitations should I keep in mind?
+Review server trust, tool descriptions, credentials and side effects before enabling a connection.
+
+## Sources
+
+Model Context Protocol documentation: https://modelcontextprotocol.io/docs/getting-started/intro
+
+No rankings, AI citations or commercial outcomes are guaranteed.

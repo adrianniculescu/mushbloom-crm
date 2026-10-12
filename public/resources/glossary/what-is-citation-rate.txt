@@ -1,0 +1,67 @@
+# What is AI citation rate?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-citation-rate.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+AI citation rate is a defined measurement of how often a target source is linked in a sampled set of AI answers. Its meaning depends on the denominator, prompt set, engines and collection method; there is no universal formula.
+
+## Analogy & mental model
+
+It is the proportion of sampled reports that include your source in their footnotes.
+
+Choose a documented denominator, deduplicate runs and separate links from brand mentions.
+
+## Why it matters
+
+A percentage is only informative when its denominator is clear. Citation rate can show patterns within a defined test sample, but different prompts or engines may give very different results. It should support diagnosis rather than suggest a universal score for a brand.
+
+## Practical business example
+
+A visibility report separates answers containing a link to the target domain from answers that merely mention the company, and states exactly which buyer questions were tested.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Define the sampled answers, target domain and what counts as a citation.
+
+2. Count qualifying linked references and the agreed total of sampled responses.
+
+3. Report the fraction with dates, engine settings, repetitions and exclusions.
+
+## Core components
+
+- Defined denominator
+
+- Linked-source rule
+
+- Sampling documentation
+
+A small or selectively chosen prompt set can produce an impressive but unrepresentative percentage.
+
+## AI citation rate vs Share of Model
+
+Citation rate specifically concerns linked references under a declared counting rule. Share of Model can include brand presence relative to other brands and needs its own definition.
+
+## Frequently asked questions
+
+What does AI citation rate mean?
+AI citation rate is a defined measurement of how often a target source is linked in a sampled set of AI answers. Its meaning depends on the denominator, prompt set, engines and collection method; there is no universal formula.
+
+How is it different from Share of Model?
+Citation rate specifically concerns linked references under a declared counting rule. Share of Model can include brand presence relative to other brands and needs its own definition.
+
+What is a sensible first step for a small business?
+Choose a documented denominator, deduplicate runs and separate links from brand mentions. Define the sampled answers, target domain and what counts as a citation.
+
+What limitations should I keep in mind?
+A small or selectively chosen prompt set can produce an impressive but unrepresentative percentage.
+
+## Sources
+
+Google: AI features and your website: https://developers.google.com/search/docs/appearance/ai-features
+
+No rankings, AI citations or commercial outcomes are guaranteed.

@@ -1,0 +1,67 @@
+# What is RAG (Retrieval-Augmented Generation)?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-rag.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Retrieval-augmented generation is an approach that retrieves relevant information from external sources and supplies it to a model when generating a response. It can provide current or specialised context without retraining the model.
+
+## Analogy & mental model
+
+The assistant pulls the relevant handbook pages before answering your question.
+
+Test whether the right evidence is retrieved and whether the answer actually follows it.
+
+## Why it matters
+
+Business knowledge changes faster than model training. RAG can provide current policies and specialised evidence at answer time, while retaining references to the source. The weakest part may be retrieval rather than generation, so both stages need testing.
+
+## Practical business example
+
+An internal assistant retrieves the relevant onboarding procedure and answers a staff question with a reference to the maintained document.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Search an approved collection for passages relevant to the user’s request.
+
+2. Supply the selected passages and source identifiers to the model.
+
+3. Generate and validate an evidence-based answer, escalating when evidence is missing.
+
+## Core components
+
+- Source collection
+
+- Retriever
+
+- Evidence-aware generation
+
+Incorrect retrieval, stale documents or weak access filtering can still produce harmful answers.
+
+## RAG — Retrieval-Augmented Generation vs Fine-tuning
+
+Fine-tuning changes model behaviour through training examples. RAG supplies external evidence during a request and is usually easier to refresh when facts change.
+
+## Frequently asked questions
+
+What does RAG mean?
+Retrieval-augmented generation is an approach that retrieves relevant information from external sources and supplies it to a model when generating a response. It can provide current or specialised context without retraining the model.
+
+How is it different from Fine-tuning?
+Fine-tuning changes model behaviour through training examples. RAG supplies external evidence during a request and is usually easier to refresh when facts change.
+
+What is a sensible first step for a small business?
+Test whether the right evidence is retrieved and whether the answer actually follows it. Search an approved collection for passages relevant to the user’s request.
+
+What limitations should I keep in mind?
+Incorrect retrieval, stale documents or weak access filtering can still produce harmful answers.
+
+## Sources
+
+Google Cloud: Retrieval-augmented generation: https://cloud.google.com/use-cases/retrieval-augmented-generation
+
+No rankings, AI citations or commercial outcomes are guaranteed.

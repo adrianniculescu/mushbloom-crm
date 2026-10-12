@@ -1,0 +1,67 @@
+# What is IndexNow?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-indexnow.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+IndexNow is a protocol for notifying participating search engines when website URLs are added, updated or deleted. A notification helps discovery but does not guarantee indexing, and participation is engine-specific.
+
+## Analogy & mental model
+
+It tells the librarian that a book changed; the librarian still decides whether and when to catalogue it.
+
+Notify genuine canonical URL changes through a verified implementation, not repeated unchanged submissions.
+
+## Why it matters
+
+Search engines need to learn when content changes. IndexNow can reduce reliance on waiting for rediscovery by notifying participating engines. It is a change signal, not a shortcut around quality, canonical selection or indexing eligibility.
+
+## Practical business example
+
+A published guide is updated with a corrected technical explanation and the site sends its canonical URL as a changed resource.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Establish the required key verification for the host.
+
+2. Send valid public URLs that were actually added, updated or deleted.
+
+3. Handle response errors and inspect downstream indexing through the engine’s tools.
+
+## Core components
+
+- Host verification
+
+- Changed URL notification
+
+- Participating engine
+
+Support is engine-specific. Do not assume a notification is a direct Google submission or an AI citation request.
+
+## IndexNow vs XML sitemap
+
+A sitemap lists preferred URLs for discovery. IndexNow notifies participating engines about specific changes; neither confirms that the notified content is indexed.
+
+## Frequently asked questions
+
+What does IndexNow mean?
+IndexNow is a protocol for notifying participating search engines when website URLs are added, updated or deleted. A notification helps discovery but does not guarantee indexing, and participation is engine-specific.
+
+How is it different from XML sitemap?
+A sitemap lists preferred URLs for discovery. IndexNow notifies participating engines about specific changes; neither confirms that the notified content is indexed.
+
+What is a sensible first step for a small business?
+Notify genuine canonical URL changes through a verified implementation, not repeated unchanged submissions. Establish the required key verification for the host.
+
+What limitations should I keep in mind?
+Support is engine-specific. Do not assume a notification is a direct Google submission or an AI citation request.
+
+## Sources
+
+IndexNow documentation: https://www.indexnow.org/documentation
+
+No rankings, AI citations or commercial outcomes are guaranteed.

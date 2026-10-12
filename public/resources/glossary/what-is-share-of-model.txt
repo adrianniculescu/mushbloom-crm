@@ -1,0 +1,67 @@
+# What is Share of Model (SOM)?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-share-of-model.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Share of Model is a practitioner-defined measure of brand presence across a chosen sample of AI answers. In Mushbloom’s LLMboost work, it is used to compare visibility across a documented query set; it is not a universal engine-provided score.
+
+## Analogy & mental model
+
+It is a survey of which brands are mentioned in a selected set of conversations, not a census of every answer.
+
+State the prompts, engines, dates, sample size and whether you count mentions or linked citations.
+
+## Why it matters
+
+A documented sample can reveal whether a brand appears in relevant AI answers. Without a clear denominator, reported percentages can be misleading. The most useful measurement distinguishes accurate citations from superficial mentions and ties observations to commercially relevant questions.
+
+## Practical business example
+
+An agency measures which sources appear in a repeatable set of buyer questions and separately reports inaccurate recommendations rather than counting them as positive visibility.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Define the engines, prompts, dates, repeat runs and comparison brands.
+
+2. Classify each answer using explicit rules for mentions and linked citations.
+
+3. Report the numerator and denominator alongside context and sampling limitations.
+
+## Core components
+
+- Fixed sampling plan
+
+- Classification rules
+
+- Transparent reporting
+
+There is no universal engine-provided SOM score; results depend heavily on the sample and classification.
+
+## Share of Model (SOM) vs Market share
+
+Market share refers to commercial participation in a defined market. Share of Model refers to presence in sampled answers and is not a sales or revenue measure.
+
+## Frequently asked questions
+
+What does Share of Model (SOM) mean?
+Share of Model is a practitioner-defined measure of brand presence across a chosen sample of AI answers. In Mushbloom’s LLMboost work, it is used to compare visibility across a documented query set; it is not a universal engine-provided score.
+
+How is it different from Market share?
+Market share refers to commercial participation in a defined market. Share of Model refers to presence in sampled answers and is not a sales or revenue measure.
+
+What is a sensible first step for a small business?
+State the prompts, engines, dates, sample size and whether you count mentions or linked citations. Define the engines, prompts, dates, repeat runs and comparison brands.
+
+What limitations should I keep in mind?
+There is no universal engine-provided SOM score; results depend heavily on the sample and classification.
+
+## Sources
+
+Google: AI features and your website: https://developers.google.com/search/docs/appearance/ai-features
+
+No rankings, AI citations or commercial outcomes are guaranteed.

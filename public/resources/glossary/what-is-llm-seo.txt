@@ -1,0 +1,67 @@
+# What is LLM SEO?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-llm-seo.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+LLM SEO is an industry label for work aimed at helping a brand or its content be discovered and represented accurately in language-model-based answers. Usage varies and often overlaps with AEO and GEO.
+
+## Analogy & mental model
+
+It extends your visibility work from lists of links to answers that discuss your business.
+
+Define which engines, queries and outcomes you measure before claiming an improvement.
+
+## Why it matters
+
+The label is useful only if the intended outcome is defined. A brand mention, a source citation and an inbound lead require different measurements. Clear scope prevents optimisation work from becoming a collection of untested claims about what models supposedly prefer.
+
+## Practical business example
+
+A consultancy checks whether answers about a specific implementation problem cite its detailed guide, then looks for relevant visits rather than reporting every mention as a success.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Choose engines and questions relevant to the customer’s buying journey.
+
+2. Improve factual clarity, source accessibility and corroborating information.
+
+3. Track a consistent sample of answers and inspect actual linked pages and referrals.
+
+## Core components
+
+- Defined engine and prompt set
+
+- Content and entity accuracy
+
+- Observed visibility outcomes
+
+Search-only performance reports do not establish visibility inside every language-model product.
+
+## LLM SEO vs GEO
+
+LLM SEO and GEO are overlapping industry labels. Neither describes a universally standardised ranking system or guarantees that a model will select a page.
+
+## Frequently asked questions
+
+What does LLM SEO mean?
+LLM SEO is an industry label for work aimed at helping a brand or its content be discovered and represented accurately in language-model-based answers. Usage varies and often overlaps with AEO and GEO.
+
+How is it different from GEO?
+LLM SEO and GEO are overlapping industry labels. Neither describes a universally standardised ranking system or guarantees that a model will select a page.
+
+What is a sensible first step for a small business?
+Define which engines, queries and outcomes you measure before claiming an improvement. Choose engines and questions relevant to the customer’s buying journey.
+
+What limitations should I keep in mind?
+Search-only performance reports do not establish visibility inside every language-model product.
+
+## Sources
+
+Google: AI features and your website: https://developers.google.com/search/docs/appearance/ai-features
+
+No rankings, AI citations or commercial outcomes are guaranteed.

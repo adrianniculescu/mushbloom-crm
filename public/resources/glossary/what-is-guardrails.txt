@@ -1,0 +1,67 @@
+# What is AI guardrails?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-guardrails.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+AI guardrails are controls that limit inputs, outputs or actions in an AI system. They can include access checks, spending limits, output validation and human approval; prompting alone is not a reliable security boundary.
+
+## Analogy & mental model
+
+They are the rails, brakes and operating rules around a machine—not a note asking it to be careful.
+
+Enforce critical restrictions outside the model and test attempts to bypass them.
+
+## Why it matters
+
+Business risk comes from what an AI system can disclose or change, not only what it says. Guardrails place enforceable boundaries around those consequences. They should be designed from concrete risks and tested with adversarial cases rather than treated as a reassuring slogan.
+
+## Practical business example
+
+An agent may draft a customer email, but a separate policy check rejects attachments containing another client’s private records.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Identify sensitive data, actions and failure conditions in the workflow.
+
+2. Add independent access checks, validation, restricted tools and approval gates.
+
+3. Test attempts to bypass controls and monitor both blocked and successful actions.
+
+## Core components
+
+- Access enforcement
+
+- Input and output validation
+
+- Approval and monitoring
+
+No single control eliminates all risk; permissions and data isolation must remain effective independently of model output.
+
+## AI guardrails vs Prompt instruction
+
+Instructions influence model behaviour. Enforced guardrails restrict what the application can actually do even when the model ignores or misunderstands instructions.
+
+## Frequently asked questions
+
+What does AI guardrails mean?
+AI guardrails are controls that limit inputs, outputs or actions in an AI system. They can include access checks, spending limits, output validation and human approval; prompting alone is not a reliable security boundary.
+
+How is it different from Prompt instruction?
+Instructions influence model behaviour. Enforced guardrails restrict what the application can actually do even when the model ignores or misunderstands instructions.
+
+What is a sensible first step for a small business?
+Enforce critical restrictions outside the model and test attempts to bypass them. Identify sensitive data, actions and failure conditions in the workflow.
+
+What limitations should I keep in mind?
+No single control eliminates all risk; permissions and data isolation must remain effective independently of model output.
+
+## Sources
+
+OWASP: LLM application risks: https://genai.owasp.org/llm-top-10/
+
+No rankings, AI citations or commercial outcomes are guaranteed.

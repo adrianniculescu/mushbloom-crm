@@ -1,0 +1,67 @@
+# What is Reranking?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-reranking.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Reranking reorders an initial set of retrieved results using an additional relevance assessment. It can improve which passages are supplied to a model, but cannot recover evidence absent from the candidate set.
+
+## Analogy & mental model
+
+A researcher sorts a shortlist of documents before deciding which ones belong in the briefing.
+
+Test retrieval and reranking separately, including questions where no suitable source exists.
+
+## Why it matters
+
+Initial retrieval may return many plausible passages. A second relevance stage can improve which evidence reaches the answer generator. It cannot repair a collection that lacks the needed source or a retriever that failed to include it.
+
+## Practical business example
+
+A support query returns several policy sections. Reranking prioritises the one covering the exact product and customer condition before generation.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Retrieve a candidate set using keyword, vector or hybrid search.
+
+2. Score candidates against the specific question with a suitable relevance model or method.
+
+3. Supply the best permitted passages and preserve their source references.
+
+## Core components
+
+- Candidate set
+
+- Relevance scoring
+
+- Selected evidence
+
+Better-looking relevance scores do not establish factual correctness or permission to use a passage.
+
+## Reranking vs Retrieval
+
+Retrieval creates the candidate set. Reranking reorders that set; evaluating the stages separately helps identify whether a missing answer was never retrieved or merely ranked poorly.
+
+## Frequently asked questions
+
+What does Reranking mean?
+Reranking reorders an initial set of retrieved results using an additional relevance assessment. It can improve which passages are supplied to a model, but cannot recover evidence absent from the candidate set.
+
+How is it different from Retrieval?
+Retrieval creates the candidate set. Reranking reorders that set; evaluating the stages separately helps identify whether a missing answer was never retrieved or merely ranked poorly.
+
+What is a sensible first step for a small business?
+Test retrieval and reranking separately, including questions where no suitable source exists. Retrieve a candidate set using keyword, vector or hybrid search.
+
+What limitations should I keep in mind?
+Better-looking relevance scores do not establish factual correctness or permission to use a passage.
+
+## Sources
+
+Google Cloud: Retrieval-augmented generation: https://cloud.google.com/use-cases/retrieval-augmented-generation
+
+No rankings, AI citations or commercial outcomes are guaranteed.

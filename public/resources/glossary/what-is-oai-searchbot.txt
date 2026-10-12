@@ -1,0 +1,67 @@
+# What is OAI-SearchBot?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-oai-searchbot.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+OAI-SearchBot is OpenAI’s crawler for its search features. It has a different purpose from GPTBot, which relates to model training; crawler access does not guarantee a citation.
+
+## Analogy & mental model
+
+One researcher gathers references for answers; another gathers material for training.
+
+Review search and training crawler preferences separately and check that your hosting does not block intended access.
+
+## Why it matters
+
+Search crawling and model-training crawling have different purposes. Businesses should make intentional choices about each instead of treating all AI traffic as identical. Access also depends on hosting and security controls, not only the presence of a robots.txt rule.
+
+## Practical business example
+
+A publisher allows search discovery while reviewing training access separately, then checks that its firewall does not block legitimate search requests.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Review OpenAI’s current documentation for the crawler’s purpose and verification information.
+
+2. Set the intended search crawler preferences in robots.txt.
+
+3. Check actual fetch behaviour and hosting restrictions for public source pages.
+
+## Core components
+
+- Crawler identity
+
+- Search access preference
+
+- Hosting response
+
+Allowing a crawler is permission to access, not a promise of inclusion or citation.
+
+## OAI-SearchBot vs GPTBot
+
+GPTBot is associated with model training. OAI-SearchBot supports search features; choosing a rule for one does not automatically express the same preference for the other.
+
+## Frequently asked questions
+
+What does OAI-SearchBot mean?
+OAI-SearchBot is OpenAI’s crawler for its search features. It has a different purpose from GPTBot, which relates to model training; crawler access does not guarantee a citation.
+
+How is it different from GPTBot?
+GPTBot is associated with model training. OAI-SearchBot supports search features; choosing a rule for one does not automatically express the same preference for the other.
+
+What is a sensible first step for a small business?
+Review search and training crawler preferences separately and check that your hosting does not block intended access. Review OpenAI’s current documentation for the crawler’s purpose and verification information.
+
+What limitations should I keep in mind?
+Allowing a crawler is permission to access, not a promise of inclusion or citation.
+
+## Sources
+
+OpenAI: Overview of crawlers: https://developers.openai.com/api/docs/bots
+
+No rankings, AI citations or commercial outcomes are guaranteed.

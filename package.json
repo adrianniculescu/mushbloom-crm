@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "generate:glossary": "bun scripts/generate-glossary.ts",
+    "test:glossary": "bun test src/data/glossary.test.mjs",
     "dev": "vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",

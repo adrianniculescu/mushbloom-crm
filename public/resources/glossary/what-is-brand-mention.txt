@@ -1,0 +1,67 @@
+# What is Brand mention?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-brand-mention.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+A brand mention is a reference to a company or product in content or an AI answer. It may be positive, negative, inaccurate or unrelated; an unlinked mention is not a source citation or a qualified lead.
+
+## Analogy & mental model
+
+Hearing your name in a conversation is different from receiving a recommendation and a phone call.
+
+Classify relevance and accuracy as well as frequency when measuring mentions.
+
+## Why it matters
+
+Mentions can help identify how a business is represented, including mistakes or negative context. Counting them without classification can inflate visibility reports. A useful measurement connects mentions to relevant questions, correct descriptions and actual opportunities for the reader to continue.
+
+## Practical business example
+
+An AI answer lists a company as a provider but describes a service it no longer sells. That mention should be recorded as an accuracy problem, not celebrated as a lead.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Capture answers or pages where the business is named.
+
+2. Classify relevance, sentiment, factual accuracy and whether a link is present.
+
+3. Report mentions separately from citations, visits and qualified enquiries.
+
+## Core components
+
+- Named entity
+
+- Context and accuracy
+
+- Measurement classification
+
+More mentions do not necessarily mean better recommendations, useful traffic or commercial demand.
+
+## Brand mention vs Citation
+
+A citation refers readers to supporting source material. A brand mention can be unlinked and need not provide evidence or a path to the business.
+
+## Frequently asked questions
+
+What does Brand mention mean?
+A brand mention is a reference to a company or product in content or an AI answer. It may be positive, negative, inaccurate or unrelated; an unlinked mention is not a source citation or a qualified lead.
+
+How is it different from Citation?
+A citation refers readers to supporting source material. A brand mention can be unlinked and need not provide evidence or a path to the business.
+
+What is a sensible first step for a small business?
+Classify relevance and accuracy as well as frequency when measuring mentions. Capture answers or pages where the business is named.
+
+What limitations should I keep in mind?
+More mentions do not necessarily mean better recommendations, useful traffic or commercial demand.
+
+## Sources
+
+Google: AI features and your website: https://developers.google.com/search/docs/appearance/ai-features
+
+No rankings, AI citations or commercial outcomes are guaranteed.

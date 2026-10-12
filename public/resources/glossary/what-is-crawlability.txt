@@ -1,0 +1,67 @@
+# What is Crawlability?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-crawlability.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Crawlability is the ability of a crawler to discover and fetch a website’s pages. Links, server responses, access controls and crawler rules affect it; being crawlable does not mean a page is indexed.
+
+## Analogy & mental model
+
+The library door is open, but your book has not necessarily been catalogued.
+
+Check page responses and crawler access before diagnosing ranking or citation problems.
+
+## Why it matters
+
+A search or AI crawler cannot use information it cannot fetch. Access problems should be investigated before content or ranking theories. Crawlability is a technical prerequisite, but pages also need to be understandable, eligible for indexing and useful to a real audience.
+
+## Practical business example
+
+A resource looks complete in a browser but its initial response contains no article text. A crawler that does not execute scripts may not see the guide.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Fetch important URLs and inspect status codes, redirects and access barriers.
+
+2. Check crawler rules, firewall behaviour and ordinary links to the page.
+
+3. Inspect the response body to confirm that substantive content is available.
+
+## Core components
+
+- Discoverable links
+
+- Fetchable response
+
+- Crawler access rules
+
+robots.txt does not override a firewall, authentication wall or missing page.
+
+## Crawlability vs Indexing
+
+Crawlability concerns fetching. Indexing concerns analysing and storing a fetched page; one does not guarantee the other.
+
+## Frequently asked questions
+
+What does Crawlability mean?
+Crawlability is the ability of a crawler to discover and fetch a website’s pages. Links, server responses, access controls and crawler rules affect it; being crawlable does not mean a page is indexed.
+
+How is it different from Indexing?
+Crawlability concerns fetching. Indexing concerns analysing and storing a fetched page; one does not guarantee the other.
+
+What is a sensible first step for a small business?
+Check page responses and crawler access before diagnosing ranking or citation problems. Fetch important URLs and inspect status codes, redirects and access barriers.
+
+What limitations should I keep in mind?
+robots.txt does not override a firewall, authentication wall or missing page.
+
+## Sources
+
+Google: How Search works: https://developers.google.com/search/docs/fundamentals/how-search-works
+
+No rankings, AI citations or commercial outcomes are guaranteed.

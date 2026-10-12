@@ -1,0 +1,67 @@
+# What is Zero-click search?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-zero-click-search.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+A zero-click search is a search interaction that ends without a click through to an external website. The user may find an answer on the results page, refine the query or abandon the task; it does not always indicate satisfaction.
+
+## Analogy & mental model
+
+Someone reads the notice in a shop window and leaves without entering.
+
+Give people a reason to visit for deeper evidence, tools or a relevant service—not just a repeated short answer.
+
+## Why it matters
+
+Search answers can resolve simple questions without sending a visitor to the source site. That does not make all informational content useless, but it changes the role of a basic definition. A site needs deeper evidence, decision support or an appropriate service for readers who continue.
+
+## Practical business example
+
+A user learns the expansion of an acronym without visiting a website. Another user follows a guide because they need implementation details, risks and examples.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. A user searches and encounters an answer or useful information within the search interface.
+
+2. The user does not follow a link to an external site in that interaction.
+
+3. The session may end, continue with another query or proceed through another channel.
+
+## Core components
+
+- Search interaction
+
+- On-interface information
+
+- No external click
+
+No click does not establish that the user found a satisfactory answer or remembered the cited brand.
+
+## Zero-click search vs AI citation
+
+A citation can be displayed in a zero-click interaction. Citation visibility and referral traffic are separate outcomes and should not be conflated.
+
+## Frequently asked questions
+
+What does Zero-click search mean?
+A zero-click search is a search interaction that ends without a click through to an external website. The user may find an answer on the results page, refine the query or abandon the task; it does not always indicate satisfaction.
+
+How is it different from AI citation?
+A citation can be displayed in a zero-click interaction. Citation visibility and referral traffic are separate outcomes and should not be conflated.
+
+What is a sensible first step for a small business?
+Give people a reason to visit for deeper evidence, tools or a relevant service—not just a repeated short answer. A user searches and encounters an answer or useful information within the search interface.
+
+What limitations should I keep in mind?
+No click does not establish that the user found a satisfactory answer or remembered the cited brand.
+
+## Sources
+
+Google: AI features and your website: https://developers.google.com/search/docs/appearance/ai-features
+
+No rankings, AI citations or commercial outcomes are guaranteed.

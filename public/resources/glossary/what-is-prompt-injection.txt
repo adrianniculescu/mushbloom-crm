@@ -1,0 +1,67 @@
+# What is Prompt injection?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-prompt-injection.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Prompt injection is an attempt to make an AI system follow malicious instructions embedded in input or external content. Retrieved documents, websites and tool responses can carry attacks even when the original user request is legitimate.
+
+## Analogy & mental model
+
+A document tells the assistant to ignore its manager and reveal the filing cabinet’s contents.
+
+Treat external text as data, restrict tools and keep secrets outside prompts.
+
+## Why it matters
+
+Agents often read content from outside the organisation. An attacker can place instructions in that material and try to make the system treat them as authority. The risk grows when retrieved text is combined with powerful tools or private information.
+
+## Practical business example
+
+A retrieved page tells a research assistant to send internal files to an external address. The safe workflow treats that sentence as page content and provides no export authority.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. An attacker places instructions in a user message, document, webpage or tool response.
+
+2. The system incorporates that content into a model interaction.
+
+3. An unsafe system follows the embedded instructions instead of treating them as untrusted data.
+
+## Core components
+
+- Untrusted content
+
+- Instruction confusion
+
+- Potential tool or data misuse
+
+Filtering suspicious phrases alone is insufficient; limit tool authority and protect secrets outside the model.
+
+## Prompt injection vs Ordinary task instruction
+
+A legitimate instruction comes through the authorised task channel. Prompt injection tries to cross a trust boundary through content the system is only meant to read.
+
+## Frequently asked questions
+
+What does Prompt injection mean?
+Prompt injection is an attempt to make an AI system follow malicious instructions embedded in input or external content. Retrieved documents, websites and tool responses can carry attacks even when the original user request is legitimate.
+
+How is it different from Ordinary task instruction?
+A legitimate instruction comes through the authorised task channel. Prompt injection tries to cross a trust boundary through content the system is only meant to read.
+
+What is a sensible first step for a small business?
+Treat external text as data, restrict tools and keep secrets outside prompts. An attacker places instructions in a user message, document, webpage or tool response.
+
+What limitations should I keep in mind?
+Filtering suspicious phrases alone is insufficient; limit tool authority and protect secrets outside the model.
+
+## Sources
+
+OWASP: LLM application risks: https://genai.owasp.org/llm-top-10/
+
+No rankings, AI citations or commercial outcomes are guaranteed.

@@ -1,0 +1,67 @@
+# What is Vector database?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-vector-database.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+A vector database stores numerical representations such as embeddings and supports similarity retrieval. It can help retrieve related content, but access filtering, source quality and relevance testing remain separate responsibilities.
+
+## Analogy & mental model
+
+It is a searchable map of nearby ideas, not a fact-checker or permission system.
+
+Apply client and document permissions before returning retrieval results to a model.
+
+## Why it matters
+
+Large collections need efficient ways to retrieve related material. Vector databases support that task, but similarity retrieval can expose the wrong document if access filters are weak. Treat retrieval permissions as a business requirement, not an optional model instruction.
+
+## Practical business example
+
+A client-specific assistant retrieves only the current client’s approved records even when another client has a semantically similar document.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Create compatible embeddings for approved documents and retain source metadata.
+
+2. Store them with client, version and access identifiers.
+
+3. Query for similar items while applying permissions, then verify the returned evidence.
+
+## Core components
+
+- Vectors and indexes
+
+- Source metadata
+
+- Permission-aware query
+
+A vector store is not a truth database, and retrieval filters must not rely on the model remembering which client it serves.
+
+## Vector database vs Traditional database
+
+A traditional database often retrieves by explicit fields and relationships. A vector database adds similarity search; business systems commonly need both capabilities.
+
+## Frequently asked questions
+
+What does Vector database mean?
+A vector database stores numerical representations such as embeddings and supports similarity retrieval. It can help retrieve related content, but access filtering, source quality and relevance testing remain separate responsibilities.
+
+How is it different from Traditional database?
+A traditional database often retrieves by explicit fields and relationships. A vector database adds similarity search; business systems commonly need both capabilities.
+
+What is a sensible first step for a small business?
+Apply client and document permissions before returning retrieval results to a model. Create compatible embeddings for approved documents and retain source metadata.
+
+What limitations should I keep in mind?
+A vector store is not a truth database, and retrieval filters must not rely on the model remembering which client it serves.
+
+## Sources
+
+Google Cloud: Retrieval-augmented generation: https://cloud.google.com/use-cases/retrieval-augmented-generation
+
+No rankings, AI citations or commercial outcomes are guaranteed.

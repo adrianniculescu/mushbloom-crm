@@ -1,0 +1,67 @@
+# What is Human in the loop?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-human-in-the-loop.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Human-in-the-loop design places a person at defined review or decision points in an AI workflow. The person can approve, correct or reject actions before they create material consequences.
+
+## Analogy & mental model
+
+An assistant drafts a proposal, but the business owner signs it before it goes out.
+
+Require approval for sensitive messages, legal decisions, spending and changes to production data.
+
+## Why it matters
+
+Not every action has the same consequences. Human review is valuable where money, sensitive information or customer commitments are involved. Effective design specifies who reviews what and provides enough evidence for a meaningful decision, rather than making approval a reflexive click.
+
+## Practical business example
+
+An agent drafts a contract response, but a qualified person checks the terms and authorises any reply before it leaves the organisation.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Identify actions requiring review and define the responsible person.
+
+2. Present the proposed action, evidence and likely consequences before execution.
+
+3. Record approval, rejection or correction and continue only within the authorised scope.
+
+## Core components
+
+- Approval boundary
+
+- Reviewer and evidence
+
+- Decision record
+
+Approval is ineffective if reviewers cannot see the actual action or relevant evidence.
+
+## Human in the loop vs Fully automated workflow
+
+A fully automated step executes without case-by-case review. Human-in-the-loop design intentionally inserts a decision point for specified actions.
+
+## Frequently asked questions
+
+What does Human in the loop mean?
+Human-in-the-loop design places a person at defined review or decision points in an AI workflow. The person can approve, correct or reject actions before they create material consequences.
+
+How is it different from Fully automated workflow?
+A fully automated step executes without case-by-case review. Human-in-the-loop design intentionally inserts a decision point for specified actions.
+
+What is a sensible first step for a small business?
+Require approval for sensitive messages, legal decisions, spending and changes to production data. Identify actions requiring review and define the responsible person.
+
+What limitations should I keep in mind?
+Approval is ineffective if reviewers cannot see the actual action or relevant evidence.
+
+## Sources
+
+Google Cloud: Retrieval-augmented generation: https://cloud.google.com/use-cases/retrieval-augmented-generation
+
+No rankings, AI citations or commercial outcomes are guaranteed.

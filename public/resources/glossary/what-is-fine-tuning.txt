@@ -1,0 +1,67 @@
+# What is Fine-tuning?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-fine-tuning.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Fine-tuning is additional training that adjusts a model using task-specific examples. It can improve recurring behaviours or formats; it is not the same as supplying current documents at answer time.
+
+## Analogy & mental model
+
+It teaches the assistant a working style, while RAG gives the assistant the latest handbook.
+
+Use clear baseline tests to decide whether fine-tuning is needed instead of better instructions or retrieval.
+
+## Why it matters
+
+Some repeated behaviours are difficult to achieve consistently with instructions alone. Fine-tuning can help with those patterns, but adding frequently changing facts to training is not a substitute for retrieval. It should follow a measured baseline and a clear reason to change the model.
+
+## Practical business example
+
+A model is trained to classify an established set of ticket types consistently, while current account facts continue to come from authorised retrieval.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Collect high-quality task examples with permitted data and desired responses.
+
+2. Train using a supported method and hold out representative evaluation cases.
+
+3. Compare the resulting behaviour with the baseline before deploying it.
+
+## Core components
+
+- Training examples
+
+- Model adjustment
+
+- Held-out evaluation
+
+Do not use confidential training examples without appropriate rights, controls and a clear understanding of provider data handling.
+
+## Fine-tuning vs RAG
+
+Fine-tuning changes model parameters. RAG supplies retrieved evidence during an interaction and can update facts without repeating the training process.
+
+## Frequently asked questions
+
+What does Fine-tuning mean?
+Fine-tuning is additional training that adjusts a model using task-specific examples. It can improve recurring behaviours or formats; it is not the same as supplying current documents at answer time.
+
+How is it different from RAG?
+Fine-tuning changes model parameters. RAG supplies retrieved evidence during an interaction and can update facts without repeating the training process.
+
+What is a sensible first step for a small business?
+Use clear baseline tests to decide whether fine-tuning is needed instead of better instructions or retrieval. Collect high-quality task examples with permitted data and desired responses.
+
+What limitations should I keep in mind?
+Do not use confidential training examples without appropriate rights, controls and a clear understanding of provider data handling.
+
+## Sources
+
+OpenAI: Supervised fine-tuning: https://developers.openai.com/api/docs/guides/supervised-fine-tuning
+
+No rankings, AI citations or commercial outcomes are guaranteed.

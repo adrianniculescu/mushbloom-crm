@@ -1,0 +1,67 @@
+# What is Entity?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-entity.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+An entity is an identifiable person, organisation, place, product or concept. Consistent names, relationships and supporting information help readers and search systems distinguish one entity from another.
+
+## Analogy & mental model
+
+It is a complete business record rather than a name with no identifying details.
+
+Keep your company name, founder, services, domain and contact details consistent across credible profiles.
+
+## Why it matters
+
+Ambiguous names make it difficult to distinguish one business from another. Consistent identifiers and relationships help readers and automated systems connect the right facts. They are especially useful when a company has several services, domains or public profiles.
+
+## Practical business example
+
+A company’s website and industry profile use the same business name and link to the same official domain, reducing confusion with a similarly named firm.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Describe the organisation and its services using stable, consistent names.
+
+2. Connect identifying facts such as official website, founder and contact information.
+
+3. Keep public profiles and machine-readable descriptions aligned with visible facts.
+
+## Core components
+
+- Stable identity
+
+- Attributes
+
+- Relationships
+
+Repeating a name does not prove that all statements about the entity are credible.
+
+## Entity vs Keyword
+
+A keyword is wording in a query or page. An entity is the identifiable thing that wording refers to, and it may have many names or descriptions.
+
+## Frequently asked questions
+
+What does Entity mean?
+An entity is an identifiable person, organisation, place, product or concept. Consistent names, relationships and supporting information help readers and search systems distinguish one entity from another.
+
+How is it different from Keyword?
+A keyword is wording in a query or page. An entity is the identifiable thing that wording refers to, and it may have many names or descriptions.
+
+What is a sensible first step for a small business?
+Keep your company name, founder, services, domain and contact details consistent across credible profiles. Describe the organisation and its services using stable, consistent names.
+
+What limitations should I keep in mind?
+Repeating a name does not prove that all statements about the entity are credible.
+
+## Sources
+
+Google: Structured data introduction: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+
+No rankings, AI citations or commercial outcomes are guaranteed.

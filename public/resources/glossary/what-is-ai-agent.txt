@@ -1,0 +1,67 @@
+# What is AI agent?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-ai-agent.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+An AI agent is a software system that uses a model to choose actions and interact with tools toward a defined goal. Its access, instructions and approval boundaries determine what it can safely do.
+
+## Analogy & mental model
+
+Think of a junior assistant with a task list and a restricted set of keys—not an unsupervised employee.
+
+Define the agent’s role, approved data, tools and escalation rules before connecting business accounts.
+
+## Why it matters
+
+Agents become useful when a task needs more than one fixed response, such as checking information and selecting a next action. They also introduce operational risks because a wrong action can affect customers or records. A defined role is more valuable than an impressive claim of autonomy.
+
+## Practical business example
+
+An enquiry agent categorises a request and drafts a reply. A staff member approves a price exception rather than letting the agent invent a discount.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Give the agent a narrow goal and the minimum tools needed to complete it.
+
+2. Let the model propose an action, then validate its arguments and permissions outside the model.
+
+3. Record the result and route exceptions or sensitive actions to a person.
+
+## Core components
+
+- Role and goal
+
+- Tool access and action validation
+
+- Approval and audit trail
+
+A natural-language instruction is not a substitute for a server-enforced permission.
+
+## AI agent vs Workflow automation
+
+A fixed workflow follows predefined branches. An agent can select actions within those boundaries; the workflow still controls permissions, approvals and handoffs.
+
+## Frequently asked questions
+
+What does AI agent mean?
+An AI agent is a software system that uses a model to choose actions and interact with tools toward a defined goal. Its access, instructions and approval boundaries determine what it can safely do.
+
+How is it different from Workflow automation?
+A fixed workflow follows predefined branches. An agent can select actions within those boundaries; the workflow still controls permissions, approvals and handoffs.
+
+What is a sensible first step for a small business?
+Define the agent’s role, approved data, tools and escalation rules before connecting business accounts. Give the agent a narrow goal and the minimum tools needed to complete it.
+
+What limitations should I keep in mind?
+A natural-language instruction is not a substitute for a server-enforced permission.
+
+## Sources
+
+Google Cloud: Retrieval-augmented generation: https://cloud.google.com/use-cases/retrieval-augmented-generation
+
+No rankings, AI citations or commercial outcomes are guaranteed.

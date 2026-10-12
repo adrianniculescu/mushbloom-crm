@@ -1,0 +1,67 @@
+# What is E-E-A-T?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-eeat.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+E-E-A-T stands for experience, expertise, authoritativeness and trustworthiness. Google uses these concepts in quality evaluation guidance; they are not a single score you can add to a page.
+
+## Analogy & mental model
+
+A reader asks who wrote the advice, what they know and whether the evidence is trustworthy.
+
+Show genuine experience, accurate author information, sources and named case studies where permission exists.
+
+## Why it matters
+
+Trust is particularly important when advice affects money, safety or business decisions. Readers need to understand where information came from and where its limits lie. Clear authorship and original evidence support confidence more effectively than unsupported claims of being an expert.
+
+## Practical business example
+
+An agency explains the implementation choices in a permitted client case study and distinguishes measured outcomes from estimates.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Identify who produced the content and what experience supports it.
+
+2. Show verifiable evidence, sources and appropriate qualifications or limitations.
+
+3. Review claims and keep important information current as circumstances change.
+
+## Core components
+
+- Experience and expertise
+
+- External context
+
+- Transparent evidence
+
+E-E-A-T is not a single public ranking score or a certification badge.
+
+## E-E-A-T vs Structured data
+
+Structured data labels facts for machines. E-E-A-T describes quality considerations; adding an author field cannot manufacture real experience or trust.
+
+## Frequently asked questions
+
+What does E-E-A-T mean?
+E-E-A-T stands for experience, expertise, authoritativeness and trustworthiness. Google uses these concepts in quality evaluation guidance; they are not a single score you can add to a page.
+
+How is it different from Structured data?
+Structured data labels facts for machines. E-E-A-T describes quality considerations; adding an author field cannot manufacture real experience or trust.
+
+What is a sensible first step for a small business?
+Show genuine experience, accurate author information, sources and named case studies where permission exists. Identify who produced the content and what experience supports it.
+
+What limitations should I keep in mind?
+E-E-A-T is not a single public ranking score or a certification badge.
+
+## Sources
+
+Google: Creating helpful, reliable content: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+No rankings, AI citations or commercial outcomes are guaranteed.

@@ -1,0 +1,67 @@
+# What is Hallucination?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-hallucination.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+A hallucination is an AI-generated statement that is unsupported or incorrect but may sound plausible. It can include invented facts, sources or quotations, even when the answer is confidently written.
+
+## Analogy & mental model
+
+An assistant fills a gap in a report with a convincing guess instead of saying they do not know.
+
+Verify factual claims and source links before sending advice or publishing client content.
+
+## Why it matters
+
+Confident mistakes can damage customer trust and create operational or legal exposure. Hallucinations are not limited to obscure questions: models can invent prices, dates or source links. Systems need a safe way to admit that information is missing.
+
+## Practical business example
+
+An assistant drafts an email with a discount that does not exist. Validation blocks the message and asks a staff member to confirm the offer.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Identify claims that need verifiable factual support.
+
+2. Compare those claims and citations with approved sources or trusted records.
+
+3. Reject unsupported assertions or obtain human review before consequential use.
+
+## Core components
+
+- Factual claim
+
+- Available evidence
+
+- Verification or abstention
+
+Retrieval and better prompts reduce some risks but do not eliminate hallucinations.
+
+## Hallucination vs Ordinary uncertainty
+
+Uncertainty can be honestly reported. A hallucination presents unsupported material as though it were factual; confident wording does not remove that difference.
+
+## Frequently asked questions
+
+What does Hallucination mean?
+A hallucination is an AI-generated statement that is unsupported or incorrect but may sound plausible. It can include invented facts, sources or quotations, even when the answer is confidently written.
+
+How is it different from Ordinary uncertainty?
+Uncertainty can be honestly reported. A hallucination presents unsupported material as though it were factual; confident wording does not remove that difference.
+
+What is a sensible first step for a small business?
+Verify factual claims and source links before sending advice or publishing client content. Identify claims that need verifiable factual support.
+
+What limitations should I keep in mind?
+Retrieval and better prompts reduce some risks but do not eliminate hallucinations.
+
+## Sources
+
+Google: Creating helpful, reliable content: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+No rankings, AI citations or commercial outcomes are guaranteed.

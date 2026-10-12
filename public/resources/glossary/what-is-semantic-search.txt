@@ -1,0 +1,67 @@
+# What is Semantic search?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-semantic-search.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Semantic search retrieves information using meaning and context rather than only exact text matches. Systems may combine semantic matching with keyword search and other relevance signals.
+
+## Analogy & mental model
+
+A librarian understands that “missed leads” and “unanswered enquiries” may describe the same problem.
+
+Use natural language and clear topic coverage rather than stuffing repeated keyword variations.
+
+## Why it matters
+
+Exact wording is often an incomplete representation of a reader’s problem. Semantic retrieval can connect paraphrases and related concepts, but broad similarity can also blur important distinctions. Business systems should test relevance on actual tasks and exceptions.
+
+## Practical business example
+
+A search for “chasing unpaid invoices” finds the guide on “payment follow-up” but should not return unrelated sales-prospecting advice.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Represent or analyse the meaning of a query and candidate content.
+
+2. Retrieve candidates using semantic relevance, often combined with keyword signals.
+
+3. Filter and rank results according to the specific task and permitted source collection.
+
+## Core components
+
+- Query meaning
+
+- Candidate retrieval
+
+- Relevance assessment
+
+Semantic similarity cannot by itself distinguish a true statement from a misleading one.
+
+## Semantic search vs Embedding
+
+An embedding is a representation often used in semantic search. Semantic search is the retrieval approach; it can involve additional signals and ranking stages.
+
+## Frequently asked questions
+
+What does Semantic search mean?
+Semantic search retrieves information using meaning and context rather than only exact text matches. Systems may combine semantic matching with keyword search and other relevance signals.
+
+How is it different from Embedding?
+An embedding is a representation often used in semantic search. Semantic search is the retrieval approach; it can involve additional signals and ranking stages.
+
+What is a sensible first step for a small business?
+Use natural language and clear topic coverage rather than stuffing repeated keyword variations. Represent or analyse the meaning of a query and candidate content.
+
+What limitations should I keep in mind?
+Semantic similarity cannot by itself distinguish a true statement from a misleading one.
+
+## Sources
+
+Google Cloud: Retrieval-augmented generation: https://cloud.google.com/use-cases/retrieval-augmented-generation
+
+No rankings, AI citations or commercial outcomes are guaranteed.

@@ -1,0 +1,67 @@
+# What is AI referral traffic?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-referral-traffic.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+AI referral traffic is website traffic attributed to visits from AI products or their linked answers. Some referrals lack identifiable source information, so analytics may undercount them or classify them as direct traffic.
+
+## Analogy & mental model
+
+It counts people who arrive through a recommendation, when the introduction is still attached.
+
+Measure landing pages and qualified enquiries alongside identifiable AI referrers.
+
+## Why it matters
+
+Being quoted is not the same as receiving a useful visit. Referral data helps connect visibility with reader behaviour, but source identification can be incomplete. Landing pages and successful enquiries provide additional evidence without assuming every direct visit came from AI.
+
+## Practical business example
+
+A guide receives identifiable visits from an AI answer. The business checks whether those readers explore the matching service and successfully send an enquiry.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Capture available session-source information under the site’s consent rules.
+
+2. Identify known AI referrers and inspect their landing-page behaviour.
+
+3. Connect visits to successfully completed lead actions while acknowledging unattributed traffic.
+
+## Core components
+
+- Session attribution
+
+- Landing page
+
+- Completed lead event
+
+Analytics cannot reliably identify every AI-origin visit, particularly across copied links or privacy restrictions.
+
+## AI referral traffic vs Direct traffic
+
+Direct traffic often means no usable source was available. It can include many origins and should not be automatically reclassified as AI traffic.
+
+## Frequently asked questions
+
+What does AI referral traffic mean?
+AI referral traffic is website traffic attributed to visits from AI products or their linked answers. Some referrals lack identifiable source information, so analytics may undercount them or classify them as direct traffic.
+
+How is it different from Direct traffic?
+Direct traffic often means no usable source was available. It can include many origins and should not be automatically reclassified as AI traffic.
+
+What is a sensible first step for a small business?
+Measure landing pages and qualified enquiries alongside identifiable AI referrers. Capture available session-source information under the site’s consent rules.
+
+What limitations should I keep in mind?
+Analytics cannot reliably identify every AI-origin visit, particularly across copied links or privacy restrictions.
+
+## Sources
+
+Google Analytics: Traffic acquisition: https://support.google.com/analytics/answer/12923437
+
+No rankings, AI citations or commercial outcomes are guaranteed.

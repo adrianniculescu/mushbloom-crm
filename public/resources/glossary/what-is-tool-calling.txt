@@ -1,0 +1,67 @@
+# What is Tool calling?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-tool-calling.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Tool calling lets a model request an operation through a defined software interface, such as retrieving a record or drafting a calendar event. The application decides whether to execute the request and returns the result.
+
+## Analogy & mental model
+
+The assistant fills out a work order; a controlled service decides whether to perform it.
+
+Validate arguments, permissions and side effects before executing any model-proposed operation.
+
+## Why it matters
+
+A model cannot safely be given direct authority simply because it can express a function request. Tool calling separates the proposal from the execution layer. That separation lets a business enforce validation, limits and approval while still using AI to interpret requests.
+
+## Practical business example
+
+An assistant requests an available appointment slot. The calendar service returns real availability; the assistant cannot invent a booking that the service never accepted.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Describe a tool with clear arguments and permitted purpose.
+
+2. Receive a model-generated request and validate it against the user’s rights and business rules.
+
+3. Execute only an authorised operation and return its actual result to the model.
+
+## Core components
+
+- Tool schema
+
+- Application-side validation
+
+- Execution result
+
+Never treat model-provided identifiers, amounts or destinations as inherently trusted.
+
+## Tool calling vs Autonomous action
+
+A tool request is not necessarily an executed action. The application remains responsible for whether and how the request is carried out.
+
+## Frequently asked questions
+
+What does Tool calling mean?
+Tool calling lets a model request an operation through a defined software interface, such as retrieving a record or drafting a calendar event. The application decides whether to execute the request and returns the result.
+
+How is it different from Autonomous action?
+A tool request is not necessarily an executed action. The application remains responsible for whether and how the request is carried out.
+
+What is a sensible first step for a small business?
+Validate arguments, permissions and side effects before executing any model-proposed operation. Describe a tool with clear arguments and permitted purpose.
+
+What limitations should I keep in mind?
+Never treat model-provided identifiers, amounts or destinations as inherently trusted.
+
+## Sources
+
+OpenAI: Function calling: https://developers.openai.com/api/docs/guides/function-calling
+
+No rankings, AI citations or commercial outcomes are guaranteed.

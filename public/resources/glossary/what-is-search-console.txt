@@ -1,0 +1,67 @@
+# What is Google Search Console?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-search-console.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Google Search Console is Google’s service for verified website owners to inspect search performance, indexing and technical reports. It supplies evidence about Google Search, not a complete view of all AI engines or every lead.
+
+## Analogy & mental model
+
+It is a diagnostic panel showing how one search service sees your site.
+
+Verify ownership, submit the sitemap and inspect important pages before guessing about organic visibility.
+
+## Why it matters
+
+Visibility problems need evidence about discovery and indexing. Search Console can show how Google sees a verified site, while analytics shows what visitors do after arriving. Together they support diagnosis, but neither establishes performance in every AI product.
+
+## Practical business example
+
+An owner discovers that a guide is indexed but receives few impressions for buyer questions, so the next task differs from fixing a page that was never indexed.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Verify ownership of the intended site property.
+
+2. Submit the sitemap and inspect representative public URLs.
+
+3. Review queries, impressions, clicks and indexing reports to prioritise actual problems.
+
+## Core components
+
+- Verified property
+
+- URL inspection
+
+- Search and indexing reports
+
+Report availability can lag, and verifying one property does not automatically verify every domain variant.
+
+## Google Search Console vs Google Analytics
+
+Search Console reports Google search and indexing information. Analytics reports measured on-site activity and attribution; their scopes and counting methods differ.
+
+## Frequently asked questions
+
+What does Google Search Console mean?
+Google Search Console is Google’s service for verified website owners to inspect search performance, indexing and technical reports. It supplies evidence about Google Search, not a complete view of all AI engines or every lead.
+
+How is it different from Google Analytics?
+Search Console reports Google search and indexing information. Analytics reports measured on-site activity and attribution; their scopes and counting methods differ.
+
+What is a sensible first step for a small business?
+Verify ownership, submit the sitemap and inspect important pages before guessing about organic visibility. Verify ownership of the intended site property.
+
+What limitations should I keep in mind?
+Report availability can lag, and verifying one property does not automatically verify every domain variant.
+
+## Sources
+
+Google: Search Console introduction: https://developers.google.com/search/docs/monitor-debug/search-console-start
+
+No rankings, AI citations or commercial outcomes are guaranteed.

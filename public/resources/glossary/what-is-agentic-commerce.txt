@@ -1,0 +1,67 @@
+# What is Agentic commerce?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-agentic-commerce.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Agentic commerce describes buying journeys in which AI agents help discover products, compare options or carry out authorised purchasing tasks. The degree of automation varies; payment, identity and consent still need explicit controls.
+
+## Analogy & mental model
+
+A shopping assistant can shortlist options, but must operate within the buyer’s agreed budget and authority.
+
+Keep prices, availability and returns accurate, and make approval requirements explicit.
+
+## Why it matters
+
+AI assistance can change how customers compare and purchase products, but merchants still need trustworthy operational data. Accurate prices, availability and policies matter more than promotional wording. Businesses should distinguish recommendation-only experiences from workflows that can actually create orders or payments.
+
+## Practical business example
+
+An assistant shortlists compatible office supplies and prepares an order for the buyer to approve, rather than committing a company to unreviewed purchases.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. The buyer defines a need and may specify constraints such as budget or delivery requirements.
+
+2. An assistant finds and compares supported options using available product data.
+
+3. Any purchase proceeds through an authorised merchant and payment process, with explicit controls on commitment.
+
+## Core components
+
+- Product discovery
+
+- Comparison and buyer constraints
+
+- Authorised purchasing
+
+Do not assume all assistants, merchants or payment providers support the same capabilities.
+
+## Agentic commerce vs ACP
+
+Agentic commerce is the broad practice of agent-assisted buying. ACP is one specific checkout protocol; it does not cover every discovery channel, commercial negotiation or procurement process.
+
+## Frequently asked questions
+
+What does Agentic commerce mean?
+Agentic commerce describes buying journeys in which AI agents help discover products, compare options or carry out authorised purchasing tasks. The degree of automation varies; payment, identity and consent still need explicit controls.
+
+How is it different from ACP?
+Agentic commerce is the broad practice of agent-assisted buying. ACP is one specific checkout protocol; it does not cover every discovery channel, commercial negotiation or procurement process.
+
+What is a sensible first step for a small business?
+Keep prices, availability and returns accurate, and make approval requirements explicit. The buyer defines a need and may specify constraints such as budget or delivery requirements.
+
+What limitations should I keep in mind?
+Do not assume all assistants, merchants or payment providers support the same capabilities.
+
+## Sources
+
+Agentic Commerce Protocol: specification: https://www.agenticcommerce.dev/
+
+No rankings, AI citations or commercial outcomes are guaranteed.
