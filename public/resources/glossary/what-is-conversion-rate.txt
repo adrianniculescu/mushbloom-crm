@@ -1,0 +1,67 @@
+# What is Conversion rate?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-conversion-rate.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Conversion rate is the proportion of measured visits or interactions that complete a defined action. The denominator and action must be explicit; a booking-link click is not the same as a completed booking or a qualified enquiry.
+
+## Analogy & mental model
+
+It is the share of visitors who take the agreed next step, not everyone who looks at the doorway.
+
+Define qualified lead events and measure successful submissions separately from button clicks.
+
+## Why it matters
+
+Organic visits have business value only when the right readers can complete a useful next step. A clearly defined conversion reveals whether that step works. Mixing clicks, form starts and successful enquiries into one metric hides where the journey is failing.
+
+## Practical business example
+
+A business tracks accepted enquiry submissions and later qualifies them, while reporting booking-link clicks separately from bookings confirmed by the scheduling service.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Define the action and whether the denominator is users, sessions or another interaction.
+
+2. Record successful completion rather than only the intent to act.
+
+3. Review quality and source context, then compare like-for-like periods.
+
+## Core components
+
+- Defined action
+
+- Explicit denominator
+
+- Reliable completion event
+
+A higher rate with a much smaller or irrelevant audience does not automatically mean more qualified leads.
+
+## Conversion rate vs Click-through rate
+
+Click-through rate measures clicks relative to impressions or exposures. Conversion rate measures a defined completion relative to its declared starting population.
+
+## Frequently asked questions
+
+What does Conversion rate mean?
+Conversion rate is the proportion of measured visits or interactions that complete a defined action. The denominator and action must be explicit; a booking-link click is not the same as a completed booking or a qualified enquiry.
+
+How is it different from Click-through rate?
+Click-through rate measures clicks relative to impressions or exposures. Conversion rate measures a defined completion relative to its declared starting population.
+
+What is a sensible first step for a small business?
+Define qualified lead events and measure successful submissions separately from button clicks. Define the action and whether the denominator is users, sessions or another interaction.
+
+What limitations should I keep in mind?
+A higher rate with a much smaller or irrelevant audience does not automatically mean more qualified leads.
+
+## Sources
+
+Google Analytics: Traffic acquisition: https://support.google.com/analytics/answer/12923437
+
+No rankings, AI citations or commercial outcomes are guaranteed.

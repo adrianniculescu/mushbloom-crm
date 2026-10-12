@@ -1,0 +1,67 @@
+# What is Context window?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-context-window.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+A context window is the amount of input and output information a model can consider in one interaction, measured in tokens. A larger window does not guarantee that every supplied detail is used correctly.
+
+## Analogy & mental model
+
+It is the size of an assistant’s working desk, not their ability to remember every paper on it.
+
+Supply focused, relevant evidence rather than pasting an entire unfiltered company archive.
+
+## Why it matters
+
+Context limits affect how much evidence a model can use in a single interaction. Overloading the input can add cost and irrelevant material without improving accuracy. Good retrieval and concise instructions often matter more than selecting the largest available window.
+
+## Practical business example
+
+A support assistant receives the current returns policy and the customer’s order details instead of thousands of unrelated support tickets.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Estimate the space required by instructions, retrieved passages and expected output.
+
+2. Select evidence relevant to the current task rather than an entire archive.
+
+3. Test answers involving facts placed in different parts of the supplied context.
+
+## Core components
+
+- Input tokens
+
+- Output budget
+
+- Evidence selection
+
+Available context capacity does not guarantee reliable use of every detail.
+
+## Context window vs Knowledge base
+
+The knowledge base is the wider stored collection. The context window is the limited working information supplied during a particular model interaction.
+
+## Frequently asked questions
+
+What does Context window mean?
+A context window is the amount of input and output information a model can consider in one interaction, measured in tokens. A larger window does not guarantee that every supplied detail is used correctly.
+
+How is it different from Knowledge base?
+The knowledge base is the wider stored collection. The context window is the limited working information supplied during a particular model interaction.
+
+What is a sensible first step for a small business?
+Supply focused, relevant evidence rather than pasting an entire unfiltered company archive. Estimate the space required by instructions, retrieved passages and expected output.
+
+What limitations should I keep in mind?
+Available context capacity does not guarantee reliable use of every detail.
+
+## Sources
+
+Google Cloud: Retrieval-augmented generation: https://cloud.google.com/use-cases/retrieval-augmented-generation
+
+No rankings, AI citations or commercial outcomes are guaranteed.

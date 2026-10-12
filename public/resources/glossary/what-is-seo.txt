@@ -1,0 +1,67 @@
+# What is SEO (Search Engine Optimisation)?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-seo.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Search engine optimisation is the practice of helping search engines discover, understand and present useful website content to relevant users. It includes technical access, content quality and a usable website.
+
+## Analogy & mental model
+
+You make a shop easy to find, label what it sells and give visitors a reason to stay.
+
+Fix access and indexing first, then improve pages around real customer questions and conversions.
+
+## Why it matters
+
+Organic visibility begins with accessible, useful pages that match a real need. Traffic alone does not solve a business problem if readers cannot find the relevant offer or complete an enquiry. SEO should therefore connect technical evidence with the commercial journey.
+
+## Practical business example
+
+A service business resolves indexing issues, publishes answers to common buyer questions and tracks successfully submitted enquiries rather than only page views.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Check that important pages can be discovered, fetched and considered for indexing.
+
+2. Improve useful content, internal connections and the website’s clarity.
+
+3. Measure relevant search queries, landing-page behaviour and successful lead actions.
+
+## Core components
+
+- Technical access
+
+- Useful content
+
+- Performance measurement
+
+No agency can guarantee a search engine’s ranking decisions or a fixed number of organic leads.
+
+## SEO — Search Engine Optimisation vs Paid search
+
+SEO improves organic discoverability. Paid search buys placements through an advertising system; neither approach guarantees that a visitor becomes a customer.
+
+## Frequently asked questions
+
+What does SEO mean?
+Search engine optimisation is the practice of helping search engines discover, understand and present useful website content to relevant users. It includes technical access, content quality and a usable website.
+
+How is it different from Paid search?
+SEO improves organic discoverability. Paid search buys placements through an advertising system; neither approach guarantees that a visitor becomes a customer.
+
+What is a sensible first step for a small business?
+Fix access and indexing first, then improve pages around real customer questions and conversions. Check that important pages can be discovered, fetched and considered for indexing.
+
+What limitations should I keep in mind?
+No agency can guarantee a search engine’s ranking decisions or a fixed number of organic leads.
+
+## Sources
+
+Google: How Search works: https://developers.google.com/search/docs/fundamentals/how-search-works
+
+No rankings, AI citations or commercial outcomes are guaranteed.

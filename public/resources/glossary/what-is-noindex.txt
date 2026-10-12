@@ -1,0 +1,67 @@
+# What is noindex?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-noindex.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+noindex is a directive asking supporting search engines not to include a page in their index. They normally need to crawl the page to see it; blocking crawling can prevent them from reading the directive.
+
+## Analogy & mental model
+
+The book can be inspected, but its cover requests that it not appear in the public catalogue.
+
+Use noindex for appropriate public-but-non-search pages, and real authentication for private information.
+
+## Why it matters
+
+Not every publicly accessible page belongs in search. A deliberate noindex directive can exclude low-value or administrative-adjacent public pages while leaving them usable. Private information still needs actual access controls, because indexing instructions are not secrecy.
+
+## Practical business example
+
+A public confirmation page uses noindex, while an admin workspace requires authentication regardless of crawler rules.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Choose pages that should remain accessible but excluded from supporting search indexes.
+
+2. Serve the directive through a robots meta tag or supported HTTP header.
+
+3. Allow the engine to fetch the directive and inspect whether the intended exclusion takes effect.
+
+## Core components
+
+- Indexing directive
+
+- Crawl access to directive
+
+- Status inspection
+
+Do not apply a sitewide noindex when the intention is to exclude only one route.
+
+## noindex vs robots.txt
+
+robots.txt can stop compatible fetching. noindex asks for exclusion from an index and normally must be seen during fetching; blocking both can prevent the instruction from being read.
+
+## Frequently asked questions
+
+What does noindex mean?
+noindex is a directive asking supporting search engines not to include a page in their index. They normally need to crawl the page to see it; blocking crawling can prevent them from reading the directive.
+
+How is it different from robots.txt?
+robots.txt can stop compatible fetching. noindex asks for exclusion from an index and normally must be seen during fetching; blocking both can prevent the instruction from being read.
+
+What is a sensible first step for a small business?
+Use noindex for appropriate public-but-non-search pages, and real authentication for private information. Choose pages that should remain accessible but excluded from supporting search indexes.
+
+What limitations should I keep in mind?
+Do not apply a sitewide noindex when the intention is to exclude only one route.
+
+## Sources
+
+Google: Block indexing with noindex: https://developers.google.com/search/docs/crawling-indexing/block-indexing
+
+No rankings, AI citations or commercial outcomes are guaranteed.

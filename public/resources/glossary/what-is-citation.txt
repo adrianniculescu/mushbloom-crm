@@ -1,0 +1,67 @@
+# What is Citation in an AI answer?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-citation.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+An AI citation is a reference or link attached to a generated answer that attributes information to a source. A brand mention without a source link is not the same as a citation, and a citation does not prove the answer is accurate.
+
+## Analogy & mental model
+
+It is a footnote in a report, not merely your company name appearing in a sentence.
+
+Record the answer, query, engine, date and actual linked page when checking citations.
+
+## Why it matters
+
+A linked source gives readers a way to verify and explore an AI answer. For a business, relevance matters as much as frequency: a citation for a buyer’s implementation question is different from a passing historical reference. Links also need to support the actual claim being made.
+
+## Practical business example
+
+An answer about supervised AI links to a page explaining approval rules. The source is useful because the linked passage actually describes those rules.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Run a documented question in a specified engine and capture the answer.
+
+2. Inspect the source link and confirm that it points to your page.
+
+3. Check relevance, factual accuracy and whether a visit or enquiry follows.
+
+## Core components
+
+- Answer and query
+
+- Linked source URL
+
+- Claim-to-source relationship
+
+A source link can be misplaced or fail to support the generated claim.
+
+## Citation in an AI answer vs Brand mention
+
+A mention names a company. A citation attributes information to a source, usually through a link; the two require separate measurements.
+
+## Frequently asked questions
+
+What does Citation in an AI answer mean?
+An AI citation is a reference or link attached to a generated answer that attributes information to a source. A brand mention without a source link is not the same as a citation, and a citation does not prove the answer is accurate.
+
+How is it different from Brand mention?
+A mention names a company. A citation attributes information to a source, usually through a link; the two require separate measurements.
+
+What is a sensible first step for a small business?
+Record the answer, query, engine, date and actual linked page when checking citations. Run a documented question in a specified engine and capture the answer.
+
+What limitations should I keep in mind?
+A source link can be misplaced or fail to support the generated claim.
+
+## Sources
+
+Google: AI features and your website: https://developers.google.com/search/docs/appearance/ai-features
+
+No rankings, AI citations or commercial outcomes are guaranteed.

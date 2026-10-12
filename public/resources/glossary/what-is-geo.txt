@@ -1,0 +1,67 @@
+# What is GEO (Generative Engine Optimisation)?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-geo.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Generative engine optimisation is an industry term for improving the discoverability and usefulness of content in AI-generated responses. It overlaps with SEO and AEO; it is not a separate guaranteed ranking system.
+
+## Analogy & mental model
+
+GEO prepares your research to be useful when an assistant writes an answer from several sources.
+
+Publish clear definitions, original evidence and accessible supporting pages, then measure observed outcomes.
+
+## Why it matters
+
+Generated answers may combine several sources, so a useful page must contribute something clear and defensible. Original explanations, data and comparisons can provide that contribution. GEO work should be tied to observed discovery and business outcomes rather than promises to control a model’s recommendations.
+
+## Practical business example
+
+An agency publishes a comparison of supervised agent workflows and fixed automations, explaining where each is appropriate rather than claiming one is always superior.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Map the questions for which your expertise is genuinely relevant.
+
+2. Create accessible, evidence-backed content with clear definitions and relationships.
+
+3. Observe citations and referrals across a documented sample, then improve gaps.
+
+## Core components
+
+- Useful source material
+
+- Technical discoverability
+
+- Repeatable measurement
+
+Industry usage varies and no content pattern forces an engine to recommend a business.
+
+## GEO — Generative Engine Optimisation vs SEO
+
+SEO supports discovery in search results. GEO focuses on usefulness in generated responses; both depend on accessible content, relevance and credibility.
+
+## Frequently asked questions
+
+What does GEO mean?
+Generative engine optimisation is an industry term for improving the discoverability and usefulness of content in AI-generated responses. It overlaps with SEO and AEO; it is not a separate guaranteed ranking system.
+
+How is it different from SEO?
+SEO supports discovery in search results. GEO focuses on usefulness in generated responses; both depend on accessible content, relevance and credibility.
+
+What is a sensible first step for a small business?
+Publish clear definitions, original evidence and accessible supporting pages, then measure observed outcomes. Map the questions for which your expertise is genuinely relevant.
+
+What limitations should I keep in mind?
+Industry usage varies and no content pattern forces an engine to recommend a business.
+
+## Sources
+
+Google: AI features and your website: https://developers.google.com/search/docs/appearance/ai-features
+
+No rankings, AI citations or commercial outcomes are guaranteed.

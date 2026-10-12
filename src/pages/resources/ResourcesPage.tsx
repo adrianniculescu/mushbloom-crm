@@ -19,7 +19,7 @@ export default function ResourcesPage() {
         <div className="flex flex-col justify-center">
           <p className="text-primary text-xs uppercase tracking-wider">Resource 01 · Glossary · {glossaryTerms.length} terms</p>
           <h2 className="text-3xl font-bold mt-4 mb-4 font-['Space_Grotesk']"><Link to="/resources/aeo-geo-seo-glossary">The AEO, GEO & SEO glossary</Link></h2>
-          <p className="text-muted-foreground leading-relaxed">From answer engines to retrieval-augmented generation: original definitions, everyday analogies and practical examples for business owners.</p>
+          <p className="text-muted-foreground leading-relaxed">60 original guides from answer engines to agentic commerce: definitions, analogies, business examples, how each works, comparisons and FAQs.</p>
           <Button asChild className="mt-6 self-start"><Link to="/resources/aeo-geo-seo-glossary"><BookOpen /> Explore the glossary <ArrowRight /></Link></Button>
         </div>
       </article>

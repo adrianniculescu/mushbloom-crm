@@ -1,0 +1,67 @@
+# What is Prerendering?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-prerendering.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Prerendering creates ready-to-read HTML before a request, often during a site build. Unlike request-time rendering, the content stays as generated until refreshed or rebuilt; freshness and route coverage need management.
+
+## Analogy & mental model
+
+You print the handbook in advance rather than printing a new edition for each visitor.
+
+Regenerate pages when source content changes and verify every intended public URL.
+
+## Why it matters
+
+Stable reference content can be delivered as ready-made HTML without introducing a request-time server. That makes the definitions available to non-JavaScript readers. The trade-off is maintaining synchronisation so the generated edition does not become stale.
+
+## Practical business example
+
+A glossary produces a complete HTML guide for each term and regenerates all of them after a factual correction, alongside its text reference.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Generate HTML for every intended public reference URL from the same source content.
+
+2. Serve those files with the correct page text, metadata and links.
+
+3. Regenerate and validate the files whenever definitions or guide content change.
+
+## Core components
+
+- Build-time source
+
+- Static route output
+
+- Regeneration checks
+
+Do not show crawlers a different claim from the one visitors see. Generated and interactive editions must agree.
+
+## Prerendering vs SSR
+
+Prerendered files are prepared before requests. SSR renders at request time; both can provide initial HTML, but their freshness and infrastructure requirements differ.
+
+## Frequently asked questions
+
+What does Prerendering mean?
+Prerendering creates ready-to-read HTML before a request, often during a site build. Unlike request-time rendering, the content stays as generated until refreshed or rebuilt; freshness and route coverage need management.
+
+How is it different from SSR?
+Prerendered files are prepared before requests. SSR renders at request time; both can provide initial HTML, but their freshness and infrastructure requirements differ.
+
+What is a sensible first step for a small business?
+Regenerate pages when source content changes and verify every intended public URL. Generate HTML for every intended public reference URL from the same source content.
+
+What limitations should I keep in mind?
+Do not show crawlers a different claim from the one visitors see. Generated and interactive editions must agree.
+
+## Sources
+
+Google: JavaScript SEO basics: https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics
+
+No rankings, AI citations or commercial outcomes are guaranteed.

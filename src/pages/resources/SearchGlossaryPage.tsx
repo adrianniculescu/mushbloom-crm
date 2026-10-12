@@ -5,11 +5,11 @@ import Navigation from '@/components/Navigation';
 import ResourceMeta from '@/components/ResourceMeta';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { glossaryCategories, glossarySources, glossaryTerms } from '@/data/searchGlossary';
+import { glossaryCategories, glossarySources, glossaryTerms, termPath } from '@/data/searchGlossary';
 
 const base = 'https://mushbloom.uk/resources/aeo-geo-seo-glossary';
 const schema = { '@context': 'https://schema.org', '@graph': [
-  { '@type': 'DefinedTermSet', '@id': base, name: 'The AEO, GEO & SEO Glossary', url: base, description: 'Original definitions, analogies and practical examples for AI search and business automation.', inLanguage: 'en-GB', publisher: { '@id': 'https://mushbloom.uk/#organization' }, dateModified: '2026-10-12', hasDefinedTerm: glossaryTerms.map(t => ({ '@type': 'DefinedTerm', '@id': `${base}#${t.id}`, url: `${base}#${t.id}`, name: t.name, description: t.definition, inDefinedTermSet: base })) },
+  { '@type': 'DefinedTermSet', '@id': base, name: 'The AEO, GEO & SEO Glossary', url: base, description: 'Original definitions, analogies and practical examples for AI search and business automation.', inLanguage: 'en-GB', publisher: { '@id': 'https://mushbloom.uk/#organization' }, dateModified: '2026-10-12', hasDefinedTerm: glossaryTerms.map(t => ({ '@type': 'DefinedTerm', '@id': `https://mushbloom.uk${termPath(t.id)}#term`, url: `https://mushbloom.uk${termPath(t.id)}`, name: t.name, description: t.definition, inDefinedTermSet: base })) },
   { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://mushbloom.uk/' }, { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://mushbloom.uk/resources' }, { '@type': 'ListItem', position: 3, name: 'AEO, GEO & SEO Glossary', item: base }] },
 ] };
 
@@ -26,7 +26,7 @@ export default function SearchGlossaryPage() {
     try { await navigator.clipboard.writeText(`${base}#${id}`); setCopied(id); window.setTimeout(() => setCopied(''), 2000); } catch { setCopied(''); }
   }
   return <div className="resources-theme min-h-screen bg-background text-foreground">
-    <ResourceMeta title="AEO, GEO & SEO Glossary: 30 Clear Definitions | Mushbloom" description="Understand AEO, GEO, SEO, AI citations, RAG and AI agents with original definitions, simple analogies, business examples and linked sources." path="/resources/aeo-geo-seo-glossary" schema={schema} />
+    <ResourceMeta title="AEO, GEO & SEO Glossary: 60 Expert Guides | Mushbloom" description="Explore 60 original guides to AEO, GEO, SEO and AI agents: definitions, examples, how each works, comparisons, FAQs and primary sources." path="/resources/aeo-geo-seo-glossary" schema={schema} />
     <Navigation />
     <main className="max-w-6xl mx-auto px-5 sm:px-8 pt-28 pb-20">
       <Link to="/resources" className="inline-flex gap-2 items-center text-muted-foreground text-sm hover:text-primary"><ArrowLeft className="h-4 w-4" /> Resources</Link>
@@ -60,6 +60,7 @@ export default function SearchGlossaryPage() {
             <div className="flex items-start justify-between gap-3"><div className="min-w-0"><p className="text-xs text-primary mb-2">{t.category}</p><h2 className="text-2xl font-bold font-['Space_Grotesk'] break-words"><a href={`#${t.id}`}>{t.name}</a></h2></div><Button variant="ghost" size="icon" className="shrink-0" onClick={() => copyTerm(t.id)} aria-label={`Copy link to ${t.name}`} title={copied === t.id ? 'Copied' : 'Copy term link'}><LinkIcon /></Button></div>
             {copied === t.id && <p role="status" className="text-primary text-xs mt-2">Link copied</p>}
             <p className="mt-4 leading-relaxed">{t.definition}</p>
+            <Link to={termPath(t.id)} className="inline-flex items-center gap-2 text-primary mt-4 font-medium hover:underline">Read the full guide <ArrowRight className="h-4 w-4" /></Link>
             <dl className="mt-5 grid sm:grid-cols-2 gap-5 text-sm leading-relaxed"><div><dt className="font-semibold mb-1">Think of it this way</dt><dd className="text-muted-foreground">{t.analogy}</dd></div><div><dt className="font-semibold mb-1">For your business</dt><dd className="text-muted-foreground">{t.practical}</dd></div></dl>
             <p className="mt-5 text-xs text-muted-foreground">Reference: <a className="underline hover:text-primary" href={glossarySources[t.source].url} target="_blank" rel="noopener noreferrer">{glossarySources[t.source].name}</a></p>
             <p className="text-sm mt-4 flex flex-wrap gap-x-4 gap-y-2"><span className="text-muted-foreground">Related:</span>{t.related.map(id => <Link key={id} to={`#${id}`} onClick={reset} className="text-primary hover:underline">{glossaryTerms.find(x => x.id === id)?.name.split(' — ')[0]}</Link>)}</p>

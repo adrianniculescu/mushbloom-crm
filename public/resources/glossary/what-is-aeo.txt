@@ -1,0 +1,67 @@
+# What is AEO (Answer Engine Optimisation)?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-aeo.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Answer engine optimisation is the practice of making information easier for answer systems to find, understand and use when responding to a question. It covers clear answers, reliable evidence and accessible pages, not a guaranteed placement.
+
+## Analogy & mental model
+
+AEO is like giving a helpful librarian a precise answer with the right reference attached.
+
+Answer a real buyer question directly, then explain the evidence, limits and next step.
+
+## Why it matters
+
+Buyers increasingly ask complete questions rather than browse many supplier pages. A precise answer can help them understand your expertise before they contact you. The commercial value depends on answering a question that matters to your customers, not simply earning an isolated snippet.
+
+## Practical business example
+
+A bookkeeping business explains which documents a new client needs, then links to its onboarding service. The answer resolves uncertainty before the visitor makes contact.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Identify recurring questions from enquiries and sales calls, including objections and implementation concerns.
+
+2. Write a direct answer first, then add the evidence, conditions and a concrete example.
+
+3. Check that the page is accessible and measure whether readers continue to a relevant guide or service.
+
+## Core components
+
+- A specific reader question
+
+- A self-contained answer with evidence
+
+- A relevant next step
+
+Answer formatting alone cannot make inaccurate or unoriginal content authoritative.
+
+## AEO — Answer Engine Optimisation vs GEO
+
+AEO emphasises answering questions; GEO emphasises usefulness in generated answers that may combine several sources. They overlap with ordinary SEO rather than replacing it.
+
+## Frequently asked questions
+
+What does AEO mean?
+Answer engine optimisation is the practice of making information easier for answer systems to find, understand and use when responding to a question. It covers clear answers, reliable evidence and accessible pages, not a guaranteed placement.
+
+How is it different from GEO?
+AEO emphasises answering questions; GEO emphasises usefulness in generated answers that may combine several sources. They overlap with ordinary SEO rather than replacing it.
+
+What is a sensible first step for a small business?
+Answer a real buyer question directly, then explain the evidence, limits and next step. Identify recurring questions from enquiries and sales calls, including objections and implementation concerns.
+
+What limitations should I keep in mind?
+Answer formatting alone cannot make inaccurate or unoriginal content authoritative.
+
+## Sources
+
+Google: AI features and your website: https://developers.google.com/search/docs/appearance/ai-features
+
+No rankings, AI citations or commercial outcomes are guaranteed.

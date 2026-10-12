@@ -1,0 +1,67 @@
+# What is XML sitemap?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-sitemap.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+An XML sitemap lists preferred website URLs to help search engines discover pages. Submission is a discovery hint and does not guarantee crawling, indexing or ranking.
+
+## Analogy & mental model
+
+It is a catalogue of books you would like the library to consider, not confirmation they are on the shelf.
+
+List public canonical pages, keep the file current and inspect indexing in the relevant search tools.
+
+## Why it matters
+
+A sitemap provides a discoverable list of preferred public pages, especially when a site has many resources. It should represent the current site rather than every possible route. Search tools are still needed to establish which entries were actually crawled or indexed.
+
+## Practical business example
+
+A glossary adds a new guide URL to its sitemap after publishing the substantive guide, excluding private administrative routes.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. List valid public canonical URLs in the expected XML format.
+
+2. Publish the file and submit or reference it through suitable search tools.
+
+3. Review reported processing and page-level indexing rather than assuming success.
+
+## Core components
+
+- Canonical URL list
+
+- Valid XML
+
+- Discovery and inspection
+
+Submission is a hint, not confirmation of indexing, ranking or AI source selection.
+
+## XML sitemap vs Internal link
+
+A sitemap is a discovery list for crawlers. Internal links also provide reader navigation and contextual relationships between pages.
+
+## Frequently asked questions
+
+What does XML sitemap mean?
+An XML sitemap lists preferred website URLs to help search engines discover pages. Submission is a discovery hint and does not guarantee crawling, indexing or ranking.
+
+How is it different from Internal link?
+A sitemap is a discovery list for crawlers. Internal links also provide reader navigation and contextual relationships between pages.
+
+What is a sensible first step for a small business?
+List public canonical pages, keep the file current and inspect indexing in the relevant search tools. List valid public canonical URLs in the expected XML format.
+
+What limitations should I keep in mind?
+Submission is a hint, not confirmation of indexing, ranking or AI source selection.
+
+## Sources
+
+Google: How Search works: https://developers.google.com/search/docs/fundamentals/how-search-works
+
+No rankings, AI citations or commercial outcomes are guaranteed.

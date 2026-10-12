@@ -1,0 +1,67 @@
+# What is Internal link?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-internal-link.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+An internal link connects one page on a website to another page on the same website. Descriptive, crawlable links help readers navigate and search engines discover relationships between pages.
+
+## Analogy & mental model
+
+It is a signpost from one aisle of a shop to the next relevant aisle.
+
+Link definitions to detailed guides and guides to the relevant service when the connection is useful.
+
+## Why it matters
+
+A good internal link helps a visitor take the next relevant step and gives crawlers a route to additional pages. It should explain the relationship between content, not merely increase link volume. Broken or vague links interrupt both navigation and discovery.
+
+## Practical business example
+
+A short RAG definition links to the full implementation guide, which in turn points to the supervised-agent service where appropriate.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Choose a related destination that genuinely extends the current subject.
+
+2. Use a normal crawlable link with descriptive anchor text.
+
+3. Check the destination and keep the relationship relevant as content changes.
+
+## Core components
+
+- Source page
+
+- Descriptive anchor
+
+- Valid destination
+
+Avoid stuffing every paragraph with links or linking to pages that do not answer the implied question.
+
+## Internal link vs Sitemap
+
+An internal link supplies context within the reading experience. A sitemap lists URLs for discovery but does not explain every page relationship to visitors.
+
+## Frequently asked questions
+
+What does Internal link mean?
+An internal link connects one page on a website to another page on the same website. Descriptive, crawlable links help readers navigate and search engines discover relationships between pages.
+
+How is it different from Sitemap?
+An internal link supplies context within the reading experience. A sitemap lists URLs for discovery but does not explain every page relationship to visitors.
+
+What is a sensible first step for a small business?
+Link definitions to detailed guides and guides to the relevant service when the connection is useful. Choose a related destination that genuinely extends the current subject.
+
+What limitations should I keep in mind?
+Avoid stuffing every paragraph with links or linking to pages that do not answer the implied question.
+
+## Sources
+
+Google: Link best practices: https://developers.google.com/search/docs/crawling-indexing/links-crawlable
+
+No rankings, AI citations or commercial outcomes are guaranteed.

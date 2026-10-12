@@ -1,0 +1,67 @@
+# What is Canonical URL?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-canonical-url.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+A canonical URL is the preferred address for a page when similar content is available at multiple URLs. A canonical tag expresses a preference to search engines; it is a signal, not an access restriction.
+
+## Analogy & mental model
+
+It identifies the master edition when several copies of a document exist.
+
+Use one consistent public domain and point each original page’s canonical at its own preferred URL.
+
+## Why it matters
+
+Duplicate addresses can split reporting and make it harder for systems to identify the preferred version of content. A consistent canonical strategy clarifies the intended master page. It should work alongside redirects, internal links and sitemaps rather than contradicting them.
+
+## Practical business example
+
+A service page has tracking parameters from several campaigns, but all versions identify the clean service URL as the preferred address.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Identify duplicates such as parameter variants or alternate hostnames.
+
+2. Choose the preferred public URL and declare it with a canonical link.
+
+3. Align internal links and sitemap entries, then inspect the engine’s chosen canonical.
+
+## Core components
+
+- Preferred URL
+
+- Canonical declaration
+
+- Consistent linking signals
+
+Pointing every page to the homepage can erase the distinct identity of useful resource pages.
+
+## Canonical URL vs Redirect
+
+A redirect moves a visitor to another address. A canonical tag leaves the current page accessible and signals a preferred indexed version; engines may choose differently.
+
+## Frequently asked questions
+
+What does Canonical URL mean?
+A canonical URL is the preferred address for a page when similar content is available at multiple URLs. A canonical tag expresses a preference to search engines; it is a signal, not an access restriction.
+
+How is it different from Redirect?
+A redirect moves a visitor to another address. A canonical tag leaves the current page accessible and signals a preferred indexed version; engines may choose differently.
+
+What is a sensible first step for a small business?
+Use one consistent public domain and point each original page’s canonical at its own preferred URL. Identify duplicates such as parameter variants or alternate hostnames.
+
+What limitations should I keep in mind?
+Pointing every page to the homepage can erase the distinct identity of useful resource pages.
+
+## Sources
+
+Google: How Search works: https://developers.google.com/search/docs/fundamentals/how-search-works
+
+No rankings, AI citations or commercial outcomes are guaranteed.

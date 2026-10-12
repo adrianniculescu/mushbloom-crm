@@ -1,0 +1,67 @@
+# What is Featured snippet?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-featured-snippet.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+A featured snippet is a selected extract shown prominently in some Google search results to answer a query. Google chooses it from page content; it is distinct from an AI-generated summary.
+
+## Analogy & mental model
+
+It is a highlighted quotation from a book, rather than a new summary written from several books.
+
+Answer questions clearly while preserving context and avoiding unsupported claims.
+
+## Why it matters
+
+A well-structured passage can help a reader get an immediate answer. The same clarity should remain useful on the page when the reader visits for context. Optimising for an extract should not strip away conditions that are important to the answer.
+
+## Practical business example
+
+A guide gives a concise definition of indexing followed by an explanation of why an accessible page may still be absent from search.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Publish a clear passage answering a specific query.
+
+2. Google’s systems decide whether to use content as a featured snippet.
+
+3. Readers can inspect the source for explanation beyond the selected extract.
+
+## Core components
+
+- Answer passage
+
+- Engine selection
+
+- Source link
+
+There is no markup that guarantees a featured snippet. Avoid oversimplified answers that become misleading out of context.
+
+## Featured snippet vs AI Overview
+
+A snippet generally extracts page content. An AI Overview composes generated content that may use multiple sources, so it is a different feature.
+
+## Frequently asked questions
+
+What does Featured snippet mean?
+A featured snippet is a selected extract shown prominently in some Google search results to answer a query. Google chooses it from page content; it is distinct from an AI-generated summary.
+
+How is it different from AI Overview?
+A snippet generally extracts page content. An AI Overview composes generated content that may use multiple sources, so it is a different feature.
+
+What is a sensible first step for a small business?
+Answer questions clearly while preserving context and avoiding unsupported claims. Publish a clear passage answering a specific query.
+
+What limitations should I keep in mind?
+There is no markup that guarantees a featured snippet. Avoid oversimplified answers that become misleading out of context.
+
+## Sources
+
+Google: Featured snippets: https://developers.google.com/search/docs/appearance/featured-snippets
+
+No rankings, AI citations or commercial outcomes are guaranteed.

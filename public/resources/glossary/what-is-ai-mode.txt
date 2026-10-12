@@ -1,0 +1,67 @@
+# What is Google AI Mode?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-ai-mode.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Google AI Mode is a search experience that uses AI to support more complex queries and follow-up exploration, with links to relevant web sources. Its behaviour and availability can change independently of ordinary ranked results.
+
+## Analogy & mental model
+
+It is an ongoing research conversation rather than one fixed list of search results.
+
+Assess actual queries and linked sources rather than assuming a conventional ranking determines inclusion.
+
+## Why it matters
+
+A conversational search experience can explore a complex question across several dimensions. Businesses may appear through a supporting page even when the original wording differs from that page’s title. Useful depth and reliable evidence matter more than creating numerous shallow pages for every possible prompt.
+
+## Practical business example
+
+A buyer investigates AI tools for a service business and then asks about privacy and approval. A focused guide can contribute to the follow-up even if it was not the main introductory source.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. The user asks a question and may refine it through follow-up requests.
+
+2. Google’s systems retrieve information, potentially using multiple related searches.
+
+3. The experience generates an answer with links and continues the investigation as needed.
+
+## Core components
+
+- Conversational query
+
+- Retrieval across subtopics
+
+- Linked answer and follow-up
+
+Availability and behaviour can change. Ordinary indexing and helpful content remain important prerequisites.
+
+## Google AI Mode vs AI Overviews
+
+AI Overviews appear as summaries in some search results. AI Mode is a more conversational search experience; their eligibility and presentation should not be assumed identical.
+
+## Frequently asked questions
+
+What does Google AI Mode mean?
+Google AI Mode is a search experience that uses AI to support more complex queries and follow-up exploration, with links to relevant web sources. Its behaviour and availability can change independently of ordinary ranked results.
+
+How is it different from AI Overviews?
+AI Overviews appear as summaries in some search results. AI Mode is a more conversational search experience; their eligibility and presentation should not be assumed identical.
+
+What is a sensible first step for a small business?
+Assess actual queries and linked sources rather than assuming a conventional ranking determines inclusion. The user asks a question and may refine it through follow-up requests.
+
+What limitations should I keep in mind?
+Availability and behaviour can change. Ordinary indexing and helpful content remain important prerequisites.
+
+## Sources
+
+Google: AI features and your website: https://developers.google.com/search/docs/appearance/ai-features
+
+No rankings, AI citations or commercial outcomes are guaranteed.

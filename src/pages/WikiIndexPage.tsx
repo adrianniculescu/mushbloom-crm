@@ -17,7 +17,7 @@ const featuredGuides = [
     slug: 'aeo-geo-seo-glossary',
     path: '/resources/aeo-geo-seo-glossary',
     title: 'The AEO, GEO & SEO Glossary',
-    description: '30 original definitions with simple analogies, practical business examples and references for AI search, SEO and supervised AI systems.',
+    description: '60 original detailed guides with definitions, analogies, how each works, practical examples, comparisons, FAQs and primary references.',
     readTime: 'Reference library',
     tag: 'Resources & Definitions',
   },

@@ -1,0 +1,67 @@
+# What is Knowledge base?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-knowledge-base.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+A knowledge base is an organised collection of information that people or software can consult. For business AI, its source quality, freshness and access controls matter as much as the retrieval technology.
+
+## Analogy & mental model
+
+It is your company’s maintained reference library, not an unsorted folder of old files.
+
+Assign owners to policies, remove obsolete material and keep client information separated.
+
+## Why it matters
+
+AI systems can only rely on the evidence they are allowed to access. A maintained knowledge base helps prevent inconsistent policies and accidental disclosure. Its usefulness depends on ownership, versioning and permissions, not just the volume of material stored.
+
+## Practical business example
+
+A customer-service library separates public product guidance from private client records and gives the assistant access only to the relevant collection.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Collect approved documents and assign an owner to each important topic.
+
+2. Label access permissions, source provenance and review dates.
+
+3. Retrieve relevant items and retire obsolete or conflicting versions.
+
+## Core components
+
+- Curated documents
+
+- Permissions and provenance
+
+- Maintenance process
+
+An unfiltered archive can amplify outdated advice instead of creating a reliable company brain.
+
+## Knowledge base vs Context window
+
+A knowledge base is a persistent collection. The context window is the temporary subset a model can consider in a particular request.
+
+## Frequently asked questions
+
+What does Knowledge base mean?
+A knowledge base is an organised collection of information that people or software can consult. For business AI, its source quality, freshness and access controls matter as much as the retrieval technology.
+
+How is it different from Context window?
+A knowledge base is a persistent collection. The context window is the temporary subset a model can consider in a particular request.
+
+What is a sensible first step for a small business?
+Assign owners to policies, remove obsolete material and keep client information separated. Collect approved documents and assign an owner to each important topic.
+
+What limitations should I keep in mind?
+An unfiltered archive can amplify outdated advice instead of creating a reliable company brain.
+
+## Sources
+
+Google Cloud: Retrieval-augmented generation: https://cloud.google.com/use-cases/retrieval-augmented-generation
+
+No rankings, AI citations or commercial outcomes are guaranteed.

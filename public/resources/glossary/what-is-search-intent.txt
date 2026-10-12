@@ -1,0 +1,67 @@
+# What is Search intent?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-search-intent.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Search intent is the task or need behind a query, such as learning a concept, comparing suppliers or booking a service. Useful pages match that need rather than only repeating the query’s keywords.
+
+## Analogy & mental model
+
+Someone asking for a plumber needs different information from someone asking how a tap works.
+
+Separate educational resources from service pages and give each a relevant next step.
+
+## Why it matters
+
+A page can attract visitors without attracting customers if it answers the wrong stage of their journey. Intent clarifies whether a reader needs a definition, a comparison or a purchasing decision. Matching that need improves the usefulness of the page and its next step.
+
+## Practical business example
+
+A glossary explains what an agent is, while a service page explains scope, approval rules and how to request an assessment.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Collect the query and the likely task behind it.
+
+2. Choose a page format that resolves that task with appropriate depth.
+
+3. Offer a next step that follows naturally from the answer rather than interrupting it.
+
+## Core components
+
+- Reader task
+
+- Appropriate format
+
+- Relevant continuation
+
+Do not assume every informational search is a purchase-ready lead.
+
+## Search intent vs Keyword
+
+A keyword is the wording of a search. Intent is the underlying need, which may be shared by many different phrases.
+
+## Frequently asked questions
+
+What does Search intent mean?
+Search intent is the task or need behind a query, such as learning a concept, comparing suppliers or booking a service. Useful pages match that need rather than only repeating the query’s keywords.
+
+How is it different from Keyword?
+A keyword is the wording of a search. Intent is the underlying need, which may be shared by many different phrases.
+
+What is a sensible first step for a small business?
+Separate educational resources from service pages and give each a relevant next step. Collect the query and the likely task behind it.
+
+What limitations should I keep in mind?
+Do not assume every informational search is a purchase-ready lead.
+
+## Sources
+
+Google: Creating helpful, reliable content: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+No rankings, AI citations or commercial outcomes are guaranteed.

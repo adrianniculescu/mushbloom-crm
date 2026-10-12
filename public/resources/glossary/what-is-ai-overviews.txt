@@ -1,0 +1,67 @@
+# What is AI Overviews?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-ai-overviews.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+AI Overviews are Google Search features that produce AI-generated summaries for some searches and may include links to supporting web pages. Availability and source selection depend on the query and Google’s systems.
+
+## Analogy & mental model
+
+Instead of only a shelf of books, the librarian gives a summary and points to selected books.
+
+Maintain normal SEO eligibility and useful text; there is no special markup that guarantees inclusion.
+
+## Why it matters
+
+A summary can answer part of a search before the user reaches a website. That changes where discovery happens, but a cited page still needs to offer deeper value. Businesses should treat summary visibility as one observation, not proof that qualified traffic or revenue increased.
+
+## Practical business example
+
+A software buyer sees an overview of integration options and follows a source to inspect detailed limitations and implementation advice.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Google assesses a query and whether an AI summary is appropriate.
+
+2. Its systems retrieve relevant information and generate a response with selected links.
+
+3. Users may inspect those links or continue searching; source inclusion can vary between runs.
+
+## Core components
+
+- Query eligibility
+
+- Retrieved web evidence
+
+- Summary and supporting links
+
+Google does not require a special AI schema or an llms.txt file for these features.
+
+## AI Overviews vs Featured snippet
+
+A featured snippet extracts content from a selected page. An AI Overview generates a synthesis that may rely on several sources and is not the same search feature.
+
+## Frequently asked questions
+
+What does AI Overviews mean?
+AI Overviews are Google Search features that produce AI-generated summaries for some searches and may include links to supporting web pages. Availability and source selection depend on the query and Google’s systems.
+
+How is it different from Featured snippet?
+A featured snippet extracts content from a selected page. An AI Overview generates a synthesis that may rely on several sources and is not the same search feature.
+
+What is a sensible first step for a small business?
+Maintain normal SEO eligibility and useful text; there is no special markup that guarantees inclusion. Google assesses a query and whether an AI summary is appropriate.
+
+What limitations should I keep in mind?
+Google does not require a special AI schema or an llms.txt file for these features.
+
+## Sources
+
+Google: AI features and your website: https://developers.google.com/search/docs/appearance/ai-features
+
+No rankings, AI citations or commercial outcomes are guaranteed.

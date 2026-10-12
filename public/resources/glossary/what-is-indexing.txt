@@ -1,0 +1,67 @@
+# What is Indexing?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-indexing.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Indexing is the process of analysing and storing a page in a search engine’s index after discovery. A page can be crawlable but not indexed, and an indexed page is not guaranteed to rank or be cited.
+
+## Analogy & mental model
+
+The book has a catalogue entry; that does not mean it will be recommended to every reader.
+
+Use search engine inspection tools to confirm actual index status rather than inferring it from a sitemap.
+
+## Why it matters
+
+A publicly accessible page may still be absent from a search index. That can explain low discovery, but index status must be checked rather than inferred. Indexing is also not a quality endorsement or a promise of visibility for commercially useful queries.
+
+## Practical business example
+
+A newly published guide appears in the sitemap but URL inspection reports that it has not yet been indexed. The owner investigates that status rather than treating submission as success.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. The engine discovers and fetches a URL when its systems choose to crawl.
+
+2. It analyses content, canonical signals and indexing directives.
+
+3. It may store the preferred page and later select it for relevant searches.
+
+## Core components
+
+- Content analysis
+
+- Canonical selection
+
+- Index eligibility
+
+Crawl requests and sitemap submission cannot guarantee inclusion or timing.
+
+## Indexing vs Ranking
+
+Indexing means a page is stored and eligible for consideration. Ranking is its selection and placement for a particular search.
+
+## Frequently asked questions
+
+What does Indexing mean?
+Indexing is the process of analysing and storing a page in a search engine’s index after discovery. A page can be crawlable but not indexed, and an indexed page is not guaranteed to rank or be cited.
+
+How is it different from Ranking?
+Indexing means a page is stored and eligible for consideration. Ranking is its selection and placement for a particular search.
+
+What is a sensible first step for a small business?
+Use search engine inspection tools to confirm actual index status rather than inferring it from a sitemap. The engine discovers and fetches a URL when its systems choose to crawl.
+
+What limitations should I keep in mind?
+Crawl requests and sitemap submission cannot guarantee inclusion or timing.
+
+## Sources
+
+Google: How Search works: https://developers.google.com/search/docs/fundamentals/how-search-works
+
+No rankings, AI citations or commercial outcomes are guaranteed.

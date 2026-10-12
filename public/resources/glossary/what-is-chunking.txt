@@ -1,0 +1,67 @@
+# What is Chunking?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-chunking.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Chunking splits documents into smaller passages for retrieval or model processing. Useful boundaries preserve meaning and provenance; arbitrary cuts can separate an answer from its conditions or source.
+
+## Analogy & mental model
+
+You file a handbook by complete sections rather than tearing each page into equal strips.
+
+Keep headings, source identifiers and necessary surrounding context with each passage.
+
+## Why it matters
+
+Retrieval quality depends partly on what a passage contains. A chunk that omits a heading or qualification can look relevant while supporting the wrong answer. Good boundaries keep meaning, provenance and enough context together without overwhelming the model.
+
+## Practical business example
+
+A policy exception stays with its eligibility conditions, rather than becoming a standalone passage suggesting the exception applies to every customer.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Split source material along meaningful sections or logical units.
+
+2. Preserve headings, identifiers and needed surrounding context.
+
+3. Test questions whose answers depend on conditions crossing a potential boundary.
+
+## Core components
+
+- Passage boundaries
+
+- Source metadata
+
+- Context preservation
+
+Equal-size splitting is not automatically suitable for every document, table or policy.
+
+## Chunking vs Context window
+
+Chunking prepares candidate passages for retrieval. The context window limits how much selected material the model can consider in one interaction.
+
+## Frequently asked questions
+
+What does Chunking mean?
+Chunking splits documents into smaller passages for retrieval or model processing. Useful boundaries preserve meaning and provenance; arbitrary cuts can separate an answer from its conditions or source.
+
+How is it different from Context window?
+Chunking prepares candidate passages for retrieval. The context window limits how much selected material the model can consider in one interaction.
+
+What is a sensible first step for a small business?
+Keep headings, source identifiers and necessary surrounding context with each passage. Split source material along meaningful sections or logical units.
+
+What limitations should I keep in mind?
+Equal-size splitting is not automatically suitable for every document, table or policy.
+
+## Sources
+
+Google Cloud: Retrieval-augmented generation: https://cloud.google.com/use-cases/retrieval-augmented-generation
+
+No rankings, AI citations or commercial outcomes are guaranteed.

@@ -1,0 +1,67 @@
+# What is Workflow automation?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-workflow-automation.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Workflow automation connects steps in a business process so defined events trigger actions with less manual effort. AI may handle language or judgement within the workflow, while deterministic rules control the surrounding process.
+
+## Analogy & mental model
+
+A relay team passes the right information to the next person without repeatedly retyping it.
+
+Map the existing process, define exceptions and automate one measurable bottleneck first.
+
+## Why it matters
+
+Repetitive handoffs often cause delays, missing information and duplicated admin. Automation can make those handoffs more consistent, but a broken process becomes a faster broken process if nobody maps it first. Start with the bottleneck and its exceptions, then choose tools.
+
+## Practical business example
+
+A completed enquiry form creates a record, alerts the responsible person and schedules a reminder if no follow-up is logged. AI may draft a response without independently approving a quote.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Map the trigger, information inputs and required business outcome.
+
+2. Connect defined actions and use AI only where interpretation or language adds value.
+
+3. Track completion, route exceptions and improve the process using actual operational feedback.
+
+## Core components
+
+- Trigger and state
+
+- Actions and branching
+
+- Exceptions and ownership
+
+Avoid automating unclear ownership or sensitive actions without a review path.
+
+## Workflow automation vs AI agent
+
+Workflow automation can be entirely deterministic. An agent may choose actions within a workflow, but the surrounding process still defines allowed transitions and approvals.
+
+## Frequently asked questions
+
+What does Workflow automation mean?
+Workflow automation connects steps in a business process so defined events trigger actions with less manual effort. AI may handle language or judgement within the workflow, while deterministic rules control the surrounding process.
+
+How is it different from AI agent?
+Workflow automation can be entirely deterministic. An agent may choose actions within a workflow, but the surrounding process still defines allowed transitions and approvals.
+
+What is a sensible first step for a small business?
+Map the existing process, define exceptions and automate one measurable bottleneck first. Map the trigger, information inputs and required business outcome.
+
+What limitations should I keep in mind?
+Avoid automating unclear ownership or sensitive actions without a review path.
+
+## Sources
+
+OpenAI: Function calling: https://developers.openai.com/api/docs/guides/function-calling
+
+No rankings, AI citations or commercial outcomes are guaranteed.

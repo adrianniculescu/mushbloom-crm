@@ -1,0 +1,67 @@
+# What is Knowledge graph?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-knowledge-graph.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+A knowledge graph represents entities and relationships as connected data. Search systems can use such representations to distinguish people, businesses and concepts; publishing schema does not guarantee entry into a proprietary knowledge graph.
+
+## Analogy & mental model
+
+It is a map showing who is connected to what, rather than a list of repeated keywords.
+
+Keep identifying facts consistent and support relationships with credible sources.
+
+## Why it matters
+
+Relationships make it easier to distinguish a person, company or product from similarly named entities. A knowledge graph organises those connections, but proprietary search graphs have their own inclusion processes. Businesses should focus on consistent facts and supporting sources rather than claiming schema creates a knowledge panel.
+
+## Practical business example
+
+An organisation’s founder, services and official website are represented as connected facts rather than disconnected keyword strings.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Identify entities and their stable identifiers.
+
+2. Represent meaningful relationships and attributes with evidence.
+
+3. Keep relationships current and distinguish confirmed facts from uncertain associations.
+
+## Core components
+
+- Entities
+
+- Relationships
+
+- Attributes and evidence
+
+A site’s own graph or schema does not guarantee inclusion in Google’s or another provider’s proprietary graph.
+
+## Knowledge graph vs Knowledge base
+
+A knowledge base is a broader collection of information. A knowledge graph specifically represents entities and relationships; it may be one part of a knowledge system.
+
+## Frequently asked questions
+
+What does Knowledge graph mean?
+A knowledge graph represents entities and relationships as connected data. Search systems can use such representations to distinguish people, businesses and concepts; publishing schema does not guarantee entry into a proprietary knowledge graph.
+
+How is it different from Knowledge base?
+A knowledge base is a broader collection of information. A knowledge graph specifically represents entities and relationships; it may be one part of a knowledge system.
+
+What is a sensible first step for a small business?
+Keep identifying facts consistent and support relationships with credible sources. Identify entities and their stable identifiers.
+
+What limitations should I keep in mind?
+A site’s own graph or schema does not guarantee inclusion in Google’s or another provider’s proprietary graph.
+
+## Sources
+
+Google: Structured data introduction: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+
+No rankings, AI citations or commercial outcomes are guaranteed.

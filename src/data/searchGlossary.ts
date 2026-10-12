@@ -1,3 +1,5 @@
+import { additionalSearchTerms } from './additionalSearchTerms';
+
 export const glossarySources = {
   search: { name: 'Google: How Search works', url: 'https://developers.google.com/search/docs/fundamentals/how-search-works' },
   ai: { name: 'Google: AI features and your website', url: 'https://developers.google.com/search/docs/appearance/ai-features' },
@@ -6,6 +8,21 @@ export const glossarySources = {
   bots: { name: 'OpenAI: Overview of crawlers', url: 'https://developers.openai.com/api/docs/bots' },
   rag: { name: 'Google Cloud: Retrieval-augmented generation', url: 'https://cloud.google.com/use-cases/retrieval-augmented-generation' },
   llms: { name: 'The llms.txt community proposal', url: 'https://llmstxt.org/' },
+  acp: { name: 'Agentic Commerce Protocol: specification', url: 'https://www.agenticcommerce.dev/' },
+  a2a: { name: 'Agent2Agent protocol documentation', url: 'https://a2a-protocol.org/latest/' },
+  mcp: { name: 'Model Context Protocol documentation', url: 'https://modelcontextprotocol.io/docs/getting-started/intro' },
+  tools: { name: 'OpenAI: Function calling', url: 'https://developers.openai.com/api/docs/guides/function-calling' },
+  security: { name: 'OWASP: LLM application risks', url: 'https://genai.owasp.org/llm-top-10/' },
+  evals: { name: 'OpenAI: Evaluation best practices', url: 'https://developers.openai.com/api/docs/guides/evaluation-best-practices' },
+  analytics: { name: 'Google Analytics: Traffic acquisition', url: 'https://support.google.com/analytics/answer/12923437' },
+  snippets: { name: 'Google: Featured snippets', url: 'https://developers.google.com/search/docs/appearance/featured-snippets' },
+  links: { name: 'Google: Link best practices', url: 'https://developers.google.com/search/docs/crawling-indexing/links-crawlable' },
+  gsc: { name: 'Google: Search Console introduction', url: 'https://developers.google.com/search/docs/monitor-debug/search-console-start' },
+  bing: { name: 'Bing Webmaster Tools', url: 'https://www.bing.com/webmasters/about' },
+  indexnow: { name: 'IndexNow documentation', url: 'https://www.indexnow.org/documentation' },
+  noindex: { name: 'Google: Block indexing with noindex', url: 'https://developers.google.com/search/docs/crawling-indexing/block-indexing' },
+  javascript: { name: 'Google: JavaScript SEO basics', url: 'https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics' },
+  tuning: { name: 'OpenAI: Supervised fine-tuning', url: 'https://developers.openai.com/api/docs/guides/supervised-fine-tuning' },
 };
 export const glossaryCategories = ['All terms', 'AI search', 'SEO foundations', 'Technical SEO', 'LLMs & knowledge', 'AI agents'] as const;
 export interface GlossaryTerm {
@@ -44,4 +61,8 @@ export const glossaryTerms: GlossaryTerm[] = [
   { id: 'sitemap', name: 'XML sitemap', category: 'Technical SEO', definition: 'An XML sitemap lists preferred website URLs to help search engines discover pages. Submission is a discovery hint and does not guarantee crawling, indexing or ranking.', analogy: 'It is a catalogue of books you would like the library to consider, not confirmation they are on the shelf.', practical: 'List public canonical pages, keep the file current and inspect indexing in the relevant search tools.', source: 'search', related: ['indexing', 'crawlability', 'canonical-url'] },
   { id: 'structured-data', name: 'Structured data', category: 'Technical SEO', definition: 'Structured data is machine-readable markup describing page content and relationships using a shared vocabulary such as Schema.org. It should reflect visible, accurate content and does not guarantee rich results or AI citations.', analogy: 'It is a standardised label on the document, not extra evidence that the document is correct.', practical: 'Choose a valid type, match the visible content and validate the markup before publishing.', source: 'schema', related: ['entity', 'seo', 'ai-overviews'] },
 ] satisfies GlossaryTerm[];
+glossaryTerms.push(...additionalSearchTerms);
 glossaryTerms.sort((a, b) => a.name.localeCompare(b.name));
+
+export const glossaryPath = '/resources/aeo-geo-seo-glossary';
+export const termPath = (id: string) => `/resources/glossary/what-is-${id}.html`;

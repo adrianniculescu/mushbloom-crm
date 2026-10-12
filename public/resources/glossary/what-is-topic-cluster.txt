@@ -1,0 +1,67 @@
+# What is Topic cluster?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-topic-cluster.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+A topic cluster is an editorial organisation of a broad subject into a central page and linked supporting pages. The links help readers explore related questions; the structure alone does not establish expertise or rankings.
+
+## Analogy & mental model
+
+A handbook has an overview chapter and focused chapters that refer to each other.
+
+Assign each page a distinct reader need and avoid multiple pages competing to answer the same question.
+
+## Why it matters
+
+A coherent set of guides helps readers move from a broad question to a specific decision. The benefit comes from distinct, useful coverage and sensible connections. Publishing many thin pages under one topic is not equivalent to building expertise.
+
+## Practical business example
+
+An AI automation hub links to guides on agent permissions, retrieval, approval and evaluation, each resolving a different implementation question.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Choose a broad reader need and identify genuinely different supporting questions.
+
+2. Create an overview and focused pages that each contribute substantive information.
+
+3. Link pages contextually and update overlapping or obsolete material.
+
+## Core components
+
+- Overview page
+
+- Distinct supporting guides
+
+- Contextual internal links
+
+A larger page count does not compensate for duplication, weak sourcing or missing original insight.
+
+## Topic cluster vs Keyword cannibalisation
+
+A cluster gives pages distinct roles. Cannibalisation describes problematic overlap where multiple pages compete to fulfil essentially the same need.
+
+## Frequently asked questions
+
+What does Topic cluster mean?
+A topic cluster is an editorial organisation of a broad subject into a central page and linked supporting pages. The links help readers explore related questions; the structure alone does not establish expertise or rankings.
+
+How is it different from Keyword cannibalisation?
+A cluster gives pages distinct roles. Cannibalisation describes problematic overlap where multiple pages compete to fulfil essentially the same need.
+
+What is a sensible first step for a small business?
+Assign each page a distinct reader need and avoid multiple pages competing to answer the same question. Choose a broad reader need and identify genuinely different supporting questions.
+
+What limitations should I keep in mind?
+A larger page count does not compensate for duplication, weak sourcing or missing original insight.
+
+## Sources
+
+Google: Creating helpful, reliable content: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+
+No rankings, AI citations or commercial outcomes are guaranteed.

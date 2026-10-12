@@ -1,0 +1,67 @@
+# What is Query fan-out?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-query-fan-out.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Query fan-out is a retrieval technique in which a system expands a user’s question into multiple related searches. The results can help build a broader answer than a single literal query would retrieve.
+
+## Analogy & mental model
+
+A researcher divides a big question into smaller questions before writing the final briefing.
+
+Cover meaningful subtopics and comparisons, without manufacturing near-duplicate pages for every phrase.
+
+## Why it matters
+
+Complex questions often require evidence about several subtopics. Query expansion can surface sources beyond the original phrasing. The content response is to explain meaningful aspects thoroughly, not to generate a near-duplicate page for every imagined variation.
+
+## Practical business example
+
+A request about adopting AI agents expands into questions about permissions, costs, tools and staff oversight. Separate useful guides may contribute different parts of the answer.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Interpret the original request and identify useful subquestions.
+
+2. Run related searches or retrieval operations for those subquestions.
+
+3. Combine selected evidence while preserving distinctions and checking consistency.
+
+## Core components
+
+- Original question
+
+- Related query set
+
+- Evidence synthesis
+
+Website owners do not control an engine’s expansion choices or which sources it selects.
+
+## Query fan-out vs Keyword variation
+
+Keyword variation changes wording. Query fan-out decomposes the information need into related searches that can explore different aspects of the task.
+
+## Frequently asked questions
+
+What does Query fan-out mean?
+Query fan-out is a retrieval technique in which a system expands a user’s question into multiple related searches. The results can help build a broader answer than a single literal query would retrieve.
+
+How is it different from Keyword variation?
+Keyword variation changes wording. Query fan-out decomposes the information need into related searches that can explore different aspects of the task.
+
+What is a sensible first step for a small business?
+Cover meaningful subtopics and comparisons, without manufacturing near-duplicate pages for every phrase. Interpret the original request and identify useful subquestions.
+
+What limitations should I keep in mind?
+Website owners do not control an engine’s expansion choices or which sources it selects.
+
+## Sources
+
+Google: AI features and your website: https://developers.google.com/search/docs/appearance/ai-features
+
+No rankings, AI citations or commercial outcomes are guaranteed.

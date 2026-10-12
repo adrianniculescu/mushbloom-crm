@@ -1,0 +1,67 @@
+# What is Grounding?
+
+Source: https://mushbloom.uk/resources/glossary/what-is-grounding.html
+
+By Mushbloom. Published and updated: 2026-10-12.
+
+## Definition & overview
+
+Grounding connects a model’s response to supplied or retrieved evidence. It can improve factual reliability, but the evidence may still be incomplete, outdated or misinterpreted.
+
+## Analogy & mental model
+
+The assistant checks the company handbook rather than guessing the policy.
+
+Use approved current sources, preserve references and review high-impact answers.
+
+## Why it matters
+
+Business answers must reflect actual policies, products and customer records, not a model’s plausible assumptions. Grounding connects output to usable evidence. It reduces some uncertainty but still requires checks that the selected evidence is current and that the generated answer follows it.
+
+## Practical business example
+
+A support answer uses the current delivery policy and explicitly says when the available documents do not cover an exception.
+
+Illustrative scenario, not a client case study or promised result.
+
+## How it works
+
+1. Retrieve or supply approved material relevant to the request.
+
+2. Ask the model to base its answer on that evidence and preserve references.
+
+3. Check unsupported claims and route missing or conflicting evidence for review.
+
+## Core components
+
+- Approved source material
+
+- Evidence-to-answer link
+
+- Verification
+
+A response can cite a real source yet draw the wrong conclusion from it.
+
+## Grounding vs RAG
+
+RAG is a retrieval-and-generation architecture. Grounding is the goal of anchoring claims to evidence and can also use directly supplied documents.
+
+## Frequently asked questions
+
+What does Grounding mean?
+Grounding connects a model’s response to supplied or retrieved evidence. It can improve factual reliability, but the evidence may still be incomplete, outdated or misinterpreted.
+
+How is it different from RAG?
+RAG is a retrieval-and-generation architecture. Grounding is the goal of anchoring claims to evidence and can also use directly supplied documents.
+
+What is a sensible first step for a small business?
+Use approved current sources, preserve references and review high-impact answers. Retrieve or supply approved material relevant to the request.
+
+What limitations should I keep in mind?
+A response can cite a real source yet draw the wrong conclusion from it.
+
+## Sources
+
+Google Cloud: Retrieval-augmented generation: https://cloud.google.com/use-cases/retrieval-augmented-generation
+
+No rankings, AI citations or commercial outcomes are guaranteed.
