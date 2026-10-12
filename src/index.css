@@ -115,6 +115,10 @@
     --ring: 213 94% 70%;
     letter-spacing: 0;
   }
+
+  .resources-theme h1, .resources-theme h2, .resources-theme h3 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
 }
 
 @layer base {

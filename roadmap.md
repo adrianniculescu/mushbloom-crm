@@ -7,5 +7,5 @@
 - [ ] Phase 3 client logins (later, by request).
 
 ## Resources launch
-- [ ] Add Resources hub and original, sourced AI search glossary with search, categories and A–Z navigation.
-- [ ] Connect navigation, Wiki, discovery files and a plain-text reference; verify the reader flow.
+- [x] Add Resources hub and original, sourced AI search glossary with search, categories and A–Z navigation.
+- [x] Connect navigation, Wiki, discovery files and a plain-text reference; verify the reader flow.
