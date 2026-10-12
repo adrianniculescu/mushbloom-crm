@@ -1,0 +1,277 @@
+# The AEO, GEO & SEO Glossary | Mushbloom
+
+Source: https://mushbloom.uk/resources/aeo-geo-seo-glossary
+
+Updated: 2026-10-12
+
+Original Mushbloom definitions and illustrative examples. SEO/AEO/GEO practices overlap; citations and rankings are not guaranteed. Industry labels vary.
+
+## AEO — Answer Engine Optimisation
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#aeo
+Category: AI search
+Definition: Answer engine optimisation is the practice of making information easier for answer systems to find, understand and use when responding to a question. It covers clear answers, reliable evidence and accessible pages, not a guaranteed placement.
+Analogy: AEO is like giving a helpful librarian a precise answer with the right reference attached.
+For your business: Answer a real buyer question directly, then explain the evidence, limits and next step.
+Reference: https://developers.google.com/search/docs/appearance/ai-features
+Related terms: geo, seo, citation
+
+## AI agent
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#ai-agent
+Category: AI agents
+Definition: An AI agent is a software system that uses a model to choose actions and interact with tools toward a defined goal. Its access, instructions and approval boundaries determine what it can safely do.
+Analogy: Think of a junior assistant with a task list and a restricted set of keys—not an unsupervised employee.
+For your business: Define the agent’s role, approved data, tools and escalation rules before connecting business accounts.
+Reference: https://cloud.google.com/use-cases/retrieval-augmented-generation
+Related terms: human-in-the-loop, grounding, rag
+
+## AI Overviews
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#ai-overviews
+Category: AI search
+Definition: AI Overviews are Google Search features that produce AI-generated summaries for some searches and may include links to supporting web pages. Availability and source selection depend on the query and Google’s systems.
+Analogy: Instead of only a shelf of books, the librarian gives a summary and points to selected books.
+For your business: Maintain normal SEO eligibility and useful text; there is no special markup that guarantees inclusion.
+Reference: https://developers.google.com/search/docs/appearance/ai-features
+Related terms: geo, indexing, structured-data
+
+## AI search
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#ai-search
+Category: AI search
+Definition: AI search combines information retrieval with AI-generated answers. A system may search the web or a knowledge collection, select evidence and compose a response; not every model answer uses live search.
+Analogy: A researcher collects documents before writing a briefing rather than answering from memory alone.
+For your business: Separate live-search citations from model-only brand mentions when measuring visibility.
+Reference: https://developers.google.com/search/docs/appearance/ai-features
+Related terms: citation, rag, llm
+
+## Backlink
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#backlink
+Category: SEO foundations
+Definition: A backlink is a link from another website to a page on your website. Relevant editorial links can help discovery and contribute to search signals; a link is not proof of expertise by itself.
+Analogy: It is a reference from another publication, rather than a claim printed in your own brochure.
+For your business: Earn links through useful original work and genuine partnerships, not purchased ranking schemes.
+Reference: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+Related terms: seo, entity, citation
+
+## Canonical URL
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#canonical-url
+Category: Technical SEO
+Definition: A canonical URL is the preferred address for a page when similar content is available at multiple URLs. A canonical tag expresses a preference to search engines; it is a signal, not an access restriction.
+Analogy: It identifies the master edition when several copies of a document exist.
+For your business: Use one consistent public domain and point each original page’s canonical at its own preferred URL.
+Reference: https://developers.google.com/search/docs/fundamentals/how-search-works
+Related terms: indexing, sitemap, seo
+
+## Citation in an AI answer
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#citation
+Category: AI search
+Definition: An AI citation is a reference or link attached to a generated answer that attributes information to a source. A brand mention without a source link is not the same as a citation, and a citation does not prove the answer is accurate.
+Analogy: It is a footnote in a report, not merely your company name appearing in a sentence.
+For your business: Record the answer, query, engine, date and actual linked page when checking citations.
+Reference: https://developers.google.com/search/docs/appearance/ai-features
+Related terms: ai-search, grounding, share-of-model
+
+## Context window
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#context-window
+Category: LLMs & knowledge
+Definition: A context window is the amount of input and output information a model can consider in one interaction, measured in tokens. A larger window does not guarantee that every supplied detail is used correctly.
+Analogy: It is the size of an assistant’s working desk, not their ability to remember every paper on it.
+For your business: Supply focused, relevant evidence rather than pasting an entire unfiltered company archive.
+Reference: https://cloud.google.com/use-cases/retrieval-augmented-generation
+Related terms: llm, rag, knowledge-base
+
+## Crawlability
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#crawlability
+Category: Technical SEO
+Definition: Crawlability is the ability of a crawler to discover and fetch a website’s pages. Links, server responses, access controls and crawler rules affect it; being crawlable does not mean a page is indexed.
+Analogy: The library door is open, but your book has not necessarily been catalogued.
+For your business: Check page responses and crawler access before diagnosing ranking or citation problems.
+Reference: https://developers.google.com/search/docs/fundamentals/how-search-works
+Related terms: indexing, robots-txt, sitemap
+
+## E-E-A-T
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#eeat
+Category: SEO foundations
+Definition: E-E-A-T stands for experience, expertise, authoritativeness and trustworthiness. Google uses these concepts in quality evaluation guidance; they are not a single score you can add to a page.
+Analogy: A reader asks who wrote the advice, what they know and whether the evidence is trustworthy.
+For your business: Show genuine experience, accurate author information, sources and named case studies where permission exists.
+Reference: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+Related terms: entity, backlink, seo
+
+## Embedding
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#embedding
+Category: LLMs & knowledge
+Definition: An embedding is a numerical representation of content used to compare patterns of meaning. Retrieval systems can use embeddings to find relevant passages even when wording differs; similarity does not establish factual correctness.
+Analogy: It is a map that places related ideas near each other, not a stamp saying they are true.
+For your business: Use retrieval tests and source checks alongside semantic matching.
+Reference: https://cloud.google.com/use-cases/retrieval-augmented-generation
+Related terms: rag, semantic-search, knowledge-base
+
+## Entity
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#entity
+Category: SEO foundations
+Definition: An entity is an identifiable person, organisation, place, product or concept. Consistent names, relationships and supporting information help readers and search systems distinguish one entity from another.
+Analogy: It is a complete business record rather than a name with no identifying details.
+For your business: Keep your company name, founder, services, domain and contact details consistent across credible profiles.
+Reference: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+Related terms: structured-data, eeat, geo
+
+## GEO — Generative Engine Optimisation
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#geo
+Category: AI search
+Definition: Generative engine optimisation is an industry term for improving the discoverability and usefulness of content in AI-generated responses. It overlaps with SEO and AEO; it is not a separate guaranteed ranking system.
+Analogy: GEO prepares your research to be useful when an assistant writes an answer from several sources.
+For your business: Publish clear definitions, original evidence and accessible supporting pages, then measure observed outcomes.
+Reference: https://developers.google.com/search/docs/appearance/ai-features
+Related terms: aeo, seo, citation
+
+## Grounding
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#grounding
+Category: LLMs & knowledge
+Definition: Grounding connects a model’s response to supplied or retrieved evidence. It can improve factual reliability, but the evidence may still be incomplete, outdated or misinterpreted.
+Analogy: The assistant checks the company handbook rather than guessing the policy.
+For your business: Use approved current sources, preserve references and review high-impact answers.
+Reference: https://cloud.google.com/use-cases/retrieval-augmented-generation
+Related terms: rag, hallucination, citation
+
+## Hallucination
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#hallucination
+Category: LLMs & knowledge
+Definition: A hallucination is an AI-generated statement that is unsupported or incorrect but may sound plausible. It can include invented facts, sources or quotations, even when the answer is confidently written.
+Analogy: An assistant fills a gap in a report with a convincing guess instead of saying they do not know.
+For your business: Verify factual claims and source links before sending advice or publishing client content.
+Reference: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+Related terms: grounding, human-in-the-loop, llm
+
+## Human in the loop
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#human-in-the-loop
+Category: AI agents
+Definition: Human-in-the-loop design places a person at defined review or decision points in an AI workflow. The person can approve, correct or reject actions before they create material consequences.
+Analogy: An assistant drafts a proposal, but the business owner signs it before it goes out.
+For your business: Require approval for sensitive messages, legal decisions, spending and changes to production data.
+Reference: https://cloud.google.com/use-cases/retrieval-augmented-generation
+Related terms: ai-agent, grounding, hallucination
+
+## Indexing
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#indexing
+Category: Technical SEO
+Definition: Indexing is the process of analysing and storing a page in a search engine’s index after discovery. A page can be crawlable but not indexed, and an indexed page is not guaranteed to rank or be cited.
+Analogy: The book has a catalogue entry; that does not mean it will be recommended to every reader.
+For your business: Use search engine inspection tools to confirm actual index status rather than inferring it from a sitemap.
+Reference: https://developers.google.com/search/docs/fundamentals/how-search-works
+Related terms: crawlability, sitemap, canonical-url
+
+## Knowledge base
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#knowledge-base
+Category: LLMs & knowledge
+Definition: A knowledge base is an organised collection of information that people or software can consult. For business AI, its source quality, freshness and access controls matter as much as the retrieval technology.
+Analogy: It is your company’s maintained reference library, not an unsorted folder of old files.
+For your business: Assign owners to policies, remove obsolete material and keep client information separated.
+Reference: https://cloud.google.com/use-cases/retrieval-augmented-generation
+Related terms: rag, grounding, ai-agent
+
+## LLM — Large Language Model
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#llm
+Category: LLMs & knowledge
+Definition: A large language model is a model trained on large amounts of data to process and generate language. Its generated text is not necessarily a database lookup or a live web search.
+Analogy: It is a skilled language assistant, not an always-current encyclopaedia.
+For your business: Give the model reliable context and check important output rather than assuming fluency equals accuracy.
+Reference: https://cloud.google.com/use-cases/retrieval-augmented-generation
+Related terms: rag, hallucination, ai-search
+
+## LLM SEO
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#llm-seo
+Category: AI search
+Definition: LLM SEO is an industry label for work aimed at helping a brand or its content be discovered and represented accurately in language-model-based answers. Usage varies and often overlaps with AEO and GEO.
+Analogy: It extends your visibility work from lists of links to answers that discuss your business.
+For your business: Define which engines, queries and outcomes you measure before claiming an improvement.
+Reference: https://developers.google.com/search/docs/appearance/ai-features
+Related terms: geo, aeo, share-of-model
+
+## llms.txt
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#llms-txt
+Category: Technical SEO
+Definition: llms.txt is a community proposal for a Markdown file that summarises a site and links to useful content for language-model tools. It is not a universal crawler standard, access-control file or guaranteed citation signal.
+Analogy: It is a suggested reading list for an assistant, not a compulsory invitation or a security gate.
+For your business: Maintain it as a helpful reference, but prioritise accessible pages, evidence and real search measurement.
+Reference: https://llmstxt.org/
+Related terms: robots-txt, sitemap, geo
+
+## OAI-SearchBot
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#oai-searchbot
+Category: Technical SEO
+Definition: OAI-SearchBot is OpenAI’s crawler for its search features. It has a different purpose from GPTBot, which relates to model training; crawler access does not guarantee a citation.
+Analogy: One researcher gathers references for answers; another gathers material for training.
+For your business: Review search and training crawler preferences separately and check that your hosting does not block intended access.
+Reference: https://developers.openai.com/api/docs/bots
+Related terms: robots-txt, crawlability, ai-search
+
+## RAG — Retrieval-Augmented Generation
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#rag
+Category: LLMs & knowledge
+Definition: Retrieval-augmented generation is an approach that retrieves relevant information from external sources and supplies it to a model when generating a response. It can provide current or specialised context without retraining the model.
+Analogy: The assistant pulls the relevant handbook pages before answering your question.
+For your business: Test whether the right evidence is retrieved and whether the answer actually follows it.
+Reference: https://cloud.google.com/use-cases/retrieval-augmented-generation
+Related terms: grounding, knowledge-base, embedding
+
+## robots.txt
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#robots-txt
+Category: Technical SEO
+Definition: robots.txt is a file that gives compatible crawlers instructions about which paths they may crawl. It is not authentication and does not reliably hide private information or remove indexed URLs.
+Analogy: It is a sign asking visitors where not to walk, not a locked door.
+For your business: Protect private data with real access controls and manage indexing separately from crawl preferences.
+Reference: https://developers.google.com/search/docs/fundamentals/how-search-works
+Related terms: crawlability, indexing, oai-searchbot
+
+## Search intent
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#search-intent
+Category: SEO foundations
+Definition: Search intent is the task or need behind a query, such as learning a concept, comparing suppliers or booking a service. Useful pages match that need rather than only repeating the query’s keywords.
+Analogy: Someone asking for a plumber needs different information from someone asking how a tap works.
+For your business: Separate educational resources from service pages and give each a relevant next step.
+Reference: https://developers.google.com/search/docs/fundamentals/creating-helpful-content
+Related terms: seo, aeo, semantic-search
+
+## Semantic search
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#semantic-search
+Category: LLMs & knowledge
+Definition: Semantic search retrieves information using meaning and context rather than only exact text matches. Systems may combine semantic matching with keyword search and other relevance signals.
+Analogy: A librarian understands that “missed leads” and “unanswered enquiries” may describe the same problem.
+For your business: Use natural language and clear topic coverage rather than stuffing repeated keyword variations.
+Reference: https://cloud.google.com/use-cases/retrieval-augmented-generation
+Related terms: embedding, search-intent, rag
+
+## SEO — Search Engine Optimisation
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#seo
+Category: SEO foundations
+Definition: Search engine optimisation is the practice of helping search engines discover, understand and present useful website content to relevant users. It includes technical access, content quality and a usable website.
+Analogy: You make a shop easy to find, label what it sells and give visitors a reason to stay.
+For your business: Fix access and indexing first, then improve pages around real customer questions and conversions.
+Reference: https://developers.google.com/search/docs/fundamentals/how-search-works
+Related terms: aeo, geo, indexing
+
+## Share of Model (SOM)
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#share-of-model
+Category: AI search
+Definition: Share of Model is a practitioner-defined measure of brand presence across a chosen sample of AI answers. In Mushbloom’s LLMboost work, it is used to compare visibility across a documented query set; it is not a universal engine-provided score.
+Analogy: It is a survey of which brands are mentioned in a selected set of conversations, not a census of every answer.
+For your business: State the prompts, engines, dates, sample size and whether you count mentions or linked citations.
+Reference: https://developers.google.com/search/docs/appearance/ai-features
+Related terms: citation, llm-seo, geo
+
+## Structured data
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#structured-data
+Category: Technical SEO
+Definition: Structured data is machine-readable markup describing page content and relationships using a shared vocabulary such as Schema.org. It should reflect visible, accurate content and does not guarantee rich results or AI citations.
+Analogy: It is a standardised label on the document, not extra evidence that the document is correct.
+For your business: Choose a valid type, match the visible content and validate the markup before publishing.
+Reference: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
+Related terms: entity, seo, ai-overviews
+
+## XML sitemap
+URL: https://mushbloom.uk/resources/aeo-geo-seo-glossary#sitemap
+Category: Technical SEO
+Definition: An XML sitemap lists preferred website URLs to help search engines discover pages. Submission is a discovery hint and does not guarantee crawling, indexing or ranking.
+Analogy: It is a catalogue of books you would like the library to consider, not confirmation they are on the shelf.
+For your business: List public canonical pages, keep the file current and inspect indexing in the relevant search tools.
+Reference: https://developers.google.com/search/docs/fundamentals/how-search-works
+Related terms: indexing, crawlability, canonical-url
