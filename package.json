@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "generate:glossary": "bun scripts/generate-glossary.ts",
+    "generate:myths": "bun scripts/generate-myths.ts",
     "test:glossary": "bun test src/data/glossary.test.mjs",
     "dev": "vite",
     "build": "vite build",
