@@ -5,3 +5,7 @@
 - [ ] Verify completed TidyCal bookings after account-side GA4 integration (blocked: TidyCal account access).
 - [ ] Connect Google Search Console and inspect indexing data (blocked: account connection).- [x] Admin workspace in CMS (admin-only), Projects, AI Tools, Brain; public /automate intake page + homepage section.
 - [ ] Phase 3 client logins (later, by request).
+
+## Resources launch
+- [ ] Add Resources hub and original, sourced AI search glossary with search, categories and A–Z navigation.
+- [ ] Connect navigation, Wiki, discovery files and a plain-text reference; verify the reader flow.
