@@ -11,6 +11,6 @@ await writeFile('public/resources/aeo-geo-myths.html', `<!doctype html><html lan
 const text = [`# ${title}`, desc, 'By Mushbloom. Published 2026-10-12. Interactive: https://mushbloom.uk/resources/aeo-geo-myths', ...mythPillars.flatMap(p => [`## ${p.name}`, ...myths.filter(m => m.pillar === p.id).map(m => `Claim: ${m.claim}\nVerdict: ${verdictLabel[m.verdict]}\nReality: ${m.reality}\nWhat to do: ${m.action}\nSource: ${mythSources[m.source].url}`)])].join('\n\n');
 await writeFile('public/resources/aeo-geo-myths.txt', text);
 const sm = (await readFile('public/sitemap.xml', 'utf8')).replace(/\s*<!-- myths:start -->[\s\S]*?<!-- myths:end -->\s*/g, '\n');
-const urls = ['https://mushbloom.uk/resources/aeo-geo-myths', url];
+const urls = ['https://mushbloom.uk/resources/aeo-geo-myths', url, ...mythPillars.map(p => `https://mushbloom.uk/resources/aeo-geo-myths/${p.id}`)];
 await writeFile('public/sitemap.xml', sm.replace('</urlset>', `  <!-- myths:start -->\n${urls.map(u => `  <url><loc>${u}</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`).join('\n')}\n  <!-- myths:end -->\n</urlset>`));
 console.log(`Generated ${myths.length} myths`);

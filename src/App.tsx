@@ -60,6 +60,7 @@ import ResourcesPage from './pages/resources/ResourcesPage';
 import SearchGlossaryPage from './pages/resources/SearchGlossaryPage';
 import GlossaryTermPage from './pages/resources/GlossaryTermPage';
 import AeoGeoMythsPage from './pages/resources/AeoGeoMythsPage';
+import MythPillarPage from './pages/resources/MythPillarPage';
 
 const queryClient = new QueryClient();
 
@@ -110,6 +111,7 @@ const App = () => (
               <Route path="/resources/aeo-geo-seo-glossary" element={<SearchGlossaryPage />} />
               <Route path="/resources/glossary/:slug" element={<GlossaryTermPage />} />
               <Route path="/resources/aeo-geo-myths" element={<AeoGeoMythsPage />} />
+              <Route path="/resources/aeo-geo-myths/:pillar" element={<MythPillarPage />} />
               <Route path="/wiki/mushbloom-legiit-partnership" element={<MushbloomLegiitPartnership />} />
               <Route path="/wiki/mushbloom-ai-automation-evolution" element={<MushbloomEvolutionGuide />} />
               <Route path="/wiki/:slug" element={<WikiArticlePage />} />
