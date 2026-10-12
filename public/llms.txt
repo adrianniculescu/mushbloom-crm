@@ -31,6 +31,7 @@ How Mushbloom works: workflow first, tool second. It maps the current process, f
 - [AEO, GEO & SEO Glossary](https://mushbloom.uk/resources/aeo-geo-seo-glossary): 60 original detailed guides with definitions, importance, process, comparisons, FAQs and sources. Includes ACP, MCP, A2A, SEO, AEO, GEO, citations and RAG. Industry terminology varies; inclusion and citations are not guaranteed.
 - [Glossary guide index — readable HTML](https://mushbloom.uk/resources/glossary/index.html): Links to all 60 complete static HTML guides. Each guide is readable without JavaScript and has a plain-text edition.
 - [Glossary — full plain-text reference](https://mushbloom.uk/resources/aeo-geo-seo-glossary.txt): Complete readable definitions, examples, stable term URLs and source links without requiring JavaScript.
+- [AEO & GEO Myths: 76 Fact-Checked Claims](https://mushbloom.uk/resources/aeo-geo-myths): Common AI search, AEO and GEO claims with verdicts (Debunked, Nuanced, Verified), explanations, practical advice and official sources. Plain text: https://mushbloom.uk/resources/aeo-geo-myths.txt
 - [Home](https://mushbloom.uk/): Practical no-code AI automation for SMEs and owner-run businesses.
 - [LLMboost](https://mushbloom.uk/llmboost): LLM SEO and Share of Model optimization for ChatGPT, Gemini, Claude, Perplexity.
 - [AI Automation Agency](https://mushbloom.uk/agency): No-code AI workflow implementation for SMEs and owner-run businesses.
