@@ -36,6 +36,7 @@ import AiAutomationAgencyPage from "./pages/AiAutomationAgencyPage";
 import LovableDevelopmentPage from "./pages/LovableDevelopmentPage";
 import LinkedInSalesMachinePage from "./pages/services/LinkedInSalesMachinePage";
 import AiWorkflowsPage from "./pages/services/AiWorkflowsPage";
+import ServicePillarPage from "./pages/services/ServicePillarPage";
 import AiWorkforcePage from "./pages/services/AiWorkforcePage";
 import AutomateIntakePage from "./pages/services/AutomateIntakePage";
 import PartnersPage from "./pages/PartnersPage";
@@ -97,6 +98,11 @@ const App = () => (
               <Route path="/agency" element={<AiAutomationAgencyPage />} />
               <Route path="/services/lovable-development" element={<LovableDevelopmentPage />} />
               <Route path="/services/linkedin-sales-machine" element={<LinkedInSalesMachinePage />} />
+              <Route path="/services/llm-seo" element={<ServicePillarPage slug="llm-seo" />} />
+              <Route path="/services/ai-agents" element={<ServicePillarPage slug="ai-agents" />} />
+              <Route path="/services/no-code-apps" element={<ServicePillarPage slug="no-code-apps" />} />
+              <Route path="/solutions/investors" element={<ServicePillarPage slug="investors" />} />
+              <Route path="/services/process-automation" element={<ServicePillarPage slug="process-automation" />} />
               <Route path="/services/ai-workflows" element={<AiWorkflowsPage />} />
               <Route path="/ai-workforce" element={<AiWorkforcePage />} />
               <Route path="/automate" element={<AutomateIntakePage />} />

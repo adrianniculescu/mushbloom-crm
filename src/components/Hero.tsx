@@ -10,18 +10,18 @@ const Hero = () => {
           <div>
             <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-2 mb-6 animate-fade-in">
               <Shield className="h-4 w-4 text-green-400" />
-              <span className="text-sm text-gray-300">International no-code AI automation agency</span>
+              <span className="text-sm text-gray-300">UK AI automation agency · working internationally</span>
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in font-['Space_Grotesk'] leading-tight">
+              AI Automation Agency UK —{' '}
               <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-green-500 bg-clip-text text-transparent">
-                Stop losing revenue
-              </span>{' '}
-              to missed enquiries, slow follow-up and repetitive admin
+                Deploy Your Custom AI Workforce in Days
+              </span>
             </h1>
             
             <p className="text-lg md:text-xl text-gray-300 mb-6 animate-fade-in delay-200 leading-relaxed">
-              Mushbloom helps SMEs and owner-run businesses identify the workflows costing them time and money, then implement simple AI-powered systems that capture more opportunities, follow up consistently and reduce admin—without jargon or complex software.
+              Custom multi-agent architectures that automate sales, operations and client intelligence — reducing overhead and repetitive admin while you scale.
             </p>
 
             {/* Bullet points */}

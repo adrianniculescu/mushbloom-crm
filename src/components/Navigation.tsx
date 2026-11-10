@@ -21,6 +21,11 @@ const Navigation = () => {
   ];
 
   const serviceItems = [
+    { name: 'AI Workforces & Agents', href: '/services/ai-agents', description: 'Custom AI agents for business' },
+    { name: 'LLM SEO / GEO', href: '/services/llm-seo', description: 'LLM SEO agency UK' },
+    { name: 'No-Code App Development', href: '/services/no-code-apps', description: 'Production apps in days' },
+    { name: 'Process Automation', href: '/services/process-automation', description: 'Business process automation' },
+    { name: 'Investor Solutions', href: '/solutions/investors', description: 'AI deal sourcing for VC & PE' },
     { name: 'Automate Your Workflow', href: '/automate', description: 'Tell us what you want to automate' },
     { name: 'AI Workforce Systems', href: '/ai-workforce', description: 'Supervised AI agents for your business' },
     { name: 'LLMboost', href: '/llmboost', description: 'AI Search Visibility' },
