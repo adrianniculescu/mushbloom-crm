@@ -221,4 +221,9 @@
   <url><loc>https://mushbloom.uk/resources/aeo-geo-myths/agentic</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://mushbloom.uk/resources/aeo-geo-myths/retrieval</loc><lastmod>2026-10-12</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <!-- myths:end -->
+  <url><loc>https://mushbloom.uk/services/llm-seo</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://mushbloom.uk/services/ai-agents</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://mushbloom.uk/services/no-code-apps</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://mushbloom.uk/solutions/investors</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://mushbloom.uk/services/process-automation</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>

@@ -8,7 +8,7 @@ const SiteFooter: React.FC = () => {
   return (
     <footer className="border-t border-white/10 bg-black/40 backdrop-blur-sm" aria-labelledby="site-footer-heading">
       <h2 id="site-footer-heading" className="sr-only">Site footer</h2>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid gap-8 md:grid-cols-5 text-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 grid gap-8 md:grid-cols-6 text-sm">
         <div className="md:col-span-2">
           <p className="text-white font-semibold mb-2">Mushbloom</p>
           <p className="text-gray-400 max-w-md">
@@ -31,6 +31,16 @@ const SiteFooter: React.FC = () => {
             <li><Link to="/wiki" className="hover:text-white">Wiki</Link></li>
             <li><Link to="/resources" className="hover:text-white">Resources</Link></li>
             <li><a href="/#contact" className="hover:text-white">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Specialisms">
+          <p className="text-white font-semibold mb-3">Specialisms</p>
+          <ul className="space-y-2 text-gray-400">
+            <li><Link to="/services/ai-agents" className="hover:text-white">Custom AI agents for business</Link></li>
+            <li><Link to="/services/llm-seo" className="hover:text-white">LLM SEO agency UK</Link></li>
+            <li><Link to="/services/no-code-apps" className="hover:text-white">No-code app development agency UK</Link></li>
+            <li><Link to="/services/process-automation" className="hover:text-white">Business process automation agency</Link></li>
+            <li><Link to="/solutions/investors" className="hover:text-white">AI deal sourcing for investors</Link></li>
           </ul>
         </nav>
         <nav aria-label="Services">
@@ -69,7 +79,7 @@ const SiteFooter: React.FC = () => {
       </div>
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-xs text-gray-500 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between">
-          <p>© 2024–{year} Mushbloom. All rights reserved.</p>
+          <p>© 2024–{year} Mushbloom. All rights reserved. Mushbloom is a registered digital agency operating in the United Kingdom.</p>
           <p>Made with care · WCAG 2.2 AA in progress</p>
         </div>
       </div>
